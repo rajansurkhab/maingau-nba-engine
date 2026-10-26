@@ -1,90 +1,90 @@
-# Planung: MAINGAU Next-Best-Action-Engine
-Futury Build Days #3 (AI Edition), 26.–27.10.2026
+# Planning: MAINGAU Next Best Action Engine
+Futury Build Days #3 (AI Edition), 26–27 Oct 2026
 
-**Quellen:** `Hackathon_slides_for_MAINGAU.pptx` (13 Folien, inkl. Sprechernotizen). Belege stehen als **[Fn]** für Folie n. Mit **[Fn-N]** ist die Sprechernotiz von Folie n gemeint. Ergänzend habe ich die mitgelieferten Mock-Daten gesichtet (`Re__Präsentation_Hackathon/…`). Aussagen daraus sind als **[Daten: Datei]** gekennzeichnet. Sie sind nicht Teil der Präsentation, sie präzisieren sie nur.
+**Sources:** `Hackathon_slides_for_MAINGAU.pptx` (13 slides incl. speaker notes). Citations appear as **[Sn]** for slide n. **[Sn-N]** means the speaker notes of slide n. I also reviewed the mock data supplied with the brief (`Re__Präsentation_Hackathon/…`). Statements based on it are marked **[Data: file]**. The data is not part of the presentation; it only makes it more precise.
 
-**Bildinhalte:** Ich habe alle eingebetteten Bilder angesehen. Es sind das MAINGAU-Logo (F1, F13), ein Bürofoto (F3) und Icons der Geschäftsfelder (F4). In keinem Bild steckt Aufgabeninhalt. Diagramme wie die Pipeline (F9) und die Systemlandschaft (F5) bestehen aus PowerPoint-Formen mit Text und sind vollständig über den Folientext erfasst.
-
----
-
-## 1. Aufgabenstellung
-
-### 1.1 Ziel und Problem in eigenen Worten
-
-MAINGAU hat fünf Geschäftsfelder, und jedes hat sein eigenes System: Energie, Autostrom, Mobilfunk, Online-Shop und Smart Living [F4, F5]. Eine einheitliche Kundensicht auf Databricks ist im Aufbau. Es fehlt aber die **Entscheidungsschicht** darüber, die festlegt, welches Angebot über welchen Kanal, in welcher Tonalität und zu welchem Zeitpunkt kommt [F5].
-
-Heute laufen Kampagnen über grobe, produktbezogene Segmente mit statischen Kriterien. Sie sind weder personalisiert noch dynamisch und blenden den Customer Lifetime Value (CLV) aus [F6]. Die größte Lücke ist das Cross-Selling über das Portfolio hinweg [F6-N].
-
-**Ziel:** ein klickbarer Prototyp, der pro Kunde **Angebot, Kanal und Tonalität** empfiehlt, dazu ein Marketing-Dashboard zur Steuerung [F6]. Als „beste“ Aktion gilt die mit dem **höchsten erwarteten CLV-Zuwachs** [F6, F7]:
-
-> E[Wert einer Aktion] = p(accept) × (CLV_nachher − CLV_jetzt) − Kontaktkosten [F7]
-
-Der Kern ist also kein klassisches Empfehlungssystem („was passt zum Kunden“), sondern eine **wertbasierte Entscheidung unter Nebenbedingungen**. Dazu gehören Consent, Ausschlüsse, Kontaktlimits und Human-in-the-Loop [F8, F12]. Jede Entscheidung muss erklärbar und geloggt sein [F8, F12]. Oft ist eine **Service-Aktion** besser als ein Verkaufsangebot [F7].
-
-### 1.2 Anforderungen
-
-**MUSS** (Kern, für jedes Team gleich [F11, F11-N])
-
-| # | Anforderung | Beleg |
-|---|---|---|
-| M1 | Klickbarer Prototyp: pro Kunde Angebot, Kanal, Tonalität (Du/Sie), erwarteter CLV-Gewinn und Begründung | F8, F10, F11 |
-| M2 | Ranking nach erwartetem CLV-Gewinn. Negative Aktionen fallen weg, Fatigue und Limits werden beachtet | F7, F9 |
-| M3 | Marketing-Dashboard: Top-NBAs über Kunden und Segmente hinweg. Angebote, Prioritäten und Kontaktlimits einstellbar. Inhalte, Kanäle und Tonalität freigeben | F10, F11 |
-| M4 | Customer-360°-Dashboard für Service: Status (Produkte, Verträge, offene Fälle), CLV, bestgerankte NBAs mit Begründung | F10, F10-N, F11 |
-| M5 | Architekturkonzept auf **einer** Folie: Betrieb auf Databricks mit MCP-Datenzugriff | F10, F11 |
-| M6 | Pitch: 8 Min. plus 4 Min. Q&A, **auf Englisch** | F11, F12 |
-| M7 | **Eine** Deep-Dive-Option aus A–D | F11 |
-| M8 | **Explain:** Ein Marketer versteht in einer Zeile, warum die Aktion gewählt wurde, und kann sie ändern | F8 |
-| M9 | **Learn als Konzept:** Wie verbessern Reaktionen die Engine, und wie wird Kausalität belegt (Kontrollgruppe, Uplift)? | F8, F8-N |
-| M10 | Harte Regeln, die **vor** dem Ranking greifen: Consent ist bindend, und ein Widerruf stoppt sofort. Ausschlüsse (Mahnung, offene Beschwerde, Kündigung) sperren Sales-Inhalte | F7-N, F12 |
-| M11 | Kein autonomes Versenden: Die Engine schlägt vor, das Marketing gibt frei | F12 |
-| M12 | Personalisierung nur mit Profiling-Consent | F12 |
-| M13 | Keine Manipulation: keine personalisierten Preise, keine künstliche Dringlichkeit, kein Targeting von Kunden in Notlagen | F12 |
-| M14 | Zahlungsdaten nur als Ausschlusskriterium, nie zur Bonitätsbewertung | F12, F12-N |
-| M15 | Logging jeder Entscheidung mit Inputs, Regeln, Scores und gewählter Aktion | F8, F12 |
-| M16 | Nur Mock-Daten, kein Scraping von MAINGAU-Systemen. Kundeninhalte auf Deutsch | F12 |
-
-**SOLL** (empfohlen, verbessert die Bewertung)
-
-| # | Anforderung | Beleg |
-|---|---|---|
-| S1 | Referenz-Pipeline übernehmen: Trigger → Eligibility → Scoring → Arbitration → Channel & Tone → Content → Delivery & Log. Abwandlungen sind erlaubt | F9, F9-N |
-| S2 | Start mit Regeln, vorberechnetem CLV und Annahmeraten aus der Action History | F9 |
-| S3 | Kontrollgruppe führen und beibehalten | F8, F9 |
-| S4 | Die vier Beispielfälle abdecken: Gaszähler-Abmeldung → Wärmepumpenstrom, Wallbox-Kauf → Autostrom, dreimal Klick auf Wärmepumpen-Story → Follow-up, High-Value- vs. Neukunde | F6 |
-| S5 | Das Autostrom-Beispiel korrekt lösen: Bei 3 fehlgeschlagenen Ladevorgängen bekommt der Service-Fix einen positiven Score, das Stromangebot einen negativen | F7 |
-| S6 | Kanalwahl nach Verhalten: Ein formal schreibender Kunde, der nie Newsletter öffnet, aber wöchentlich im Portal ist, bekommt ein Portal-Pop-up mit „Sie“ | F9 |
-| S7 | Pfad zu ML skizzieren | F9-N |
-
-**KANN** (optional)
-
-| # | Option | Beleg |
-|---|---|---|
-| K1 | ML-Modelle (p_accept, Churn, Tonalität). „ML is optional“ | F9 |
-| K2 | Content-Generierung per LLM innerhalb freigegebener Templates (entspricht Deep Dive C) | F9, F11 |
-| K3 | Event-Replay der 640 Live-Events (entspricht Deep Dive B). Kein Live-Event-Processing im Kern | F6-N, F11, F12 |
-| K4 | Feedback-Loop und Uplift tatsächlich bauen (Deep Dive A) | F8-N, F11 |
-| K5 | Tonalitätserkennung als eigenes Modell (Deep Dive D) | F11 |
-
-**Explizit nicht gefordert:** Datenintegration, also „the pipes“ [F5, F5-N], Live-Event-Processing im Kern [F6-N] und produktive Schnittstellen [F6-N].
-
-### 1.3 Vorgegebene Daten, Schnittstellen, Technologien, Abgabeformate
-
-- **Daten:** 750 synthetische Kunden, 16 Tabellen mit einem gemeinsamen `customer_id`, 640 Live-Events zum Replay, 10 % Kontrollgruppe in der Action History [F12]. CLV, Margen, Churn-Treiber und alle Parameter sind vorberechnet (`customer_value`, `value_assumptions`) [F7].
-  - [Daten: README] Snapshot vom 30.09.2026 23:59, Event-Stream vom 01.10.2026. 150 Kunden haben nur Autostrom. Die Daten enthalten absichtliche Fallen: Apple-MPP-Maschinenöffnungen, verspätete Roaming-CDRs, Gastbestellungen, Consent-Widerruf per Unsubscribe, Altaktionen ohne Consent-Check, offline HEMS-Gateways und doppelte Events (bestätigt in F12-N).
-  - [Daten: clv_method] Die genaue dCLV-Formel inklusive Ablehnungszweig (siehe Abschnitt 3) und Hinweisen zu Einmalprodukten.
-- **Technologie-Zielbild:** Databricks (Master View) und MCP für den Datenzugriff, aber nur als Architekturkonzept [F5, F5-N, F10]. LLM für Content ist eine Möglichkeit, keine Pflicht [F9].
-- **Schnittstellen:** Es gibt keine Live-Schnittstellen, die Daten liegen als Dateien vor [F5, F6-N]. [Daten] Vorhanden sind XLSX, CSV und JSONL.
-- **Abgabe:** Prototyp, Marketing-Dashboard, 360°-Dashboard, eine Architekturfolie, Pitch (8 + 4 Min., Englisch) und ein Deep Dive [F11].
-- **Zeitbudget:** 32 Stunden [F6-N].
+**Image content:** I looked at every embedded image. They are the MAINGAU logo (S1, S13), an office photo (S3) and icons of the business lines (S4). None of the images carries task content. Diagrams such as the pipeline (S9) and the system landscape (S5) are built from PowerPoint shapes with text and are fully captured by the slide text.
 
 ---
 
-## 2. Bewertungskriterien
+## 1. Task
 
-### 2.1 Jury-Gewichtung [F11]
+### 1.1 Goal and problem in my own words
 
-| Kriterium | Gewicht |
+MAINGAU has five business lines, and each runs its own system: energy, Autostrom, mobile, online shop and Smart Living [S4, S5]. A unified customer view on Databricks is being built. What is missing is the **decision layer** on top of it, which decides which offer goes out through which channel, in which tone and at what time [S5].
+
+Today campaigns run on broad, product-based segments with static criteria. They are neither personalised nor dynamic, and they ignore customer lifetime value (CLV) [S6]. The biggest gap is cross-selling across the portfolio [S6-N].
+
+**Goal:** a clickable prototype that recommends **offer, channel and tone** per customer, plus a marketing dashboard to steer it [S6]. The "best" action is the one with the **highest expected CLV gain** [S6, S7]:
+
+> E[value of an action] = p(accept) × (CLV after − CLV now) − contact cost [S7]
+
+So the core is not a classic recommender system ("what fits this customer") but a **value-based decision under constraints**. The constraints include consent, exclusions, contact limits and human in the loop [S8, S12]. Every decision must be explainable and logged [S8, S12]. Often a **service action** beats a sales offer [S7].
+
+### 1.2 Requirements
+
+**MUST** (core, identical for every team [S11, S11-N])
+
+| # | Requirement | Source |
+|---|---|---|
+| M1 | Clickable prototype: per customer offer, channel, tone (Du/Sie), expected CLV gain and reason | S8, S10, S11 |
+| M2 | Ranking by expected CLV gain. Negative actions are dropped, fatigue and limits are respected | S7, S9 |
+| M3 | Marketing dashboard: top NBAs across customers and segments. Offers, priorities and contact limits can be set. Content, channels and tone can be approved | S10, S11 |
+| M4 | Customer 360° dashboard for service: status (products, contracts, open cases), CLV, top-ranked NBAs with reason | S10, S10-N, S11 |
+| M5 | Architecture concept on **one** slide: running on Databricks with MCP data access | S10, S11 |
+| M6 | Pitch: 8 min plus 4 min Q&A, **in English** | S11, S12 |
+| M7 | **One** deep-dive option from A–D | S11 |
+| M8 | **Explain:** a marketer understands in one line why the action was chosen, and can change it | S8 |
+| M9 | **Learn as a concept:** how do reactions improve the engine, and how is causality shown (control group, uplift)? | S8, S8-N |
+| M10 | Hard rules that apply **before** ranking: consent is binding and a withdrawal stops actions at once. Exclusions (dunning, open complaint, cancellation) block sales content | S7-N, S12 |
+| M11 | No autonomous sending: the engine proposes, marketing approves | S12 |
+| M12 | Personalisation only with profiling consent | S12 |
+| M13 | No manipulation: no personalised prices, no artificial urgency, no targeting of customers in hardship | S12 |
+| M14 | Payment data only as an exclusion criterion, never for creditworthiness scoring | S12, S12-N |
+| M15 | Every decision logged with inputs, rules, scores and chosen action | S8, S12 |
+| M16 | Mock data only, no scraping of MAINGAU systems. Customer content in German | S12 |
+
+**SHOULD** (recommended, improves the score)
+
+| # | Requirement | Source |
+|---|---|---|
+| S1 | Adopt the reference pipeline: Trigger → Eligibility → Scoring → Arbitration → Channel & Tone → Content → Delivery & Log. Changes are allowed | S9, S9-N |
+| S2 | Start with rules, precomputed CLV and acceptance rates from the action history | S9 |
+| S3 | Keep and maintain a control group | S8, S9 |
+| S4 | Cover the four example cases: gas meter deregistration → heat-pump electricity, wallbox purchase → Autostrom, three clicks on the heat-pump story → follow-up, high-value vs. new customer | S6 |
+| S5 | Solve the Autostrom example correctly: with 3 failed charging sessions the service fix scores positive and the electricity offer negative | S7 |
+| S6 | Channel choice by behaviour: a formally writing customer who never opens newsletters but visits the portal weekly gets a portal pop-up addressed with "Sie" | S9 |
+| S7 | Sketch the path to ML | S9-N |
+
+**COULD** (optional)
+
+| # | Option | Source |
+|---|---|---|
+| K1 | ML models (p_accept, churn, tone). "ML is optional" | S9 |
+| K2 | Content generation via LLM within approved templates (= deep dive C) | S9, S11 |
+| K3 | Event replay of the 640 live events (= deep dive B). No live event processing in the core | S6-N, S11, S12 |
+| K4 | Actually build the feedback loop and uplift (deep dive A) | S8-N, S11 |
+| K5 | Tone detection as its own model (deep dive D) | S11 |
+
+**Explicitly not required:** data integration, i.e. "the pipes" [S5, S5-N], live event processing in the core [S6-N] and production interfaces [S6-N].
+
+### 1.3 Given data, interfaces, technologies, deliverable formats
+
+- **Data:** 750 synthetic customers, 16 tables sharing one `customer_id`, 640 live events for replay, 10 % control group in the action history [S12]. CLV, margins, churn drivers and all parameters are precomputed (`customer_value`, `value_assumptions`) [S7].
+  - [Data: README] Snapshot of 30 Sep 2026 23:59, event stream of 1 Oct 2026. 150 customers hold only Autostrom. The data contains deliberate traps: Apple MPP machine opens, late roaming CDRs, guest orders, consent withdrawn by unsubscribe, legacy actions without a consent check, offline HEMS gateways and duplicate events (confirmed in S12-N).
+  - [Data: clv_method] The exact dCLV formula including the reject branch (see section 3) and notes on one-off products.
+- **Target technology:** Databricks (master view) and MCP for data access, but only as an architecture concept [S5, S5-N, S10]. An LLM for content is an option, not a requirement [S9].
+- **Interfaces:** there are no live interfaces; the data comes as files [S5, S6-N]. [Data] XLSX, CSV and JSONL are provided.
+- **Deliverables:** prototype, marketing dashboard, 360° dashboard, one architecture slide, pitch (8 + 4 min, English) and one deep dive [S11].
+- **Time budget:** 32 hours [S6-N].
+
+---
+
+## 2. Judging criteria
+
+### 2.1 Jury weighting [S11]
+
+| Criterion | Weight |
 |---|---|
 | Technical quality | 25 % |
 | Feasibility | 25 % |
@@ -92,115 +92,115 @@ Der Kern ist also kein klassisches Empfehlungssystem („was passt zum Kunden“
 | Innovation | 15 % |
 | Pitch | 10 % |
 
-**Prüfung an Referenzkunden, die in den Daten versteckt sind** [F11]:
-1. Erwarteter CLV-Gewinn der empfohlenen Aktionen
-2. **Null** Consent- oder Ausschlussverletzungen
-3. Eine klare Begründung für jede Entscheidung
+**Checked on reference customers hidden in the data** [S11]:
+1. Expected CLV gain of the recommended actions
+2. **Zero** consent or exclusion violations
+3. A clear reason for every decision
 
-### 2.2 Konsequenzen für die Priorisierung
+### 2.2 Consequences for prioritisation
 
-1. **Korrektheit vor Raffinesse.** Eine einzige Consent- oder Ausschlussverletzung bei einem Referenzkunden ist ein harter Fehler, weil die Vorgabe „zero“ lautet. Die Eligibility-Stufe ist deshalb die wichtigste Komponente. Sie braucht Unit-Tests gegen jede bekannte Datenfalle, darunter Unsubscribe als Widerruf, Altaktionen mit `consent_checked=False` und Mahnstufen.
-2. **Die dCLV-Rechnung muss exakt der Vorgabe in `clv_method` folgen.** Die Jury rechnet den „expected CLV gain“ sehr wahrscheinlich nach dieser Methode nach. Eigene „bessere“ CLV-Modelle sind nur als Zusatz sinnvoll, nie als Ersatz.
-3. **Feasibility (25 %) und Technical quality (25 %) zusammen ergeben 50 %.** Saubere, nachvollziehbare Pipeline, Decision Log und realistischer Databricks-Pfad sind wichtiger als ein komplexes ML-Modell. F9 sagt ausdrücklich: Regeln plus vorberechneter CLV reichen.
-4. **Impact (25 %):** Die vier Beispiele aus F6 und das Autostrom-Beispiel aus F7 sollten im Demo sichtbar gelöst werden. Ideal ist eine Kennzahl wie „Σ erwarteter dCLV gegenüber der Legacy-Regel-Engine“.
-5. **Innovation (15 %)** entsteht vor allem im Deep Dive und in der Begründung: einzeilige, menschenlesbare Reasons und ein sauberes Uplift-Konzept. Ein Markov- oder ML-Ansatz zahlt hier ein, darf aber Punkt 1 nicht gefährden.
-6. **Pitch (10 %, Englisch):** Die Demo-Story früh festlegen und am 2. Tag nicht mehr umbauen.
+1. **Correctness before sophistication.** A single consent or exclusion violation on a reference customer is a hard failure, because the requirement says "zero". The eligibility stage is therefore the most important component. It needs unit tests against every known data trap, including unsubscribe as withdrawal, legacy actions with `consent_checked=False` and dunning levels.
+2. **The dCLV calculation must follow `clv_method` exactly.** The jury will very likely recompute the "expected CLV gain" with this method. Our own "better" CLV models only make sense as an addition, never as a replacement.
+3. **Feasibility (25 %) and technical quality (25 %) together make 50 %.** A clean, traceable pipeline, a decision log and a realistic Databricks path matter more than a complex ML model. S9 says explicitly: rules plus precomputed CLV are enough.
+4. **Impact (25 %):** the four examples from S6 and the Autostrom example from S7 should be visibly solved in the demo. Ideally with a metric such as "Σ expected dCLV vs. the legacy rule engine".
+5. **Innovation (15 %)** comes mainly from the deep dive and the reasons: one-line, human-readable reasons and a clean uplift concept. A Markov or ML approach contributes here, but must not put point 1 at risk.
+6. **Pitch (10 %, English):** fix the demo story early and do not rebuild it on day 2.
 
-**Daraus folgt die Reihenfolge:** Eligibility, dann dCLV-Scoring, dann Arbitration und Log, dann 360°-Ansicht, dann Marketing-Dashboard, dann Deep Dive, dann ML-Verfeinerung.
+**Resulting order:** eligibility, then dCLV scoring, then arbitration and log, then 360° view, then marketing dashboard, then deep dive, then ML refinement.
 
 ---
 
-## 3. Ansatz: Markov-Kette mit ML
+## 3. Approach: Markov chain with ML
 
-### 3.1 Die vorgegebene CLV-Formel ist bereits eine Markov-Kette
+### 3.1 The given CLV formula already is a Markov chain
 
-Die CLV-Methode [Daten: clv_method] lautet:
+The CLV method [Data: clv_method] reads:
 
 ```
 CLV = Σ_{t=1..10} (margin − cost_to_serve) · (1 − churn)^(t−1) / 1.06^t
 ```
 
-Das ist der erwartete diskontierte Ertrag einer **absorbierenden Markov-Kette mit zwei Zuständen**: `aktiv` geht mit der Wahrscheinlichkeit `churn` in den absorbierenden Zustand `churned` über. Es handelt sich um eine **Markov Reward Process** mit Zeitschritt 1 Jahr, Horizont H = 10 und Diskontfaktor γ = 1/1.06.
+This is the expected discounted reward of an **absorbing Markov chain with two states**: `active` moves to the absorbing state `churned` with probability `churn`. It is a **Markov reward process** with a time step of one year, horizon H = 10 and discount factor γ = 1/1.06.
 
-Die Aktionen verändern die Parameter dieser Kette [Daten: clv_method]:
-- **Accept** (Sales/Upsell): Marge steigt um `annual_margin_if_bought`, Churn ändert sich um `churn_effect_if_bought`. Einmalprodukte zählen die Marge nur einmal.
-- **Accept** bei Retention (P-EN-02): Der Churn-Treiber „Preisgarantie endet“ fällt weg.
-- **Accept** bei Service (P-SV-01): Die Service-Churn-Treiber fallen weg, abzüglich `service_resolution_cost_eur`.
-- **Reject:** Die Kette bleibt unverändert, **außer** bei einem Sales-Kontakt während einer offenen Beschwerde oder Mahnung. Dann steigt der Churn um 0,05.
+Actions change the parameters of this chain [Data: clv_method]:
+- **Accept** (sales/upsell): margin rises by `annual_margin_if_bought`, churn changes by `churn_effect_if_bought`. One-off products count their margin only once.
+- **Accept** for retention (P-EN-02): the churn driver "price guarantee ends" is removed.
+- **Accept** for service (P-SV-01): the service churn drivers are removed, minus `service_resolution_cost_eur`.
+- **Reject:** the chain stays unchanged, **except** for a sales contact during an open complaint or dunning. Then churn rises by 0.05.
 
 ```
 dCLV = p·(CLV_acc − CLV_now) + (1−p)·(CLV_rej − CLV_now) − contact_cost
 ```
 
-Formal ist das ein **einstufiger Lookahead in einem Markov Decision Process (MDP)**. Die Aktion wirkt als Übergang im Parameterraum, die Kette bewertet die Folgen. Diese Sicht ist das tragende Argument für den Markov-Ansatz, weil er sich **nahtlos** an die geforderte Bewertung anschließt.
+Formally this is a **one-step lookahead in a Markov decision process (MDP)**. The action acts as a transition in parameter space, and the chain values the consequences. This view is the main argument for the Markov approach, because it connects **seamlessly** to the required valuation.
 
-### 3.2 Vorgeschlagene Markov-Modellierung auf drei Ebenen
+### 3.2 Proposed Markov modelling on three levels
 
-**Ebene 1 – Wert-Kette (Pflicht, exakt nach Vorgabe)**
-- Zustände: {aktiv, churned}. Zeitschritt: 1 Jahr. Ordnung: 1. Konstante Übergangswahrscheinlichkeit pro Szenario.
-- Zweck: CLV_now, CLV_acc und CLV_rej berechnen. Die Formel ist deterministisch, ML wird hier nicht gebraucht.
+**Level 1 – value chain (mandatory, exactly as specified)**
+- States: {active, churned}. Time step: 1 year. Order: 1. Constant transition probability per scenario.
+- Purpose: compute CLV_now, CLV_acc and CLV_rej. The formula is deterministic; no ML is needed here.
 
-**Ebene 2 – Kundenzustands-Kette (optional, Erweiterung)**
-- Zustand = Tupel aus (Produkt-Bündel, Service-Lage, Engagement-Lage), zum Beispiel `({Strom, Autostrom}, offene_Beschwerde, portal_aktiv)`.
-  - Produkt-Bündel: Menge der aktiven Geschäftsfelder. Bei 5 Feldern sind das höchstens 2⁵ = 32 Zustände, real deutlich weniger.
-  - Service-Lage: {ok, offenes Ticket, Beschwerde, Mahnung, Kündigung}.
-  - Engagement: {inaktiv, Newsletter-aktiv, Portal-aktiv, beides}.
-- Übergänge (monatlich): Produktkauf, Kündigung, neues Ticket, Lösung eines Tickets.
-- Zweck: realistischere CLV-Projektion, weil Service-Fälle sich auflösen und Kunden weitere Produkte kaufen. Außerdem lassen sich **Cross-Sell-Pfade** erkennen (Gas → Wärmepumpenstrom, Wallbox → Autostrom [F6]).
-- Ordnung: Wegen Fatigue und „dreimal Klick in Folge“ [F6] reicht Ordnung 1 nicht. Ich empfehle **State Augmentation** statt höherer Ordnung, also Zähler wie `kontakte_30d` oder `klicks_thema_letzte_3` als Teil des Zustands. Das hält die Kette formal bei Ordnung 1.
+**Level 2 – customer state chain (optional extension)**
+- State = tuple of (product bundle, service situation, engagement situation), e.g. `({electricity, Autostrom}, open_complaint, portal_active)`.
+  - Product bundle: set of active business lines. With 5 lines that is at most 2⁵ = 32 states, in practice far fewer.
+  - Service situation: {ok, open ticket, complaint, dunning, cancellation}.
+  - Engagement: {inactive, newsletter-active, portal-active, both}.
+- Transitions (monthly): product purchase, cancellation, new ticket, ticket resolved.
+- Purpose: a more realistic CLV projection, because service cases get resolved and customers buy further products. **Cross-sell paths** also become visible (gas → heat-pump electricity, wallbox → Autostrom [S6]).
+- Order: because of fatigue and "three clicks in a row" [S6], order 1 is not enough. I recommend **state augmentation** instead of a higher order, i.e. counters such as `contacts_30d` or `clicks_topic_last_3` as part of the state. This keeps the chain formally at order 1.
 
-**Ebene 3 – Interaktions- oder Response-Kette (für p_accept und Deep Dive A)**
-- Zustände: `zugestellt → gesehen (human open, ohne Apple MPP) → geklickt → konvertiert` plus `ignoriert`, `dismissed` und `unsubscribed` (absorbierend).
-- Übergänge werden aus `nba_action_history` und `newsletter_performance` geschätzt, je Kombination aus Kanal, Angebot und Tonalität.
-- Zweck: p_accept als **Absorptionswahrscheinlichkeit** in „konvertiert“. Außerdem lässt sich das Unsubscribe-Risiko als echte Kosten eines Kontakts modellieren, was ein Fatigue-Argument liefert.
+**Level 3 – interaction or response chain (for p_accept and deep dive A)**
+- States: `delivered → seen (human open, excluding Apple MPP) → clicked → converted` plus `ignored`, `dismissed` and `unsubscribed` (absorbing).
+- Transitions are estimated from `nba_action_history` and `newsletter_performance`, per combination of channel, offer and tone.
+- Purpose: p_accept as the **absorption probability** into "converted". The unsubscribe risk can also be modelled as a real cost of a contact, which gives a fatigue argument.
 
-### 3.3 Wo ML ergänzt
+### 3.3 Where ML adds value
 
-| Teilproblem | ML-Rolle | Begründung |
+| Sub-problem | Role of ML | Rationale |
 |---|---|---|
-| **p_accept** (Offer × Channel × Tone × Kundenmerkmale) | Hierarchisches **Beta-Binomial-Shrinkage** als Baseline (F9: „Start with rates from history“). Dann **logistische Regression** oder kleines GBM mit Kalibrierung | Wenig Daten (~2.000 nicht-Kontroll-Aktionen, ~200 Klicks [Daten]). Viele Zellen sind leer, deshalb braucht es Shrinkage |
-| **Übergangswahrscheinlichkeiten Ebene 2** | Multinomiale logistische Regression oder ein Count-Modell je Ausgangszustand, mit Kovariaten (Discrete-Time-Hazard) | Statt einer globalen Matrix entsteht eine **kundenindividuelle Übergangsmatrix**, also ein Hybridmodell |
-| **Zustandsschätzung** latenter Absichten (z. B. „plant Wärmepumpe“, „frustriert“) | **Hidden Markov Model** über Event-Sequenzen oder ein einfacher Bayes-Filter | Nicht direkt beobachtbare Zustände aus Signalen ableiten: Gaszähler-Abmeldung, Wärmepumpen-Klicks [F6], fehlgeschlagene Ladevorgänge [F7] |
-| **Tonalität (Du/Sie)** | Regelbasiert per Pronomen-Zählung in `message_text` und `call_transcripts`, optional ein Klassifikator (Deep Dive D) | [Daten: README] Die Tonalität ist nicht gelabelt und muss abgeleitet werden |
-| **Uplift / Kausalität** | Differenz Treatment − Control je Angebot × Kanal, später T-Learner oder Uplift-Baum | F8 verlangt einen Kausalitätsnachweis, F12 nennt die 10 % Kontrollgruppe |
+| **p_accept** (offer × channel × tone × customer features) | Hierarchical **Beta-Binomial shrinkage** as baseline (S9: "Start with rates from history"). Then **logistic regression** or a small GBM with calibration | Little data (~2,000 non-control actions, ~200 clicks [Data]). Many cells are empty, so shrinkage is needed |
+| **Level-2 transition probabilities** | Multinomial logistic regression or a count model per source state, with covariates (discrete-time hazard) | Instead of one global matrix there is a **customer-specific transition matrix**, i.e. a hybrid model |
+| **State estimation** of latent intent (e.g. "plans a heat pump", "frustrated") | **Hidden Markov model** over event sequences, or a simple Bayes filter | Derive states that cannot be observed directly from signals: gas meter deregistration, heat-pump clicks [S6], failed charging sessions [S7] |
+| **Tone (Du/Sie)** | Rule-based via pronoun counts in `message_text` and `call_transcripts`, optionally a classifier (deep dive D) | [Data: README] tone is not labelled and must be derived |
+| **Uplift / causality** | Difference treatment − control per offer × channel, later a T-learner or uplift tree | S8 asks for proof of causality, S12 mentions the 10 % control group |
 
-**Compliance-Grenze für ML:** Personalisierte Modelle (individuelle Kovariaten) dürfen nur für Kunden mit `profiling_analytics = granted` laufen [F12]. Für alle anderen gelten **Segment- bzw. Populationsraten**. Zahlungsdaten (Mahnung, `payment_method`) dürfen **keine Features** in p_accept- oder Churn-Modellen sein, sondern nur Ausschlüsse [F12]. *Annahme:* Die vorberechnete Churn-Wahrscheinlichkeit in `customer_value` enthält bereits `dunning_ge2` [Daten: value_assumptions]. Wir übernehmen sie als Vorgabe, bauen aber kein eigenes Modell mit Zahlungsdaten.
+**Compliance boundary for ML:** personalised models (individual covariates) may only run for customers with `profiling_analytics = granted` [S12]. Everyone else gets **segment or population rates**. Payment data (dunning, `payment_method`) must **not be features** in p_accept or churn models, only exclusions [S12]. *Assumption:* the precomputed churn probability in `customer_value` already includes `dunning_ge2` [Data: value_assumptions]. We take it as given but build no model of our own on payment data.
 
-### 3.4 Grenzen des Ansatzes
+### 3.4 Limits of the approach
 
-- **Markov-Eigenschaft:** Kundenverhalten hängt von der Historie ab (Fatigue, Saisonalität, Ende der Preisgarantie). State Augmentation hilft, vergrößert aber den Zustandsraum.
-- **Datenmenge:** Bei 750 Kunden und wenigen Monaten Historie sind Übergänge auf Ebene 2 spärlich besetzt, die Schätzungen werden instabil. Gegenmittel: Shrinkage zur Population und grobe Zustände.
-- **Stationarität:** Die Übergänge ändern sich, etwa durch die AC-Preissenkung am 01.07.2026 [Daten: sources].
-- **Korrelation ist keine Kausalität:** Übergangsraten aus der Legacy-Historie sind durch die alte Regel-Engine verzerrt (Selection Bias). Nur der Vergleich mit der Kontrollgruppe liefert kausale Effekte [F8].
-- **Konsistenz mit der Jury-Bewertung:** Ein eigenes CLV-Modell (Ebene 2) liefert andere Zahlen als `clv_method`. Deshalb zeigen wir den Vorgabe-CLV als Primärwert und Ebene 2 höchstens als Zusatzansicht.
-- **Erklärbarkeit:** Ein HMM oder GBM ist schwerer in einer Zeile zu erklären [F8]. Reasons sollten deshalb aus Regel und Treiber erzeugt werden, nicht aus Modell-Interna.
+- **Markov property:** customer behaviour depends on history (fatigue, seasonality, end of the price guarantee). State augmentation helps but enlarges the state space.
+- **Data volume:** with 750 customers and a few months of history, level-2 transitions are sparse and the estimates become unstable. Remedies: shrinkage towards the population and coarse states.
+- **Stationarity:** transitions change over time, e.g. because of the AC price cut on 1 Jul 2026 [Data: sources].
+- **Correlation is not causation:** transition rates from the legacy history are biased by the old rule engine (selection bias). Only the comparison with the control group yields causal effects [S8].
+- **Consistency with the jury's valuation:** a CLV model of our own (level 2) produces different numbers than `clv_method`. We therefore show the specified CLV as the primary value and level 2 at most as an additional view.
+- **Explainability:** an HMM or GBM is harder to explain in one line [S8]. Reasons should therefore be generated from rules and drivers, not from model internals.
 
-### 3.5 Alternativen zum Vergleich
+### 3.5 Alternatives for comparison
 
-| Alternative | Stärke | Schwäche im Kontext |
+| Alternative | Strength | Weakness in this context |
 |---|---|---|
-| Rein regelbasiert plus vorgegebener CLV (F9 „Day one“) | Schnell, vollständig erklärbar, deckt die Bewertung ab | Wenig Innovation |
-| Contextual Bandit (Thompson Sampling auf p_accept) | Natürlicher „Learn“-Loop [F8], Exploration | Braucht Online-Feedback, im Hackathon nur simulierbar |
-| Uplift-Modell (T-/X-Learner) | Direkt kausal, passt zu F8 | Wenige Kontrollbeobachtungen (248 [Daten]) |
-| Survival-Modell (Cox, Discrete-Time-Hazard) für Churn | Statistisch sauberer als konstanter Churn | Weicht vom vorgegebenen CLV ab |
-| Volles MDP / Reinforcement Learning (mehrstufige Policy) | Plant Sequenzen wie „erst Service-Fix, dann Angebot“ | Zu viel für 32 h, schwer zu validieren und zu erklären |
+| Purely rule-based plus specified CLV (S9 "Day one") | Fast, fully explainable, covers the judging | Little innovation |
+| Contextual bandit (Thompson sampling on p_accept) | Natural "Learn" loop [S8], exploration | Needs online feedback, can only be simulated in the hackathon |
+| Uplift model (T-/X-learner) | Directly causal, fits S8 | Few control observations (248 [Data]) |
+| Survival model (Cox, discrete-time hazard) for churn | Statistically cleaner than constant churn | Deviates from the specified CLV |
+| Full MDP / reinforcement learning (multi-step policy) | Plans sequences such as "service fix first, then offer" | Too much for 32 h, hard to validate and explain |
 
-**Empfehlung:** Ebene 1 exakt umsetzen, also den Kern. Ebene 3 plus Beta-Binomial-Shrinkage für p_accept (leichtes ML). Ebene 2 und HMM nur als Konzept bzw. Folie im „Learn“-Teil. Damit trägt der Markov-Rahmen die Story („Wir modellieren den Kunden als Markov Reward Process, jede NBA verschiebt seine Übergänge“), ohne die Pflichtbewertung zu gefährden.
+**Recommendation:** implement level 1 exactly (the core). Level 3 plus Beta-Binomial shrinkage for p_accept (light ML). Level 2 and the HMM only as a concept or slide in the "Learn" part. This way the Markov framing carries the story ("we model the customer as a Markov reward process, and every NBA shifts its transitions") without putting the mandatory valuation at risk.
 
-### 3.6 Offene Modellierungsfragen (vor dem Start klären)
+### 3.6 Open modelling questions (to settle before starting)
 
-1. Zeitschritt: Ebene 1 rechnet jährlich (Vorgabe). Gilt für Ebene 2 und 3 monatlich oder ereignisbasiert?
-2. Was zählt als „accept“? `clicked`, `converted_within_14d` oder Conversion-Wert > 0? Das beeinflusst p_accept direkt.
-3. Wie wird p_accept für **Service-Aktionen** (P-SV-01) geschätzt? In der Historie kommen sie offenbar nicht als Offer vor; `service_nba_feedback` hat eigene Reaktionen. *Annahme nötig.*
-4. Sollen Churn-Treiber in `customer_value.churn_drivers` direkt zerlegt werden (additiv laut `value_assumptions`), um CLV_acc für Retention und Service zu berechnen? Wie wird die Untergrenze des `multi_line_factor` (min. 0,5×) bei Produktkäufen angewendet?
-5. Sind mehrere NBAs pro Kunde und Zeitraum erlaubt, also eine Sequenz, oder genau eine?
-6. Wie wird Fatigue quantifiziert, als hartes Limit oder als Kostenterm im Score? Die Folien nennen keine Werte.
+1. Time step: level 1 is yearly (as specified). Are levels 2 and 3 monthly or event-based?
+2. What counts as "accept"? `clicked`, `converted_within_14d` or conversion value > 0? This directly affects p_accept.
+3. How is p_accept estimated for **service actions** (P-SV-01)? They do not seem to appear as offers in the history; `service_nba_feedback` has its own reactions. *Assumption needed.*
+4. Should the churn drivers in `customer_value.churn_drivers` be decomposed directly (additive according to `value_assumptions`) to compute CLV_acc for retention and service? How is the floor of the `multi_line_factor` (min. 0.5×) applied to product purchases?
+5. Are several NBAs per customer and period allowed (a sequence), or exactly one?
+6. How is fatigue quantified: as a hard limit or as a cost term in the score? The slides give no values.
 
 ---
 
-## 4. Systementwurf: Vorschläge
+## 4. System design: proposals
 
-Alle Varianten bilden die Referenz-Pipeline aus F9 ab:
+All variants implement the reference pipeline from S9:
 
 ```
 Trigger → Eligibility → Scoring → Arbitration → Channel&Tone → Content → Delivery&Log
@@ -208,229 +208,229 @@ Trigger → Eligibility → Scoring → Arbitration → Channel&Tone → Content
                          └──────────── Feedback (Response) ─────────────────┘
 ```
 
-### Variante A – Monolith: Python-Notebook/Script plus Streamlit
+### Variant A – monolith: Python notebook/script plus Streamlit
 
 ```mermaid
 flowchart LR
-  CSV[(CSV/XLSX + JSONL)] --> L[Loader + Cleaning<br/>dedupe, MPP-Filter, Gast-Orders]
-  L --> F[Feature-/Customer-Tabelle<br/>pandas]
-  F --> E[Engine-Funktionen<br/>eligibility · score · arbitrate · tone]
-  E --> UI[Streamlit-App<br/>Tabs: Empfehlung · Marketing · 360°]
+  CSV[(CSV/XLSX + JSONL)] --> L[Loader + cleaning<br/>dedupe, MPP filter, guest orders]
+  L --> F[Feature / customer table<br/>pandas]
+  F --> E[Engine functions<br/>eligibility · score · arbitrate · tone]
+  E --> UI[Streamlit app<br/>tabs: recommendation · marketing · 360°]
   E --> LOG[(decision_log.parquet)]
-  UI -- Parameter (Limits, Prioritäten) --> E
+  UI -- parameters (limits, priorities) --> E
 ```
 
-- **Vorteile:** Am schnellsten (~6–8 h bis zur ersten Demo), ein Repo, eine Sprache, wenig Integrationsrisiko.
-- **Nachteile:** Engine und UI sind verschränkt. Das schwächt die Feasibility-Story für Databricks und MCP, und Freigabe-Workflow sowie Logging fallen schnell „hemdsärmelig“ aus.
-- **Risiken:** Streamlit-State bei mehreren Nutzern. Performance ist bei 750 Kunden unkritisch.
-- **Aufwand:** gering.
+- **Pros:** fastest (~6–8 h to a first demo), one repo, one language, little integration risk.
+- **Cons:** engine and UI are entangled. That weakens the feasibility story for Databricks and MCP, and the approval workflow and logging quickly become ad hoc.
+- **Risks:** Streamlit state with several users. Performance is uncritical with 750 customers.
+- **Effort:** low.
 
-### Variante B – Engine als Bibliothek plus API, getrennte UIs (empfohlen)
+### Variant B – engine as a library plus API, separate UIs (recommended)
 
 ```mermaid
 flowchart LR
   subgraph Data
-    RAW[(Mock-Daten)] --> PREP[Prep-Job<br/>Cleaning + Features]
+    RAW[(Mock data)] --> PREP[Prep job<br/>cleaning + features]
     PREP --> DB[(DuckDB / Parquet<br/>customer_features, consent, cases)]
   end
-  subgraph Engine["nba_engine (Python-Paket)"]
-    TRG[Trigger<br/>Batch + Event-Replay] --> ELI[Eligibility<br/>harte Regeln]
-    ELI --> SCO[Scoring<br/>Markov-CLV + p_accept]
-    SCO --> ARB[Arbitration<br/>Limits, Fatigue, Priorities]
+  subgraph Engine["nba_engine (Python package)"]
+    TRG[Trigger<br/>batch + event replay] --> ELI[Eligibility<br/>hard rules]
+    ELI --> SCO[Scoring<br/>Markov CLV + p_accept]
+    SCO --> ARB[Arbitration<br/>limits, fatigue, priorities]
     ARB --> CT[Channel & Tone]
-    CT --> CON[Content<br/>Templates / opt. LLM]
+    CT --> CON[Content<br/>templates / opt. LLM]
   end
   DB --> TRG
-  CFG[(config: Angebote, Prioritäten,<br/>Limits, Freigaben)] --> ELI & ARB & CON
+  CFG[(config: offers, priorities,<br/>limits, approvals)] --> ELI & ARB & CON
   CON --> LOG[(decision_log<br/>append-only)]
   API[FastAPI<br/>/recommend /customer/360 /approve /config] --> Engine
   LOG --> API
-  API --> MUI[Marketing-Dashboard]
-  API --> SUI[360°-Dashboard Service]
+  API --> MUI[Marketing dashboard]
+  API --> SUI[360° dashboard for service]
 ```
 
-- **Schnittstellen:**
-  - `recommend(customer_id | segment) → [Decision]`, wobei eine Decision Offer, Channel, Tone, dCLV, Reason, Regeltrace und Decision-ID enthält.
-  - `customer_360(id)` liefert Status, CLV und die Top-NBAs.
-  - `config GET/PUT` und `approve(decision_id | template_id)`.
-- **Vorteile:** Saubere Trennung entlang F9. Die Engine ist testbar, besonders Eligibility gegen die Fallen. Die API entspricht 1:1 späteren **MCP-Tools** (Architekturfolie). Das Log ist zentral (F12).
-- **Nachteile:** Mehr Boilerplate, zwei Frontends. Wenn beide in Streamlit als Multipage-App gebaut werden, ist das gut beherrschbar.
-- **Risiken:** Integrationsaufwand zwischen API und UI. Gegenmittel: Die UI ruft die Engine zunächst direkt als Paket auf, die API kommt als dünne Schicht später.
-- **Aufwand:** mittel (~12–16 h Kern).
+- **Interfaces:**
+  - `recommend(customer_id | segment) → [Decision]`, where a decision contains offer, channel, tone, dCLV, reason, rule trace and decision ID.
+  - `customer_360(id)` returns status, CLV and the top NBAs.
+  - `config GET/PUT` and `approve(decision_id | template_id)`.
+- **Pros:** clean separation along S9. The engine is testable, especially eligibility against the traps. The API maps 1:1 to later **MCP tools** (architecture slide). The log is central (S12).
+- **Cons:** more boilerplate, two frontends. Built as one Streamlit multipage app, this stays manageable.
+- **Risks:** integration effort between API and UI. Remedy: the UI first calls the engine directly as a package; the API follows later as a thin layer.
+- **Effort:** medium (~12–16 h for the core).
 
-### Variante C – „Databricks-native“ plus MCP-Server plus LLM-Agent
+### Variant C – "Databricks-native" plus MCP server plus LLM agent
 
 ```mermaid
 flowchart LR
-  DLT[Delta Tables<br/>Master View] --> FS[Feature Store]
-  FS --> JOB[Databricks Job<br/>Batch-Scoring]
-  EVT[Event Stream] --> SS[Structured Streaming<br/>Trigger]
+  DLT[Delta tables<br/>master view] --> FS[Feature store]
+  FS --> JOB[Databricks job<br/>batch scoring]
+  EVT[Event stream] --> SS[Structured Streaming<br/>trigger]
   SS --> JOB
-  JOB --> MLF[MLflow<br/>p_accept-/Churn-Modelle]
+  JOB --> MLF[MLflow<br/>p_accept / churn models]
   JOB --> DLOG[(Delta decision_log)]
-  MCP[MCP-Server<br/>Tools: get_360, recommend, explain] --> DLT & DLOG
-  LLM[LLM-Agent<br/>Content/Explain] --> MCP
-  APP[Databricks App / Dashboard] --> MCP
+  MCP[MCP server<br/>tools: get_360, recommend, explain] --> DLT & DLOG
+  LLM[LLM agent<br/>content / explain] --> MCP
+  APP[Databricks app / dashboard] --> MCP
 ```
 
-- **Vorteile:** Höchster Innovations- und Zielbild-Wert, direkt anschlussfähig an MAINGAU [F5, F10].
-- **Nachteile:** Hohe Setup-Hürde. Ob ein Databricks-Workspace verfügbar ist, ist unklar. Fehleranfällig, und das LLM erschwert die Garantie „zero violations“.
-- **Risiken:** Infrastruktur frisst die Zeit für die Kernlogik. Ohne Workspace ist es nicht demonstrierbar.
-- **Aufwand:** hoch.
+- **Pros:** highest innovation and target-picture value, directly compatible with MAINGAU [S5, S10].
+- **Cons:** high setup hurdle. It is unclear whether a Databricks workspace is available. Error-prone, and the LLM makes the "zero violations" guarantee harder.
+- **Risks:** infrastructure eats the time needed for the core logic. Without a workspace it cannot be demonstrated.
+- **Effort:** high.
 
-### Empfehlung
+### Recommendation
 
-**Variante B bauen, Variante C als Architekturfolie zeigen.**
+**Build variant B, show variant C as the architecture slide.**
 
-- B erfüllt M1–M4 und M8, M11, M15 strukturell: Pipeline-Stufen entsprechen F9, Freigabe und Konfiguration haben eigene Endpunkte, das Log ist append-only.
-- Feasibility und Technical quality (50 %) profitieren von Testbarkeit und klarer Trennung.
-- Die Engine-API wird auf der Architekturfolie zu MCP-Tools auf Databricks (M5). Das gibt eine glaubwürdige Migrationsgeschichte ohne Infrastrukturrisiko.
-- Fallback: Läuft die Zeit knapp, wird B zu A ohne API (UI importiert das Paket direkt). Die Engine-Logik bleibt unverändert.
+- B meets M1–M4 as well as M8, M11 and M15 structurally: the pipeline stages match S9, approval and configuration have their own endpoints, and the log is append-only.
+- Feasibility and technical quality (50 %) benefit from testability and clear separation.
+- On the architecture slide the engine API becomes MCP tools on Databricks (M5). That gives a credible migration story without infrastructure risk.
+- Fallback: if time runs short, B becomes A without the API (the UI imports the package directly). The engine logic stays unchanged.
 
-**Deep-Dive-Empfehlung:** **A – Feedback-Loop & Uplift.** Er passt am besten zum Markov- und ML-Ansatz (Ebene 3, Beta-Binomial-Update als Bayesian Learning, Kontrollgruppenvergleich), und die Kontrollgruppe ist in den Daten vorhanden [F12]. Alternative: D (Tonalität), falls ein Teammitglied NLP-Erfahrung mitbringt.
+**Deep-dive recommendation:** **A – feedback loop & uplift.** It fits the Markov and ML approach best (level 3, Beta-Binomial update as Bayesian learning, control-group comparison), and the control group exists in the data [S12]. Alternative: D (tone) if a team member has NLP experience.
 
 ---
 
-## 5. Algorithmen und Datenstrukturen
+## 5. Algorithms and data structures
 
-Notation: C = Kunden (750), O = Angebote (18 laut Katalog [Daten]), K = Kanäle (5 in der Historie [Daten]), T = Tonalitäten (2), R = Regeln.
+Notation: C = customers (750), O = offers (18 in the catalogue [Data]), K = channels (5 in the history [Data]), T = tones (2), R = rules.
 
-### 5.1 Daten-Prep und Fallen
+### 5.1 Data prep and traps
 
-| Teilproblem | Algorithmus | Komplexität | Begründung |
+| Sub-problem | Algorithm | Complexity | Rationale |
 |---|---|---|---|
-| Doppelte Events (12 Duplikate in 647 Zeilen [Daten]) | Hash-Set über `event_id` | O(n) | Idempotente Verarbeitung |
-| Verspätete Roaming-CDRs | Sortieren nach `occurred_at`, Watermark auf `ingested_at`, Zählfenster immer nach `occurred_at` | O(n log n) | „3 fehlgeschlagene Ladevorgänge in 30 Tagen“ korrekt zählen |
-| Apple-MPP-Opens | Filter `open_client_class == apple_mpp_prefetch` | O(n) | Sonst ist das Engagement überschätzt |
-| Gastbestellungen | `customer_id IS NULL` verwerfen bzw. nicht zuordnen | O(n) | Keine falschen Trigger |
-| Consent-Status | Neuester Status je (Kunde, Typ). Unsubscribe-Events setzen `withdrawn` | O(n log n) bzw. O(n) mit dict | Widerruf wirkt sofort [F12] |
+| Duplicate events (12 duplicates in 647 lines [Data]) | Hash set over `event_id` | O(n) | Idempotent processing |
+| Late roaming CDRs | Sort by `occurred_at`, watermark on `ingested_at`, counting windows always by `occurred_at` | O(n log n) | Count "3 failed charging sessions in 30 days" correctly |
+| Apple MPP opens | Filter `open_client_class == apple_mpp_prefetch` | O(n) | Otherwise engagement is overestimated |
+| Guest orders | Drop or leave unassigned where `customer_id IS NULL` | O(n) | No false triggers |
+| Consent status | Latest status per (customer, type). Unsubscribe events set `withdrawn` | O(n log n), or O(n) with a dict | Withdrawal applies at once [S12] |
 
 ### 5.2 Eligibility
 
-- **Algorithmus:** Regelkaskade mit Short-Circuit, je Kandidat (Kunde, Angebot, Kanal). Reihenfolge: Consent pro Kanal → Profiling-Consent (sonst nur nicht-personalisierte Defaults) → Ausschlüsse (Mahnung ≥ 1, offene Beschwerde, Kündigung sperren Sales [F12]) → bereits gehaltenes Produkt → Frequenz und Fatigue.
-- **Komplexität:** O(C · O · K · R), real unter 10⁶ Operationen und damit trivial.
-- **Datenstruktur:** Regeln als **Liste von Prädikat-Objekten** (id, Beschreibung, Funktion). Jede Prüfung schreibt in einen `rule_trace`, der direkt ins Decision Log und den Reason-Text fließt. Optional: Consent je Kunde als **Bitmaske** über die 6 Consent-Typen, damit die Kanalprüfung O(1) kostet.
+- **Algorithm:** rule cascade with short-circuit, per candidate (customer, offer, channel). Order: consent per channel → profiling consent (otherwise only non-personalised defaults) → exclusions (dunning ≥ 1, open complaint, cancellation block sales [S12]) → product already held → frequency and fatigue.
+- **Complexity:** O(C · O · K · R), in practice under 10⁶ operations and thus trivial.
+- **Data structure:** rules as a **list of predicate objects** (id, description, function). Each check writes into a `rule_trace` that feeds the decision log and the reason text directly. Optional: consent per customer as a **bitmask** over the 6 consent types, so the channel check costs O(1).
 
-### 5.3 Scoring (Markov-CLV)
+### 5.3 Scoring (Markov CLV)
 
-- **CLV in geschlossener Form** statt Schleife, mit q = 1 − churn und γ = 1/1.06:
-  `CLV = m·γ · (1 − (qγ)^H) / (1 − qγ)`, also O(1) je Szenario. Einmalprodukte werden addiert, nicht annuisiert.
-- Pro Kandidat drei Szenarien (now, acc, rej), insgesamt O(C · O · K · T).
-- **Churn-Zerlegung:** Basis-Churn × Multi-Line-Faktor plus additive Treiber [Daten: value_assumptions]. Sie liegen als **dict `driver → delta`** pro Kunde vor, sodass Retention und Service gezielt Treiber entfernen können.
-- **Ebene 2 (optional):** kleine **dichte Übergangsmatrix** (numpy, k ≤ ~50 Zustände). Absorbierende Kette: Fundamentalmatrix N = (I − Q)⁻¹ mit O(k³) ≈ 10⁵ Operationen, also vernachlässigbar. Diskontierter Wert V = (I − γP)⁻¹ r. Für endliche Horizonte iterativ, O(H · k²).
-- Bei großem Zustandsraum (Ebene-3-Sequenzen, viele Events) sind **dict-of-Counter** (`counts[s][s'] += 1`) beim Lernen und **scipy.sparse CSR** zum Rechnen geeignet, weil die meisten Übergänge nie vorkommen.
+- **CLV in closed form** instead of a loop, with q = 1 − churn and γ = 1/1.06:
+  `CLV = m·γ · (1 − (qγ)^H) / (1 − qγ)`, i.e. O(1) per scenario. One-off products are added, not annuitised.
+- Three scenarios per candidate (now, acc, rej), O(C · O · K · T) in total.
+- **Churn decomposition:** base churn × multi-line factor plus additive drivers [Data: value_assumptions]. They are kept as a **dict `driver → delta`** per customer, so retention and service can remove specific drivers.
+- **Level 2 (optional):** small **dense transition matrix** (numpy, k ≤ ~50 states). Absorbing chain: fundamental matrix N = (I − Q)⁻¹ with O(k³) ≈ 10⁵ operations, negligible. Discounted value V = (I − γP)⁻¹ r. For finite horizons iteratively, O(H · k²).
+- For a large state space (level-3 sequences, many events), a **dict of Counters** (`counts[s][s'] += 1`) for learning and **scipy.sparse CSR** for computing are suitable, because most transitions never occur.
 
 ### 5.4 p_accept
 
-- **Baseline:** hierarchisches Beta-Binomial-Shrinkage.
-  `p(o,k,t) = (succ + α · p(o,k)) / (n + α)`, wobei p(o,k) wiederum zu p(o) und dann zu p_global geschrumpft wird.
-  Aggregation in O(N) über die Historie. Lookup O(1) über ein **dict mit Tupel-Key** `(offer, channel, tone)`.
-- Kontrollgruppe (`held_out`) **nicht** im Nenner, sie dient als Uplift-Basis.
-- Altaktionen mit `consent_checked=False` beim Lernen markieren bzw. ausschließen. *Annahme:* Sie sind verzerrt und rechtlich problematisch.
-- **ML-Stufe:** logistische Regression (O(N · d · Iterationen)) mit Platt- oder isotonischer Kalibrierung, nur für Kunden mit Profiling-Consent.
-- **Learn-Loop (Deep Dive A):** Beta-Posterior-Update pro Response in O(1). Optional Thompson Sampling für Exploration.
+- **Baseline:** hierarchical Beta-Binomial shrinkage.
+  `p(o,k,t) = (succ + α · p(o,k)) / (n + α)`, where p(o,k) is in turn shrunk towards p(o) and then towards p_global.
+  Aggregation in O(N) over the history. Lookup in O(1) via a **dict with tuple keys** `(offer, channel, tone)`.
+- The control group (`held_out`) is **not** in the denominator; it serves as the uplift baseline.
+- Mark or exclude legacy actions with `consent_checked=False` during learning. *Assumption:* they are biased and legally problematic.
+- **ML stage:** logistic regression (O(N · d · iterations)) with Platt or isotonic calibration, only for customers with profiling consent.
+- **Learn loop (deep dive A):** Beta posterior update per response in O(1). Optionally Thompson sampling for exploration.
 
 ### 5.5 Arbitration
 
-- **Pro Kunde:** dCLV ≤ 0 verwerfen, dann Top-1 bzw. Top-k per **Heap** in O(O·K·T · log k).
-- **Globale Kontaktlimits** (z. B. Outbound-Calls pro Tag, Kontakte pro Kunde und Monat): **Greedy über eine Priority Queue** nach dCLV (bzw. dCLV pro Kapazitätseinheit), O(M log M) mit M Kandidaten. Bei harten Budgets wäre exakt eine ILP oder ein Knapsack nötig, für den Hackathon reicht Greedy (≥ ½-Approximation bei einfachen Kapazitäten). Das wird als Annahme dokumentiert.
-- **Marketing-Prioritäten** als Gewichte oder Boosts im Config-dict. Sie werden geloggt, damit nachvollziehbar bleibt, warum vom reinen dCLV-Ranking abgewichen wurde.
+- **Per customer:** drop dCLV ≤ 0, then top-1 or top-k via a **heap** in O(O·K·T · log k).
+- **Global contact limits** (e.g. outbound calls per day, contacts per customer and month): **greedy over a priority queue** by dCLV (or dCLV per unit of capacity), O(M log M) with M candidates. Hard budgets would need an exact ILP or knapsack; for the hackathon greedy is enough (≥ ½-approximation for simple capacities). This is documented as an assumption.
+- **Marketing priorities** as weights or boosts in the config dict. They are logged so it stays traceable why the ranking deviates from pure dCLV.
 
 ### 5.6 Channel & Tone
 
-- **Kanal:** Er geht bereits als Dimension ins Scoring ein (p_accept und Kontaktkosten je Kanal). Zusätzlich fließt die Engagement-Affinität ein (Portal-Sessions pro Woche, menschliche Öffnungsrate), siehe das Beispiel in F9.
-- **Tonalität:**
-  1. Explizit gewählte Ansprache aus Kundentexten: Regex-Zählung von Du- bzw. Sie-Formen in `message_text` und `call_transcripts`, O(Textlänge).
-  2. Wenn kein Text vorliegt: Default „Sie“. *Annahme* (konservativ, wie in 1.698 von 2.270 Legacy-Aktionen [Daten]).
-  3. Optional (Deep Dive D): Klassifikator mit TF-IDF und logistischer Regression.
+- **Channel:** it already enters scoring as a dimension (p_accept and contact cost per channel). On top of that comes engagement affinity (portal sessions per week, human open rate), see the example in S9.
+- **Tone:**
+  1. Form of address chosen explicitly in customer texts: regex counts of Du and Sie forms in `message_text` and `call_transcripts`, O(text length).
+  2. If there is no text: default "Sie". *Assumption* (conservative, as in 1,698 of 2,270 legacy actions [Data]).
+  3. Optional (deep dive D): classifier with TF-IDF and logistic regression.
 
-### 5.7 Content, Log, Explain
+### 5.7 Content, log, explain
 
-- **Content:** Template-Lookup `dict[(offer, tone)] → template`, nur freigegebene Templates (Status-Flag). Ein LLM nur zur Variantenbildung innerhalb der Templates [F9]. Ein Post-Check auf verbotene Muster (Dringlichkeit, Preise) setzt F12 um.
-- **Decision Log:** append-only **Parquet- oder DuckDB-Tabelle** mit `decision_id, ts, customer_id, inputs_snapshot (JSON), rule_trace (JSON), scores, chosen, reason, status (proposed/approved/rejected), control_group_flag`.
-- **Reason-Generierung:** Template aus dem dominanten Treiber, z. B. „3 failed charges in 30 d → service fix: +€X CLV; sales offer blocked (−€Y)“. Das kostet O(1) und ist deterministisch.
+- **Content:** template lookup `dict[(offer, tone)] → template`, only approved templates (status flag). An LLM only for variants within the templates [S9]. A post-check for forbidden patterns (urgency, prices) implements S12.
+- **Decision log:** append-only **Parquet or DuckDB table** with `decision_id, ts, customer_id, inputs_snapshot (JSON), rule_trace (JSON), scores, chosen, reason, status (proposed/approved/rejected), control_group_flag`.
+- **Reason generation:** template from the dominant driver, e.g. "3 failed charges in 30 d → service fix: +€X CLV; sales offer blocked (−€Y)". Costs O(1) and is deterministic.
 - **Caches:**
-  - vorberechnete `customer_features`-Tabelle (ein Lauf, O(Σ Zeilen))
-  - `functools.lru_cache` bzw. Session-Cache für die 360°-Ansicht
-  - Cache der Kandidaten-Scores je Config-Version, invalidiert bei Config-Änderung
+  - precomputed `customer_features` table (one pass, O(Σ rows))
+  - `functools.lru_cache` or a session cache for the 360° view
+  - cache of candidate scores per config version, invalidated on config change
 
-### 5.8 Uplift / Kausalität (Learn)
+### 5.8 Uplift / causality (Learn)
 
-- Differenz der Konversionsraten Treatment − Control je (Offer, Kanal), Konfidenzintervall per **Bootstrap** in O(B · n). Alternativ ein Zwei-Proportionen-z-Test.
-- Weiterführend: T-Learner mit zwei Klassifikatoren und Qini-Kurve zur Bewertung.
+- Difference of conversion rates treatment − control per (offer, channel), confidence interval via **bootstrap** in O(B · n). Alternatively a two-proportion z-test.
+- Further: T-learner with two classifiers and a Qini curve for evaluation.
 
-### Pseudocode-Skizze der Pipeline (nur zur Verdeutlichung)
+### Pseudocode sketch of the pipeline (for illustration only)
 
 ```
 for customer in trigger_set:
     cands = [(o,k,t) for o in offers for k in channels for t in tones]
-    cands = [c for c in cands if eligible(customer, c, trace)]    # harte Regeln
+    cands = [c for c in cands if eligible(customer, c, trace)]    # hard rules
     for c in cands:
         c.dclv = p_accept(c)·ΔCLV_acc + (1−p)·ΔCLV_rej − cost(c.k)
-    best = top_k(filter(c.dclv > 0), respecting limits)          # sonst: "no action"
-    log(customer, inputs, trace, scores, best, reason(best))     # Status = proposed
+    best = top_k(filter(c.dclv > 0), respecting limits)          # otherwise: "no action"
+    log(customer, inputs, trace, scores, best, reason(best))     # status = proposed
 ```
 
 ---
 
-## 6. Offene Fragen und Annahmen
+## 6. Open questions and assumptions
 
-### 6.1 Offene Fragen (in der Präsentation fehlend oder unklar)
+### 6.1 Open questions (missing or unclear in the presentation)
 
-1. **Referenzkunden:** Welche Kunden sind es, und wie genau wird bewertet [F11]? Gibt es ein Abgabeformat, etwa eine CSV mit Empfehlungen pro Kunde, oder bewertet die Jury live am Prototyp?
-2. **Tabellenanzahl:** F12 nennt 16 Tabellen, das README 15 Quelltabellen, der CSV-Ordner enthält 21 Dateien (inkl. `columns`, `sources`, `value_assumptions` usw.). Welche zählen?
-3. **Event-Anzahl:** F12 nennt 640 Live-Events. Die JSONL hat 647 Zeilen mit 12 Duplikaten, also 635 eindeutige [Daten]. Ist die Abweichung beabsichtigt?
-4. **Kontaktlimits und Fatigue:** Die Folien nennen keine konkreten Werte [F8, F9, F10]. Auch in `value_assumptions` stehen keine. Sollen wir sie selbst festlegen (als Marketing-Einstellung)?
-5. **Kündigung und Retention:** „Cancellations block sales content“ [F12]. Ist das Retention-Angebot P-EN-02 bei eingegangener Kündigung erlaubt (Rückgewinnung) oder ebenfalls gesperrt?
-6. **Profiling-Consent:** Was darf ohne `profiling_analytics` angezeigt werden [F12]? Nur nicht-personalisierte Standardaktionen? Ist schon die Nutzung des individuellen CLV Profiling?
-7. **„Targeting of customers in hardship“** [F12]: Wie wird Hardship in den Daten erkannt? Allein über die Mahnstufe oder über weitere Signale wie Ratenzahlung oder Texte in Tickets?
-8. **Tonalität:** Ist „Tone“ ausschließlich Du/Sie [F8], oder sind auch Stilnuancen (formell/locker, sachlich/emotional) gemeint?
-9. **Kanäle:** Welche Kanäle sind für die Engine zulässig? Zählt ein Service-Agent im Gespräch (360°-Ansicht) als eigener Kanal?
-10. **Databricks und MCP:** Gibt es Zugang zu einem Workspace, oder ist das rein konzeptionell [F10]? Welche MCP-Server bzw. welches Tool-Interface ist gemeint?
-11. **LLM-Nutzung:** Dürfen externe LLM-APIs mit (synthetischen) Kundendaten genutzt werden? Gibt es Vorgaben zum Modell?
-12. **Abgabe:** Repo-Link, Video, gehostete Demo? Deadline am 27.10.? Teamgröße? Der Hinweis „Shared on [DATUM]“ auf F13 ist ein nicht ausgefüllter Platzhalter.
-13. **Zeitraum der Empfehlung:** Bezieht sich die NBA auf den Snapshot vom 30.09. (Batch) oder auf jeden Event-Zeitpunkt am 01.10. (Replay)?
-14. **Mehrere Aktionen:** Eine NBA pro Kunde oder eine Rangliste mit mehreren gleichzeitig zulässigen Aktionen (z. B. Service-Fix und später Upsell)?
-15. **Definition von „accept“** für p_accept: Klick, Konversion innerhalb von 14 Tagen oder positive Agent-Reaktion?
+1. **Reference customers:** which customers are they, and how exactly are they assessed [S11]? Is there a submission format, e.g. a CSV with recommendations per customer, or does the jury assess live on the prototype?
+2. **Number of tables:** S12 says 16 tables, the README 15 source tables, the CSV folder contains 21 files (incl. `columns`, `sources`, `value_assumptions` etc.). Which ones count?
+3. **Number of events:** S12 says 640 live events. The JSONL has 647 lines with 12 duplicates, i.e. 635 unique [Data]. Is the difference intended?
+4. **Contact limits and fatigue:** the slides give no concrete values [S8, S9, S10]. Neither does `value_assumptions`. Should we set them ourselves (as a marketing setting)?
+5. **Cancellation and retention:** "Cancellations block sales content" [S12]. Is the retention offer P-EN-02 allowed after a received cancellation (win-back) or blocked as well?
+6. **Profiling consent:** what may be shown without `profiling_analytics` [S12]? Only non-personalised standard actions? Is using the individual CLV already profiling?
+7. **"Targeting of customers in hardship"** [S12]: how is hardship detected in the data? Only via the dunning level, or via further signals such as instalment plans or ticket texts?
+8. **Tone:** is "tone" only Du/Sie [S8], or are style nuances meant too (formal/casual, factual/emotional)?
+9. **Channels:** which channels may the engine use? Does a service agent in conversation (360° view) count as a channel of its own?
+10. **Databricks and MCP:** is there access to a workspace, or is this purely conceptual [S10]? Which MCP server or tool interface is meant?
+11. **LLM use:** may external LLM APIs be used with (synthetic) customer data? Are there requirements on the model?
+12. **Submission:** repo link, video, hosted demo? Deadline on 27 Oct? Team size? The note "Shared on [DATUM]" on S13 is an unfilled placeholder.
+13. **Time frame of the recommendation:** does the NBA refer to the snapshot of 30 Sep (batch) or to each event time on 1 Oct (replay)?
+14. **Several actions:** one NBA per customer, or a ranking with several actions allowed at the same time (e.g. service fix and later upsell)?
+15. **Definition of "accept"** for p_accept: click, conversion within 14 days, or a positive agent reaction?
 
-### 6.2 Getroffene Annahmen
+### 6.2 Assumptions made
 
-- **ANNAHME A1:** Bewertet wird mit der dCLV-Formel aus `clv_method`. Unser primärer Score folgt ihr exakt.
-- **ANNAHME A2:** p_accept bedeutet `converted_within_14d = True`. Klicks dienen nur als Prior bzw. schwächeres Signal.
-- **ANNAHME A3:** Kontroll-Datensätze (`held_out`) fließen nicht in p_accept ein, sondern nur in die Uplift-Analyse.
-- **ANNAHME A4:** Aktionen mit `consent_checked=False` werden beim Lernen ausgeschlossen und in der Analyse als Compliance-Befund gezeigt.
-- **ANNAHME A5:** Tonalität bedeutet nur Du/Sie. Default ist „Sie“, wenn kein Textsignal vorliegt.
-- **ANNAHME A6:** Kontaktlimits sind Marketing-Parameter mit Startwerten, die wir festlegen (z. B. höchstens 1 Sales-Kontakt pro Kunde und Woche, höchstens N Outbound-Calls pro Tag). Sie sind im Dashboard änderbar.
-- **ANNAHME A7:** Ohne Profiling-Consent erhält der Kunde nur Aktionen, die auf Populations- bzw. Segment-p_accept beruhen und keine individuelle Verhaltensanalyse nutzen. Service-Aktionen bleiben erlaubt.
-- **ANNAHME A8:** Mahnstufe ≥ 1, eine offene Beschwerde oder eine eingegangene Kündigung sperren alle Sales- und Upsell-Angebote. Service-Aktionen bleiben erlaubt, Retention nur nach Klärung von Frage 5.
-- **ANNAHME A9:** Wenn keine Aktion dCLV > 0 hat, ist „keine Aktion“ eine gültige, geloggte Entscheidung.
-- **ANNAHME A10:** Kein Databricks-Zugang. Databricks und MCP erscheinen nur auf der Architekturfolie.
-- **ANNAHME A11:** Der Prototyp verarbeitet Batch-Daten zum Snapshot 30.09. Event-Replay ist optional (Deep Dive B) und gehört nicht zum Kern. Eligibility-relevante Events (Consent-Änderung, Mahnung, Kündigung, Beschwerde, Gaszähler-Abmeldung) werden aber schon jetzt angewendet, sobald sie bis `as_of` *ingestiert* sind.
-- **ANNAHME A12:** Jeder Outbound-Kanal braucht seinen Consent, auch für Service-Aktionen: `newsletter_email` → newsletter_email, `email` → marketing_email, `sms` → marketing_sms, `outbound_call` → marketing_phone, `portal_popup`/`app_push` → portal_app_personalisation. Das ist konservativ und schützt „zero violations“. Ein Unsubscribe widerruft nur `newsletter_email`.
-- **ANNAHME A13:** Ein gekündigter Autostrom-Vertrag zählt als „cancellation received“ und sperrt Sales. Retention bei Kündigung ist per `EngineConfig.allow_retention_on_cancellation` schaltbar (Default: gesperrt, Frage 5).
-- **ANNAHME A14:** Kontaktlimit-Startwert: höchstens 4 zugestellte Sales-Kontakte pro Kunde in 30 Tagen (konkretisiert A6).
-- **ANNAHME A15:** Der Ablehnungs-Malus (+0,05 Churn) gilt laut `clv_method` bei offener Beschwerde oder Mahnung. F7 spricht allgemeiner von „open service case“. Deshalb zählt per Default jedes offene Ticket (`reject_penalty_on_any_open_ticket`). Nur so ist das F7-Beispiel MG-100009 (Ladeticket am 01.10.) negativ.
-- **ANNAHME A16:** Ein Service-Fix entfernt die Treiber offene Beschwerde, Tickets ≥ 2, niedriger CSAT und fehlgeschlagene Ladevorgänge, aber **nicht** den Mahnungs-Treiber. Sonst würden Zahlungsdaten Wert erzeugen (F12).
-- **ANNAHME A17:** Für P-SV-01 gibt es keine Historie. Prior p_accept = 0,5, im Dashboard änderbar. Einmalprodukte addieren ihre Marge einmal und undiskontiert. `app_push` kostet wie ein Portal-Pop-up (0 €).
-- **ANNAHME A18:** p_accept nutzt nur Populations- bzw. Segmentraten (offer × channel × tone) und ist damit auch ohne Profiling-Consent zulässig. Die Shrinkage-Stärke ist 30 Pseudo-Beobachtungen pro Ebene.
-- **ANNAHME A19:** Pro Lauf bekommt jeder Kunde höchstens eine Aktion. Die Outbound-Call-Kapazität liegt bei 25 pro Lauf (Call-Center-Limit, im Dashboard änderbar). Marketing-Prioritäten gewichten nur das Ranking, die Bedingung dCLV > 0 bleibt bestehen.
-- **ANNAHME A20:** 10 % der Sales-Entscheidungen gehen per stabilem Hash in die Kontrollgruppe (Status `held_out`, nicht versendet). Service-Aktionen werden nie zurückgehalten, denn ein Kunde mit Problem soll die Lösung nicht wegen eines Experiments verlieren.
-- **ANNAHME A21:** Ein Trigger-Signal zählt als Kaufabsicht wie ein Klick. p_accept wird mit Signalstärke s Richtung „Konversion nach Klick“ des Angebots verschoben: `p = p_base + s·(p_intent − p_base)`. p_intent ist ein zweites Beta-Binomial-Modell nur auf geklickten Aktionen (Historie: 31 % nach Klick gegenüber 3,4 % gesamt). Stärken: Gaszähler-Abmeldung, 3 Wärmepumpen-Klicks und Wallbox jeweils 1,0, Wärmepumpe im HEMS 0,5. Pro Angebot zählt nur das stärkste Signal. p ist auf 0,5 gedeckelt. Begründung: Die alten P-AS-01-Aktionen gingen ungezielt raus (0/179 Konversionen), deshalb taugt ihre Basisrate nicht als Maßstab für Kunden mit Signal.
-- **ANNAHME A22:** Signale, Kanalaffinität und die erkannte Du/Sie-Ansprache sind Personalisierung und greifen nur mit `profiling_analytics`. Ohne Consent gelten Populationsraten, die Ansprache ist „Sie“, und das Signal wird als „not used“ geloggt.
-- **ANNAHME A23:** Die Kanalaffinität vergleicht menschliche Öffnungen der letzten 6 Newsletter (ohne Apple MPP) bzw. Portal- und App-Besuche pro Woche (Jul–Sep) mit dem Bevölkerungsschnitt, geglättet mit 2 Pseudo-Beobachtungen und begrenzt auf ×0,1 bis ×3 der Odds.
-- **ASSUMPTION A24:** Marketing approval of channels and tone (slide 10) is a config switch. A channel that is not approved is skipped in arbitration (logged as a note). If "Du" is not approved, every customer gets "Sie" and the tone evidence records the override. Approval of individual actions happens in the decision log (proposed → approved/rejected).
-- **ASSUMPTION A25:** Segments in the dashboard are CLV terciles (low/mid/high value). Customers younger than 365 days form their own segment "New customer". This makes slide 6's "high-value vs. new customer" comparison visible.
+- **ASSUMPTION A1:** Judging uses the dCLV formula from `clv_method`. Our primary score follows it exactly.
+- **ASSUMPTION A2:** p_accept means `converted_within_14d = True`. Clicks serve only as a prior or a weaker signal.
+- **ASSUMPTION A3:** Control records (`held_out`) do not enter p_accept, only the uplift analysis.
+- **ASSUMPTION A4:** Actions with `consent_checked=False` are excluded from learning and shown as a compliance finding in the analysis.
+- **ASSUMPTION A5:** Tone means only Du/Sie. The default is "Sie" when there is no text signal.
+- **ASSUMPTION A6:** Contact limits are marketing parameters with starting values we set (e.g. at most 1 sales contact per customer and week, at most N outbound calls per day). They can be changed in the dashboard.
+- **ASSUMPTION A7:** Without profiling consent the customer only gets actions based on population or segment p_accept that use no individual behavioural analysis. Service actions stay allowed.
+- **ASSUMPTION A8:** Dunning level ≥ 1, an open complaint or a received cancellation block all sales and upsell offers. Service actions stay allowed; retention only once question 5 is clarified.
+- **ASSUMPTION A9:** If no action has dCLV > 0, "no action" is a valid, logged decision.
+- **ASSUMPTION A10:** No Databricks access. Databricks and MCP appear only on the architecture slide.
+- **ASSUMPTION A11:** The prototype processes batch data as of the snapshot of 30 Sep. Event replay is optional (deep dive B) and not part of the core. However, eligibility-relevant events (consent change, dunning, cancellation, complaint, gas meter deregistration) are already applied as soon as they have been *ingested* by `as_of`.
+- **ASSUMPTION A12:** Every outbound channel needs its consent, also for service actions: `newsletter_email` → newsletter_email, `email` → marketing_email, `sms` → marketing_sms, `outbound_call` → marketing_phone, `portal_popup`/`app_push` → portal_app_personalisation. This is conservative and protects "zero violations". An unsubscribe withdraws only `newsletter_email`.
+- **ASSUMPTION A13:** A cancelled Autostrom contract counts as "cancellation received" and blocks sales. Retention after a cancellation can be switched on via `EngineConfig.allow_retention_on_cancellation` (default: blocked, question 5).
+- **ASSUMPTION A14:** Starting value for the contact limit: at most 4 delivered sales contacts per customer in 30 days (makes A6 concrete).
+- **ASSUMPTION A15:** According to `clv_method`, the reject penalty (+0.05 churn) applies during an open complaint or dunning. S7 speaks more generally of an "open service case". By default every open ticket therefore counts (`reject_penalty_on_any_open_ticket`). Only then does the S7 example MG-100009 (charging ticket on 1 Oct) score negative.
+- **ASSUMPTION A16:** A service fix removes the drivers open complaint, tickets ≥ 2, low CSAT and failed charging sessions, but **not** the dunning driver. Otherwise payment data would create value (S12).
+- **ASSUMPTION A17:** There is no history for P-SV-01. Prior p_accept = 0.5, changeable in the dashboard. One-off products add their margin once and undiscounted. `app_push` costs the same as a portal pop-up (€0).
+- **ASSUMPTION A18:** p_accept uses only population or segment rates (offer × channel × tone) and is therefore allowed without profiling consent. The shrinkage strength is 30 pseudo-observations per level.
+- **ASSUMPTION A19:** Each customer gets at most one action per run. Outbound call capacity is 25 per run (call-centre limit, changeable in the dashboard). Marketing priorities only weight the ranking; the condition dCLV > 0 still holds.
+- **ASSUMPTION A20:** 10 % of sales decisions go into the control group via a stable hash (status `held_out`, not sent). Service actions are never held out, because a customer with a problem should not lose the fix because of an experiment.
+- **ASSUMPTION A21:** A trigger signal counts as purchase intent, like a click. With signal strength s, p_accept is moved towards the offer's "conversion after click" rate: `p = p_base + s·(p_intent − p_base)`. p_intent is a second Beta-Binomial model fitted only on clicked actions (history: 31 % after a click vs. 3.4 % overall). Strengths: gas meter deregistration, 3 heat-pump clicks and wallbox 1.0 each, heat pump in HEMS 0.5. Only the strongest signal per offer counts. p is capped at 0.5. Rationale: the old P-AS-01 actions went out untargeted (0/179 conversions), so their base rate is no yardstick for customers with a signal.
+- **ASSUMPTION A22:** Signals, channel affinity and the detected Du/Sie form of address are personalisation and apply only with `profiling_analytics`. Without consent, population rates apply, the form of address is "Sie", and the signal is logged as "not used".
+- **ASSUMPTION A23:** Channel affinity compares human opens of the last 6 newsletters (excluding Apple MPP) and portal and app visits per week (Jul–Sep) with the population average, smoothed with 2 pseudo-observations and bounded to ×0.1 to ×3 of the odds.
+- **ASSUMPTION A24:** Marketing approval of channels and tone (S10) is a config switch. A channel that is not approved is skipped in arbitration (logged as a note). If "Du" is not approved, every customer gets "Sie" and the tone evidence records the override. Approval of individual actions happens in the decision log (proposed → approved/rejected).
+- **ASSUMPTION A25:** Segments in the dashboard are CLV terciles (low/mid/high value). Customers younger than 365 days form their own segment "New customer". This makes the "high-value vs. new customer" comparison from S6 visible.
 
 ---
 
-## Anhang: grober Zeitplan (32 h, Vorschlag)
+## Appendix: rough schedule (32 h, proposal)
 
-| Block | Inhalt | Ergebnis |
+| Block | Content | Result |
 |---|---|---|
-| 0–2 h | Fragen 6.1 beim Mentor klären, Rollen verteilen, Repo-Skelett | Entscheidungen fixiert |
-| 2–8 h | Daten-Prep und Fallen, Eligibility mit Tests | Eligibility grün |
-| 8–14 h | Markov-CLV-Scoring, p_accept-Shrinkage, Arbitration, Log | Engine liefert Rangliste |
-| 14–20 h | 360°-Dashboard und Marketing-Dashboard (Config, Approve) | Klickbarer Prototyp |
-| 20–26 h | Deep Dive A (Uplift, Learn-Loop), Reason-Texte schärfen | Differenzierung |
-| 26–30 h | Architekturfolie (Databricks/MCP), Demo-Story an den F6/F7-Beispielen | Pitch-Material |
-| 30–32 h | Probe-Pitch auf Englisch, Puffer | Abgabe |
+| 0–2 h | Clarify questions 6.1 with the mentor, assign roles, repo skeleton | Decisions fixed |
+| 2–8 h | Data prep and traps, eligibility with tests | Eligibility green |
+| 8–14 h | Markov CLV scoring, p_accept shrinkage, arbitration, log | Engine delivers a ranking |
+| 14–20 h | 360° dashboard and marketing dashboard (config, approve) | Clickable prototype |
+| 20–26 h | Deep dive A (uplift, learn loop), sharpen reason texts | Differentiation |
+| 26–30 h | Architecture slide (Databricks/MCP), demo story around the S6/S7 examples | Pitch material |
+| 30–32 h | Practice pitch in English, buffer | Submission |

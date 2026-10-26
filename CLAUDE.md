@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Hackathon workspace (Futury Build Days #3, 26.–27.10.2026) for a **MAINGAU Next-Best-Action (NBA) engine**. The folder holds:
 
 - `Hackathon_slides_for_MAINGAU.pptx`: the official brief (13 slides plus speaker notes). This is the source of truth for requirements.
-- `PLANUNG_hackathon3.md`: the team's planning doc in German. It contains the requirement list (MUSS/SOLL/KANN with slide references), jury weighting, the chosen approach, the architecture variants, open questions (§6.1) and the working assumptions A1–A11 (§6.2). Read it before making design decisions. Update it when an assumption changes.
+- `PLANUNG_hackathon3.md`: the team's planning doc (English; slide citations as [Sn], speaker notes as [Sn-N]). It contains the requirement list (MUST/SHOULD/COULD with slide references), jury weighting, the chosen approach, the architecture variants, open questions (§6.1) and the working assumptions A1–A25 (§6.2). Read it before making design decisions. Update it when an assumption changes.
 - `Re__Präsentation_Hackathon/`: synthetic mock data. `maingau_nba_mockdata.xlsx` and `maingau_nba_mockdata_csv_jsonl/csv/*.csv` hold the same tables. The event stream JSONL exists twice as identical copies. Read `README.txt` and `clv_method.txt` in that folder first.
 
 ## Commands
