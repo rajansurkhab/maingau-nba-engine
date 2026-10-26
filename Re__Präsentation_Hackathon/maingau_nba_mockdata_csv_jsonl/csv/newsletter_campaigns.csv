@@ -1,0 +1,14 @@
+campaign_id,sent_at,subject_line,product_focus,tonality,segment_rule,recipients,variant_test
+NL-2601,2026-01-15 09:00:00,Strompreise 2026 – das ändert sich,energy,sie,all newsletter subscribers,500,subject A/B
+NL-2602,2026-02-05 09:00:00,Balkonkraftwerk: Jetzt Frühjahrsangebot,shop,du,all newsletter subscribers,496,subject A/B
+NL-2603,2026-02-26 09:00:00,"Mobil M: Mehr Daten, gleicher Preis",mobile,du,all newsletter subscribers,491,
+NL-2604,2026-03-19 09:00:00,Zählerstand per App melden,service,sie,all newsletter subscribers,485,subject A/B
+NL-2605,2026-04-09 09:00:00,HEMS: Sonnenstrom smarter nutzen,smart_living,du,all newsletter subscribers,479,
+NL-2606,2026-04-30 09:00:00,Wallbox-Aktion zum Mai,shop,du,all newsletter subscribers,478,subject A/B
+NL-2607,2026-05-21 09:00:00,Preisgarantie sichern mit StromGarant,energy,sie,all newsletter subscribers,474,subject A/B
+NL-2608,2026-06-11 09:00:00,Sommer-Deals im Shop,shop,du,all newsletter subscribers,471,
+NL-2609,2026-07-02 09:00:00,Urlaub: Roaming im Mobilfunk,mobile,sie,all newsletter subscribers,466,
+NL-2610,2026-07-23 09:00:00,Dynamischer Stromtarif erklärt,energy,sie,all newsletter subscribers,463,
+NL-2611,2026-08-13 09:00:00,Heizsaison vorbereiten: Thermostate,shop,du,all newsletter subscribers,460,subject A/B
+NL-2612,2026-09-03 09:00:00,Zusatz-SIM für die Familie,mobile,du,all newsletter subscribers,452,subject A/B
+NL-2613,2026-09-24 09:00:00,Wärmepumpe + HEMS: So sparen Sie,smart_living,sie,all newsletter subscribers,446,

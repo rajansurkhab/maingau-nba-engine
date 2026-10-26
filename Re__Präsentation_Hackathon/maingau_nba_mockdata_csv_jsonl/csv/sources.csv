@@ -1,0 +1,19 @@
+sheet,source_system,format_at_source,refresh,typical_latency,keys,notes
+customer_master,CRM,REST API (JSON),near-real-time (CDC),< 5 min,customer_id (PK),Unified ID across all sources. Birth year and 3-digit postal prefix only (anonymised).
+energy_contracts,Billing ERP (IS-U type),Nightly flat-file export (CSV),daily batch 02:00,2-26 h,"contract_id (PK), customer_id (FK)","Tariff, price guarantee, consumption, meter type, dunning, cancellations, gas meter deregistrations (status terminated_meter_deregistration)."
+mobile_contracts,Telco partner backend,SFTP file (CSV),daily batch 03:00,~24 h; usage alerts as events,"contract_id (PK), customer_id (FK)","Plan, data usage last 3 months, data limit hits."
+shop_orders,Online shop (Shopware 6),Webhooks + Admin API (JSON),event-driven,< 1 min,"order_id + line (PK), customer_id (FK, null = guest)",One row per order line. Guest orders have no customer_id.
+hems_devices,HEMS cloud (Smart Living),REST API (JSON),hourly sync,~1 h,"device_id (PK), customer_id (FK)","Devices per household, connection status."
+hems_telemetry_daily,HEMS cloud (Smart Living),"15-min raw data, aggregated daily",daily 00:30,~24 h (raw 15 min),customer_id + date,September 2026. Gaps = device offline.
+consent_status,Consent management platform,REST API + events,event-driven,< 1 min (must be!),customer_id + consent_type,Latest status per consent type. Legally binding: withdrawn = stop immediately.
+newsletter_campaigns,Newsletter tool (ESP),REST API (JSON),per send,~1 h,campaign_id (PK),"Jan-Sep 2026 sends, subject line, tonality, product focus."
+newsletter_performance,Newsletter tool (ESP),Hourly API export,hourly,1-2 h,campaign_id + customer_id,"Opens flagged apple_mpp_prefetch are machine opens, not human."
+portal_sessions,Customer portal & app,Clickstream events,streaming,< 10 s,"session_id (PK), customer_id (FK)","Sessions Jul-Sep 2026, pages viewed pipe-separated."
+autostrom_contracts,Autostrom backend (eMSP),REST API (JSON),daily sync + events,~24 h; card/app status near-real-time,"contract_id (PK), customer_id (FK)","Public on-the-go charging product, no home charging. Car brand/model captured at signup. 150 customers hold Autostrom only."
+charge_sessions,Autostrom backend + roaming hub (CDRs),OCPI CDRs (JSON),event-driven,own stations minutes; roaming CDRs 1-72 h late,"session_id (PK), customer_id (FK)",Jun-Sep 2026. AC price cut 0.62 -> 0.52 EUR/kWh on 2026-07-01. Failed sessions carry a failure_reason.
+service_interactions,Ticket system,Webhooks (JSON),event-driven,< 1 min,"ticket_id (PK), customer_id (FK)",Customer message text in German (tonality signal). Phone = call note only.
+nba_action_history,Current rule engine (marketing automation),Log table,daily,~24 h,"action_id (PK), customer_id (FK)",Legacy rule-based actions Jun-Sep 2026 incl. 10 % control group. Not all checked consent.
+product_catalog,Product management,Manual (Excel),on change,,product_id (PK),Offerable products incl. Internet (no internet holdings in mock data).
+call_transcripts,Telephony + speech-to-text (pilot),Text (JSON),event-driven,~10-15 min after call,"transcript_id (PK), ticket_id (FK)",German call transcripts for phone tickets. Live transcripts arrive as events (call_transcript_ready).
+service_nba_feedback,Agent assist pilot in CRM (since 2026-07-01),Log table,event-driven,< 1 min,"feedback_id (PK), ticket_id (FK)",Rule-based suggestions shown to service agents in phone/chat and what agents and customers did with them.
+customer_value,Data warehouse / BI model (Databricks),Computed table,monthly + on major events,~1 month,customer_id (PK),"Simplified CLV (Barwert) incl. negative service impact. Method in sheet clv_method, parameters in value_assumptions."

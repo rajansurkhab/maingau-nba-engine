@@ -1,0 +1,11 @@
+CLV = sum over t=1..10 of (annual_margin - cost_to_serve) * (1 - churn)^(t-1) / (1 + 0.06)^t
+Service cases reduce CLV twice: higher cost_to_serve (handling costs) and higher churn (open complaint, low CSAT, failed charges, dunning).
+clv_service_impact_eur in customer_value shows this effect per customer (always <= 0).
+Expected value of an action:  dCLV = p_accept * (CLV_after_accept - CLV_now) + (1 - p_accept) * (CLV_after_reject - CLV_now) - contact_cost
+CLV_after_accept (sales/upsell): margin + annual_margin_if_bought, churn + churn_effect_if_bought. One-off shop products: add margin once, not as annuity.
+CLV_after_accept (retention P-EN-02): churn driver 'price guarantee ends' removed.
+CLV_after_accept (service P-SV-01): service churn drivers removed; minus service_resolution_cost_eur.
+CLV_after_reject: equal to CLV_now - EXCEPT a sales contact during an open complaint or dunning: churn + contact_during_service_case. This makes such actions negative.
+p_accept: your model. Start with rates from nba_action_history (by offer x channel x tone), compare to control group.
+Rank actions per customer by dCLV. Hard rules (consent, exclusions) are applied before ranking - a negative dCLV is the economic reason behind them.
+All parameters are fictional and editable in sheet value_assumptions.

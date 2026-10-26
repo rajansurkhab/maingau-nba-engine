@@ -1,0 +1,39 @@
+group,parameter,value,unit,description
+general,discount_rate,0.06,per year,Discount rate for present value
+general,horizon_years,10.0,years,CLV horizon
+margin,electricity_eur_per_kwh,0.022,EUR/kWh,Contribution margin electricity (StromAktiv/Garant/Komfort)
+margin,heatpump_electricity_eur_per_kwh,0.015,EUR/kWh,Contribution margin StromWärme
+margin,gas_eur_per_kwh,0.005,EUR/kWh,Contribution margin gas
+margin,energy_base_eur_per_year,48.0,EUR/year,Margin from base price per energy contract
+margin,mobile_share_of_fee,0.3,share,Margin share of mobile monthly fee
+margin,autostrom_eur_per_kwh,0.07,EUR/kWh,Margin per kWh charged (annualised from Jun-Sep x3)
+margin,hems_eur_per_year,36.0,EUR/year,HEMS subscription margin
+margin,shop_share_of_net_sales,0.18,share,"Margin on shop sales, trailing 12 months, expected to repeat"
+cost_to_serve,base_per_business_line_eur,12.0,EUR/year,"Billing, systems, letters per active business line"
+cost_to_serve,ticket_email_eur,4.5,EUR,Handling cost per email ticket
+cost_to_serve,ticket_chat_eur,3.0,EUR,Handling cost per chat
+cost_to_serve,ticket_phone_eur,7.5,EUR,Handling cost per call
+cost_to_serve,ticket_portal_form_eur,2.5,EUR,Handling cost per portal form
+cost_to_serve,complaint_multiplier,2.5,x,Complaints cost 2.5x a normal ticket
+cost_to_serve,failed_charge_session_eur,1.5,EUR,Support / goodwill per failed charging session
+cost_to_serve,goodwill_counts_as_cost,1.0,flag,Goodwill credits (goodwill_eur) are added to service cost
+cost_to_serve,dunning_per_level_eur,15.0,EUR,Dunning cost per stage
+churn,base_electricity,0.14,prob/year,"Base churn, electricity"
+churn,base_gas,0.12,prob/year,"Base churn, gas"
+churn,base_mobile,0.18,prob/year,"Base churn, mobile"
+churn,base_autostrom,0.2,prob/year,"Base churn, Autostrom"
+churn,multi_line_factor,0.8,x per extra line,Each additional business line multiplies churn by 0.8 (min 0.5x)
+churn,price_guarantee_ends_90d,0.1,+prob,Price guarantee ends within 90 days
+churn,open_complaint,0.12,+prob,Open complaint (service case)
+churn,tickets_12m_ge2,0.04,+prob,Two or more tickets in 12 months
+churn,csat_le2,0.05,+prob,Last CSAT rating 1 or 2
+churn,dunning_ge2,0.08,+prob,Dunning level 2 or higher
+churn,failed_charges_30d_ge3,0.1,+prob,Three or more failed charging sessions in 30 days
+churn,hems_user,-0.04,+prob,HEMS users churn less
+churn,cancellation_pending,0.95,prob,Cancellation received: churn set to 0.95
+action,contact_during_service_case,0.05,+prob,Sales contact during open complaint or dunning raises churn (negative NBA value)
+action,contact_cost_email_eur,0.01,EUR,Cost per email / newsletter contact
+action,contact_cost_sms_eur,0.08,EUR,Cost per SMS
+action,contact_cost_popup_eur,0.0,EUR,Portal/app pop-up
+action,contact_cost_call_eur,6.0,EUR,Outbound call
+action,service_resolution_cost_eur,15.0,EUR,Proactive resolution of a service case (incl. goodwill)

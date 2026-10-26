@@ -1,0 +1,19 @@
+product_id,business_line,product_name,description,typical_target_signal,price_indicative_eur,margin_class,action_type,annual_margin_if_bought_eur,churn_effect_if_bought,value_note
+P-EN-01,energy,StromAktiv,"Electricity, flexible price",customer without electricity contract,,medium,sales,114,-0.02,
+P-EN-02,energy,StromGarant,Electricity with 24-month price guarantee,retention / price guarantee ending,,medium,retention,0,-0.1,"Value = avoided churn, not new margin"
+P-EN-03,energy,StromWärme,Heat pump electricity tariff,heat pump in household,,medium,sales,140,-0.02,
+P-EN-04,energy,GasAktiv,"Gas, flexible price",electricity customer with gas heating (unknown in data),,medium,sales,111,-0.02,
+P-EN-05,energy,Dynamischer Stromtarif,"Dynamic tariff (EPEX spot based), requires smart meter",smart meter + HEMS/EV/heat pump,,high,sales,20,-0.03,
+P-MO-01,mobile,Mobil S / M / L,Mobile plans 10/30/100 GB,energy customer without mobile,9.99-24.99 / month,high,sales,54,-0.02,
+P-MO-02,mobile,Mobil Upgrade,Upgrade to next data tier,data limit reached repeatedly,+5.00 / month,high,upsell,18,-0.03,
+P-MO-03,mobile,Zusatz-SIM,Additional SIM for household,household_size > 1,7.99 / month,high,upsell,29,-0.01,
+P-IN-01,internet,Internet (DSL/Glasfaser),Fixed-line internet (no holdings in mock data),energy/mobile customer without internet,34.99-54.99 / month,high,sales,130,-0.03,
+P-SL-01,smart_living,HEMS Starter-Set,Home energy management gateway + app,PV / heat pump / EV owner without HEMS,349,high,sales,36,-0.04,
+P-SL-02,smart_living,HEMS Speicher-Optimierung,Battery optimisation add-on,HEMS + battery,4.99 / month,high,upsell,36,-0.01,
+P-SL-03,smart_living,Wallbox-Integration,Smart charging via HEMS,HEMS + EV / wallbox,2.99 / month,medium,upsell,24,-0.01,
+P-SH-01,shop,Balkonkraftwerk 800 W,Plug-in solar kit,"no PV, owner/tenant with balcony (unknown)",499,medium,one_off,90,-0.01,"One-off margin, counted once (not recurring)"
+P-SH-02,shop,Wallbox 11 kW,Wallbox for EV,EV driver (charging signals),699,medium,one_off,126,-0.01,"One-off margin, counted once"
+P-SH-03,shop,Smarte Thermostate,Smart radiator thermostats set,gas heating,129,medium,one_off,23,0.0,"One-off margin, counted once"
+P-SH-04,shop,Smart Plug 4er-Set,Smart plugs with metering,"digital, low basket",49,low,one_off,9,0.0,"One-off margin, counted once"
+P-AS-01,e_mobility,MAINGAU Autostrom,"Public charging card/app, on-the-go only (AC 0.52 / DC 0.62 EUR/kWh)",EV driver without Autostrom,AC 0.52 / DC 0.62 per kWh,medium,sales,85,-0.02,
+P-SV-01,service,Service-Only / No offer,"Resolve issue, no sales content","open complaint, dunning, cancellation",,,service,0,,Value = removes service churn drivers; costs service_resolution_cost_eur

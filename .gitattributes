@@ -1,0 +1,4 @@
+# keep mock data byte-identical to the source
+*.csv -text
+*.jsonl -text
+*.txt -text

@@ -1,0 +1,239 @@
+contract_id,customer_id,product,status,start_date,cancelled_at,car_brand,car_model,battery_kwh,max_dc_kw,car_first_registration_year,charge_cards,app_user,payment_method,ac_price_eur_kwh,dc_price_eur_kwh,record_updated_at
+AS-800001,MG-100008,MAINGAU Autostrom,active,2025-10-04,,Volkswagen,ID.3,58,120,2019,1,True,credit_card,0.52,0.62,2026-09-30 05:07:43
+AS-800002,MG-100009,MAINGAU Autostrom,active,2021-03-19,,Hyundai,Ioniq 5,77,230,2020,1,True,credit_card,0.52,0.62,2026-09-30 07:56:34
+AS-800003,MG-100601,MAINGAU Autostrom,active,2026-07-31,,Hyundai,Ioniq 5,77,230,2021,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 06:04:30
+AS-800004,MG-100602,MAINGAU Autostrom,active,2024-05-14,,Hyundai,Ioniq 5,77,230,2025,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 04:02:59
+AS-800005,MG-100603,MAINGAU Autostrom,active,2021-03-28,,Polestar,2,78,205,2024,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 17:14:47
+AS-800006,MG-100604,MAINGAU Autostrom,active,2022-07-11,,Audi,Q4 e-tron,77,135,2025,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 20:30:21
+AS-800007,MG-100605,MAINGAU Autostrom,active,2024-06-08,,Kia,EV6,77,230,2026,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 01:12:17
+AS-800008,MG-100606,MAINGAU Autostrom,active,2021-08-26,,Audi,Q4 e-tron,77,135,2025,1,True,credit_card,0.52,0.62,2026-09-30 04:31:34
+AS-800009,MG-100607,MAINGAU Autostrom,active,2024-05-17,,Tesla,Model Y,75,250,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 08:06:39
+AS-800010,MG-100608,MAINGAU Autostrom,active,2022-04-02,,Cupra,Born,58,120,2022,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 02:38:05
+AS-800011,MG-100609,MAINGAU Autostrom,active,2026-01-30,,Audi,Q4 e-tron,77,135,2020,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 07:08:33
+AS-800012,MG-100610,MAINGAU Autostrom,active,2026-05-09,,Hyundai,Ioniq 5,77,230,2024,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 00:54:28
+AS-800013,MG-100611,MAINGAU Autostrom,active,2023-01-14,,Skoda,Enyaq,77,135,2021,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 12:34:35
+AS-800014,MG-100612,MAINGAU Autostrom,active,2021-04-24,,Renault,Megane E-Tech,60,130,2024,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 05:12:54
+AS-800015,MG-100613,MAINGAU Autostrom,active,2025-05-01,,Fiat,500e,42,85,2024,1,False,credit_card,0.52,0.62,2026-09-30 22:53:49
+AS-800016,MG-100614,MAINGAU Autostrom,active,2026-06-27,,Kia,EV6,77,230,2020,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:05:03
+AS-800017,MG-100615,MAINGAU Autostrom,active,2021-12-08,,Tesla,Model Y,75,250,2025,1,True,credit_card,0.52,0.62,2026-09-30 15:09:55
+AS-800018,MG-100616,MAINGAU Autostrom,active,2022-12-11,,Tesla,Model 3,60,170,2026,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 09:24:57
+AS-800019,MG-100617,MAINGAU Autostrom,active,2023-05-06,,Mercedes-Benz,EQA,66,100,2024,1,True,credit_card,0.52,0.62,2026-09-30 20:44:10
+AS-800020,MG-100618,MAINGAU Autostrom,active,2026-07-22,,Tesla,Model Y,75,250,2024,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:26:06
+AS-800021,MG-100619,MAINGAU Autostrom,active,2021-06-01,,Tesla,Model Y,75,250,2025,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 00:59:53
+AS-800022,MG-100620,MAINGAU Autostrom,active,2021-04-02,,Hyundai,Ioniq 5,77,230,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 08:20:31
+AS-800023,MG-100621,MAINGAU Autostrom,active,2023-05-11,,Volkswagen,ID.4,77,135,2022,1,True,credit_card,0.52,0.62,2026-09-30 22:40:10
+AS-800024,MG-100622,MAINGAU Autostrom,active,2021-07-11,,Tesla,Model Y,75,250,2019,1,True,credit_card,0.52,0.62,2026-09-30 02:01:27
+AS-800025,MG-100623,MAINGAU Autostrom,active,2024-10-04,,BYD,Atto 3,60,88,2022,1,False,credit_card,0.52,0.62,2026-09-30 12:28:04
+AS-800026,MG-100624,MAINGAU Autostrom,active,2024-11-04,,Tesla,Model 3,60,170,2022,1,False,credit_card,0.52,0.62,2026-09-30 10:13:20
+AS-800027,MG-100625,MAINGAU Autostrom,active,2021-11-30,,Tesla,Model Y,75,250,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 14:14:07
+AS-800028,MG-100626,MAINGAU Autostrom,active,2024-10-05,,Volkswagen,ID.3,58,120,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 21:35:02
+AS-800029,MG-100627,MAINGAU Autostrom,active,2026-01-08,,Opel,Corsa Electric,50,100,2020,2,True,credit_card,0.52,0.62,2026-09-30 19:16:56
+AS-800030,MG-100628,MAINGAU Autostrom,active,2026-03-28,,Tesla,Model Y,75,250,2024,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 13:11:26
+AS-800031,MG-100629,MAINGAU Autostrom,active,2024-11-02,,Volkswagen,ID.4,77,135,2020,1,False,credit_card,0.52,0.62,2026-09-30 11:00:55
+AS-800032,MG-100630,MAINGAU Autostrom,active,2023-08-23,,Volkswagen,ID.4,77,135,2025,1,False,credit_card,0.52,0.62,2026-09-30 14:20:54
+AS-800033,MG-100631,MAINGAU Autostrom,active,2025-04-11,,Tesla,Model Y,75,250,2025,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 22:18:35
+AS-800034,MG-100632,MAINGAU Autostrom,active,2026-05-08,,Tesla,Model Y,75,250,2024,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 15:54:59
+AS-800035,MG-100633,MAINGAU Autostrom,active,2024-05-06,,Tesla,Model Y,75,250,2024,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 09:34:46
+AS-800036,MG-100634,MAINGAU Autostrom,active,2021-11-22,,Tesla,Model 3,60,170,2024,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 07:10:28
+AS-800037,MG-100635,MAINGAU Autostrom,active,2022-09-20,,Tesla,Model Y,75,250,2020,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 19:21:50
+AS-800038,MG-100636,MAINGAU Autostrom,active,2023-06-09,,Tesla,Model 3,60,170,2024,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 03:18:22
+AS-800039,MG-100637,MAINGAU Autostrom,active,2024-11-30,,Mercedes-Benz,EQA,66,100,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 09:54:58
+AS-800040,MG-100638,MAINGAU Autostrom,active,2024-10-28,,Tesla,Model 3,60,170,2024,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 14:03:57
+AS-800041,MG-100639,MAINGAU Autostrom,active,2025-06-13,,Renault,Megane E-Tech,60,130,2024,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 21:52:30
+AS-800042,MG-100640,MAINGAU Autostrom,active,2024-11-28,,Audi,Q4 e-tron,77,135,2021,1,True,credit_card,0.52,0.62,2026-09-30 14:04:49
+AS-800043,MG-100641,MAINGAU Autostrom,active,2023-05-05,,Volkswagen,ID.4,77,135,2023,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 17:43:21
+AS-800044,MG-100642,MAINGAU Autostrom,active,2024-04-30,,Tesla,Model Y,75,250,2020,1,True,credit_card,0.52,0.62,2026-09-30 12:39:44
+AS-800045,MG-100643,MAINGAU Autostrom,active,2022-07-11,,Tesla,Model Y,75,250,2021,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 19:48:39
+AS-800046,MG-100644,MAINGAU Autostrom,cancelled,2023-11-23,2026-08-20,BMW,i4,81,200,2022,1,True,credit_card,0.52,0.62,2026-09-30 04:28:29
+AS-800047,MG-100645,MAINGAU Autostrom,active,2021-08-01,,Tesla,Model Y,75,250,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 12:45:56
+AS-800048,MG-100646,MAINGAU Autostrom,active,2021-04-16,,Skoda,Enyaq,77,135,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:36:38
+AS-800049,MG-100647,MAINGAU Autostrom,active,2025-01-29,,Volkswagen,ID.4,77,135,2023,1,True,credit_card,0.52,0.62,2026-09-30 18:05:17
+AS-800050,MG-100648,MAINGAU Autostrom,active,2023-10-08,,Tesla,Model Y,75,250,2019,2,False,credit_card,0.52,0.62,2026-09-30 00:33:19
+AS-800051,MG-100649,MAINGAU Autostrom,active,2021-09-02,,Hyundai,Ioniq 5,77,230,2025,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 09:14:27
+AS-800052,MG-100650,MAINGAU Autostrom,active,2021-07-22,,Skoda,Enyaq,77,135,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 16:25:14
+AS-800053,MG-100651,MAINGAU Autostrom,active,2023-12-22,,Skoda,Enyaq,77,135,2021,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:52:22
+AS-800054,MG-100652,MAINGAU Autostrom,active,2021-05-24,,Volkswagen,ID.4,77,135,2021,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:17:56
+AS-800055,MG-100653,MAINGAU Autostrom,active,2022-05-02,,Tesla,Model Y,75,250,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 04:02:56
+AS-800056,MG-100654,MAINGAU Autostrom,active,2023-01-05,,Skoda,Enyaq,77,135,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 13:28:06
+AS-800057,MG-100655,MAINGAU Autostrom,active,2024-02-24,,Cupra,Born,58,120,2024,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 15:21:26
+AS-800058,MG-100656,MAINGAU Autostrom,active,2025-04-25,,Cupra,Born,58,120,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 17:59:55
+AS-800059,MG-100657,MAINGAU Autostrom,active,2022-10-20,,Opel,Corsa Electric,50,100,2026,1,False,credit_card,0.52,0.62,2026-09-30 05:12:08
+AS-800060,MG-100658,MAINGAU Autostrom,active,2022-03-12,,Hyundai,Ioniq 5,77,230,2026,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 18:25:49
+AS-800061,MG-100659,MAINGAU Autostrom,active,2021-05-17,,Volkswagen,ID.4,77,135,2022,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 14:03:47
+AS-800062,MG-100660,MAINGAU Autostrom,active,2021-07-12,,Kia,EV6,77,230,2021,2,True,credit_card,0.52,0.62,2026-09-30 18:48:52
+AS-800063,MG-100661,MAINGAU Autostrom,active,2026-06-20,,Volkswagen,ID.3,58,120,2025,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 10:31:11
+AS-800064,MG-100662,MAINGAU Autostrom,active,2022-05-27,,Volkswagen,ID.4,77,135,2026,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 06:38:15
+AS-800065,MG-100663,MAINGAU Autostrom,active,2024-04-17,,BMW,i4,81,200,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 16:13:38
+AS-800066,MG-100664,MAINGAU Autostrom,active,2026-07-11,,Kia,EV6,77,230,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 22:12:22
+AS-800067,MG-100665,MAINGAU Autostrom,active,2022-10-12,,Tesla,Model 3,60,170,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 16:03:08
+AS-800068,MG-100666,MAINGAU Autostrom,active,2024-06-21,,Volkswagen,ID.4,77,135,2023,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 12:58:19
+AS-800069,MG-100667,MAINGAU Autostrom,active,2023-06-14,,Volkswagen,ID.3,58,120,2026,1,True,credit_card,0.52,0.62,2026-09-30 22:17:16
+AS-800070,MG-100668,MAINGAU Autostrom,active,2023-07-01,,BYD,Atto 3,60,88,2024,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 13:00:29
+AS-800071,MG-100669,MAINGAU Autostrom,active,2024-11-30,,Volkswagen,ID.3,58,120,2026,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 12:38:59
+AS-800072,MG-100670,MAINGAU Autostrom,active,2024-03-10,,BMW,i4,81,200,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 02:19:27
+AS-800073,MG-100671,MAINGAU Autostrom,active,2026-05-16,,Tesla,Model Y,75,250,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 07:36:08
+AS-800074,MG-100672,MAINGAU Autostrom,active,2021-11-07,,Volkswagen,ID.3,58,120,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 04:52:14
+AS-800075,MG-100673,MAINGAU Autostrom,active,2021-12-16,,Tesla,Model 3,60,170,2023,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 02:12:49
+AS-800076,MG-100674,MAINGAU Autostrom,active,2022-01-31,,Cupra,Born,58,120,2023,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 17:57:07
+AS-800077,MG-100675,MAINGAU Autostrom,active,2024-04-25,,Audi,Q4 e-tron,77,135,2020,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 09:38:28
+AS-800078,MG-100676,MAINGAU Autostrom,active,2024-02-25,,BMW,i4,81,200,2021,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 17:44:56
+AS-800079,MG-100677,MAINGAU Autostrom,active,2021-06-12,,BYD,Atto 3,60,88,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 04:26:31
+AS-800080,MG-100678,MAINGAU Autostrom,active,2024-08-16,,Skoda,Enyaq,77,135,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 20:29:34
+AS-800081,MG-100679,MAINGAU Autostrom,active,2023-10-15,,Volkswagen,ID.3,58,120,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 21:08:58
+AS-800082,MG-100680,MAINGAU Autostrom,active,2023-06-29,,Skoda,Enyaq,77,135,2020,1,False,credit_card,0.52,0.62,2026-09-30 04:10:02
+AS-800083,MG-100681,MAINGAU Autostrom,active,2024-05-06,,Volkswagen,ID.3,58,120,2024,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 07:10:17
+AS-800084,MG-100682,MAINGAU Autostrom,active,2021-11-17,,Audi,Q4 e-tron,77,135,2026,1,False,credit_card,0.52,0.62,2026-09-30 13:14:25
+AS-800085,MG-100683,MAINGAU Autostrom,active,2023-01-10,,Mercedes-Benz,EQA,66,100,2021,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 04:56:20
+AS-800086,MG-100684,MAINGAU Autostrom,active,2024-06-22,,Volkswagen,ID.3,58,120,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:53:23
+AS-800087,MG-100685,MAINGAU Autostrom,active,2022-10-17,,Renault,Megane E-Tech,60,130,2026,1,False,credit_card,0.52,0.62,2026-09-30 06:38:30
+AS-800088,MG-100686,MAINGAU Autostrom,active,2025-09-01,,Cupra,Born,58,120,2024,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 21:10:53
+AS-800089,MG-100687,MAINGAU Autostrom,active,2024-08-16,,Volkswagen,ID.4,77,135,2025,1,True,credit_card,0.52,0.62,2026-09-30 12:36:09
+AS-800090,MG-100688,MAINGAU Autostrom,active,2021-07-09,,Opel,Corsa Electric,50,100,2024,1,True,credit_card,0.52,0.62,2026-09-30 22:57:47
+AS-800091,MG-100689,MAINGAU Autostrom,active,2023-07-06,,Volkswagen,ID.3,58,120,2024,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 15:20:52
+AS-800092,MG-100690,MAINGAU Autostrom,active,2026-02-13,,Opel,Corsa Electric,50,100,2019,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 03:16:20
+AS-800093,MG-100691,MAINGAU Autostrom,active,2026-05-03,,Opel,Corsa Electric,50,100,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 12:44:43
+AS-800094,MG-100692,MAINGAU Autostrom,active,2022-12-15,,BYD,Atto 3,60,88,2019,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 19:22:39
+AS-800095,MG-100693,MAINGAU Autostrom,active,2023-05-18,,Volkswagen,ID.3,58,120,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 12:38:02
+AS-800096,MG-100694,MAINGAU Autostrom,active,2022-10-08,,Volkswagen,ID.3,58,120,2025,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 16:01:59
+AS-800097,MG-100695,MAINGAU Autostrom,active,2021-09-24,,Polestar,2,78,205,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 19:42:33
+AS-800098,MG-100696,MAINGAU Autostrom,active,2021-10-22,,Hyundai,Ioniq 5,77,230,2019,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 18:09:30
+AS-800099,MG-100697,MAINGAU Autostrom,active,2024-01-02,,Volkswagen,ID.4,77,135,2022,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 18:52:10
+AS-800100,MG-100698,MAINGAU Autostrom,active,2023-08-12,,Tesla,Model 3,60,170,2022,1,False,credit_card,0.52,0.62,2026-09-30 17:25:52
+AS-800101,MG-100699,MAINGAU Autostrom,active,2026-05-22,,Hyundai,Ioniq 5,77,230,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 21:48:05
+AS-800102,MG-100700,MAINGAU Autostrom,active,2024-08-20,,BYD,Atto 3,60,88,2024,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 21:43:29
+AS-800103,MG-100701,MAINGAU Autostrom,active,2025-08-22,,Opel,Corsa Electric,50,100,2019,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 07:03:47
+AS-800104,MG-100702,MAINGAU Autostrom,active,2023-05-18,,Volkswagen,ID.3,58,120,2025,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 04:35:14
+AS-800105,MG-100703,MAINGAU Autostrom,active,2025-07-31,,Hyundai,Ioniq 5,77,230,2026,2,True,credit_card,0.52,0.62,2026-09-30 01:29:13
+AS-800106,MG-100704,MAINGAU Autostrom,active,2025-01-06,,Cupra,Born,58,120,2025,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 18:27:40
+AS-800107,MG-100705,MAINGAU Autostrom,active,2023-07-05,,Audi,Q4 e-tron,77,135,2024,2,True,credit_card,0.52,0.62,2026-09-30 19:09:13
+AS-800108,MG-100706,MAINGAU Autostrom,active,2022-08-20,,Hyundai,Ioniq 5,77,230,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 15:08:57
+AS-800109,MG-100707,MAINGAU Autostrom,active,2025-03-01,,Volkswagen,ID.3,58,120,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 19:33:44
+AS-800110,MG-100708,MAINGAU Autostrom,active,2022-04-14,,Tesla,Model 3,60,170,2021,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 10:55:27
+AS-800111,MG-100709,MAINGAU Autostrom,active,2024-02-09,,Hyundai,Ioniq 5,77,230,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 00:54:09
+AS-800112,MG-100710,MAINGAU Autostrom,active,2021-06-19,,Volkswagen,ID.3,58,120,2022,2,False,credit_card,0.52,0.62,2026-09-30 14:14:03
+AS-800113,MG-100711,MAINGAU Autostrom,active,2023-03-29,,Volkswagen,ID.3,58,120,2025,2,True,credit_card,0.52,0.62,2026-09-30 22:35:25
+AS-800114,MG-100712,MAINGAU Autostrom,active,2026-05-27,,Tesla,Model Y,75,250,2026,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 09:07:51
+AS-800115,MG-100713,MAINGAU Autostrom,active,2022-03-28,,Skoda,Enyaq,77,135,2020,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 19:08:26
+AS-800116,MG-100714,MAINGAU Autostrom,active,2021-05-02,,BMW,i4,81,200,2024,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 14:22:27
+AS-800117,MG-100715,MAINGAU Autostrom,active,2021-05-19,,Cupra,Born,58,120,2022,1,True,credit_card,0.52,0.62,2026-09-30 04:44:35
+AS-800118,MG-100716,MAINGAU Autostrom,active,2024-04-16,,Mercedes-Benz,EQA,66,100,2022,1,True,credit_card,0.52,0.62,2026-09-30 16:26:10
+AS-800119,MG-100717,MAINGAU Autostrom,active,2025-07-05,,BMW,i4,81,200,2020,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 15:14:50
+AS-800120,MG-100718,MAINGAU Autostrom,active,2021-09-13,,Opel,Corsa Electric,50,100,2024,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 06:01:37
+AS-800121,MG-100719,MAINGAU Autostrom,active,2023-05-24,,Renault,Megane E-Tech,60,130,2021,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 07:53:19
+AS-800122,MG-100720,MAINGAU Autostrom,active,2022-01-18,,Opel,Corsa Electric,50,100,2022,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 16:02:06
+AS-800123,MG-100721,MAINGAU Autostrom,active,2021-03-04,,Skoda,Enyaq,77,135,2020,2,True,credit_card,0.52,0.62,2026-09-30 07:21:01
+AS-800124,MG-100722,MAINGAU Autostrom,active,2021-11-17,,Volkswagen,ID.3,58,120,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 08:17:00
+AS-800125,MG-100723,MAINGAU Autostrom,active,2022-02-11,,Volkswagen,ID.3,58,120,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 00:17:10
+AS-800126,MG-100724,MAINGAU Autostrom,cancelled,2024-12-06,2026-09-18,Fiat,500e,42,85,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 03:09:43
+AS-800127,MG-100725,MAINGAU Autostrom,active,2023-02-13,,Volkswagen,ID.4,77,135,2024,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 13:32:28
+AS-800128,MG-100726,MAINGAU Autostrom,active,2021-08-07,,Tesla,Model 3,60,170,2025,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 00:39:56
+AS-800129,MG-100727,MAINGAU Autostrom,active,2025-09-27,,Volkswagen,ID.3,58,120,2026,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 07:47:58
+AS-800130,MG-100728,MAINGAU Autostrom,active,2024-09-07,,Skoda,Enyaq,77,135,2023,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 00:04:19
+AS-800131,MG-100729,MAINGAU Autostrom,active,2025-12-06,,Hyundai,Ioniq 5,77,230,2025,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 05:42:32
+AS-800132,MG-100730,MAINGAU Autostrom,active,2024-06-22,,Kia,EV6,77,230,2025,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 22:19:00
+AS-800133,MG-100731,MAINGAU Autostrom,active,2026-08-02,,Cupra,Born,58,120,2020,1,True,credit_card,0.52,0.62,2026-09-30 00:18:25
+AS-800134,MG-100732,MAINGAU Autostrom,active,2024-09-12,,BMW,i4,81,200,2022,1,True,credit_card,0.52,0.62,2026-09-30 08:31:21
+AS-800135,MG-100733,MAINGAU Autostrom,active,2023-09-13,,Tesla,Model Y,75,250,2020,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:32:03
+AS-800136,MG-100734,MAINGAU Autostrom,active,2025-08-03,,Tesla,Model Y,75,250,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 04:15:19
+AS-800137,MG-100735,MAINGAU Autostrom,active,2024-08-10,,Tesla,Model Y,75,250,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 04:56:57
+AS-800138,MG-100736,MAINGAU Autostrom,active,2021-04-21,,Tesla,Model 3,60,170,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 16:58:11
+AS-800139,MG-100737,MAINGAU Autostrom,active,2024-06-07,,Audi,Q4 e-tron,77,135,2022,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 22:19:10
+AS-800140,MG-100738,MAINGAU Autostrom,active,2024-05-07,,BMW,i4,81,200,2020,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 20:24:38
+AS-800141,MG-100739,MAINGAU Autostrom,active,2025-11-08,,Tesla,Model 3,60,170,2022,1,True,credit_card,0.52,0.62,2026-09-30 12:48:17
+AS-800142,MG-100740,MAINGAU Autostrom,active,2021-10-08,,Skoda,Enyaq,77,135,2026,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 04:02:06
+AS-800143,MG-100741,MAINGAU Autostrom,active,2026-02-27,,Tesla,Model 3,60,170,2025,1,True,credit_card,0.52,0.62,2026-09-30 10:08:44
+AS-800144,MG-100742,MAINGAU Autostrom,active,2022-02-23,,Mercedes-Benz,EQA,66,100,2025,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 19:39:36
+AS-800145,MG-100743,MAINGAU Autostrom,active,2023-10-13,,BMW,i4,81,200,2020,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 04:30:38
+AS-800146,MG-100744,MAINGAU Autostrom,active,2022-11-30,,Volkswagen,ID.4,77,135,2019,1,True,credit_card,0.52,0.62,2026-09-30 04:19:05
+AS-800147,MG-100745,MAINGAU Autostrom,active,2024-06-17,,Volkswagen,ID.4,77,135,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 18:21:55
+AS-800148,MG-100746,MAINGAU Autostrom,active,2023-08-02,,Volkswagen,ID.4,77,135,2025,1,True,credit_card,0.52,0.62,2026-09-30 16:39:47
+AS-800149,MG-100747,MAINGAU Autostrom,active,2026-01-06,,Mercedes-Benz,EQA,66,100,2023,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 21:22:18
+AS-800150,MG-100748,MAINGAU Autostrom,active,2025-09-21,,Tesla,Model Y,75,250,2019,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 05:26:57
+AS-800151,MG-100749,MAINGAU Autostrom,active,2026-08-13,,Opel,Corsa Electric,50,100,2020,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 15:19:19
+AS-800152,MG-100750,MAINGAU Autostrom,active,2025-05-14,,Audi,Q4 e-tron,77,135,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 04:38:24
+AS-800153,MG-100010,MAINGAU Autostrom,active,2024-01-17,,Volkswagen,ID.4,77,135,2021,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 08:01:50
+AS-800154,MG-100027,MAINGAU Autostrom,active,2022-08-14,,Cupra,Born,58,120,2021,2,True,credit_card,0.52,0.62,2026-09-30 20:21:17
+AS-800155,MG-100044,MAINGAU Autostrom,active,2023-03-30,,Skoda,Enyaq,77,135,2022,1,False,credit_card,0.52,0.62,2026-09-30 21:06:18
+AS-800156,MG-100046,MAINGAU Autostrom,active,2021-04-24,,Mercedes-Benz,EQA,66,100,2020,1,True,credit_card,0.52,0.62,2026-09-30 11:14:26
+AS-800157,MG-100063,MAINGAU Autostrom,active,2023-08-03,,Tesla,Model 3,60,170,2022,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 04:40:37
+AS-800158,MG-100069,MAINGAU Autostrom,cancelled,2024-12-06,2026-07-05,Volkswagen,ID.3,58,120,2024,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 01:22:01
+AS-800159,MG-100070,MAINGAU Autostrom,active,2026-06-30,,Tesla,Model Y,75,250,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:07:29
+AS-800160,MG-100073,MAINGAU Autostrom,active,2024-05-11,,Volkswagen,ID.4,77,135,2021,2,True,credit_card,0.52,0.62,2026-09-30 17:38:52
+AS-800161,MG-100077,MAINGAU Autostrom,active,2024-03-31,,BMW,i4,81,200,2026,2,True,credit_card,0.52,0.62,2026-09-30 13:30:26
+AS-800162,MG-100087,MAINGAU Autostrom,active,2026-07-02,,Tesla,Model Y,75,250,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 16:01:26
+AS-800163,MG-100093,MAINGAU Autostrom,active,2023-01-22,,Renault,Megane E-Tech,60,130,2022,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 15:30:24
+AS-800164,MG-100101,MAINGAU Autostrom,active,2022-01-19,,Audi,Q4 e-tron,77,135,2020,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 12:19:19
+AS-800165,MG-100106,MAINGAU Autostrom,active,2024-11-02,,Skoda,Enyaq,77,135,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:11:10
+AS-800166,MG-100111,MAINGAU Autostrom,active,2022-11-17,,Audi,Q4 e-tron,77,135,2023,1,True,credit_card,0.52,0.62,2026-09-30 06:40:14
+AS-800167,MG-100127,MAINGAU Autostrom,active,2025-06-28,,Volkswagen,ID.4,77,135,2025,1,True,credit_card,0.52,0.62,2026-09-30 20:32:34
+AS-800168,MG-100137,MAINGAU Autostrom,active,2021-04-30,,Tesla,Model 3,60,170,2019,1,False,credit_card,0.52,0.62,2026-09-30 03:38:35
+AS-800169,MG-100139,MAINGAU Autostrom,active,2023-08-05,,Volkswagen,ID.3,58,120,2021,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 16:31:19
+AS-800170,MG-100147,MAINGAU Autostrom,active,2025-04-30,,Skoda,Enyaq,77,135,2019,1,True,credit_card,0.52,0.62,2026-09-30 15:51:25
+AS-800171,MG-100150,MAINGAU Autostrom,active,2022-05-08,,Tesla,Model Y,75,250,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 14:28:46
+AS-800172,MG-100152,MAINGAU Autostrom,cancelled,2021-08-11,2026-08-07,Tesla,Model 3,60,170,2026,1,True,credit_card,0.52,0.62,2026-09-30 03:28:57
+AS-800173,MG-100157,MAINGAU Autostrom,cancelled,2022-06-12,2026-07-11,Volkswagen,ID.3,58,120,2020,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 05:19:47
+AS-800174,MG-100174,MAINGAU Autostrom,active,2021-07-24,,Volkswagen,ID.4,77,135,2025,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 21:37:17
+AS-800175,MG-100175,MAINGAU Autostrom,active,2025-11-09,,Skoda,Enyaq,77,135,2023,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 22:41:22
+AS-800176,MG-100182,MAINGAU Autostrom,active,2026-02-07,,Tesla,Model 3,60,170,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 02:23:01
+AS-800177,MG-100215,MAINGAU Autostrom,active,2021-04-29,,Cupra,Born,58,120,2020,1,True,credit_card,0.52,0.62,2026-09-30 12:04:51
+AS-800178,MG-100228,MAINGAU Autostrom,active,2024-09-30,,Volkswagen,ID.4,77,135,2025,1,True,credit_card,0.52,0.62,2026-09-30 06:00:06
+AS-800179,MG-100229,MAINGAU Autostrom,active,2021-08-10,,Tesla,Model Y,75,250,2021,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 07:24:16
+AS-800180,MG-100247,MAINGAU Autostrom,cancelled,2023-09-05,2026-08-23,Renault,Megane E-Tech,60,130,2022,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 05:05:26
+AS-800181,MG-100251,MAINGAU Autostrom,active,2022-09-23,,Tesla,Model 3,60,170,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 17:31:22
+AS-800182,MG-100259,MAINGAU Autostrom,active,2022-08-17,,Audi,Q4 e-tron,77,135,2023,1,True,credit_card,0.52,0.62,2026-09-30 10:13:05
+AS-800183,MG-100261,MAINGAU Autostrom,active,2025-12-15,,Tesla,Model Y,75,250,2025,1,False,credit_card,0.52,0.62,2026-09-30 07:32:29
+AS-800184,MG-100276,MAINGAU Autostrom,active,2025-03-18,,Volkswagen,ID.3,58,120,2025,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 22:26:22
+AS-800185,MG-100280,MAINGAU Autostrom,active,2024-04-02,,Cupra,Born,58,120,2020,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 10:00:04
+AS-800186,MG-100282,MAINGAU Autostrom,active,2026-07-23,,Mercedes-Benz,EQA,66,100,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 11:28:08
+AS-800187,MG-100291,MAINGAU Autostrom,active,2024-11-26,,Tesla,Model 3,60,170,2021,2,True,credit_card,0.52,0.62,2026-09-30 00:22:31
+AS-800188,MG-100296,MAINGAU Autostrom,active,2022-10-02,,Volkswagen,ID.3,58,120,2020,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 00:59:16
+AS-800189,MG-100305,MAINGAU Autostrom,active,2025-05-02,,Tesla,Model Y,75,250,2021,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 07:40:40
+AS-800190,MG-100321,MAINGAU Autostrom,active,2023-07-23,,Volkswagen,ID.3,58,120,2021,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 08:14:00
+AS-800191,MG-100324,MAINGAU Autostrom,active,2025-02-05,,Opel,Corsa Electric,50,100,2019,1,True,credit_card,0.52,0.62,2026-09-30 19:49:21
+AS-800192,MG-100325,MAINGAU Autostrom,active,2023-10-14,,Mercedes-Benz,EQA,66,100,2024,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 13:35:46
+AS-800193,MG-100327,MAINGAU Autostrom,active,2026-01-27,,Opel,Corsa Electric,50,100,2024,1,True,credit_card,0.52,0.62,2026-09-30 16:46:57
+AS-800194,MG-100328,MAINGAU Autostrom,active,2024-09-23,,Volkswagen,ID.3,58,120,2023,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 02:41:01
+AS-800195,MG-100332,MAINGAU Autostrom,active,2022-05-29,,Skoda,Enyaq,77,135,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 06:52:58
+AS-800196,MG-100342,MAINGAU Autostrom,cancelled,2026-06-03,2026-07-24,Hyundai,Ioniq 5,77,230,2023,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 13:08:40
+AS-800197,MG-100345,MAINGAU Autostrom,active,2022-07-10,,Volkswagen,ID.3,58,120,2023,1,False,credit_card,0.52,0.62,2026-09-30 18:33:39
+AS-800198,MG-100349,MAINGAU Autostrom,active,2022-07-19,,Volkswagen,ID.4,77,135,2025,1,True,credit_card,0.52,0.62,2026-09-30 12:06:06
+AS-800199,MG-100352,MAINGAU Autostrom,active,2023-01-08,,Tesla,Model Y,75,250,2020,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 18:04:03
+AS-800200,MG-100354,MAINGAU Autostrom,active,2026-02-20,,Volkswagen,ID.4,77,135,2023,1,False,credit_card,0.52,0.62,2026-09-30 02:27:33
+AS-800201,MG-100355,MAINGAU Autostrom,active,2021-09-28,,Volkswagen,ID.3,58,120,2023,1,False,credit_card,0.52,0.62,2026-09-30 06:28:35
+AS-800202,MG-100356,MAINGAU Autostrom,active,2025-09-02,,Hyundai,Ioniq 5,77,230,2025,1,True,credit_card,0.52,0.62,2026-09-30 05:26:27
+AS-800203,MG-100364,MAINGAU Autostrom,active,2021-04-15,,BYD,Atto 3,60,88,2025,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 17:43:26
+AS-800204,MG-100367,MAINGAU Autostrom,active,2026-03-19,,Tesla,Model 3,60,170,2025,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 10:39:48
+AS-800205,MG-100375,MAINGAU Autostrom,active,2021-06-12,,Fiat,500e,42,85,2023,1,True,credit_card,0.52,0.62,2026-09-30 20:21:05
+AS-800206,MG-100396,MAINGAU Autostrom,active,2024-05-22,,Polestar,2,78,205,2021,1,False,credit_card,0.52,0.62,2026-09-30 18:19:45
+AS-800207,MG-100400,MAINGAU Autostrom,active,2025-05-20,,Volkswagen,ID.3,58,120,2020,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 02:53:33
+AS-800208,MG-100406,MAINGAU Autostrom,active,2026-07-16,,Volkswagen,ID.3,58,120,2026,1,True,credit_card,0.52,0.62,2026-09-30 06:01:14
+AS-800209,MG-100414,MAINGAU Autostrom,active,2026-03-14,,Tesla,Model Y,75,250,2025,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 02:30:48
+AS-800210,MG-100415,MAINGAU Autostrom,active,2021-05-16,,Volkswagen,ID.3,58,120,2023,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 18:00:41
+AS-800211,MG-100425,MAINGAU Autostrom,active,2021-06-17,,Mercedes-Benz,EQA,66,100,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 06:21:57
+AS-800212,MG-100435,MAINGAU Autostrom,active,2022-06-01,,Tesla,Model 3,60,170,2025,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 07:57:37
+AS-800213,MG-100443,MAINGAU Autostrom,active,2021-08-21,,Tesla,Model Y,75,250,2025,1,True,credit_card,0.52,0.62,2026-09-30 19:10:08
+AS-800214,MG-100446,MAINGAU Autostrom,active,2026-04-08,,Skoda,Enyaq,77,135,2020,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 10:40:22
+AS-800215,MG-100453,MAINGAU Autostrom,active,2024-07-09,,Mercedes-Benz,EQA,66,100,2020,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 06:22:01
+AS-800216,MG-100456,MAINGAU Autostrom,active,2023-01-07,,Kia,EV6,77,230,2024,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 05:07:29
+AS-800217,MG-100464,MAINGAU Autostrom,active,2023-01-29,,Tesla,Model 3,60,170,2019,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 00:03:25
+AS-800218,MG-100485,MAINGAU Autostrom,active,2023-02-09,,Volkswagen,ID.3,58,120,2021,1,False,credit_card,0.52,0.62,2026-09-30 10:29:16
+AS-800219,MG-100497,MAINGAU Autostrom,active,2024-02-07,,Tesla,Model Y,75,250,2020,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 12:46:07
+AS-800220,MG-100499,MAINGAU Autostrom,active,2025-02-28,,BYD,Atto 3,60,88,2023,2,True,credit_card,0.52,0.62,2026-09-30 16:16:25
+AS-800221,MG-100523,MAINGAU Autostrom,active,2022-04-04,,BMW,i4,81,200,2024,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 02:16:42
+AS-800222,MG-100528,MAINGAU Autostrom,active,2022-05-25,,Tesla,Model 3,60,170,2024,1,True,credit_card,0.52,0.62,2026-09-30 02:34:44
+AS-800223,MG-100533,MAINGAU Autostrom,active,2026-01-09,,Cupra,Born,58,120,2022,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 06:39:07
+AS-800224,MG-100538,MAINGAU Autostrom,active,2022-06-13,,Cupra,Born,58,120,2020,1,True,credit_card,0.52,0.62,2026-09-30 10:21:49
+AS-800225,MG-100539,MAINGAU Autostrom,active,2022-09-05,,Volkswagen,ID.4,77,135,2021,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 09:23:52
+AS-800226,MG-100544,MAINGAU Autostrom,active,2024-07-03,,Cupra,Born,58,120,2019,1,True,credit_card,0.52,0.62,2026-09-30 18:20:12
+AS-800227,MG-100546,MAINGAU Autostrom,active,2026-07-20,,Volkswagen,ID.3,58,120,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 09:00:37
+AS-800228,MG-100547,MAINGAU Autostrom,active,2026-04-14,,Tesla,Model Y,75,250,2024,2,True,sepa_direct_debit,0.52,0.62,2026-09-30 09:23:59
+AS-800229,MG-100548,MAINGAU Autostrom,active,2023-07-26,,Hyundai,Ioniq 5,77,230,2020,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 14:31:34
+AS-800230,MG-100561,MAINGAU Autostrom,active,2024-03-04,,Polestar,2,78,205,2023,1,True,credit_card,0.52,0.62,2026-09-30 19:54:41
+AS-800231,MG-100564,MAINGAU Autostrom,active,2023-02-09,,Volkswagen,ID.3,58,120,2025,1,True,credit_card,0.52,0.62,2026-09-30 05:17:55
+AS-800232,MG-100567,MAINGAU Autostrom,cancelled,2026-06-25,2026-08-18,Tesla,Model 3,60,170,2020,2,False,sepa_direct_debit,0.52,0.62,2026-09-30 16:16:59
+AS-800233,MG-100570,MAINGAU Autostrom,cancelled,2024-12-24,2026-08-29,Polestar,2,78,205,2020,1,False,credit_card,0.52,0.62,2026-09-30 15:31:39
+AS-800234,MG-100577,MAINGAU Autostrom,active,2023-12-07,,Tesla,Model Y,75,250,2026,1,True,sepa_direct_debit,0.52,0.62,2026-09-30 22:35:06
+AS-800235,MG-100580,MAINGAU Autostrom,active,2022-06-15,,Tesla,Model Y,75,250,2025,1,True,credit_card,0.52,0.62,2026-09-30 08:56:13
+AS-800236,MG-100587,MAINGAU Autostrom,active,2026-07-23,,Volkswagen,ID.3,58,120,2020,1,True,credit_card,0.52,0.62,2026-09-30 10:12:35
+AS-800237,MG-100594,MAINGAU Autostrom,active,2026-02-02,,Hyundai,Ioniq 5,77,230,2020,2,True,credit_card,0.52,0.62,2026-09-30 16:53:31
+AS-800238,MG-100007,MAINGAU Autostrom,active,2024-01-26,,Mercedes-Benz,EQA,66,100,2021,1,False,sepa_direct_debit,0.52,0.62,2026-09-30 14:25:52

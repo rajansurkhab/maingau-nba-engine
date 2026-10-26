@@ -1,0 +1,1375 @@
+transcript_id,ticket_id,customer_id,call_started_at,duration_s,transcript,transcription_source,language
+CT-600001,TK-200017,MG-100027,2025-10-05 01:21:52,364,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600002,TK-200409,MG-100412,2025-10-05 10:06:21,832,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600003,TK-200233,MG-100252,2025-10-07 16:48:37,549,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600004,TK-200117,MG-100136,2025-10-12 05:52:12,831,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600005,TK-200676,MG-100689,2025-10-14 23:50:04,842,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600006,TK-200231,MG-100252,2025-10-17 13:50:48,209,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600007,TK-200148,MG-100171,2025-10-19 00:06:43,201,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600008,TK-200643,MG-100657,2025-10-21 11:37:53,804,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600009,TK-200410,MG-100412,2025-10-21 21:28:18,226,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600010,TK-200649,MG-100664,2025-10-22 03:55:03,878,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600011,TK-200221,MG-100241,2025-10-25 13:19:54,518,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600012,TK-200180,MG-100198,2025-10-25 20:55:25,276,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600013,TK-200418,MG-100421,2025-10-26 20:49:06,702,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600014,TK-200576,MG-100573,2025-10-27 20:14:27,675,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600015,TK-200479,MG-100484,2025-10-27 20:34:29,676,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600016,TK-200296,MG-100319,2025-10-29 22:27:24,327,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600017,TK-200587,MG-100587,2025-10-30 23:09:38,214,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600018,TK-200076,MG-100090,2025-11-07 21:50:59,398,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, mein HEMS zeigt seit gestern nix mehr.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Neu gestartet hab ich schon, bringt nix.
+Agent: Ich sehe, dass das Gateway offline ist. Ich starte eine Fernwartung, das dauert etwa zehn Minuten.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600019,TK-200059,MG-100068,2025-11-08 14:40:12,605,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600020,TK-200396,MG-100404,2025-11-08 21:07:17,820,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600021,TK-200271,MG-100291,2025-11-12 16:23:23,309,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600022,TK-200542,MG-100542,2025-11-14 02:22:29,526,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600023,TK-200290,MG-100312,2025-11-14 09:19:23,276,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600024,TK-200149,MG-100171,2025-11-17 03:36:57,854,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600025,TK-200106,MG-100123,2025-11-18 13:22:51,554,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600026,TK-200549,MG-100545,2025-11-19 14:14:17,529,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600027,TK-200323,MG-100344,2025-11-21 13:42:27,665,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600028,TK-200642,MG-100657,2025-11-23 06:40:55,718,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600029,TK-200478,MG-100484,2025-11-24 21:08:56,747,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600030,TK-200593,MG-100596,2025-11-24 21:38:45,395,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600031,TK-200337,MG-100359,2025-11-27 09:17:58,470,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600032,TK-200356,MG-100375,2025-11-28 18:04:42,625,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600033,TK-200720,MG-100739,2025-11-29 10:18:17,530,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600034,TK-200153,MG-100173,2025-11-30 00:55:17,612,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600035,TK-200728,MG-100744,2025-11-30 10:46:17,437,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600036,TK-200163,MG-100187,2025-12-02 06:21:12,747,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600037,TK-200628,MG-100636,2025-12-03 03:40:43,233,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600038,TK-200429,MG-100433,2025-12-05 19:45:02,476,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600039,TK-200137,MG-100150,2025-12-07 09:57:44,479,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600040,TK-200110,MG-100133,2025-12-09 00:57:43,543,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600041,TK-200729,MG-100745,2025-12-10 00:48:08,685,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600042,TK-200621,MG-100629,2025-12-11 19:54:34,593,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600043,TK-200373,MG-100386,2025-12-11 23:09:08,521,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600044,TK-200057,MG-100064,2025-12-18 17:34:17,695,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600045,TK-200482,MG-100487,2025-12-20 09:14:16,458,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600046,TK-200132,MG-100148,2025-12-20 21:55:53,698,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600047,TK-200300,MG-100322,2025-12-24 13:18:01,533,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600048,TK-200511,MG-100513,2025-12-29 06:09:26,388,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600049,TK-200102,MG-100121,2025-12-29 23:01:44,850,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600050,TK-200023,MG-100032,2026-01-01 03:08:34,684,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600051,TK-200678,MG-100690,2026-01-01 03:15:52,300,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600052,TK-200507,MG-100511,2026-01-03 04:36:55,518,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600053,TK-200595,MG-100601,2026-01-06 00:31:59,376,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600054,TK-200689,MG-100705,2026-01-06 09:35:53,504,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600055,TK-200393,MG-100403,2026-01-07 13:37:46,486,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600056,TK-200229,MG-100250,2026-01-08 08:55:52,310,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, mein Datenvolumen ist schon wieder vor Monatsende verbraucht.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Welche Optionen habe ich, ohne dass es dauerhaft teurer wird?
+Agent: Ich kann Ihnen eine Zusatzoption buchen oder den Tarif auf Mobil M umstellen. Was ist Ihnen lieber?
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600057,TK-200053,MG-100063,2026-01-08 10:49:38,780,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600058,TK-200625,MG-100633,2026-01-11 21:06:46,830,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600059,TK-200321,MG-100343,2026-01-13 19:03:57,269,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600060,TK-200185,MG-100202,2026-01-13 20:50:50,221,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600061,TK-200022,MG-100031,2026-01-18 06:10:10,588,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600062,TK-200285,MG-100307,2026-01-18 12:07:22,747,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600063,TK-200638,MG-100650,2026-01-18 17:53:11,595,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600064,TK-200384,MG-100395,2026-01-18 23:10:50,738,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600065,TK-200528,MG-100529,2026-01-19 09:52:47,767,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600066,TK-200646,MG-100661,2026-01-24 15:13:08,230,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600067,TK-200450,MG-100444,2026-01-25 00:06:54,588,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, mein HEMS zeigt seit gestern nix mehr.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Neu gestartet hab ich schon, bringt nix.
+Agent: Ich sehe, dass das Gateway offline ist. Ich starte eine Fernwartung, das dauert etwa zehn Minuten.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600068,TK-200571,MG-100566,2026-01-25 15:05:23,487,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600069,TK-200369,MG-100385,2026-01-26 14:14:02,291,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600070,TK-200013,MG-100019,2026-01-26 21:53:06,186,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600071,TK-200420,MG-100425,2026-01-27 02:13:25,227,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600072,TK-200547,MG-100544,2026-01-28 03:38:19,374,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600073,TK-200461,MG-100459,2026-01-28 07:52:16,666,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600074,TK-200176,MG-100195,2026-01-30 18:19:43,803,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600075,TK-200245,MG-100266,2026-01-31 08:30:36,853,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600076,TK-200084,MG-100100,2026-02-01 06:24:02,241,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600077,TK-200147,MG-100169,2026-02-01 20:02:59,692,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600078,TK-200412,MG-100413,2026-02-03 12:03:04,736,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, mein Datenvolumen ist schon wieder vor Monatsende verbraucht.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Welche Optionen habe ich, ohne dass es dauerhaft teurer wird?
+Agent: Ich kann Ihnen eine Zusatzoption buchen oder den Tarif auf Mobil M umstellen. Was ist Ihnen lieber?
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600079,TK-200459,MG-100458,2026-02-03 23:24:18,806,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600080,TK-200713,MG-100734,2026-02-05 18:47:08,565,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600081,TK-200064,MG-100074,2026-02-05 20:19:38,811,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600082,TK-200281,MG-100304,2026-02-08 06:13:20,330,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600083,TK-200141,MG-100155,2026-02-08 07:18:06,821,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600084,TK-200103,MG-100122,2026-02-08 16:47:44,869,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600085,TK-200223,MG-100244,2026-02-09 06:52:06,893,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600086,TK-200164,MG-100187,2026-02-09 08:19:05,885,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600087,TK-200498,MG-100502,2026-02-11 11:00:00,790,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600088,TK-200682,MG-100698,2026-02-12 11:12:10,877,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600089,TK-200526,MG-100528,2026-02-15 15:32:04,264,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600090,TK-200671,MG-100682,2026-02-16 20:49:06,397,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600091,TK-200166,MG-100188,2026-02-18 13:11:51,220,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600092,TK-200711,MG-100728,2026-02-21 14:33:14,863,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600093,TK-200465,MG-100462,2026-02-26 17:25:01,828,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600094,TK-200288,MG-100311,2026-03-03 11:51:20,648,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600095,TK-200122,MG-100140,2026-03-05 20:37:43,820,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600096,TK-200195,MG-100208,2026-03-06 08:37:50,358,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, mein Datenvolumen ist schon wieder leer.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Was kann ich da machen, ohne dass es gleich viel teurer wird?
+Agent: Ich kann Ihnen eine Zusatzoption buchen oder den Tarif auf Mobil M umstellen. Was ist Ihnen lieber?
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600097,TK-200277,MG-100300,2026-03-07 12:00:15,283,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600098,TK-200734,MG-100747,2026-03-08 01:08:17,859,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600099,TK-200584,MG-100584,2026-03-08 08:27:04,365,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600100,TK-200342,MG-100366,2026-03-11 03:42:19,217,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600101,TK-200626,MG-100633,2026-03-16 16:30:45,611,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600102,TK-200298,MG-100322,2026-03-17 13:26:35,283,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600103,TK-200126,MG-100144,2026-03-18 02:09:37,851,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600104,TK-200207,MG-100218,2026-03-19 15:38:25,193,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600105,TK-200563,MG-100558,2026-03-21 09:19:48,557,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600106,TK-200061,MG-100069,2026-03-26 01:49:39,322,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600107,TK-200578,MG-100575,2026-03-27 05:37:22,496,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600108,TK-200304,MG-100330,2026-03-27 10:07:00,755,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600109,TK-200287,MG-100310,2026-03-28 14:29:10,444,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600110,TK-200659,MG-100670,2026-03-30 19:52:55,489,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600111,TK-200338,MG-100359,2026-03-31 06:24:26,369,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600112,TK-200024,MG-100032,2026-04-01 11:22:12,611,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600113,TK-200334,MG-100355,2026-04-05 21:48:06,215,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600114,TK-200280,MG-100303,2026-04-12 01:22:15,506,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600115,TK-200680,MG-100694,2026-04-15 16:19:04,200,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600116,TK-200114,MG-100136,2026-04-15 17:15:29,621,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600117,TK-200098,MG-100117,2026-04-15 22:00:32,759,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600118,TK-200372,MG-100385,2026-04-18 08:31:34,837,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600119,TK-200609,MG-100613,2026-04-23 06:41:12,772,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600120,TK-200067,MG-100080,2026-04-24 19:44:19,235,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600121,TK-200703,MG-100717,2026-04-26 14:57:41,689,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600122,TK-200357,MG-100375,2026-04-28 14:02:29,761,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600123,TK-200440,MG-100439,2026-04-28 16:42:35,714,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600124,TK-200559,MG-100552,2026-04-30 15:51:06,220,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600125,TK-200496,MG-100499,2026-05-03 05:42:35,301,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600126,TK-200506,MG-100509,2026-05-04 13:01:43,611,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600127,TK-200093,MG-100108,2026-05-04 22:05:20,769,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600128,TK-200018,MG-100027,2026-05-05 23:05:16,892,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600129,TK-200198,MG-100210,2026-05-06 02:12:49,594,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600130,TK-200239,MG-100260,2026-05-08 00:34:44,637,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600131,TK-200692,MG-100708,2026-05-12 06:49:13,248,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600132,TK-200192,MG-100207,2026-05-13 11:02:55,194,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600133,TK-200206,MG-100218,2026-05-13 23:56:02,876,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, mein Datenvolumen ist schon wieder leer.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Was kann ich da machen, ohne dass es gleich viel teurer wird?
+Agent: Ich kann Ihnen eine Zusatzoption buchen oder den Tarif auf Mobil M umstellen. Was ist Ihnen lieber?
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600134,TK-200032,MG-100040,2026-05-15 06:47:41,576,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600135,TK-200329,MG-100349,2026-05-16 05:06:58,788,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600136,TK-200349,MG-100369,2026-05-17 09:00:16,786,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600137,TK-200118,MG-100137,2026-05-18 08:53:38,855,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600138,TK-200012,MG-100019,2026-05-19 16:09:29,339,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600139,TK-200111,MG-100133,2026-05-19 19:43:15,666,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600140,TK-200727,MG-100744,2026-05-25 10:12:10,602,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600141,TK-200731,MG-100745,2026-05-28 00:21:48,741,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600142,TK-200324,MG-100344,2026-05-30 15:29:04,284,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600143,TK-200515,MG-100515,2026-05-31 22:57:35,264,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600144,TK-200371,MG-100385,2026-05-31 23:00:18,839,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600145,TK-200449,MG-100443,2026-06-04 05:11:26,663,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600146,TK-200302,MG-100328,2026-06-05 06:44:49,397,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600147,TK-200295,MG-100318,2026-06-05 22:53:01,335,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600148,TK-200002,MG-100011,2026-06-07 14:33:34,821,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600149,TK-200039,MG-100044,2026-06-13 00:25:00,195,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600150,TK-200048,MG-100052,2026-06-16 12:10:23,617,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600151,TK-200604,MG-100608,2026-06-21 23:11:45,184,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600152,TK-200082,MG-100096,2026-06-22 18:44:30,189,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600153,TK-200375,MG-100388,2026-06-24 20:52:58,880,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600154,TK-200661,MG-100673,2026-06-25 13:53:01,865,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600155,TK-200512,MG-100513,2026-06-26 04:40:42,304,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600156,TK-200243,MG-100263,2026-06-27 00:45:37,270,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600157,TK-200071,MG-100085,2026-06-27 12:29:22,403,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600158,TK-200272,MG-100293,2026-06-28 00:25:31,304,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600159,TK-200225,MG-100244,2026-06-28 06:17:59,312,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600160,TK-200350,MG-100369,2026-06-28 18:08:53,663,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600161,TK-200588,MG-100590,2026-06-29 03:59:08,198,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600162,TK-200246,MG-100266,2026-06-29 13:50:49,462,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600163,TK-200425,MG-100430,2026-07-02 17:07:49,762,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600164,TK-200208,MG-100219,2026-07-04 03:40:42,428,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600165,TK-200169,MG-100190,2026-07-05 07:15:22,641,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600166,TK-200341,MG-100363,2026-07-07 05:08:17,371,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600167,TK-200712,MG-100733,2026-07-08 01:45:48,231,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600168,TK-200556,MG-100548,2026-07-10 21:41:32,554,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600169,TK-200131,MG-100145,2026-07-15 18:46:57,891,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600170,TK-200654,MG-100667,2026-07-15 23:34:19,328,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600171,TK-200088,MG-100104,2026-07-16 06:08:13,266,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600172,TK-200555,MG-100548,2026-07-18 01:43:13,480,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600173,TK-200270,MG-100291,2026-07-18 21:07:56,823,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600174,TK-200036,MG-100042,2026-07-19 06:21:04,750,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600175,TK-200183,MG-100201,2026-07-21 09:10:45,690,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600176,TK-200362,MG-100381,2026-07-22 16:41:45,651,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Preisgarantie läuft bald aus. Welche Konditionen bieten Sie mir an?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe ein Angebot von einem anderen Anbieter vorliegen. Können Sie da mithalten?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600177,TK-200310,MG-100334,2026-07-22 23:18:13,865,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600178,TK-200394,MG-100403,2026-07-24 17:13:52,440,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600179,TK-200025,MG-100033,2026-07-28 06:14:48,233,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600180,TK-200653,MG-100667,2026-07-28 14:49:34,212,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600181,TK-200034,MG-100041,2026-08-01 10:22:38,191,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600182,TK-200696,MG-100711,2026-08-02 08:55:22,242,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600183,TK-200263,MG-100285,2026-08-04 22:17:13,195,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600184,TK-200421,MG-100425,2026-08-09 13:33:45,846,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600185,TK-200652,MG-100666,2026-08-09 19:40:01,883,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600186,TK-200232,MG-100252,2026-08-12 08:04:04,813,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600187,TK-200331,MG-100350,2026-08-13 15:36:23,261,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600188,TK-200544,MG-100543,2026-08-17 08:22:08,578,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600189,TK-200499,MG-100502,2026-08-19 07:05:07,498,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600190,TK-200529,MG-100530,2026-08-25 00:27:52,499,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600191,TK-200488,MG-100496,2026-08-25 19:48:11,794,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600192,TK-200460,MG-100458,2026-08-26 21:36:28,349,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600193,TK-200721,MG-100739,2026-08-27 04:46:08,678,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600194,TK-200455,MG-100448,2026-08-29 09:19:33,803,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600195,TK-200194,MG-100208,2026-08-29 20:33:18,241,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600196,TK-200364,MG-100381,2026-08-30 00:55:46,503,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600197,TK-200710,MG-100728,2026-08-30 01:10:56,556,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600198,TK-200468,MG-100466,2026-08-30 02:22:24,768,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600199,TK-200274,MG-100298,2026-08-30 02:22:56,629,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hallo, ich will nur schnell meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Passt das so? In der App hat es nicht geklappt.
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600200,TK-200044,MG-100050,2026-08-31 01:56:20,661,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600201,TK-200160,MG-100180,2026-09-03 18:00:41,873,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600202,TK-200738,MG-100750,2026-09-05 06:44:58,350,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600203,TK-200472,MG-100472,2026-09-05 08:14:20,328,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600204,TK-200723,MG-100743,2026-09-06 10:14:54,299,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600205,TK-200150,MG-100171,2026-09-08 03:42:00,551,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600206,TK-200359,MG-100376,2026-09-09 23:30:02,840,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich habe eine Frage zu meiner Jahresabrechnung. Der Verbrauch erscheint mir deutlich zu hoch.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich habe den Zählerstand doch selbst gemeldet. Wie kommt diese Nachzahlung zustande?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600207,TK-200543,MG-100543,2026-09-11 03:49:54,347,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600208,TK-200019,MG-100027,2026-09-11 14:59:19,824,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, mein Datenvolumen ist schon wieder leer.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Was kann ich da machen, ohne dass es gleich viel teurer wird?
+Agent: Ich kann Ihnen eine Zusatzoption buchen oder den Tarif auf Mobil M umstellen. Was ist Ihnen lieber?
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600209,TK-200104,MG-100122,2026-09-14 01:08:14,607,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600210,TK-200305,MG-100330,2026-09-14 19:00:43,668,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich möchte meinen Zählerstand durchgeben.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Er lautet laut Display wie in der Mail angegeben. Ist das so korrekt erfasst?
+Agent: Vielen Dank, ich habe den Zählerstand erfasst. Sie erhalten eine Bestätigung per E-Mail.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600211,TK-200532,MG-100532,2026-09-15 07:09:34,574,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600212,TK-200228,MG-100248,2026-09-15 08:08:35,643,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600213,TK-200006,MG-100014,2026-09-18 12:47:12,458,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, meine Preisgarantie läuft aus – was habt ihr da für mich?
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab ein günstigeres Angebot gesehen, könnt ihr da was machen?
+Agent: Ich kann Ihnen eine Verlängerung mit erneuter Preisgarantie anbieten. Die Konditionen schicke ich Ihnen schriftlich.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600214,TK-200250,MG-100269,2026-09-20 10:54:54,760,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600215,TK-200758,MG-100561,2026-09-20 22:13:23,521,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600216,TK-200258,MG-100280,2026-09-21 06:18:54,479,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hey, ich zieh um und will den Strom mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Wohnung ist in ner anderen Stadt, geht das trotzdem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600217,TK-200485,MG-100494,2026-09-21 18:22:58,466,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich ziehe zum Monatsende um und möchte meinen Vertrag mitnehmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Die neue Adresse liegt in einem anderen Netzgebiet. Ist das ein Problem?
+Agent: Das ist kein Problem, ich nehme den Umzug auf. Bitte geben Sie uns noch den Zählerstand beim Auszug durch.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600218,TK-200742,MG-100109,2026-09-21 21:25:00,242,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600219,TK-200333,MG-100354,2026-09-21 23:26:14,816,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600220,TK-200748,MG-100230,2026-09-22 19:51:01,846,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600221,TK-200675,MG-100688,2026-09-22 21:48:45,900,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600222,TK-200691,MG-100707,2026-09-23 10:28:46,794,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, die Säule hat meine Karte schon wieder nicht genommen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt das dritte Mal an der gleichen Säule, ich brauch das echt für die Arbeit.
+Agent: Ich sehe die abgebrochenen Ladevorgänge. Ich melde die Säule beim Betreiber und setze Ihre Karte zurück.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600223,TK-200760,MG-100578,2026-09-23 13:11:05,520,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, ich rufe jetzt zum dritten Mal an. Meine Anfrage ist immer noch nicht bearbeitet.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich erwarte, dass das heute geklärt wird. Sonst überlege ich ernsthaft zu kündigen.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Vielen Dank, auf Wiederhören.",speech_to_text_pilot,de
+CT-600224,TK-200259,MG-100280,2026-09-24 01:07:03,800,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, mein HEMS zeigt seit gestern nix mehr.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Neu gestartet hab ich schon, bringt nix.
+Agent: Ich sehe, dass das Gateway offline ist. Ich starte eine Fernwartung, das dauert etwa zehn Minuten.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600225,TK-200068,MG-100083,2026-09-24 17:44:59,195,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, mein Datenvolumen ist schon wieder leer.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Was kann ich da machen, ohne dass es gleich viel teurer wird?
+Agent: Ich kann Ihnen eine Zusatzoption buchen oder den Tarif auf Mobil M umstellen. Was ist Ihnen lieber?
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600226,TK-200635,MG-100649,2026-09-26 11:25:28,334,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich hab ne Frage zur Rechnung – da steht ein Verbrauch, der kann nicht stimmen.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Ich hab doch den Zählerstand eingetragen, warum jetzt die Nachzahlung?
+Agent: Ich schaue mir die Abrechnung an. Es wurde ein geschätzter Zählerstand verwendet. Ich korrigiere das und Sie erhalten eine neue Rechnung.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600227,TK-200565,MG-100562,2026-09-27 13:40:54,795,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de
+CT-600228,TK-200776,MG-100009,2026-09-28 08:15:00,496,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Guten Tag, meine Ladekarte wurde an einer Schnellladesäule mehrfach abgelehnt.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Das ist jetzt schon das dritte Mal an derselben Säule. Ich bin auf das Laden unterwegs angewiesen.
+Agent: Ich sehe die abgebrochenen Ladevorgänge an der Säule in Hanau. Ich gebe das an den Betreiber weiter, eine Lösung kann ich Ihnen heute leider nicht zusagen.
+Kunde: Das ist unbefriedigend. Bitte melden Sie sich, sobald es eine Lösung gibt.",speech_to_text_pilot,de
+CT-600229,TK-200751,MG-100310,2026-09-29 10:03:49,778,"Agent: MAINGAU Energie Kundenservice, guten Tag. Wie kann ich Ihnen helfen?
+Kunde: Hi, ich ruf jetzt echt zum dritten Mal an, es hat sich nichts getan.
+Agent: Einen Moment bitte, ich schaue mir Ihr Kundenkonto an.
+Kunde: Wenn das heute nicht klappt, bin ich weg, ehrlich.
+Agent: Das tut mir leid. Ich übernehme den Fall persönlich und melde mich bis morgen Mittag. Für die Unannehmlichkeiten schreibe ich Ihnen eine Gutschrift gut.
+Kunde: Super, danke dir, tschüss!",speech_to_text_pilot,de

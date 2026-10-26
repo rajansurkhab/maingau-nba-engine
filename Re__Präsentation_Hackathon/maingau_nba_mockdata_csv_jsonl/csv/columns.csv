@@ -1,0 +1,197 @@
+sheet,column,description
+customer_master,customer_id,"Unified customer key, links all sheets"
+customer_master,customer_type,B2C only in this dataset
+customer_master,customer_since,First contract date
+customer_master,birth_year,Year of birth (anonymised)
+customer_master,postal_code_prefix,First 3 digits of postal code
+customer_master,city,City
+customer_master,household_size,Persons in household (self-reported)
+customer_master,portal_account,Has customer portal login
+customer_master,app_installed,MAINGAU app installed and logged in
+customer_master,preferred_contact_language,de / en
+customer_master,record_updated_at,Last change in CRM
+energy_contracts,contract_id,
+energy_contracts,customer_id,
+energy_contracts,commodity,electricity / gas
+energy_contracts,tariff,Tariff name (fictional prices)
+energy_contracts,status,active / cancellation_pending / terminated_meter_deregistration (gas meter removed)
+energy_contracts,start_date,
+energy_contracts,price_guarantee_until,End of price guarantee – key retention trigger
+energy_contracts,notice_period_weeks,Notice period
+energy_contracts,annual_consumption_kwh,Forecast annual consumption
+energy_contracts,energy_price_eur_kwh,"Working price, EUR/kWh gross"
+energy_contracts,base_price_eur_month,"Base price, EUR/month gross"
+energy_contracts,monthly_installment_eur,Monthly installment
+energy_contracts,meter_type,conventional / smart_meter_imsys (needed for dynamic tariff)
+energy_contracts,feed_in_meter,True = PV feed-in (prosumer)
+energy_contracts,payment_method,Payment method
+energy_contracts,dunning_level,"0 = none, 1-3 = dunning stage (exclusion signal)"
+energy_contracts,cancellation_received_at,Cancellation received
+energy_contracts,last_meter_reading_at,Last meter reading
+energy_contracts,record_updated_at,
+mobile_contracts,contract_id,
+mobile_contracts,customer_id,
+mobile_contracts,plan,Mobil S / M / L
+mobile_contracts,data_volume_gb,Monthly data volume
+mobile_contracts,monthly_fee_eur,Monthly fee
+mobile_contracts,sim_count,SIMs on contract
+mobile_contracts,status,
+mobile_contracts,start_date,
+mobile_contracts,min_term_end,End of minimum term
+mobile_contracts,avg_data_used_gb_3m,"Avg. monthly data use, last 3 months"
+mobile_contracts,data_limit_reached_3m,Months with data limit reached (of 3)
+mobile_contracts,roaming_days_3m,"Roaming days, last 3 months"
+mobile_contracts,esim,eSIM
+mobile_contracts,record_updated_at,
+shop_orders,order_id,
+shop_orders,customer_id,
+shop_orders,order_created_at,Order timestamp
+shop_orders,order_channel,web / app
+shop_orders,product_name,
+shop_orders,product_category,solar / e_mobility / smart_home / energy_saving / accessories
+shop_orders,quantity,
+shop_orders,line_value_eur,Line value gross
+shop_orders,payment_method,
+shop_orders,order_status,delivered / returned / cancelled
+shop_orders,newsletter_attributed_campaign,Attribution (empty – not tracked today)
+shop_orders,record_updated_at,
+hems_devices,device_id,
+hems_devices,customer_id,
+hems_devices,device_type,hems_gateway / pv_inverter / home_battery / wallbox / heat_pump / smart_plug
+hems_devices,manufacturer,Anonymised vendor
+hems_devices,activated_at,
+hems_devices,firmware_version,
+hems_devices,connection_status,online / offline
+hems_devices,last_seen_at,Last heartbeat
+hems_telemetry_daily,customer_id,
+hems_telemetry_daily,date,
+hems_telemetry_daily,pv_generation_kwh,PV generation per day
+hems_telemetry_daily,household_consumption_kwh,Total household consumption
+hems_telemetry_daily,grid_import_kwh,Grid import
+hems_telemetry_daily,grid_export_kwh,Grid export (feed-in)
+hems_telemetry_daily,self_consumption_rate,Share of PV used on site
+hems_telemetry_daily,ev_charging_kwh,EV charging via wallbox
+hems_telemetry_daily,battery_soc_avg_pct,Avg. battery state of charge
+hems_telemetry_daily,heat_pump_kwh,Heat pump consumption
+consent_status,customer_id,
+consent_status,consent_type,newsletter_email / marketing_email / marketing_phone / marketing_sms / portal_app_personalisation / profiling_analytics
+consent_status,status,granted / withdrawn / not_given
+consent_status,updated_at,Last status change
+consent_status,source,Where consent was given or withdrawn
+consent_status,double_opt_in_confirmed_at,DOI confirmation (newsletter)
+consent_status,legal_basis,Legal basis
+newsletter_campaigns,campaign_id,
+newsletter_campaigns,sent_at,
+newsletter_campaigns,subject_line,
+newsletter_campaigns,product_focus,Business line promoted
+newsletter_campaigns,tonality,du / sie
+newsletter_campaigns,segment_rule,Targeting (today: everyone)
+newsletter_campaigns,recipients,Number of recipients
+newsletter_campaigns,variant_test,A/B test run
+newsletter_performance,campaign_id,
+newsletter_performance,customer_id,
+newsletter_performance,delivered,Delivered
+newsletter_performance,bounced,Bounced
+newsletter_performance,opened_at,First open
+newsletter_performance,open_client_class,"human / apple_mpp_prefetch (machine open, ignore for engagement)"
+newsletter_performance,clicked_at,First click
+newsletter_performance,click_target,Landing page
+newsletter_performance,converted_within_7d,Purchase or contract within 7 days of click
+newsletter_performance,unsubscribed,Unsubscribed via this mail
+portal_sessions,session_id,
+portal_sessions,customer_id,
+portal_sessions,session_start,
+portal_sessions,client,app / web
+portal_sessions,pages_viewed,"Pages, pipe-separated"
+portal_sessions,duration_s,Session duration in seconds
+portal_sessions,offer_banner_shown,Generic offer banner displayed
+service_interactions,ticket_id,
+service_interactions,customer_id,
+service_interactions,created_at,
+service_interactions,channel,email / phone / chat / portal_form
+service_interactions,category,billing / meter / tariff / complaint / moving / mobile / hems / autostrom / meter_deregistration
+service_interactions,message_text,Customer's own words (German) – tonality signal
+service_interactions,call_note,Agent note for phone contacts
+service_interactions,status,open / closed
+service_interactions,resolved_at,
+service_interactions,csat_1to5,Satisfaction rating after closing
+autostrom_contracts,contract_id,
+autostrom_contracts,customer_id,
+autostrom_contracts,product,MAINGAU Autostrom (on-the-go charging only)
+autostrom_contracts,status,active / cancelled
+autostrom_contracts,start_date,
+autostrom_contracts,cancelled_at,Cancellation date
+autostrom_contracts,car_brand,Vehicle brand (self-reported at signup)
+autostrom_contracts,car_model,Vehicle model
+autostrom_contracts,battery_kwh,Usable battery capacity
+autostrom_contracts,max_dc_kw,Max DC charging power of the car
+autostrom_contracts,car_first_registration_year,First registration year
+autostrom_contracts,charge_cards,Number of RFID cards
+autostrom_contracts,app_user,Uses Autostrom app for authentication
+autostrom_contracts,payment_method,
+autostrom_contracts,ac_price_eur_kwh,Current AC price
+autostrom_contracts,dc_price_eur_kwh,Current DC price
+autostrom_contracts,record_updated_at,
+charge_sessions,session_id,
+charge_sessions,contract_id,
+charge_sessions,customer_id,
+charge_sessions,auth_method,rfid_card / app
+charge_sessions,started_at,Session start
+charge_sessions,ended_at,Session end (plug-out)
+charge_sessions,charge_type,AC / DC
+charge_sessions,max_power_kw,Max power of the charge point
+charge_sessions,energy_kwh,Energy delivered
+charge_sessions,location_id,Charge point location (anonymised)
+charge_sessions,location_city,City (empty abroad)
+charge_sessions,country,ISO country
+charge_sessions,cpo_id,Charge point operator (anonymised)
+charge_sessions,session_status,completed / failed / aborted
+charge_sessions,failure_reason,auth_rejected / connector_error / station_offline / vehicle_communication
+charge_sessions,price_eur_kwh,Price applied
+charge_sessions,amount_eur,Amount billed
+charge_sessions,cdr_source,own_backend / roaming_hub
+charge_sessions,cdr_received_at,When the charge detail record arrived – roaming CDRs arrive late
+nba_action_history,action_id,
+nba_action_history,customer_id,
+nba_action_history,decided_at,
+nba_action_history,decision_source,rule_engine_v1 (today's logic)
+nba_action_history,rule_id,Rule that fired
+nba_action_history,offer_id,FK product_catalog
+nba_action_history,channel,newsletter_email / portal_popup / app_push / sms / outbound_call
+nba_action_history,tonality,du / sie
+nba_action_history,content_variant,
+nba_action_history,control_group,"True = held out, not sent (for uplift)"
+nba_action_history,delivery_status,delivered / not_sent_control
+nba_action_history,response,viewed / clicked / dismissed / ignored / held_out
+nba_action_history,response_at,
+nba_action_history,converted_within_14d,Converted to the offered product within 14 days
+nba_action_history,conversion_value_eur,Value of conversion
+nba_action_history,consent_checked,Whether the legacy engine checked consent (it did not always)
+energy_contracts,meter_deregistered_at,Gas meter deregistration date (strong signal: new heating system)
+service_interactions,resolution_code,"How the case was closed (explained, bill_corrected, goodwill_credit, escalated, ...)"
+service_interactions,first_contact_resolution,Solved in the first contact
+service_interactions,goodwill_eur,Goodwill credit granted
+service_interactions,repeat_of_ticket_id,Earlier ticket of the same category within 21 days (repeat contact)
+call_transcripts,transcript,"Agent/customer dialogue in German, anonymised"
+call_transcripts,transcription_source,speech_to_text_pilot
+call_transcripts,duration_s,Call duration in seconds
+service_nba_feedback,suggestion_source,Today: simple rules in the agent assist pilot
+service_nba_feedback,suggested_offer_id,FK product_catalog
+service_nba_feedback,agent_action,accepted / dismissed / ignored
+service_nba_feedback,dismiss_reason,customer_upset / not_relevant / no_time / customer_already_has_product
+service_nba_feedback,offer_mentioned_to_customer,Agent actually mentioned the offer
+service_nba_feedback,customer_reaction,interested / declined / annoyed
+service_nba_feedback,converted_within_14d,Customer bought the suggested product within 14 days
+customer_value,active_business_lines,"Energy, mobile, Autostrom, HEMS counted separately"
+customer_value,annual_margin_eur,"Expected contribution margin per year, all products"
+customer_value,cost_to_serve_12m_eur,Base cost per business line + service handling + dunning
+customer_value,service_cost_12m_eur,Part of cost_to_serve caused by service cases
+customer_value,churn_prob_12m,Probability to leave within 12 months
+customer_value,churn_drivers,Why churn is up or down
+customer_value,clv_eur,Present value over 10 years at 6 %
+customer_value,clv_service_impact_eur,CLV change caused by service cases (<= 0)
+customer_value,model_version,Version of value model
+product_catalog,action_type,sales / upsell / retention / one_off / service
+product_catalog,annual_margin_if_bought_eur,Typical yearly margin added (one-off for shop)
+product_catalog,churn_effect_if_bought,Change of customer churn probability if bought (bundling effect)
+service_interactions,handling_cost_eur,Cost of handling this contact

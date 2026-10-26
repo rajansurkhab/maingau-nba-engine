@@ -1,0 +1,751 @@
+customer_id,active_business_lines,annual_margin_eur,cost_to_serve_12m_eur,service_cost_12m_eur,churn_prob_12m,churn_drivers,clv_eur,clv_service_impact_eur,clv_calc_date,model_version
+MG-100001,1,86.94,19.0,7.0,0.18,2 tickets in 12m,261.0,-67.0,2026-09-30,clv_simple_v1
+MG-100002,1,129.68,15.0,3.0,0.14,,503.0,-13.0,2026-09-30,clv_simple_v1
+MG-100003,2,353.28,24.0,0.0,0.117,multi-product (2 lines),1559.0,0.0,2026-09-30,clv_simple_v1
+MG-100004,1,131.6,57.75,45.75,0.38,open complaint; 2 tickets in 12m; dunning level 2,167.0,-357.0,2026-09-30,clv_simple_v1
+MG-100005,2,213.74,27.0,3.0,0.128,multi-product (2 lines),852.0,-14.0,2026-09-30,clv_simple_v1
+MG-100006,1,138.2,16.5,4.5,0.24,price guarantee ends <90d,391.0,-14.0,2026-09-30,clv_simple_v1
+MG-100007,2,181.47,24.0,0.0,0.136,multi-product (2 lines),699.0,0.0,2026-09-30,clv_simple_v1
+MG-100008,1,183.64,25.5,13.5,0.2,,572.0,-49.0,2026-09-30,clv_simple_v1
+MG-100009,1,200.11,37.5,25.5,0.34,2 tickets in 12m; 3 failed charges in 30d,403.0,-277.0,2026-09-30,clv_simple_v1
+MG-100010,2,308.83,26.5,2.5,0.286,multi-product (2 lines); price guarantee ends <90d; low CSAT,800.0,-126.0,2026-09-30,clv_simple_v1
+MG-100011,1,146.52,34.5,22.5,0.14,,491.0,-99.0,2026-09-30,clv_simple_v1
+MG-100012,1,208.67,12.0,0.0,0.13,,891.0,0.0,2026-09-30,clv_simple_v1
+MG-100013,1,123.68,29.5,17.5,0.14,,413.0,-77.0,2026-09-30,clv_simple_v1
+MG-100014,1,142.97,31.5,19.5,0.23,4 tickets in 12m; low CSAT,369.0,-205.0,2026-09-30,clv_simple_v1
+MG-100015,1,217.72,12.0,0.0,0.14,,902.0,0.0,2026-09-30,clv_simple_v1
+MG-100016,1,107.22,12.0,0.0,0.24,price guarantee ends <90d,306.0,0.0,2026-09-30,clv_simple_v1
+MG-100017,1,228.18,34.0,22.0,0.17,3 tickets in 12m,771.0,-209.0,2026-09-30,clv_simple_v1
+MG-100018,1,91.27,16.5,4.5,0.14,,328.0,-20.0,2026-09-30,clv_simple_v1
+MG-100019,1,260.66,53.25,41.25,0.32,price guarantee ends <90d; 2 tickets in 12m; low CSAT,539.0,-283.0,2026-09-30,clv_simple_v1
+MG-100020,1,280.37,14.5,2.5,0.18,low CSAT,1023.0,-194.0,2026-09-30,clv_simple_v1
+MG-100021,1,94.09,12.0,0.0,0.24,price guarantee ends <90d,264.0,0.0,2026-09-30,clv_simple_v1
+MG-100022,2,344.1,28.5,4.5,0.167,multi-product (2 lines); low CSAT,1264.0,-252.0,2026-09-30,clv_simple_v1
+MG-100023,1,143.7,12.0,0.0,0.14,,577.0,0.0,2026-09-30,clv_simple_v1
+MG-100024,3,200.31,39.0,3.0,0.062,multi-product (3 lines); HEMS user,932.0,-17.0,2026-09-30,clv_simple_v1
+MG-100025,2,134.39,24.0,0.0,0.228,multi-product (2 lines); price guarantee ends <90d,367.0,0.0,2026-09-30,clv_simple_v1
+MG-100026,1,138.71,12.0,0.0,0.14,,555.0,-0.0,2026-09-30,clv_simple_v1
+MG-100027,3,504.37,72.0,36.0,0.201,multi-product (3 lines); 3 tickets in 12m; low CSAT,1559.0,-709.0,2026-09-30,clv_simple_v1
+MG-100028,1,122.67,21.0,9.0,0.18,2 tickets in 12m,391.0,-94.0,2026-09-30,clv_simple_v1
+MG-100029,1,86.96,12.0,0.0,0.14,,328.0,0.0,2026-09-30,clv_simple_v1
+MG-100030,2,141.46,24.0,0.0,0.072,multi-product (2 lines); HEMS user,655.0,0.0,2026-09-30,clv_simple_v1
+MG-100031,1,252.6,19.5,7.5,0.13,,1057.0,-34.0,2026-09-30,clv_simple_v1
+MG-100032,1,81.35,27.0,15.0,0.28,price guarantee ends <90d; 2 tickets in 12m,157.0,-66.0,2026-09-30,clv_simple_v1
+MG-100033,1,261.22,19.5,7.5,0.13,,1096.0,-34.0,2026-09-30,clv_simple_v1
+MG-100034,2,186.39,28.5,4.5,0.278,multi-product (2 lines); price guarantee ends <90d; low CSAT,457.0,-83.0,2026-09-30,clv_simple_v1
+MG-100035,1,136.53,16.5,4.5,0.95,low CSAT; cancellation pending,119.0,-4.0,2026-09-30,clv_simple_v1
+MG-100036,1,53.96,12.0,0.0,0.18,,161.0,0.0,2026-09-30,clv_simple_v1
+MG-100037,1,255.51,14.5,2.5,0.13,,1093.0,-11.0,2026-09-30,clv_simple_v1
+MG-100038,1,137.38,15.0,3.0,0.24,price guarantee ends <90d,393.0,-10.0,2026-09-30,clv_simple_v1
+MG-100039,2,342.37,24.0,0.0,0.117,multi-product (2 lines),1508.0,0.0,2026-09-30,clv_simple_v1
+MG-100040,1,155.07,26.5,14.5,0.23,3 tickets in 12m; low CSAT,425.0,-202.0,2026-09-30,clv_simple_v1
+MG-100041,2,136.57,49.75,25.75,0.168,multi-product (2 lines); 3 tickets in 12m,347.0,-167.0,2026-09-30,clv_simple_v1
+MG-100042,1,99.52,24.0,12.0,0.18,2 tickets in 12m,291.0,-93.0,2026-09-30,clv_simple_v1
+MG-100043,1,157.36,61.5,49.5,0.22,dunning level 3,326.0,-311.0,2026-09-30,clv_simple_v1
+MG-100044,2,170.74,31.5,7.5,0.186,multi-product (2 lines); low CSAT,526.0,-126.0,2026-09-30,clv_simple_v1
+MG-100045,2,280.4,31.5,7.5,0.157,multi-product (2 lines); 2 tickets in 12m,1030.0,-184.0,2026-09-30,clv_simple_v1
+MG-100046,2,441.43,33.0,9.0,0.123,multi-product (2 lines),1899.0,-42.0,2026-09-30,clv_simple_v1
+MG-100047,0,0.0,0.0,0.0,0.25,,0.0,0.0,2026-09-30,clv_simple_v1
+MG-100048,1,146.78,12.0,0.0,0.14,,591.0,0.0,2026-09-30,clv_simple_v1
+MG-100049,1,136.24,16.5,4.5,0.14,,525.0,-20.0,2026-09-30,clv_simple_v1
+MG-100050,1,256.02,35.25,23.25,0.27,price guarantee ends <90d; 3 tickets in 12m,653.0,-154.0,2026-09-30,clv_simple_v1
+MG-100051,1,105.79,21.5,9.5,0.18,3 tickets in 12m,324.0,-87.0,2026-09-30,clv_simple_v1
+MG-100052,1,148.83,38.25,26.25,0.18,3 tickets in 12m,425.0,-174.0,2026-09-30,clv_simple_v1
+MG-100053,1,197.87,15.0,3.0,0.23,price guarantee ends <90d,605.0,-10.0,2026-09-30,clv_simple_v1
+MG-100054,1,167.15,27.0,15.0,0.14,,614.0,-66.0,2026-09-30,clv_simple_v1
+MG-100055,1,127.84,18.25,6.25,0.14,,480.0,-27.0,2026-09-30,clv_simple_v1
+MG-100056,1,127.58,12.0,0.0,0.14,,506.0,0.0,2026-09-30,clv_simple_v1
+MG-100057,1,88.77,12.0,0.0,0.14,,336.0,0.0,2026-09-30,clv_simple_v1
+MG-100058,1,164.14,12.0,0.0,0.14,,667.0,0.0,2026-09-30,clv_simple_v1
+MG-100059,1,104.25,12.0,0.0,0.14,,404.0,0.0,2026-09-30,clv_simple_v1
+MG-100060,2,226.27,28.5,4.5,0.128,multi-product (2 lines),903.0,-21.0,2026-09-30,clv_simple_v1
+MG-100061,1,217.26,12.0,0.0,0.14,,899.0,0.0,2026-09-30,clv_simple_v1
+MG-100062,1,132.11,12.0,0.0,0.14,,526.0,0.0,2026-09-30,clv_simple_v1
+MG-100063,2,184.87,51.75,27.75,0.168,multi-product (2 lines); 3 tickets in 12m,532.0,-202.0,2026-09-30,clv_simple_v1
+MG-100064,1,249.07,33.75,21.75,0.22,2 tickets in 12m; low CSAT,733.0,-341.0,2026-09-30,clv_simple_v1
+MG-100065,1,138.58,12.0,0.0,0.14,,555.0,0.0,2026-09-30,clv_simple_v1
+MG-100066,1,211.23,16.5,4.5,0.13,,883.0,-20.0,2026-09-30,clv_simple_v1
+MG-100067,1,86.68,12.0,0.0,0.14,,327.0,0.0,2026-09-30,clv_simple_v1
+MG-100068,1,237.05,27.0,15.0,0.28,price guarantee ends <90d; 3 tickets in 12m,605.0,-118.0,2026-09-30,clv_simple_v1
+MG-100069,1,164.45,19.5,7.5,0.14,,635.0,-33.0,2026-09-30,clv_simple_v1
+MG-100070,2,277.08,31.0,7.0,0.236,multi-product (2 lines); price guarantee ends <90d,800.0,-23.0,2026-09-30,clv_simple_v1
+MG-100071,1,131.25,12.0,0.0,0.14,,523.0,0.0,2026-09-30,clv_simple_v1
+MG-100072,0,0.0,0.0,0.0,0.25,,0.0,0.0,2026-09-30,clv_simple_v1
+MG-100073,2,221.64,28.5,4.5,0.136,multi-product (2 lines),858.0,-20.0,2026-09-30,clv_simple_v1
+MG-100074,1,147.7,24.0,12.0,0.18,2 tickets in 12m,476.0,-119.0,2026-09-30,clv_simple_v1
+MG-100075,2,137.69,24.0,0.0,0.128,multi-product (2 lines),519.0,0.0,2026-09-30,clv_simple_v1
+MG-100076,2,247.56,24.0,0.0,0.117,multi-product (2 lines),1059.0,0.0,2026-09-30,clv_simple_v1
+MG-100077,3,255.58,36.0,0.0,0.069,multi-product (3 lines); HEMS user,1238.0,0.0,2026-09-30,clv_simple_v1
+MG-100078,1,258.82,23.25,11.25,0.23,price guarantee ends <90d,779.0,-37.0,2026-09-30,clv_simple_v1
+MG-100079,1,121.77,12.0,0.0,0.14,,481.0,0.0,2026-09-30,clv_simple_v1
+MG-100080,2,177.24,34.0,10.0,0.168,multi-product (2 lines); 2 tickets in 12m,573.0,-127.0,2026-09-30,clv_simple_v1
+MG-100081,1,144.43,12.0,0.0,0.14,,580.0,-0.0,2026-09-30,clv_simple_v1
+MG-100082,1,151.97,12.0,0.0,0.14,,613.0,0.0,2026-09-30,clv_simple_v1
+MG-100083,2,167.48,36.0,12.0,0.168,multi-product (2 lines); 2 tickets in 12m,525.0,-129.0,2026-09-30,clv_simple_v1
+MG-100084,1,270.43,16.5,4.5,0.23,price guarantee ends <90d,840.0,-15.0,2026-09-30,clv_simple_v1
+MG-100085,1,128.62,30.75,18.75,0.3,open complaint; 2 tickets in 12m,268.0,-243.0,2026-09-30,clv_simple_v1
+MG-100086,1,197.22,14.5,2.5,0.14,,801.0,-11.0,2026-09-30,clv_simple_v1
+MG-100087,2,337.68,37.5,13.5,0.95,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m; low CSAT; cancellation pending,297.0,-13.0,2026-09-30,clv_simple_v1
+MG-100088,2,346.41,24.0,0.0,0.217,multi-product (2 lines); price guarantee ends <90d,1107.0,0.0,2026-09-30,clv_simple_v1
+MG-100089,1,114.31,60.0,48.0,0.22,dunning level 3,185.0,-263.0,2026-09-30,clv_simple_v1
+MG-100090,2,202.4,31.5,7.5,0.122,multi-product (2 lines); low CSAT; HEMS user,796.0,-198.0,2026-09-30,clv_simple_v1
+MG-100091,1,153.05,19.0,7.0,0.28,price guarantee ends <90d; 2 tickets in 12m,386.0,-67.0,2026-09-30,clv_simple_v1
+MG-100092,1,143.8,12.0,0.0,0.12,,618.0,-0.0,2026-09-30,clv_simple_v1
+MG-100093,3,216.32,36.0,0.0,0.069,multi-product (3 lines); HEMS user,1017.0,0.0,2026-09-30,clv_simple_v1
+MG-100094,1,145.5,30.25,18.25,0.4,price guarantee ends <90d; open complaint; 3 tickets in 12m,250.0,-179.0,2026-09-30,clv_simple_v1
+MG-100095,0,0.0,4.5,4.5,0.25,,-14.0,-14.0,2026-09-30,clv_simple_v1
+MG-100096,1,153.6,67.0,55.0,0.36,price guarantee ends <90d; 2 tickets in 12m; dunning level 3,205.0,-250.0,2026-09-30,clv_simple_v1
+MG-100097,1,181.67,12.0,0.0,0.23,price guarantee ends <90d,561.0,0.0,2026-09-30,clv_simple_v1
+MG-100098,1,92.18,12.0,0.0,0.14,,351.0,0.0,2026-09-30,clv_simple_v1
+MG-100099,2,169.32,24.0,0.0,0.128,multi-product (2 lines),663.0,-0.0,2026-09-30,clv_simple_v1
+MG-100100,1,133.4,27.0,15.0,0.18,2 tickets in 12m,409.0,-123.0,2026-09-30,clv_simple_v1
+MG-100101,2,297.3,48.0,24.0,0.236,multi-product (2 lines); price guarantee ends <90d,810.0,-78.0,2026-09-30,clv_simple_v1
+MG-100102,1,235.12,21.0,9.0,0.22,2 tickets in 12m; low CSAT,729.0,-282.0,2026-09-30,clv_simple_v1
+MG-100103,1,118.6,12.0,0.0,0.24,price guarantee ends <90d,343.0,0.0,2026-09-30,clv_simple_v1
+MG-100104,2,231.01,34.5,10.5,0.257,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m,602.0,-109.0,2026-09-30,clv_simple_v1
+MG-100105,1,130.28,12.0,0.0,0.14,,518.0,0.0,2026-09-30,clv_simple_v1
+MG-100106,2,348.18,43.5,19.5,0.326,multi-product (2 lines); price guarantee ends <90d; 4 tickets in 12m; low CSAT,781.0,-273.0,2026-09-30,clv_simple_v1
+MG-100107,1,128.65,12.0,0.0,0.14,,511.0,-0.0,2026-09-30,clv_simple_v1
+MG-100108,1,138.04,19.5,7.5,0.17,low CSAT,471.0,-121.0,2026-09-30,clv_simple_v1
+MG-100109,1,92.13,33.75,21.75,0.4,price guarantee ends <90d; open complaint; 2 tickets in 12m,126.0,-131.0,2026-09-30,clv_simple_v1
+MG-100110,2,178.87,24.0,0.0,0.128,multi-product (2 lines),707.0,-0.0,2026-09-30,clv_simple_v1
+MG-100111,2,416.55,24.0,0.0,0.123,multi-product (2 lines),1825.0,0.0,2026-09-30,clv_simple_v1
+MG-100112,1,122.72,12.0,0.0,0.12,,519.0,0.0,2026-09-30,clv_simple_v1
+MG-100113,2,161.79,35.25,11.25,0.192,multi-product (2 lines); open complaint; HEMS user,469.0,-299.0,2026-09-30,clv_simple_v1
+MG-100114,1,108.28,12.0,0.0,0.14,,422.0,0.0,2026-09-30,clv_simple_v1
+MG-100115,1,153.93,16.5,4.5,0.14,,602.0,-20.0,2026-09-30,clv_simple_v1
+MG-100116,1,96.93,21.0,9.0,0.23,2 tickets in 12m; low CSAT,251.0,-121.0,2026-09-30,clv_simple_v1
+MG-100117,1,248.48,22.0,10.0,0.17,2 tickets in 12m,899.0,-173.0,2026-09-30,clv_simple_v1
+MG-100118,2,236.82,24.0,0.0,0.064,multi-product (2 lines); HEMS user,1222.0,0.0,2026-09-30,clv_simple_v1
+MG-100119,1,133.98,14.5,2.5,0.14,,524.0,-11.0,2026-09-30,clv_simple_v1
+MG-100120,1,136.4,12.0,0.0,0.24,price guarantee ends <90d,400.0,0.0,2026-09-30,clv_simple_v1
+MG-100121,1,324.29,22.0,10.0,0.17,2 tickets in 12m,1200.0,-215.0,2026-09-30,clv_simple_v1
+MG-100122,1,99.02,49.5,37.5,0.18,2 tickets in 12m,190.0,-191.0,2026-09-30,clv_simple_v1
+MG-100123,1,140.53,25.0,13.0,0.18,3 tickets in 12m,444.0,-119.0,2026-09-30,clv_simple_v1
+MG-100124,1,127.86,12.0,0.0,0.14,,508.0,0.0,2026-09-30,clv_simple_v1
+MG-100125,1,280.67,12.0,0.0,0.13,,1218.0,0.0,2026-09-30,clv_simple_v1
+MG-100126,2,277.24,24.0,0.0,0.117,multi-product (2 lines),1199.0,-0.0,2026-09-30,clv_simple_v1
+MG-100127,3,596.36,40.5,4.5,0.058,multi-product (3 lines); HEMS user,3262.0,-26.0,2026-09-30,clv_simple_v1
+MG-100128,1,158.75,16.5,4.5,0.24,price guarantee ends <90d,457.0,-14.0,2026-09-30,clv_simple_v1
+MG-100129,1,314.04,12.0,0.0,0.13,,1369.0,0.0,2026-09-30,clv_simple_v1
+MG-100130,1,164.58,12.0,0.0,0.14,,669.0,0.0,2026-09-30,clv_simple_v1
+MG-100131,1,195.5,14.5,2.5,0.24,price guarantee ends <90d,582.0,-8.0,2026-09-30,clv_simple_v1
+MG-100132,1,126.61,12.0,0.0,0.14,,502.0,-0.0,2026-09-30,clv_simple_v1
+MG-100133,1,262.33,38.25,26.25,0.27,price guarantee ends <90d; 2 tickets in 12m,663.0,-165.0,2026-09-30,clv_simple_v1
+MG-100134,1,97.39,16.5,4.5,0.14,,354.0,-20.0,2026-09-30,clv_simple_v1
+MG-100135,1,82.25,27.75,15.75,0.18,2 tickets in 12m,210.0,-98.0,2026-09-30,clv_simple_v1
+MG-100136,1,92.73,84.0,72.0,0.18,4 tickets in 12m,34.0,-320.0,2026-09-30,clv_simple_v1
+MG-100137,2,356.81,31.5,7.5,0.123,multi-product (2 lines),1512.0,-35.0,2026-09-30,clv_simple_v1
+MG-100138,1,162.84,12.0,0.0,0.24,price guarantee ends <90d,485.0,0.0,2026-09-30,clv_simple_v1
+MG-100139,2,286.74,52.5,28.5,0.263,multi-product (2 lines); price guarantee ends <90d; 3 tickets in 12m,707.0,-181.0,2026-09-30,clv_simple_v1
+MG-100140,2,200.41,42.75,18.75,0.278,multi-product (2 lines); price guarantee ends <90d; low CSAT,456.0,-130.0,2026-09-30,clv_simple_v1
+MG-100141,1,239.08,12.0,0.0,0.23,price guarantee ends <90d,751.0,-0.0,2026-09-30,clv_simple_v1
+MG-100142,0,0.0,0.0,0.0,0.25,,0.0,0.0,2026-09-30,clv_simple_v1
+MG-100143,1,112.48,24.0,12.0,0.23,3 tickets in 12m; low CSAT,293.0,-148.0,2026-09-30,clv_simple_v1
+MG-100144,1,118.51,37.75,25.75,0.18,4 tickets in 12m,311.0,-156.0,2026-09-30,clv_simple_v1
+MG-100145,1,94.84,24.0,12.0,0.28,price guarantee ends <90d; 2 tickets in 12m,204.0,-62.0,2026-09-30,clv_simple_v1
+MG-100146,1,253.46,12.0,0.0,0.23,price guarantee ends <90d,799.0,0.0,2026-09-30,clv_simple_v1
+MG-100147,2,352.34,24.0,0.0,0.123,multi-product (2 lines),1526.0,0.0,2026-09-30,clv_simple_v1
+MG-100148,1,89.12,30.75,18.75,0.18,2 tickets in 12m,225.0,-113.0,2026-09-30,clv_simple_v1
+MG-100149,1,223.54,16.5,4.5,0.14,,907.0,-20.0,2026-09-30,clv_simple_v1
+MG-100150,2,310.71,87.75,63.75,0.313,multi-product (2 lines); price guarantee ends <90d; 3 tickets in 12m; low CSAT,590.0,-378.0,2026-09-30,clv_simple_v1
+MG-100151,1,156.94,12.0,0.0,0.14,,635.0,0.0,2026-09-30,clv_simple_v1
+MG-100152,1,97.68,12.0,0.0,0.14,,375.0,-0.0,2026-09-30,clv_simple_v1
+MG-100153,1,108.28,12.0,0.0,0.24,price guarantee ends <90d,309.0,0.0,2026-09-30,clv_simple_v1
+MG-100154,1,124.34,27.25,15.25,0.18,3 tickets in 12m,373.0,-119.0,2026-09-30,clv_simple_v1
+MG-100155,1,273.3,19.5,7.5,0.23,price guarantee ends <90d,839.0,-25.0,2026-09-30,clv_simple_v1
+MG-100156,1,84.32,26.25,14.25,0.35,open complaint; 2 tickets in 12m; low CSAT,141.0,-176.0,2026-09-30,clv_simple_v1
+MG-100157,1,161.45,16.5,4.5,0.95,cancellation pending,144.0,-4.0,2026-09-30,clv_simple_v1
+MG-100158,1,120.47,14.5,2.5,0.29,price guarantee ends <90d; low CSAT,297.0,-51.0,2026-09-30,clv_simple_v1
+MG-100159,1,156.06,12.0,0.0,0.14,,631.0,0.0,2026-09-30,clv_simple_v1
+MG-100160,1,98.97,12.0,0.0,0.14,,381.0,0.0,2026-09-30,clv_simple_v1
+MG-100161,2,202.22,24.0,0.0,0.072,multi-product (2 lines); HEMS user,993.0,0.0,2026-09-30,clv_simple_v1
+MG-100162,1,150.39,12.0,0.0,0.14,,606.0,0.0,2026-09-30,clv_simple_v1
+MG-100163,1,281.07,16.5,4.5,0.23,price guarantee ends <90d,875.0,-15.0,2026-09-30,clv_simple_v1
+MG-100164,1,274.43,12.0,0.0,0.13,,1190.0,0.0,2026-09-30,clv_simple_v1
+MG-100165,1,166.03,12.0,0.0,0.24,price guarantee ends <90d,495.0,0.0,2026-09-30,clv_simple_v1
+MG-100166,1,162.31,12.0,0.0,0.14,,659.0,0.0,2026-09-30,clv_simple_v1
+MG-100167,1,81.7,12.0,0.0,0.14,,305.0,0.0,2026-09-30,clv_simple_v1
+MG-100168,1,150.87,34.5,22.5,0.24,price guarantee ends <90d,374.0,-72.0,2026-09-30,clv_simple_v1
+MG-100169,2,184.99,76.5,52.5,0.208,multi-product (2 lines); dunning level 3,383.0,-352.0,2026-09-30,clv_simple_v1
+MG-100170,2,200.92,24.0,0.0,0.128,multi-product (2 lines),807.0,0.0,2026-09-30,clv_simple_v1
+MG-100171,1,112.55,45.75,33.75,0.18,3 tickets in 12m,257.0,-184.0,2026-09-30,clv_simple_v1
+MG-100172,1,203.01,12.0,0.0,0.13,,866.0,0.0,2026-09-30,clv_simple_v1
+MG-100173,1,242.28,39.75,27.75,0.17,3 tickets in 12m,804.0,-240.0,2026-09-30,clv_simple_v1
+MG-100174,3,426.41,36.0,0.0,0.102,multi-product (3 lines),1948.0,0.0,2026-09-30,clv_simple_v1
+MG-100175,3,150.47,36.0,0.0,0.111,multi-product (3 lines),554.0,0.0,2026-09-30,clv_simple_v1
+MG-100176,1,149.64,19.0,7.0,0.23,2 tickets in 12m; low CSAT,432.0,-171.0,2026-09-30,clv_simple_v1
+MG-100177,1,162.11,12.0,0.0,0.14,,658.0,-0.0,2026-09-30,clv_simple_v1
+MG-100178,1,139.01,15.0,3.0,0.14,,543.0,-13.0,2026-09-30,clv_simple_v1
+MG-100179,2,221.67,39.75,15.75,0.168,multi-product (2 lines); 2 tickets in 12m,727.0,-175.0,2026-09-30,clv_simple_v1
+MG-100180,1,120.38,24.0,12.0,0.23,2 tickets in 12m; low CSAT,319.0,-156.0,2026-09-30,clv_simple_v1
+MG-100181,0,0.0,0.0,0.0,0.25,,0.0,0.0,2026-09-30,clv_simple_v1
+MG-100182,4,303.56,63.0,15.0,0.042,multi-product (4 lines); HEMS user,1501.0,-94.0,2026-09-30,clv_simple_v1
+MG-100183,1,249.19,27.0,15.0,0.13,,1007.0,-68.0,2026-09-30,clv_simple_v1
+MG-100184,2,241.43,24.0,0.0,0.128,multi-product (2 lines),992.0,0.0,2026-09-30,clv_simple_v1
+MG-100185,1,300.36,14.5,2.5,0.23,price guarantee ends <90d,945.0,-8.0,2026-09-30,clv_simple_v1
+MG-100186,1,160.64,27.0,15.0,0.3,open complaint; 3 tickets in 12m,365.0,-286.0,2026-09-30,clv_simple_v1
+MG-100187,1,129.49,60.75,48.75,0.18,3 tickets in 12m,264.0,-250.0,2026-09-30,clv_simple_v1
+MG-100188,2,231.34,45.75,21.75,0.157,multi-product (2 lines); 2 tickets in 12m,768.0,-214.0,2026-09-30,clv_simple_v1
+MG-100189,1,207.74,14.5,2.5,0.13,,876.0,-11.0,2026-09-30,clv_simple_v1
+MG-100190,1,334.87,22.0,10.0,0.95,2 tickets in 12m; cancellation pending,310.0,-10.0,2026-09-30,clv_simple_v1
+MG-100191,1,91.96,16.5,4.5,0.29,price guarantee ends <90d; low CSAT,212.0,-45.0,2026-09-30,clv_simple_v1
+MG-100192,2,295.25,31.5,7.5,0.207,multi-product (2 lines); 2 tickets in 12m; low CSAT,933.0,-352.0,2026-09-30,clv_simple_v1
+MG-100193,0,26.82,0.0,0.0,0.25,,84.0,0.0,2026-09-30,clv_simple_v1
+MG-100194,1,166.01,14.5,2.5,0.24,price guarantee ends <90d,487.0,-8.0,2026-09-30,clv_simple_v1
+MG-100195,1,176.39,35.25,23.25,0.18,3 tickets in 12m,543.0,-177.0,2026-09-30,clv_simple_v1
+MG-100196,1,101.99,14.5,2.5,0.14,,383.0,-11.0,2026-09-30,clv_simple_v1
+MG-100197,1,127.6,14.5,2.5,0.14,,496.0,-11.0,2026-09-30,clv_simple_v1
+MG-100198,1,274.81,24.0,12.0,0.17,2 tickets in 12m,996.0,-195.0,2026-09-30,clv_simple_v1
+MG-100199,2,278.2,24.0,0.0,0.217,multi-product (2 lines); price guarantee ends <90d,872.0,0.0,2026-09-30,clv_simple_v1
+MG-100200,1,136.51,42.0,30.0,0.22,dunning level 2,322.0,-224.0,2026-09-30,clv_simple_v1
+MG-100201,1,107.76,65.75,53.75,0.4,price guarantee ends <90d; open complaint; 4 tickets in 12m,91.0,-217.0,2026-09-30,clv_simple_v1
+MG-100202,1,130.98,28.5,16.5,0.18,3 tickets in 12m,394.0,-127.0,2026-09-30,clv_simple_v1
+MG-100203,1,212.09,16.5,4.5,0.13,,887.0,-20.0,2026-09-30,clv_simple_v1
+MG-100204,1,160.13,12.0,0.0,0.24,price guarantee ends <90d,476.0,-0.0,2026-09-30,clv_simple_v1
+MG-100205,1,172.97,12.0,0.0,0.14,,705.0,0.0,2026-09-30,clv_simple_v1
+MG-100206,1,99.85,14.5,2.5,0.19,low CSAT,318.0,-67.0,2026-09-30,clv_simple_v1
+MG-100207,1,97.13,27.0,15.0,0.28,price guarantee ends <90d; 3 tickets in 12m,202.0,-72.0,2026-09-30,clv_simple_v1
+MG-100208,2,317.25,42.0,18.0,0.207,multi-product (2 lines); 3 tickets in 12m; low CSAT,973.0,-415.0,2026-09-30,clv_simple_v1
+MG-100209,1,121.63,21.0,9.0,0.18,2 tickets in 12m,387.0,-93.0,2026-09-30,clv_simple_v1
+MG-100210,2,192.89,31.5,7.5,0.128,multi-product (2 lines),737.0,-34.0,2026-09-30,clv_simple_v1
+MG-100211,1,187.65,15.0,3.0,0.13,,783.0,-14.0,2026-09-30,clv_simple_v1
+MG-100212,1,101.5,12.0,0.0,0.14,,392.0,0.0,2026-09-30,clv_simple_v1
+MG-100213,2,155.6,24.0,0.0,0.128,multi-product (2 lines),601.0,-0.0,2026-09-30,clv_simple_v1
+MG-100214,2,189.98,31.0,7.0,0.168,multi-product (2 lines); 2 tickets in 12m,635.0,-122.0,2026-09-30,clv_simple_v1
+MG-100215,2,362.88,36.0,12.0,0.176,multi-product (2 lines); 3 tickets in 12m,1273.0,-232.0,2026-09-30,clv_simple_v1
+MG-100216,1,129.16,73.25,61.25,0.27,low CSAT; dunning level 2,165.0,-348.0,2026-09-30,clv_simple_v1
+MG-100217,1,235.89,12.0,0.0,0.23,price guarantee ends <90d,740.0,0.0,2026-09-30,clv_simple_v1
+MG-100218,2,177.58,39.0,15.0,0.168,multi-product (2 lines); 2 tickets in 12m,554.0,-147.0,2026-09-30,clv_simple_v1
+MG-100219,0,0.0,7.5,7.5,0.25,,-23.0,-23.0,2026-09-30,clv_simple_v1
+MG-100220,1,167.74,12.0,0.0,0.14,,682.0,0.0,2026-09-30,clv_simple_v1
+MG-100221,1,244.28,19.0,7.0,0.27,price guarantee ends <90d; 2 tickets in 12m,666.0,-102.0,2026-09-30,clv_simple_v1
+MG-100222,1,162.88,19.0,7.0,0.18,2 tickets in 12m,554.0,-108.0,2026-09-30,clv_simple_v1
+MG-100223,2,162.55,24.0,0.0,0.128,multi-product (2 lines),632.0,0.0,2026-09-30,clv_simple_v1
+MG-100224,1,141.39,12.0,0.0,0.14,,567.0,0.0,2026-09-30,clv_simple_v1
+MG-100225,1,80.95,14.5,2.5,0.12,,312.0,-12.0,2026-09-30,clv_simple_v1
+MG-100226,2,274.98,35.25,11.25,0.337,multi-product (2 lines); price guarantee ends <90d; open complaint,598.0,-264.0,2026-09-30,clv_simple_v1
+MG-100227,1,168.72,19.5,7.5,0.32,price guarantee ends <90d; 2 tickets in 12m; low CSAT,388.0,-130.0,2026-09-30,clv_simple_v1
+MG-100228,2,314.23,24.0,0.0,0.136,multi-product (2 lines),1289.0,0.0,2026-09-30,clv_simple_v1
+MG-100229,3,341.93,40.5,4.5,0.069,multi-product (3 lines); HEMS user,1700.0,-25.0,2026-09-30,clv_simple_v1
+MG-100230,1,110.92,72.0,60.0,0.3,open complaint; 2 tickets in 12m,106.0,-327.0,2026-09-30,clv_simple_v1
+MG-100231,1,189.76,22.0,10.0,0.27,price guarantee ends <90d; 2 tickets in 12m,496.0,-92.0,2026-09-30,clv_simple_v1
+MG-100232,1,93.08,12.0,0.0,0.14,,355.0,0.0,2026-09-30,clv_simple_v1
+MG-100233,1,102.82,12.0,0.0,0.14,,398.0,-0.0,2026-09-30,clv_simple_v1
+MG-100234,1,230.77,12.0,0.0,0.13,,992.0,0.0,2026-09-30,clv_simple_v1
+MG-100235,2,150.85,35.25,11.25,0.128,multi-product (2 lines),528.0,-51.0,2026-09-30,clv_simple_v1
+MG-100236,1,123.42,27.0,15.0,0.14,,423.0,-66.0,2026-09-30,clv_simple_v1
+MG-100237,1,130.81,12.0,0.0,0.14,,521.0,-0.0,2026-09-30,clv_simple_v1
+MG-100238,1,81.37,18.25,6.25,0.14,,277.0,-27.0,2026-09-30,clv_simple_v1
+MG-100239,0,0.0,0.0,0.0,0.25,,0.0,0.0,2026-09-30,clv_simple_v1
+MG-100240,1,115.67,12.0,0.0,0.14,,454.0,-0.0,2026-09-30,clv_simple_v1
+MG-100241,1,139.65,19.5,7.5,0.14,,527.0,-33.0,2026-09-30,clv_simple_v1
+MG-100242,1,135.54,23.25,11.25,0.14,,492.0,-49.0,2026-09-30,clv_simple_v1
+MG-100243,1,144.62,12.0,0.0,0.14,,581.0,0.0,2026-09-30,clv_simple_v1
+MG-100244,1,259.46,52.0,40.0,0.17,4 tickets in 12m,824.0,-298.0,2026-09-30,clv_simple_v1
+MG-100245,1,247.77,16.5,4.5,0.23,price guarantee ends <90d,765.0,-15.0,2026-09-30,clv_simple_v1
+MG-100246,1,272.91,12.0,0.0,0.23,price guarantee ends <90d,863.0,0.0,2026-09-30,clv_simple_v1
+MG-100247,1,100.01,27.0,15.0,0.14,,320.0,-66.0,2026-09-30,clv_simple_v1
+MG-100248,0,0.0,7.5,7.5,0.25,,-23.0,-23.0,2026-09-30,clv_simple_v1
+MG-100249,1,140.93,12.0,0.0,0.14,,565.0,0.0,2026-09-30,clv_simple_v1
+MG-100250,2,202.65,31.5,7.5,0.128,multi-product (2 lines),781.0,-34.0,2026-09-30,clv_simple_v1
+MG-100251,2,408.78,35.5,11.5,0.186,multi-product (2 lines); low CSAT,1409.0,-300.0,2026-09-30,clv_simple_v1
+MG-100252,1,147.15,45.75,33.75,0.18,3 tickets in 12m,390.0,-202.0,2026-09-30,clv_simple_v1
+MG-100253,1,322.58,16.5,4.5,0.28,price guarantee ends <90d; low CSAT,881.0,-146.0,2026-09-30,clv_simple_v1
+MG-100254,2,240.1,24.0,0.0,0.064,multi-product (2 lines); HEMS user,1240.0,0.0,2026-09-30,clv_simple_v1
+MG-100255,1,250.86,12.0,0.0,0.13,,1083.0,0.0,2026-09-30,clv_simple_v1
+MG-100256,2,186.46,60.25,36.25,0.178,multi-product (2 lines); low CSAT,489.0,-253.0,2026-09-30,clv_simple_v1
+MG-100257,1,156.44,14.5,2.5,0.14,,622.0,-11.0,2026-09-30,clv_simple_v1
+MG-100258,1,105.64,15.0,3.0,0.19,low CSAT,338.0,-72.0,2026-09-30,clv_simple_v1
+MG-100259,3,357.0,45.0,9.0,0.211,multi-product (3 lines); price guarantee ends <90d,1091.0,-31.0,2026-09-30,clv_simple_v1
+MG-100260,1,133.28,24.0,12.0,0.16,2 tickets in 12m,448.0,-121.0,2026-09-30,clv_simple_v1
+MG-100261,2,284.61,36.0,12.0,0.176,multi-product (2 lines); 2 tickets in 12m,969.0,-189.0,2026-09-30,clv_simple_v1
+MG-100262,1,247.87,12.0,0.0,0.23,price guarantee ends <90d,780.0,0.0,2026-09-30,clv_simple_v1
+MG-100263,1,146.32,33.75,21.75,0.3,open complaint; 3 tickets in 12m,308.0,-281.0,2026-09-30,clv_simple_v1
+MG-100264,1,158.92,12.0,0.0,0.14,,644.0,-0.0,2026-09-30,clv_simple_v1
+MG-100265,1,105.66,12.0,0.0,0.14,,410.0,0.0,2026-09-30,clv_simple_v1
+MG-100266,1,243.34,64.5,52.5,0.18,3 tickets in 12m,688.0,-326.0,2026-09-30,clv_simple_v1
+MG-100267,1,168.01,15.0,3.0,0.14,,671.0,-13.0,2026-09-30,clv_simple_v1
+MG-100268,1,145.71,12.0,0.0,0.14,,586.0,0.0,2026-09-30,clv_simple_v1
+MG-100269,1,166.25,39.0,27.0,0.18,2 tickets in 12m,490.0,-186.0,2026-09-30,clv_simple_v1
+MG-100270,1,311.42,16.5,4.5,0.13,,1337.0,-20.0,2026-09-30,clv_simple_v1
+MG-100271,2,202.08,28.5,4.5,0.228,multi-product (2 lines); price guarantee ends <90d,577.0,-15.0,2026-09-30,clv_simple_v1
+MG-100272,2,172.78,24.0,0.0,0.128,multi-product (2 lines),679.0,0.0,2026-09-30,clv_simple_v1
+MG-100273,1,204.72,16.5,4.5,0.23,price guarantee ends <90d,622.0,-15.0,2026-09-30,clv_simple_v1
+MG-100274,1,285.94,20.75,8.75,0.27,price guarantee ends <90d; 2 tickets in 12m,784.0,-122.0,2026-09-30,clv_simple_v1
+MG-100275,1,140.25,16.5,4.5,0.14,,542.0,-20.0,2026-09-30,clv_simple_v1
+MG-100276,2,168.34,46.5,22.5,0.236,multi-product (2 lines); price guarantee ends <90d,396.0,-73.0,2026-09-30,clv_simple_v1
+MG-100277,1,130.92,12.0,0.0,0.14,,521.0,0.0,2026-09-30,clv_simple_v1
+MG-100278,1,82.23,16.5,4.5,0.14,,288.0,-20.0,2026-09-30,clv_simple_v1
+MG-100279,1,135.71,12.0,0.0,0.24,price guarantee ends <90d,398.0,0.0,2026-09-30,clv_simple_v1
+MG-100280,3,189.76,55.5,19.5,0.109,multi-product (3 lines); 2 tickets in 12m; HEMS user,655.0,-212.0,2026-09-30,clv_simple_v1
+MG-100281,1,100.58,16.5,4.5,0.14,,368.0,-20.0,2026-09-30,clv_simple_v1
+MG-100282,4,438.35,48.0,0.0,0.042,multi-product (4 lines); HEMS user,2436.0,0.0,2026-09-30,clv_simple_v1
+MG-100283,1,214.74,19.0,7.0,0.17,2 tickets in 12m,777.0,-142.0,2026-09-30,clv_simple_v1
+MG-100284,1,257.53,12.0,0.0,0.13,,1113.0,0.0,2026-09-30,clv_simple_v1
+MG-100285,0,0.0,7.5,7.5,0.25,,-23.0,-23.0,2026-09-30,clv_simple_v1
+MG-100286,2,329.93,37.5,13.5,0.168,multi-product (2 lines); 3 tickets in 12m,1169.0,-228.0,2026-09-30,clv_simple_v1
+MG-100287,1,103.46,16.5,4.5,0.95,cancellation pending,86.0,-4.0,2026-09-30,clv_simple_v1
+MG-100288,1,220.85,43.25,31.25,0.23,price guarantee ends <90d,587.0,-103.0,2026-09-30,clv_simple_v1
+MG-100289,1,235.24,12.0,0.0,0.23,price guarantee ends <90d,738.0,0.0,2026-09-30,clv_simple_v1
+MG-100290,1,119.81,16.5,4.5,0.29,price guarantee ends <90d; low CSAT,290.0,-57.0,2026-09-30,clv_simple_v1
+MG-100291,2,112.28,39.0,15.0,0.226,multi-product (2 lines); 2 tickets in 12m; low CSAT,245.0,-147.0,2026-09-30,clv_simple_v1
+MG-100292,1,144.49,12.0,0.0,0.14,,581.0,0.0,2026-09-30,clv_simple_v1
+MG-100293,1,109.41,27.0,15.0,0.28,open complaint; 2 tickets in 12m,237.0,-220.0,2026-09-30,clv_simple_v1
+MG-100294,1,204.2,12.0,0.0,0.13,,871.0,0.0,2026-09-30,clv_simple_v1
+MG-100295,1,247.27,12.0,0.0,0.24,price guarantee ends <90d,756.0,0.0,2026-09-30,clv_simple_v1
+MG-100296,2,242.92,41.5,17.5,0.95,multi-product (2 lines); price guarantee ends <90d; cancellation pending,199.0,-17.0,2026-09-30,clv_simple_v1
+MG-100297,2,359.15,24.0,0.0,0.217,multi-product (2 lines); price guarantee ends <90d,1150.0,-0.0,2026-09-30,clv_simple_v1
+MG-100298,1,140.58,27.0,15.0,0.16,3 tickets in 12m,466.0,-137.0,2026-09-30,clv_simple_v1
+MG-100299,1,121.19,12.0,0.0,0.14,,479.0,0.0,2026-09-30,clv_simple_v1
+MG-100300,2,192.95,31.5,7.5,0.128,multi-product (2 lines),737.0,-34.0,2026-09-30,clv_simple_v1
+MG-100301,1,132.85,14.5,2.5,0.24,price guarantee ends <90d,380.0,-8.0,2026-09-30,clv_simple_v1
+MG-100302,1,281.03,12.0,0.0,0.13,,1220.0,0.0,2026-09-30,clv_simple_v1
+MG-100303,1,93.76,27.0,15.0,0.95,3 tickets in 12m; cancellation pending,66.0,-15.0,2026-09-30,clv_simple_v1
+MG-100304,1,188.16,19.5,7.5,0.23,price guarantee ends <90d,558.0,-25.0,2026-09-30,clv_simple_v1
+MG-100305,2,275.52,33.0,9.0,0.136,multi-product (2 lines),1077.0,-40.0,2026-09-30,clv_simple_v1
+MG-100306,1,94.31,21.5,9.5,0.18,3 tickets in 12m,280.0,-81.0,2026-09-30,clv_simple_v1
+MG-100307,1,109.75,30.75,18.75,0.18,2 tickets in 12m,304.0,-124.0,2026-09-30,clv_simple_v1
+MG-100308,2,188.2,24.0,0.0,0.072,multi-product (2 lines); HEMS user,915.0,0.0,2026-09-30,clv_simple_v1
+MG-100309,1,99.3,12.0,0.0,0.14,,383.0,0.0,2026-09-30,clv_simple_v1
+MG-100310,1,267.56,38.25,26.25,0.39,price guarantee ends <90d; open complaint; 2 tickets in 12m,508.0,-338.0,2026-09-30,clv_simple_v1
+MG-100311,2,163.15,36.0,12.0,0.112,multi-product (2 lines); 2 tickets in 12m; HEMS user,613.0,-162.0,2026-09-30,clv_simple_v1
+MG-100312,1,118.07,35.25,23.25,0.18,3 tickets in 12m,319.0,-146.0,2026-09-30,clv_simple_v1
+MG-100313,2,191.98,24.0,0.0,0.128,multi-product (2 lines),767.0,0.0,2026-09-30,clv_simple_v1
+MG-100314,2,181.96,45.25,21.25,0.128,multi-product (2 lines),624.0,-97.0,2026-09-30,clv_simple_v1
+MG-100315,2,300.19,54.0,30.0,0.197,multi-product (2 lines); dunning level 2,897.0,-410.0,2026-09-30,clv_simple_v1
+MG-100316,1,216.18,16.5,4.5,0.18,low CSAT,768.0,-157.0,2026-09-30,clv_simple_v1
+MG-100317,1,168.74,12.0,0.0,0.14,,687.0,0.0,2026-09-30,clv_simple_v1
+MG-100318,1,211.52,30.75,18.75,0.34,open complaint; 2 tickets in 12m; low CSAT,448.0,-456.0,2026-09-30,clv_simple_v1
+MG-100319,0,0.0,12.0,12.0,0.34,2 tickets in 12m; low CSAT,-30.0,-30.0,2026-09-30,clv_simple_v1
+MG-100320,1,99.81,12.0,0.0,0.14,,385.0,-0.0,2026-09-30,clv_simple_v1
+MG-100321,2,372.4,24.0,0.0,0.123,multi-product (2 lines),1620.0,0.0,2026-09-30,clv_simple_v1
+MG-100322,1,84.56,52.75,40.75,0.18,3 tickets in 12m,122.0,-196.0,2026-09-30,clv_simple_v1
+MG-100323,2,172.92,28.5,4.5,0.072,multi-product (2 lines); HEMS user,805.0,-25.0,2026-09-30,clv_simple_v1
+MG-100324,2,300.53,24.0,0.0,0.136,multi-product (2 lines),1228.0,0.0,2026-09-30,clv_simple_v1
+MG-100325,4,393.39,55.0,7.0,0.149,multi-product (4 lines); price guarantee ends <90d; HEMS user,1440.0,-30.0,2026-09-30,clv_simple_v1
+MG-100326,2,337.6,24.0,0.0,0.064,multi-product (2 lines); HEMS user,1800.0,0.0,2026-09-30,clv_simple_v1
+MG-100327,2,233.18,24.0,0.0,0.136,multi-product (2 lines),929.0,0.0,2026-09-30,clv_simple_v1
+MG-100328,2,398.46,55.5,31.5,0.123,multi-product (2 lines),1594.0,-146.0,2026-09-30,clv_simple_v1
+MG-100329,1,165.99,14.5,2.5,0.14,,664.0,-11.0,2026-09-30,clv_simple_v1
+MG-100330,1,100.47,27.0,15.0,0.28,price guarantee ends <90d; 2 tickets in 12m,212.0,-73.0,2026-09-30,clv_simple_v1
+MG-100331,1,139.45,27.75,15.75,0.23,2 tickets in 12m; low CSAT,369.0,-189.0,2026-09-30,clv_simple_v1
+MG-100332,1,183.18,31.5,19.5,0.24,2 tickets in 12m,487.0,-131.0,2026-09-30,clv_simple_v1
+MG-100333,1,106.67,12.0,0.0,0.14,,415.0,0.0,2026-09-30,clv_simple_v1
+MG-100334,1,35.96,19.5,7.5,0.18,,63.0,-29.0,2026-09-30,clv_simple_v1
+MG-100335,1,125.73,12.0,0.0,0.24,price guarantee ends <90d,365.0,0.0,2026-09-30,clv_simple_v1
+MG-100336,1,91.3,14.5,2.5,0.14,,337.0,-11.0,2026-09-30,clv_simple_v1
+MG-100337,1,117.35,33.75,21.75,0.28,price guarantee ends <90d; 3 tickets in 12m,241.0,-98.0,2026-09-30,clv_simple_v1
+MG-100338,2,146.97,24.0,0.0,0.172,multi-product (2 lines); price guarantee ends <90d; HEMS user,485.0,0.0,2026-09-30,clv_simple_v1
+MG-100339,1,146.6,12.0,0.0,0.14,,590.0,0.0,2026-09-30,clv_simple_v1
+MG-100340,1,338.15,17.5,5.5,0.17,2 tickets in 12m,1273.0,-205.0,2026-09-30,clv_simple_v1
+MG-100341,2,200.39,28.5,4.5,0.128,multi-product (2 lines),785.0,-21.0,2026-09-30,clv_simple_v1
+MG-100342,0,0.0,10.0,10.0,0.29,3 tickets in 12m,-28.0,-28.0,2026-09-30,clv_simple_v1
+MG-100343,2,142.4,36.0,12.0,0.268,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m,316.0,-77.0,2026-09-30,clv_simple_v1
+MG-100344,1,99.94,27.0,15.0,0.23,2 tickets in 12m; low CSAT,241.0,-144.0,2026-09-30,clv_simple_v1
+MG-100345,2,96.6,24.0,0.0,0.136,multi-product (2 lines),322.0,0.0,2026-09-30,clv_simple_v1
+MG-100346,1,279.81,18.25,6.25,0.35,price guarantee ends <90d; open complaint,633.0,-253.0,2026-09-30,clv_simple_v1
+MG-100347,1,96.58,32.25,20.25,0.18,3 tickets in 12m,247.0,-123.0,2026-09-30,clv_simple_v1
+MG-100348,1,160.55,12.0,0.0,0.14,,651.0,0.0,2026-09-30,clv_simple_v1
+MG-100349,3,172.9,55.5,19.5,0.151,multi-product (3 lines); 3 tickets in 12m,496.0,-167.0,2026-09-30,clv_simple_v1
+MG-100350,2,188.26,31.5,7.5,0.072,multi-product (2 lines); HEMS user,873.0,-42.0,2026-09-30,clv_simple_v1
+MG-100351,1,121.8,12.0,0.0,0.14,,481.0,0.0,2026-09-30,clv_simple_v1
+MG-100352,2,294.85,42.0,18.0,0.136,multi-product (2 lines),1123.0,-80.0,2026-09-30,clv_simple_v1
+MG-100353,2,168.88,24.0,0.0,0.128,multi-product (2 lines),661.0,0.0,2026-09-30,clv_simple_v1
+MG-100354,2,324.83,92.5,68.5,0.226,multi-product (2 lines); 2 tickets in 12m; low CSAT,777.0,-559.0,2026-09-30,clv_simple_v1
+MG-100355,2,298.49,36.0,12.0,0.136,multi-product (2 lines),1166.0,-53.0,2026-09-30,clv_simple_v1
+MG-100356,2,382.38,28.5,4.5,0.136,multi-product (2 lines),1572.0,-20.0,2026-09-30,clv_simple_v1
+MG-100357,1,85.31,16.5,4.5,0.14,,302.0,-20.0,2026-09-30,clv_simple_v1
+MG-100358,2,238.81,24.0,0.0,0.128,multi-product (2 lines),980.0,-0.0,2026-09-30,clv_simple_v1
+MG-100359,1,145.39,27.0,15.0,0.33,price guarantee ends <90d; 2 tickets in 12m; low CSAT,300.0,-128.0,2026-09-30,clv_simple_v1
+MG-100360,1,175.58,12.0,0.0,0.14,,717.0,0.0,2026-09-30,clv_simple_v1
+MG-100361,1,149.51,16.5,4.5,0.14,,583.0,-20.0,2026-09-30,clv_simple_v1
+MG-100362,1,87.18,12.0,0.0,0.24,price guarantee ends <90d,242.0,0.0,2026-09-30,clv_simple_v1
+MG-100363,1,217.55,22.0,10.0,0.17,2 tickets in 12m,777.0,-155.0,2026-09-30,clv_simple_v1
+MG-100364,4,427.36,52.5,4.5,0.049,multi-product (4 lines); HEMS user,2279.0,-27.0,2026-09-30,clv_simple_v1
+MG-100365,2,138.46,24.0,0.0,0.128,multi-product (2 lines),522.0,0.0,2026-09-30,clv_simple_v1
+MG-100366,2,150.36,47.25,23.25,0.168,multi-product (2 lines); 3 tickets in 12m,412.0,-165.0,2026-09-30,clv_simple_v1
+MG-100367,2,399.84,36.5,12.5,0.173,multi-product (2 lines); low CSAT,1431.0,-316.0,2026-09-30,clv_simple_v1
+MG-100368,1,166.69,28.75,16.75,0.18,3 tickets in 12m,531.0,-147.0,2026-09-30,clv_simple_v1
+MG-100369,1,108.43,27.0,15.0,0.18,2 tickets in 12m,313.0,-109.0,2026-09-30,clv_simple_v1
+MG-100370,1,227.66,12.0,0.0,0.13,,978.0,0.0,2026-09-30,clv_simple_v1
+MG-100371,1,167.35,35.0,23.0,0.23,3 tickets in 12m; low CSAT,438.0,-243.0,2026-09-30,clv_simple_v1
+MG-100372,1,156.15,12.0,0.0,0.24,price guarantee ends <90d,463.0,-0.0,2026-09-30,clv_simple_v1
+MG-100373,1,128.12,16.5,4.5,0.24,price guarantee ends <90d,359.0,-14.0,2026-09-30,clv_simple_v1
+MG-100374,1,268.79,38.25,26.25,0.23,price guarantee ends <90d,762.0,-87.0,2026-09-30,clv_simple_v1
+MG-100375,2,196.25,39.0,15.0,0.176,multi-product (2 lines); 2 tickets in 12m,613.0,-152.0,2026-09-30,clv_simple_v1
+MG-100376,1,269.49,30.75,18.75,0.17,2 tickets in 12m,948.0,-219.0,2026-09-30,clv_simple_v1
+MG-100377,1,143.55,12.0,0.0,0.24,price guarantee ends <90d,423.0,0.0,2026-09-30,clv_simple_v1
+MG-100378,1,149.09,12.0,0.0,0.14,,601.0,0.0,2026-09-30,clv_simple_v1
+MG-100379,2,171.26,30.0,6.0,0.218,multi-product (2 lines); 2 tickets in 12m; low CSAT,484.0,-188.0,2026-09-30,clv_simple_v1
+MG-100380,1,131.95,12.0,0.0,0.14,,526.0,0.0,2026-09-30,clv_simple_v1
+MG-100381,1,101.13,45.75,33.75,0.18,4 tickets in 12m,213.0,-178.0,2026-09-30,clv_simple_v1
+MG-100382,0,0.0,2.5,2.5,0.25,,-8.0,-8.0,2026-09-30,clv_simple_v1
+MG-100383,2,157.23,28.5,4.5,0.228,multi-product (2 lines); price guarantee ends <90d,428.0,-15.0,2026-09-30,clv_simple_v1
+MG-100384,1,256.24,49.5,37.5,0.21,dunning level 2,725.0,-382.0,2026-09-30,clv_simple_v1
+MG-100385,1,141.15,39.0,27.0,0.18,4 tickets in 12m,393.0,-173.0,2026-09-30,clv_simple_v1
+MG-100386,1,237.15,19.5,7.5,0.13,,987.0,-34.0,2026-09-30,clv_simple_v1
+MG-100387,1,140.09,12.0,0.0,0.14,,561.0,0.0,2026-09-30,clv_simple_v1
+MG-100388,1,114.92,22.0,10.0,0.18,2 tickets in 12m,357.0,-94.0,2026-09-30,clv_simple_v1
+MG-100389,2,323.42,39.75,15.75,0.207,multi-product (2 lines); 2 tickets in 12m; low CSAT,1003.0,-415.0,2026-09-30,clv_simple_v1
+MG-100390,1,91.3,21.0,9.0,0.23,2 tickets in 12m; low CSAT,232.0,-115.0,2026-09-30,clv_simple_v1
+MG-100391,0,0.0,0.0,0.0,0.25,,0.0,0.0,2026-09-30,clv_simple_v1
+MG-100392,1,111.93,12.0,0.0,0.14,,438.0,0.0,2026-09-30,clv_simple_v1
+MG-100393,1,113.38,12.0,0.0,0.14,,444.0,0.0,2026-09-30,clv_simple_v1
+MG-100394,0,0.0,11.5,11.5,0.34,3 tickets in 12m; low CSAT,-28.0,-28.0,2026-09-30,clv_simple_v1
+MG-100395,1,153.23,24.0,12.0,0.18,2 tickets in 12m,497.0,-122.0,2026-09-30,clv_simple_v1
+MG-100396,3,131.9,36.0,0.0,0.111,multi-product (3 lines),464.0,0.0,2026-09-30,clv_simple_v1
+MG-100397,2,152.93,24.0,0.0,0.128,multi-product (2 lines),588.0,0.0,2026-09-30,clv_simple_v1
+MG-100398,0,0.0,9.0,9.0,0.29,2 tickets in 12m,-25.0,-25.0,2026-09-30,clv_simple_v1
+MG-100399,1,181.91,19.0,7.0,0.18,2 tickets in 12m,627.0,-118.0,2026-09-30,clv_simple_v1
+MG-100400,3,336.9,50.5,14.5,0.109,multi-product (3 lines); 2 tickets in 12m; HEMS user,1397.0,-299.0,2026-09-30,clv_simple_v1
+MG-100401,1,124.03,27.75,15.75,0.28,price guarantee ends <90d; 2 tickets in 12m,277.0,-83.0,2026-09-30,clv_simple_v1
+MG-100402,1,85.69,12.0,0.0,0.14,,323.0,0.0,2026-09-30,clv_simple_v1
+MG-100403,1,111.91,29.5,17.5,0.28,price guarantee ends <90d; 3 tickets in 12m,237.0,-84.0,2026-09-30,clv_simple_v1
+MG-100404,1,154.22,43.25,31.25,0.18,3 tickets in 12m,427.0,-196.0,2026-09-30,clv_simple_v1
+MG-100405,2,411.62,71.5,47.5,0.297,multi-product (2 lines); price guarantee ends <90d; dunning level 3,936.0,-394.0,2026-09-30,clv_simple_v1
+MG-100406,3,228.4,45.0,9.0,0.211,multi-product (3 lines); price guarantee ends <90d,642.0,-31.0,2026-09-30,clv_simple_v1
+MG-100407,1,248.32,16.5,4.5,0.13,,1051.0,-20.0,2026-09-30,clv_simple_v1
+MG-100408,1,115.17,19.5,7.5,0.28,price guarantee ends <90d; 2 tickets in 12m,275.0,-56.0,2026-09-30,clv_simple_v1
+MG-100409,1,149.22,19.5,7.5,0.18,2 tickets in 12m,499.0,-102.0,2026-09-30,clv_simple_v1
+MG-100410,0,0.0,11.25,11.25,0.3,low CSAT,-31.0,-31.0,2026-09-30,clv_simple_v1
+MG-100411,1,224.02,49.5,37.5,0.27,price guarantee ends <90d; 2 tickets in 12m,516.0,-185.0,2026-09-30,clv_simple_v1
+MG-100412,1,261.74,27.0,15.0,0.17,2 tickets in 12m,932.0,-200.0,2026-09-30,clv_simple_v1
+MG-100413,2,169.17,40.5,16.5,0.268,multi-product (2 lines); price guarantee ends <90d; 3 tickets in 12m,383.0,-100.0,2026-09-30,clv_simple_v1
+MG-100414,2,422.45,33.0,9.0,0.223,multi-product (2 lines); price guarantee ends <90d,1316.0,-30.0,2026-09-30,clv_simple_v1
+MG-100415,3,268.93,40.5,4.5,0.169,multi-product (3 lines); price guarantee ends <90d; HEMS user,911.0,-18.0,2026-09-30,clv_simple_v1
+MG-100416,1,110.41,24.0,12.0,0.18,3 tickets in 12m,332.0,-99.0,2026-09-30,clv_simple_v1
+MG-100417,1,90.57,12.0,0.0,0.14,,344.0,0.0,2026-09-30,clv_simple_v1
+MG-100418,0,0.0,0.0,0.0,0.25,,0.0,0.0,2026-09-30,clv_simple_v1
+MG-100419,1,131.93,12.0,0.0,0.14,,526.0,0.0,2026-09-30,clv_simple_v1
+MG-100420,1,109.56,12.0,0.0,0.24,price guarantee ends <90d,314.0,0.0,2026-09-30,clv_simple_v1
+MG-100421,1,150.91,35.25,23.25,0.26,price guarantee ends <90d; 2 tickets in 12m,351.0,-122.0,2026-09-30,clv_simple_v1
+MG-100422,1,222.34,12.0,0.0,0.23,price guarantee ends <90d,696.0,-0.0,2026-09-30,clv_simple_v1
+MG-100423,1,159.96,12.0,0.0,0.14,,648.0,0.0,2026-09-30,clv_simple_v1
+MG-100424,1,87.58,23.25,11.25,0.14,,282.0,-49.0,2026-09-30,clv_simple_v1
+MG-100425,2,200.76,39.0,15.0,0.176,multi-product (2 lines); 2 tickets in 12m,630.0,-155.0,2026-09-30,clv_simple_v1
+MG-100426,1,94.71,26.25,14.25,0.18,2 tickets in 12m,263.0,-99.0,2026-09-30,clv_simple_v1
+MG-100427,2,121.3,65.25,41.25,0.128,multi-product (2 lines),256.0,-188.0,2026-09-30,clv_simple_v1
+MG-100428,1,127.77,12.0,0.0,0.14,,507.0,0.0,2026-09-30,clv_simple_v1
+MG-100429,2,200.26,24.0,0.0,0.128,multi-product (2 lines),804.0,0.0,2026-09-30,clv_simple_v1
+MG-100430,1,81.59,33.25,21.25,0.23,2 tickets in 12m; low CSAT,160.0,-145.0,2026-09-30,clv_simple_v1
+MG-100431,1,121.04,12.0,0.0,0.24,price guarantee ends <90d,350.0,0.0,2026-09-30,clv_simple_v1
+MG-100432,1,126.67,21.0,9.0,0.18,2 tickets in 12m,407.0,-96.0,2026-09-30,clv_simple_v1
+MG-100433,1,260.99,35.25,23.25,0.27,price guarantee ends <90d; 2 tickets in 12m,668.0,-156.0,2026-09-30,clv_simple_v1
+MG-100434,1,81.29,21.0,9.0,0.18,2 tickets in 12m,232.0,-72.0,2026-09-30,clv_simple_v1
+MG-100435,3,242.48,39.0,3.0,0.069,multi-product (3 lines); HEMS user,1147.0,-17.0,2026-09-30,clv_simple_v1
+MG-100436,1,311.56,50.25,38.25,0.95,price guarantee ends <90d; 3 tickets in 12m; cancellation pending,259.0,-38.0,2026-09-30,clv_simple_v1
+MG-100437,1,131.67,23.25,11.25,0.24,price guarantee ends <90d,348.0,-36.0,2026-09-30,clv_simple_v1
+MG-100438,1,220.5,16.5,4.5,0.23,price guarantee ends <90d,675.0,-15.0,2026-09-30,clv_simple_v1
+MG-100439,1,140.0,24.0,12.0,0.18,2 tickets in 12m,446.0,-115.0,2026-09-30,clv_simple_v1
+MG-100440,1,118.25,24.0,12.0,0.18,3 tickets in 12m,363.0,-103.0,2026-09-30,clv_simple_v1
+MG-100441,1,182.67,16.5,4.5,0.28,price guarantee ends <90d; low CSAT,479.0,-86.0,2026-09-30,clv_simple_v1
+MG-100442,1,89.6,19.5,7.5,0.18,2 tickets in 12m,270.0,-70.0,2026-09-30,clv_simple_v1
+MG-100443,2,377.3,57.0,33.0,0.163,multi-product (2 lines); 3 tickets in 12m,1302.0,-340.0,2026-09-30,clv_simple_v1
+MG-100444,2,244.49,36.0,12.0,0.204,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m; HEMS user,745.0,-148.0,2026-09-30,clv_simple_v1
+MG-100445,1,86.3,12.0,0.0,0.14,,326.0,0.0,2026-09-30,clv_simple_v1
+MG-100446,3,265.05,43.0,7.0,0.201,multi-product (3 lines); 2 tickets in 12m; low CSAT,801.0,-309.0,2026-09-30,clv_simple_v1
+MG-100447,1,262.33,16.5,4.5,0.28,price guarantee ends <90d; low CSAT,708.0,-120.0,2026-09-30,clv_simple_v1
+MG-100448,1,266.9,30.75,18.75,0.39,price guarantee ends <90d; open complaint; 2 tickets in 12m,523.0,-320.0,2026-09-30,clv_simple_v1
+MG-100449,1,134.35,12.0,0.0,0.14,,536.0,0.0,2026-09-30,clv_simple_v1
+MG-100450,2,164.19,24.0,0.0,0.128,multi-product (2 lines),640.0,0.0,2026-09-30,clv_simple_v1
+MG-100451,1,227.07,12.0,0.0,0.14,,942.0,0.0,2026-09-30,clv_simple_v1
+MG-100452,1,92.4,16.5,4.5,0.14,,333.0,-20.0,2026-09-30,clv_simple_v1
+MG-100453,2,275.5,33.0,9.0,0.136,multi-product (2 lines),1077.0,-40.0,2026-09-30,clv_simple_v1
+MG-100454,1,127.09,12.0,0.0,0.24,price guarantee ends <90d,370.0,-0.0,2026-09-30,clv_simple_v1
+MG-100455,1,156.57,15.0,3.0,0.14,,620.0,-13.0,2026-09-30,clv_simple_v1
+MG-100456,2,356.08,37.5,13.5,0.152,multi-product (2 lines),1341.0,-57.0,2026-09-30,clv_simple_v1
+MG-100457,1,139.74,12.0,0.0,0.14,,560.0,0.0,2026-09-30,clv_simple_v1
+MG-100458,1,114.7,38.25,26.25,0.18,2 tickets in 12m,294.0,-156.0,2026-09-30,clv_simple_v1
+MG-100459,1,135.67,40.75,28.75,0.19,low CSAT,354.0,-188.0,2026-09-30,clv_simple_v1
+MG-100460,1,135.62,16.5,4.5,0.14,,522.0,-20.0,2026-09-30,clv_simple_v1
+MG-100461,2,132.66,33.25,9.25,0.162,multi-product (2 lines); 2 tickets in 12m; low CSAT; HEMS user,405.0,-200.0,2026-09-30,clv_simple_v1
+MG-100462,1,162.6,22.0,10.0,0.18,2 tickets in 12m,541.0,-119.0,2026-09-30,clv_simple_v1
+MG-100463,2,153.31,24.0,0.0,0.172,multi-product (2 lines); price guarantee ends <90d; HEMS user,510.0,0.0,2026-09-30,clv_simple_v1
+MG-100464,2,385.14,44.25,20.25,0.263,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m,1028.0,-192.0,2026-09-30,clv_simple_v1
+MG-100465,1,131.91,12.0,0.0,0.14,,525.0,-0.0,2026-09-30,clv_simple_v1
+MG-100466,1,112.42,19.5,7.5,0.14,,407.0,-33.0,2026-09-30,clv_simple_v1
+MG-100467,1,273.47,12.0,0.0,0.23,price guarantee ends <90d,865.0,0.0,2026-09-30,clv_simple_v1
+MG-100468,1,204.45,12.0,0.0,0.13,,872.0,0.0,2026-09-30,clv_simple_v1
+MG-100469,1,123.66,12.0,0.0,0.14,,489.0,0.0,2026-09-30,clv_simple_v1
+MG-100470,1,118.93,16.5,4.5,0.19,low CSAT,382.0,-87.0,2026-09-30,clv_simple_v1
+MG-100471,1,166.73,19.0,7.0,0.33,price guarantee ends <90d; 2 tickets in 12m; low CSAT,375.0,-122.0,2026-09-30,clv_simple_v1
+MG-100472,1,234.77,28.5,16.5,0.17,3 tickets in 12m,819.0,-191.0,2026-09-30,clv_simple_v1
+MG-100473,2,159.62,24.0,0.0,0.072,multi-product (2 lines); HEMS user,756.0,-0.0,2026-09-30,clv_simple_v1
+MG-100474,1,35.96,16.5,4.5,0.18,,75.0,-17.0,2026-09-30,clv_simple_v1
+MG-100475,1,285.65,15.0,3.0,0.23,price guarantee ends <90d,895.0,-10.0,2026-09-30,clv_simple_v1
+MG-100476,1,111.58,12.0,0.0,0.14,,436.0,0.0,2026-09-30,clv_simple_v1
+MG-100477,1,122.89,27.0,15.0,0.24,price guarantee ends <90d,308.0,-48.0,2026-09-30,clv_simple_v1
+MG-100478,1,124.8,12.0,0.0,0.14,,494.0,-0.0,2026-09-30,clv_simple_v1
+MG-100479,1,175.39,12.0,0.0,0.14,,716.0,0.0,2026-09-30,clv_simple_v1
+MG-100480,1,98.8,14.5,2.5,0.14,,369.0,-11.0,2026-09-30,clv_simple_v1
+MG-100481,1,103.73,12.0,0.0,0.14,,402.0,-0.0,2026-09-30,clv_simple_v1
+MG-100482,2,308.0,24.0,0.0,0.117,multi-product (2 lines),1345.0,-0.0,2026-09-30,clv_simple_v1
+MG-100483,1,123.39,12.0,0.0,0.14,,488.0,0.0,2026-09-30,clv_simple_v1
+MG-100484,1,117.1,27.0,15.0,0.23,2 tickets in 12m; low CSAT,298.0,-163.0,2026-09-30,clv_simple_v1
+MG-100485,1,194.84,16.5,4.5,0.2,,645.0,-16.0,2026-09-30,clv_simple_v1
+MG-100486,2,168.66,24.0,0.0,0.172,multi-product (2 lines); price guarantee ends <90d; HEMS user,571.0,-0.0,2026-09-30,clv_simple_v1
+MG-100487,1,211.59,22.0,10.0,0.22,2 tickets in 12m; low CSAT,646.0,-259.0,2026-09-30,clv_simple_v1
+MG-100488,2,165.74,26.5,2.5,0.128,multi-product (2 lines),636.0,-11.0,2026-09-30,clv_simple_v1
+MG-100489,1,104.03,12.0,0.0,0.24,price guarantee ends <90d,296.0,0.0,2026-09-30,clv_simple_v1
+MG-100490,1,357.57,42.0,30.0,0.32,price guarantee ends <90d; dunning level 2,821.0,-290.0,2026-09-30,clv_simple_v1
+MG-100491,1,114.81,16.5,4.5,0.14,,431.0,-20.0,2026-09-30,clv_simple_v1
+MG-100492,1,126.25,15.0,3.0,0.24,price guarantee ends <90d,358.0,-10.0,2026-09-30,clv_simple_v1
+MG-100493,2,182.95,24.0,0.0,0.228,multi-product (2 lines); price guarantee ends <90d,529.0,0.0,2026-09-30,clv_simple_v1
+MG-100494,1,93.47,24.0,12.0,0.18,2 tickets in 12m,267.0,-90.0,2026-09-30,clv_simple_v1
+MG-100495,1,83.05,16.5,4.5,0.14,,292.0,-20.0,2026-09-30,clv_simple_v1
+MG-100496,2,372.63,34.0,10.0,0.257,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m,1037.0,-160.0,2026-09-30,clv_simple_v1
+MG-100497,3,317.31,52.0,16.0,0.151,multi-product (3 lines); 3 tickets in 12m,1121.0,-241.0,2026-09-30,clv_simple_v1
+MG-100498,2,235.45,39.75,15.75,0.168,multi-product (2 lines); 2 tickets in 12m,782.0,-183.0,2026-09-30,clv_simple_v1
+MG-100499,2,292.44,49.5,25.5,0.276,multi-product (2 lines); price guarantee ends <90d; 3 tickets in 12m,707.0,-166.0,2026-09-30,clv_simple_v1
+MG-100500,2,242.64,24.0,0.0,0.128,multi-product (2 lines),998.0,0.0,2026-09-30,clv_simple_v1
+MG-100501,1,234.2,12.0,0.0,0.13,,1007.0,0.0,2026-09-30,clv_simple_v1
+MG-100502,1,196.5,27.0,15.0,0.17,2 tickets in 12m,673.0,-163.0,2026-09-30,clv_simple_v1
+MG-100503,2,309.6,24.0,0.0,0.164,multi-product (2 lines); price guarantee ends <90d; HEMS user,1156.0,0.0,2026-09-30,clv_simple_v1
+MG-100504,1,135.48,12.0,0.0,0.14,,541.0,-0.0,2026-09-30,clv_simple_v1
+MG-100505,1,123.08,22.75,10.75,0.23,2 tickets in 12m; low CSAT,332.0,-155.0,2026-09-30,clv_simple_v1
+MG-100506,1,190.0,27.0,15.0,0.29,open complaint; 2 tickets in 12m,457.0,-350.0,2026-09-30,clv_simple_v1
+MG-100507,2,345.96,24.0,0.0,0.217,multi-product (2 lines); price guarantee ends <90d,1105.0,0.0,2026-09-30,clv_simple_v1
+MG-100508,1,230.77,25.75,13.75,0.27,price guarantee ends <90d; 3 tickets in 12m,606.0,-117.0,2026-09-30,clv_simple_v1
+MG-100509,1,201.88,19.5,7.5,0.13,,827.0,-34.0,2026-09-30,clv_simple_v1
+MG-100510,1,259.5,12.0,0.0,0.13,,1122.0,0.0,2026-09-30,clv_simple_v1
+MG-100511,1,165.04,68.25,56.25,0.26,3 tickets in 12m; dunning level 2,294.0,-376.0,2026-09-30,clv_simple_v1
+MG-100512,1,149.68,15.0,3.0,0.14,,590.0,-13.0,2026-09-30,clv_simple_v1
+MG-100513,1,156.02,64.0,52.0,0.18,3 tickets in 12m,354.0,-277.0,2026-09-30,clv_simple_v1
+MG-100514,2,207.72,24.0,0.0,0.072,multi-product (2 lines); HEMS user,1024.0,0.0,2026-09-30,clv_simple_v1
+MG-100515,0,0.0,60.0,60.0,0.29,2 tickets in 12m,-168.0,-168.0,2026-09-30,clv_simple_v1
+MG-100516,0,0.0,5.5,5.5,0.29,2 tickets in 12m,-15.0,-15.0,2026-09-30,clv_simple_v1
+MG-100517,1,123.5,14.5,2.5,0.24,price guarantee ends <90d,350.0,-8.0,2026-09-30,clv_simple_v1
+MG-100518,1,131.16,14.5,2.5,0.14,,511.0,-11.0,2026-09-30,clv_simple_v1
+MG-100519,1,198.57,19.0,7.0,0.17,2 tickets in 12m,713.0,-133.0,2026-09-30,clv_simple_v1
+MG-100520,1,173.7,42.0,30.0,0.22,dunning level 2,448.0,-260.0,2026-09-30,clv_simple_v1
+MG-100521,1,152.96,12.0,0.0,0.24,price guarantee ends <90d,453.0,-0.0,2026-09-30,clv_simple_v1
+MG-100522,1,103.42,33.25,21.25,0.14,,307.0,-93.0,2026-09-30,clv_simple_v1
+MG-100523,1,52.4,12.0,0.0,0.2,,146.0,0.0,2026-09-30,clv_simple_v1
+MG-100524,2,130.52,24.0,0.0,0.128,multi-product (2 lines),486.0,0.0,2026-09-30,clv_simple_v1
+MG-100525,1,217.59,12.0,0.0,0.23,price guarantee ends <90d,680.0,0.0,2026-09-30,clv_simple_v1
+MG-100526,1,173.26,12.0,0.0,0.14,,707.0,0.0,2026-09-30,clv_simple_v1
+MG-100527,2,152.93,37.5,13.5,0.168,multi-product (2 lines); 3 tickets in 12m,461.0,-127.0,2026-09-30,clv_simple_v1
+MG-100528,1,195.74,31.5,19.5,0.29,2 tickets in 12m; low CSAT,461.0,-204.0,2026-09-30,clv_simple_v1
+MG-100529,1,81.64,35.25,23.25,0.28,price guarantee ends <90d; 2 tickets in 12m,134.0,-90.0,2026-09-30,clv_simple_v1
+MG-100530,2,195.88,36.0,12.0,0.168,multi-product (2 lines); 2 tickets in 12m,639.0,-145.0,2026-09-30,clv_simple_v1
+MG-100531,2,185.65,24.0,0.0,0.128,multi-product (2 lines),738.0,0.0,2026-09-30,clv_simple_v1
+MG-100532,1,113.89,47.25,35.25,0.3,open complaint; 4 tickets in 12m,182.0,-264.0,2026-09-30,clv_simple_v1
+MG-100533,2,260.27,33.0,9.0,0.136,multi-product (2 lines),1009.0,-40.0,2026-09-30,clv_simple_v1
+MG-100534,2,197.79,24.0,0.0,0.128,multi-product (2 lines),793.0,-0.0,2026-09-30,clv_simple_v1
+MG-100535,1,123.9,19.5,7.5,0.18,2 tickets in 12m,402.0,-89.0,2026-09-30,clv_simple_v1
+MG-100536,1,92.33,12.0,0.0,0.14,,352.0,0.0,2026-09-30,clv_simple_v1
+MG-100537,2,295.78,24.0,0.0,0.128,multi-product (2 lines),1240.0,0.0,2026-09-30,clv_simple_v1
+MG-100538,2,165.69,24.0,0.0,0.128,multi-product (2 lines),647.0,0.0,2026-09-30,clv_simple_v1
+MG-100539,2,126.58,36.0,12.0,0.136,multi-product (2 lines),402.0,-53.0,2026-09-30,clv_simple_v1
+MG-100540,1,109.24,14.5,2.5,0.19,low CSAT,353.0,-73.0,2026-09-30,clv_simple_v1
+MG-100541,1,310.2,16.5,4.5,0.28,price guarantee ends <90d; low CSAT,846.0,-140.0,2026-09-30,clv_simple_v1
+MG-100542,2,147.72,43.0,19.0,0.318,multi-product (2 lines); price guarantee ends <90d; 4 tickets in 12m; low CSAT,274.0,-138.0,2026-09-30,clv_simple_v1
+MG-100543,1,246.41,36.0,24.0,0.17,4 tickets in 12m,836.0,-227.0,2026-09-30,clv_simple_v1
+MG-100544,1,160.52,92.0,80.0,0.24,2 tickets in 12m,220.0,-317.0,2026-09-30,clv_simple_v1
+MG-100545,1,213.55,30.75,18.75,0.14,,801.0,-82.0,2026-09-30,clv_simple_v1
+MG-100546,3,350.83,55.75,19.75,0.147,multi-product (3 lines); 3 tickets in 12m,1265.0,-283.0,2026-09-30,clv_simple_v1
+MG-100547,2,254.17,31.5,7.5,0.276,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m,648.0,-100.0,2026-09-30,clv_simple_v1
+MG-100548,2,275.65,84.75,60.75,0.276,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m,556.0,-262.0,2026-09-30,clv_simple_v1
+MG-100549,1,324.39,12.0,0.0,0.23,price guarantee ends <90d,1033.0,0.0,2026-09-30,clv_simple_v1
+MG-100550,1,145.81,23.25,11.25,0.19,low CSAT,457.0,-129.0,2026-09-30,clv_simple_v1
+MG-100551,0,0.0,2.5,2.5,0.25,,-8.0,-8.0,2026-09-30,clv_simple_v1
+MG-100552,2,386.77,31.5,7.5,0.117,multi-product (2 lines),1682.0,-36.0,2026-09-30,clv_simple_v1
+MG-100553,1,133.27,12.0,0.0,0.14,,531.0,0.0,2026-09-30,clv_simple_v1
+MG-100554,1,141.28,16.5,4.5,0.24,price guarantee ends <90d,401.0,-14.0,2026-09-30,clv_simple_v1
+MG-100555,1,154.74,12.0,0.0,0.14,,626.0,0.0,2026-09-30,clv_simple_v1
+MG-100556,1,147.73,21.25,9.25,0.3,open complaint; 2 tickets in 12m,346.0,-249.0,2026-09-30,clv_simple_v1
+MG-100557,1,138.62,16.5,4.5,0.14,,535.0,-20.0,2026-09-30,clv_simple_v1
+MG-100558,1,257.26,22.0,10.0,0.18,2 tickets in 12m,905.0,-170.0,2026-09-30,clv_simple_v1
+MG-100559,1,98.89,12.0,0.0,0.14,,381.0,0.0,2026-09-30,clv_simple_v1
+MG-100560,1,136.26,12.0,0.0,0.24,price guarantee ends <90d,399.0,0.0,2026-09-30,clv_simple_v1
+MG-100561,2,315.93,42.75,18.75,0.356,multi-product (2 lines); price guarantee ends <90d; open complaint,652.0,-297.0,2026-09-30,clv_simple_v1
+MG-100562,1,223.58,30.75,18.75,0.14,,845.0,-82.0,2026-09-30,clv_simple_v1
+MG-100563,1,114.35,42.0,30.0,0.22,dunning level 2,246.0,-202.0,2026-09-30,clv_simple_v1
+MG-100564,2,343.75,31.0,7.0,0.263,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m,944.0,-137.0,2026-09-30,clv_simple_v1
+MG-100565,1,161.72,66.5,54.5,0.26,3 tickets in 12m; dunning level 3,289.0,-367.0,2026-09-30,clv_simple_v1
+MG-100566,1,119.81,34.5,22.5,0.14,,374.0,-99.0,2026-09-30,clv_simple_v1
+MG-100567,2,129.94,24.0,0.0,0.128,multi-product (2 lines),484.0,-0.0,2026-09-30,clv_simple_v1
+MG-100568,1,146.8,16.5,4.5,0.14,,571.0,-20.0,2026-09-30,clv_simple_v1
+MG-100569,0,0.0,0.0,0.0,0.25,,0.0,0.0,2026-09-30,clv_simple_v1
+MG-100570,1,143.74,12.0,0.0,0.24,price guarantee ends <90d,423.0,-0.0,2026-09-30,clv_simple_v1
+MG-100571,1,112.64,16.5,4.5,0.14,,421.0,-20.0,2026-09-30,clv_simple_v1
+MG-100572,2,203.81,82.75,58.75,0.212,multi-product (2 lines); price guarantee ends <90d; 2 tickets in 12m; HEMS user,422.0,-287.0,2026-09-30,clv_simple_v1
+MG-100573,1,102.59,19.5,7.5,0.19,low CSAT,310.0,-87.0,2026-09-30,clv_simple_v1
+MG-100574,1,83.73,12.0,0.0,0.14,,314.0,0.0,2026-09-30,clv_simple_v1
+MG-100575,1,135.36,28.75,16.75,0.3,open complaint; 3 tickets in 12m,291.0,-249.0,2026-09-30,clv_simple_v1
+MG-100576,1,113.93,15.0,3.0,0.24,price guarantee ends <90d,318.0,-10.0,2026-09-30,clv_simple_v1
+MG-100577,3,225.47,43.5,7.5,0.109,multi-product (3 lines); 2 tickets in 12m; HEMS user,888.0,-181.0,2026-09-30,clv_simple_v1
+MG-100578,1,149.79,30.75,18.75,0.26,open complaint,362.0,-242.0,2026-09-30,clv_simple_v1
+MG-100579,1,151.84,12.0,0.0,0.14,,613.0,0.0,2026-09-30,clv_simple_v1
+MG-100580,4,217.96,48.0,0.0,0.049,multi-product (4 lines); HEMS user,1033.0,0.0,2026-09-30,clv_simple_v1
+MG-100581,2,178.32,24.0,0.0,0.128,multi-product (2 lines),704.0,0.0,2026-09-30,clv_simple_v1
+MG-100582,2,324.99,24.0,0.0,0.117,multi-product (2 lines),1425.0,0.0,2026-09-30,clv_simple_v1
+MG-100583,1,99.46,21.0,9.0,0.18,2 tickets in 12m,302.0,-81.0,2026-09-30,clv_simple_v1
+MG-100584,1,231.96,24.0,12.0,0.17,2 tickets in 12m,826.0,-171.0,2026-09-30,clv_simple_v1
+MG-100585,1,129.31,27.0,15.0,0.24,price guarantee ends <90d,329.0,-48.0,2026-09-30,clv_simple_v1
+MG-100586,1,216.72,16.5,4.5,0.13,,908.0,-20.0,2026-09-30,clv_simple_v1
+MG-100587,2,115.56,46.5,22.5,0.136,multi-product (2 lines),307.0,-100.0,2026-09-30,clv_simple_v1
+MG-100588,1,265.88,12.0,0.0,0.23,price guarantee ends <90d,840.0,0.0,2026-09-30,clv_simple_v1
+MG-100589,1,255.86,12.0,0.0,0.23,price guarantee ends <90d,807.0,0.0,2026-09-30,clv_simple_v1
+MG-100590,1,106.43,53.25,41.25,0.23,3 tickets in 12m; low CSAT,176.0,-238.0,2026-09-30,clv_simple_v1
+MG-100591,1,129.33,19.5,7.5,0.18,2 tickets in 12m,423.0,-92.0,2026-09-30,clv_simple_v1
+MG-100592,1,93.96,12.0,0.0,0.14,,359.0,-0.0,2026-09-30,clv_simple_v1
+MG-100593,1,147.09,12.0,0.0,0.14,,592.0,0.0,2026-09-30,clv_simple_v1
+MG-100594,3,407.51,36.0,0.0,0.111,multi-product (3 lines),1799.0,0.0,2026-09-30,clv_simple_v1
+MG-100595,1,90.79,12.0,0.0,0.14,,345.0,0.0,2026-09-30,clv_simple_v1
+MG-100596,1,165.99,19.5,7.5,0.14,,642.0,-33.0,2026-09-30,clv_simple_v1
+MG-100597,1,118.05,12.0,0.0,0.14,,465.0,0.0,2026-09-30,clv_simple_v1
+MG-100598,2,205.87,24.0,0.0,0.128,multi-product (2 lines),830.0,0.0,2026-09-30,clv_simple_v1
+MG-100599,0,0.0,4.5,4.5,0.25,,-14.0,-14.0,2026-09-30,clv_simple_v1
+MG-100600,1,35.96,12.0,0.0,0.18,,92.0,0.0,2026-09-30,clv_simple_v1
+MG-100601,1,52.84,33.0,21.0,0.2,,72.0,-76.0,2026-09-30,clv_simple_v1
+MG-100602,1,176.76,49.5,37.5,0.2,,460.0,-136.0,2026-09-30,clv_simple_v1
+MG-100603,2,88.89,24.0,0.0,0.152,multi-product (2 lines),273.0,0.0,2026-09-30,clv_simple_v1
+MG-100604,1,177.47,21.0,9.0,0.2,,566.0,-33.0,2026-09-30,clv_simple_v1
+MG-100605,2,238.61,56.5,32.5,0.152,multi-product (2 lines),767.0,-137.0,2026-09-30,clv_simple_v1
+MG-100606,1,124.59,45.75,33.75,0.41,open complaint; 4 tickets in 12m; low CSAT,167.0,-240.0,2026-09-30,clv_simple_v1
+MG-100607,1,169.76,23.5,11.5,0.2,,529.0,-42.0,2026-09-30,clv_simple_v1
+MG-100608,2,96.38,39.0,15.0,0.242,multi-product (2 lines); 3 tickets in 12m; low CSAT,183.0,-121.0,2026-09-30,clv_simple_v1
+MG-100609,1,181.35,16.5,4.5,0.2,,596.0,-16.0,2026-09-30,clv_simple_v1
+MG-100610,1,174.26,36.0,24.0,0.2,,500.0,-87.0,2026-09-30,clv_simple_v1
+MG-100611,1,219.6,16.5,4.5,0.2,,734.0,-16.0,2026-09-30,clv_simple_v1
+MG-100612,1,138.6,41.0,29.0,0.2,,353.0,-105.0,2026-09-30,clv_simple_v1
+MG-100613,1,10.06,38.25,26.25,0.24,3 tickets in 12m,-91.0,-84.0,2026-09-30,clv_simple_v1
+MG-100614,2,265.61,57.5,33.5,0.192,multi-product (2 lines); 2 tickets in 12m,771.0,-246.0,2026-09-30,clv_simple_v1
+MG-100615,2,132.17,31.5,7.5,0.272,multi-product (2 lines); open complaint,296.0,-159.0,2026-09-30,clv_simple_v1
+MG-100616,1,172.05,21.0,9.0,0.2,,546.0,-33.0,2026-09-30,clv_simple_v1
+MG-100617,1,140.24,12.0,0.0,0.2,,464.0,0.0,2026-09-30,clv_simple_v1
+MG-100618,1,150.44,21.0,9.0,0.2,,468.0,-33.0,2026-09-30,clv_simple_v1
+MG-100619,2,77.47,24.0,0.0,0.152,multi-product (2 lines),225.0,0.0,2026-09-30,clv_simple_v1
+MG-100620,2,106.32,24.0,0.0,0.152,multi-product (2 lines),347.0,0.0,2026-09-30,clv_simple_v1
+MG-100621,1,23.08,19.0,7.0,0.2,,15.0,-25.0,2026-09-30,clv_simple_v1
+MG-100622,1,189.06,34.75,22.75,0.24,3 tickets in 12m,496.0,-144.0,2026-09-30,clv_simple_v1
+MG-100623,1,161.17,12.0,0.0,0.2,,539.0,0.0,2026-09-30,clv_simple_v1
+MG-100624,1,263.93,21.0,9.0,0.2,,878.0,-33.0,2026-09-30,clv_simple_v1
+MG-100625,1,167.33,19.0,7.0,0.2,,536.0,-25.0,2026-09-30,clv_simple_v1
+MG-100626,2,279.66,59.75,35.75,0.202,multi-product (2 lines); low CSAT,790.0,-286.0,2026-09-30,clv_simple_v1
+MG-100627,1,84.82,28.0,16.0,0.2,,205.0,-58.0,2026-09-30,clv_simple_v1
+MG-100628,1,175.64,21.0,9.0,0.2,,559.0,-33.0,2026-09-30,clv_simple_v1
+MG-100629,1,179.93,35.25,23.25,0.2,,523.0,-84.0,2026-09-30,clv_simple_v1
+MG-100630,1,188.31,25.5,13.5,0.2,,589.0,-49.0,2026-09-30,clv_simple_v1
+MG-100631,1,45.02,30.75,18.75,0.24,2 tickets in 12m,46.0,-74.0,2026-09-30,clv_simple_v1
+MG-100632,1,26.84,15.0,3.0,0.25,low CSAT,37.0,-17.0,2026-09-30,clv_simple_v1
+MG-100633,1,164.66,36.0,24.0,0.24,3 tickets in 12m,413.0,-138.0,2026-09-30,clv_simple_v1
+MG-100634,1,41.26,16.5,4.5,0.2,,90.0,-16.0,2026-09-30,clv_simple_v1
+MG-100635,1,154.12,21.0,9.0,0.2,,481.0,-33.0,2026-09-30,clv_simple_v1
+MG-100636,1,141.5,49.0,37.0,0.2,,334.0,-134.0,2026-09-30,clv_simple_v1
+MG-100637,1,160.06,16.5,4.5,0.2,,519.0,-16.0,2026-09-30,clv_simple_v1
+MG-100638,1,180.24,57.75,45.75,0.41,open complaint; 2 tickets in 12m; low CSAT,260.0,-348.0,2026-09-30,clv_simple_v1
+MG-100639,1,173.48,25.5,13.5,0.2,,535.0,-49.0,2026-09-30,clv_simple_v1
+MG-100640,1,199.67,25.5,13.5,0.2,,630.0,-49.0,2026-09-30,clv_simple_v1
+MG-100641,2,253.04,39.75,15.75,0.272,multi-product (2 lines); open complaint,627.0,-337.0,2026-09-30,clv_simple_v1
+MG-100642,1,168.38,30.0,18.0,0.25,low CSAT,432.0,-133.0,2026-09-30,clv_simple_v1
+MG-100643,1,14.89,12.0,0.0,0.2,,10.0,0.0,2026-09-30,clv_simple_v1
+MG-100644,1,89.96,12.0,0.0,0.18,,300.0,0.0,2026-09-30,clv_simple_v1
+MG-100645,1,178.06,25.5,13.5,0.2,,552.0,-49.0,2026-09-30,clv_simple_v1
+MG-100646,2,212.45,28.5,4.5,0.152,multi-product (2 lines),775.0,-19.0,2026-09-30,clv_simple_v1
+MG-100647,1,50.23,19.0,7.0,0.24,2 tickets in 12m,100.0,-38.0,2026-09-30,clv_simple_v1
+MG-100648,1,172.83,12.0,0.0,0.2,,581.0,0.0,2026-09-30,clv_simple_v1
+MG-100649,1,52.58,33.75,21.75,0.36,open complaint; 3 tickets in 12m,45.0,-102.0,2026-09-30,clv_simple_v1
+MG-100650,1,36.67,101.5,89.5,0.29,4 tickets in 12m; low CSAT,-182.0,-271.0,2026-09-30,clv_simple_v1
+MG-100651,2,231.08,24.0,0.0,0.152,multi-product (2 lines),872.0,0.0,2026-09-30,clv_simple_v1
+MG-100652,1,52.23,12.0,0.0,0.2,,145.0,0.0,2026-09-30,clv_simple_v1
+MG-100653,2,183.58,33.0,9.0,0.152,multi-product (2 lines),634.0,-38.0,2026-09-30,clv_simple_v1
+MG-100654,1,21.97,12.0,0.0,0.2,,36.0,0.0,2026-09-30,clv_simple_v1
+MG-100655,1,180.92,63.0,51.0,0.24,2 tickets in 12m,379.0,-232.0,2026-09-30,clv_simple_v1
+MG-100656,2,194.94,28.5,4.5,0.152,multi-product (2 lines),701.0,-19.0,2026-09-30,clv_simple_v1
+MG-100657,1,136.52,36.0,24.0,0.24,2 tickets in 12m,323.0,-127.0,2026-09-30,clv_simple_v1
+MG-100658,1,202.21,30.0,18.0,0.2,,623.0,-65.0,2026-09-30,clv_simple_v1
+MG-100659,1,234.85,34.5,22.5,0.35,low CSAT; 3 failed charges in 30d,485.0,-321.0,2026-09-30,clv_simple_v1
+MG-100660,2,200.67,33.0,9.0,0.152,multi-product (2 lines),706.0,-38.0,2026-09-30,clv_simple_v1
+MG-100661,1,42.29,19.5,7.5,0.25,low CSAT,71.0,-38.0,2026-09-30,clv_simple_v1
+MG-100662,1,40.55,16.5,4.5,0.2,,87.0,-16.0,2026-09-30,clv_simple_v1
+MG-100663,2,200.52,51.0,27.0,0.152,multi-product (2 lines),630.0,-114.0,2026-09-30,clv_simple_v1
+MG-100664,1,40.28,24.0,12.0,0.25,low CSAT,51.0,-51.0,2026-09-30,clv_simple_v1
+MG-100665,1,55.4,12.0,0.0,0.2,,157.0,0.0,2026-09-30,clv_simple_v1
+MG-100666,1,148.74,35.5,23.5,0.24,3 tickets in 12m,364.0,-130.0,2026-09-30,clv_simple_v1
+MG-100667,1,143.49,39.0,27.0,0.24,3 tickets in 12m,336.0,-140.0,2026-09-30,clv_simple_v1
+MG-100668,1,160.31,16.5,4.5,0.2,,520.0,-16.0,2026-09-30,clv_simple_v1
+MG-100669,1,40.66,93.5,81.5,0.24,3 tickets in 12m,-170.0,-273.0,2026-09-30,clv_simple_v1
+MG-100670,1,13.73,35.25,23.25,0.24,2 tickets in 12m,-69.0,-75.0,2026-09-30,clv_simple_v1
+MG-100671,1,165.71,12.0,0.0,0.2,,556.0,0.0,2026-09-30,clv_simple_v1
+MG-100672,2,110.75,24.0,0.0,0.152,multi-product (2 lines),365.0,0.0,2026-09-30,clv_simple_v1
+MG-100673,1,25.45,29.5,17.5,0.25,low CSAT,-13.0,-61.0,2026-09-30,clv_simple_v1
+MG-100674,2,193.78,24.0,0.0,0.152,multi-product (2 lines),715.0,0.0,2026-09-30,clv_simple_v1
+MG-100675,1,30.55,12.0,0.0,0.2,,67.0,0.0,2026-09-30,clv_simple_v1
+MG-100676,1,191.16,12.0,0.0,0.2,,648.0,0.0,2026-09-30,clv_simple_v1
+MG-100677,1,32.7,41.5,29.5,0.2,,-32.0,-107.0,2026-09-30,clv_simple_v1
+MG-100678,2,318.36,39.75,15.75,0.152,multi-product (2 lines),1173.0,-66.0,2026-09-30,clv_simple_v1
+MG-100679,1,11.17,21.0,9.0,0.2,,-36.0,-33.0,2026-09-30,clv_simple_v1
+MG-100680,1,14.99,52.75,40.75,0.41,open complaint; 2 tickets in 12m; low CSAT,-80.0,-91.0,2026-09-30,clv_simple_v1
+MG-100681,1,144.13,28.0,16.0,0.29,3 tickets in 12m; low CSAT,326.0,-152.0,2026-09-30,clv_simple_v1
+MG-100682,2,44.2,36.5,12.5,0.192,multi-product (2 lines); 3 tickets in 12m,29.0,-57.0,2026-09-30,clv_simple_v1
+MG-100683,1,165.56,21.0,9.0,0.2,,523.0,-33.0,2026-09-30,clv_simple_v1
+MG-100684,2,53.29,24.0,0.0,0.152,multi-product (2 lines),123.0,0.0,2026-09-30,clv_simple_v1
+MG-100685,1,144.38,21.0,9.0,0.25,low CSAT,385.0,-93.0,2026-09-30,clv_simple_v1
+MG-100686,1,12.58,15.0,3.0,0.25,low CSAT,-8.0,-10.0,2026-09-30,clv_simple_v1
+MG-100687,1,140.01,12.0,0.0,0.2,,463.0,0.0,2026-09-30,clv_simple_v1
+MG-100688,2,120.83,36.0,12.0,0.192,multi-product (2 lines); 2 tickets in 12m,314.0,-93.0,2026-09-30,clv_simple_v1
+MG-100689,2,250.28,31.5,7.5,0.152,multi-product (2 lines),921.0,-32.0,2026-09-30,clv_simple_v1
+MG-100690,1,164.03,88.25,76.25,0.29,2 tickets in 12m; low CSAT,213.0,-337.0,2026-09-30,clv_simple_v1
+MG-100691,1,148.93,21.0,9.0,0.2,,463.0,-33.0,2026-09-30,clv_simple_v1
+MG-100692,1,31.52,16.5,4.5,0.2,,54.0,-16.0,2026-09-30,clv_simple_v1
+MG-100693,2,212.43,51.0,27.0,0.152,multi-product (2 lines),680.0,-114.0,2026-09-30,clv_simple_v1
+MG-100694,1,169.67,49.25,37.25,0.24,2 tickets in 12m,387.0,-183.0,2026-09-30,clv_simple_v1
+MG-100695,1,79.28,12.0,0.0,0.2,,243.0,0.0,2026-09-30,clv_simple_v1
+MG-100696,2,300.13,28.5,4.5,0.152,multi-product (2 lines),1144.0,-19.0,2026-09-30,clv_simple_v1
+MG-100697,1,179.51,12.0,0.0,0.2,,606.0,0.0,2026-09-30,clv_simple_v1
+MG-100698,1,165.29,27.0,15.0,0.29,2 tickets in 12m; low CSAT,388.0,-166.0,2026-09-30,clv_simple_v1
+MG-100699,1,72.45,16.5,4.5,0.2,,202.0,-16.0,2026-09-30,clv_simple_v1
+MG-100700,1,20.62,12.0,0.0,0.2,,31.0,0.0,2026-09-30,clv_simple_v1
+MG-100701,1,163.23,30.25,18.25,0.29,2 tickets in 12m; low CSAT,373.0,-174.0,2026-09-30,clv_simple_v1
+MG-100702,1,151.07,21.0,9.0,0.2,,470.0,-33.0,2026-09-30,clv_simple_v1
+MG-100703,1,174.15,28.0,16.0,0.2,,528.0,-58.0,2026-09-30,clv_simple_v1
+MG-100704,1,17.26,21.0,9.0,0.2,,-14.0,-33.0,2026-09-30,clv_simple_v1
+MG-100705,1,172.79,19.5,7.5,0.2,,554.0,-27.0,2026-09-30,clv_simple_v1
+MG-100706,1,62.58,12.0,0.0,0.2,,183.0,0.0,2026-09-30,clv_simple_v1
+MG-100707,1,168.67,37.5,25.5,0.24,2 tickets in 12m,422.0,-145.0,2026-09-30,clv_simple_v1
+MG-100708,1,44.84,22.5,10.5,0.29,2 tickets in 12m; low CSAT,63.0,-56.0,2026-09-30,clv_simple_v1
+MG-100709,1,38.91,25.75,13.75,0.36,open complaint; 2 tickets in 12m,31.0,-66.0,2026-09-30,clv_simple_v1
+MG-100710,2,96.62,24.0,0.0,0.152,multi-product (2 lines),306.0,0.0,2026-09-30,clv_simple_v1
+MG-100711,1,84.21,84.0,72.0,0.24,2 tickets in 12m,1.0,-260.0,2026-09-30,clv_simple_v1
+MG-100712,1,20.73,12.0,0.0,0.2,,32.0,0.0,2026-09-30,clv_simple_v1
+MG-100713,1,9.18,16.5,4.5,0.25,low CSAT,-23.0,-13.0,2026-09-30,clv_simple_v1
+MG-100714,1,181.65,20.5,8.5,0.24,3 tickets in 12m,518.0,-95.0,2026-09-30,clv_simple_v1
+MG-100715,1,232.91,25.5,13.5,0.24,2 tickets in 12m,667.0,-132.0,2026-09-30,clv_simple_v1
+MG-100716,1,59.2,12.0,0.0,0.2,,171.0,0.0,2026-09-30,clv_simple_v1
+MG-100717,1,201.52,28.5,16.5,0.25,low CSAT,541.0,-145.0,2026-09-30,clv_simple_v1
+MG-100718,1,32.95,57.75,45.75,0.2,,-90.0,-165.0,2026-09-30,clv_simple_v1
+MG-100719,1,15.71,50.5,38.5,0.25,low CSAT,-109.0,-122.0,2026-09-30,clv_simple_v1
+MG-100720,1,172.34,16.5,4.5,0.2,,563.0,-16.0,2026-09-30,clv_simple_v1
+MG-100721,1,31.48,33.25,21.25,0.2,,-6.0,-77.0,2026-09-30,clv_simple_v1
+MG-100722,1,128.82,12.0,0.0,0.2,,422.0,0.0,2026-09-30,clv_simple_v1
+MG-100723,1,59.64,12.0,0.0,0.2,,172.0,0.0,2026-09-30,clv_simple_v1
+MG-100724,0,0.0,4.5,4.5,0.25,,-14.0,-14.0,2026-09-30,clv_simple_v1
+MG-100725,1,172.12,16.5,4.5,0.2,,563.0,-16.0,2026-09-30,clv_simple_v1
+MG-100726,1,153.89,16.5,4.5,0.2,,497.0,-16.0,2026-09-30,clv_simple_v1
+MG-100727,2,59.88,28.5,4.5,0.152,multi-product (2 lines),132.0,-19.0,2026-09-30,clv_simple_v1
+MG-100728,1,87.3,36.0,24.0,0.24,2 tickets in 12m,165.0,-107.0,2026-09-30,clv_simple_v1
+MG-100729,1,68.33,12.0,0.0,0.2,,204.0,0.0,2026-09-30,clv_simple_v1
+MG-100730,1,161.7,16.5,4.5,0.2,,525.0,-16.0,2026-09-30,clv_simple_v1
+MG-100731,2,285.89,28.5,4.5,0.152,multi-product (2 lines),1084.0,-19.0,2026-09-30,clv_simple_v1
+MG-100732,1,41.96,12.0,0.0,0.2,,108.0,0.0,2026-09-30,clv_simple_v1
+MG-100733,2,218.77,66.0,42.0,0.152,multi-product (2 lines),643.0,-177.0,2026-09-30,clv_simple_v1
+MG-100734,1,64.53,19.5,7.5,0.2,,163.0,-27.0,2026-09-30,clv_simple_v1
+MG-100735,1,24.72,48.25,36.25,0.25,low CSAT,-74.0,-120.0,2026-09-30,clv_simple_v1
+MG-100736,1,162.25,21.0,9.0,0.2,,511.0,-33.0,2026-09-30,clv_simple_v1
+MG-100737,1,190.6,12.0,0.0,0.2,,646.0,0.0,2026-09-30,clv_simple_v1
+MG-100738,1,68.99,23.5,11.5,0.24,4 tickets in 12m,146.0,-60.0,2026-09-30,clv_simple_v1
+MG-100739,1,213.53,36.0,24.0,0.24,3 tickets in 12m,571.0,-158.0,2026-09-30,clv_simple_v1
+MG-100740,1,164.01,28.0,16.0,0.2,,492.0,-58.0,2026-09-30,clv_simple_v1
+MG-100741,1,173.5,34.5,22.5,0.2,,503.0,-81.0,2026-09-30,clv_simple_v1
+MG-100742,1,154.9,12.0,0.0,0.2,,517.0,0.0,2026-09-30,clv_simple_v1
+MG-100743,1,248.96,56.5,44.5,0.24,3 tickets in 12m,618.0,-238.0,2026-09-30,clv_simple_v1
+MG-100744,1,201.54,42.75,30.75,0.24,3 tickets in 12m,510.0,-175.0,2026-09-30,clv_simple_v1
+MG-100745,1,171.59,49.5,37.5,0.24,3 tickets in 12m,392.0,-185.0,2026-09-30,clv_simple_v1
+MG-100746,2,93.46,52.0,28.0,0.152,multi-product (2 lines),175.0,-118.0,2026-09-30,clv_simple_v1
+MG-100747,1,165.77,55.5,43.5,0.29,3 tickets in 12m; low CSAT,309.0,-247.0,2026-09-30,clv_simple_v1
+MG-100748,1,26.02,56.25,44.25,0.24,2 tickets in 12m,-97.0,-148.0,2026-09-30,clv_simple_v1
+MG-100749,1,173.65,30.0,18.0,0.2,,519.0,-65.0,2026-09-30,clv_simple_v1
+MG-100750,2,76.07,47.25,23.25,0.192,multi-product (2 lines); 2 tickets in 12m,107.0,-112.0,2026-09-30,clv_simple_v1

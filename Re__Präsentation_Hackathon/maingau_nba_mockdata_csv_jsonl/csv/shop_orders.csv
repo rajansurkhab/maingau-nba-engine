@@ -1,0 +1,447 @@
+order_id,customer_id,order_created_at,order_channel,product_name,product_category,quantity,line_value_eur,payment_method,order_status,newsletter_attributed_campaign,record_updated_at
+SO-900001,MG-100015,2024-06-15 13:12:43,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2024-06-15 13:20:43
+SO-900002,MG-100015,2025-04-24 12:14:05,web,Balkonkraftwerk 800 W,solar,1,499,sepa,returned,,2025-04-24 12:25:05
+SO-900003,MG-100015,2026-06-09 11:01:48,web,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2026-06-09 11:23:48
+SO-900004,MG-100019,2024-12-20 01:37:17,web,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2024-12-20 02:07:17
+SO-900005,MG-100023,2025-08-14 10:27:24,app,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2025-08-14 10:43:24
+SO-900006,MG-100027,2026-01-01 17:05:54,web,LED-Set 10 Stk,energy_saving,2,58,credit_card,delivered,,2026-01-01 17:11:54
+SO-900007,MG-100027,2026-03-21 23:19:13,app,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2026-03-21 23:43:13
+SO-900008,MG-100034,2024-04-26 12:19:31,app,Stromzähler-Lesekopf,smart_home,1,39,invoice,delivered,,2024-04-26 12:20:31
+SO-900009,MG-100038,2026-02-18 23:50:04,app,Powerbank Solar,accessories,1,59,paypal,delivered,,2026-02-19 00:09:04
+SO-900010,MG-100039,2026-07-05 21:18:32,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2026-07-05 21:44:32
+SO-900011,MG-100039,2025-07-06 13:06:40,web,LED-Set 10 Stk,energy_saving,2,58,invoice,delivered,,2025-07-06 13:08:40
+SO-900012,MG-100041,2024-09-29 16:43:41,web,Smart Plug 4er-Set,smart_home,1,49,invoice,delivered,,2024-09-29 16:54:41
+SO-900013,MG-100048,2025-07-23 03:32:56,web,Powerbank Solar,accessories,1,59,paypal,delivered,,2025-07-23 03:44:56
+SO-900014,MG-100056,2026-07-03 17:15:19,web,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2026-07-03 17:45:19
+SO-900015,MG-100061,2025-07-31 17:04:39,web,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2025-07-31 17:07:39
+SO-900016,MG-100061,2026-08-31 21:34:21,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2026-08-31 21:50:21
+SO-900017,MG-100065,2025-03-20 14:17:37,web,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2025-03-20 14:38:37
+SO-900018,MG-100065,2026-03-01 14:38:21,web,LED-Set 10 Stk,energy_saving,2,58,credit_card,delivered,,2026-03-01 15:02:21
+SO-900019,MG-100065,2026-05-01 18:24:49,web,Powerbank Solar,accessories,1,59,invoice,delivered,,2026-05-01 18:43:49
+SO-900020,MG-100068,2025-12-28 13:14:20,app,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2025-12-28 13:21:20
+SO-900021,MG-100068,2025-05-29 16:52:55,app,LED-Set 10 Stk,energy_saving,1,29,sepa,delivered,,2025-05-29 17:22:55
+SO-900022,MG-100068,2025-04-23 10:28:39,app,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2025-04-23 10:37:39
+SO-900023,MG-100069,2024-08-26 00:59:50,web,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2024-08-26 01:22:50
+SO-900024,MG-100069,2024-12-12 09:21:42,app,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2024-12-12 09:43:42
+SO-900025,MG-100070,2025-03-24 08:31:31,app,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2025-03-24 08:53:31
+SO-900026,MG-100073,2025-01-21 13:00:32,web,Smart Plug 4er-Set,smart_home,2,98,sepa,delivered,,2025-01-21 13:04:32
+SO-900027,MG-100076,2025-07-19 01:02:21,app,Stromzähler-Lesekopf,smart_home,1,39,invoice,cancelled,,2025-07-19 01:17:21
+SO-900028,MG-100077,2025-08-31 15:26:14,app,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2025-08-31 15:42:14
+SO-900029,MG-100078,2025-03-27 15:23:21,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2025-03-27 15:25:21
+SO-900030,MG-100083,2024-10-05 13:35:47,web,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2024-10-05 13:51:47
+SO-900031,MG-100085,2025-06-14 23:57:16,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2025-06-15 00:20:16
+SO-900032,MG-100085,2026-03-11 17:42:19,web,Stromzähler-Lesekopf,smart_home,1,39,sepa,returned,,2026-03-11 17:50:19
+SO-900033,MG-100085,2024-09-24 08:44:46,web,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2024-09-24 08:57:46
+SO-900034,MG-100086,2024-10-11 18:30:54,web,Smart Plug 4er-Set,smart_home,2,98,invoice,delivered,,2024-10-11 18:53:54
+SO-900035,MG-100086,2026-05-12 07:47:22,app,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2026-05-12 07:48:22
+SO-900036,MG-100086,2024-08-14 09:41:29,web,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2024-08-14 10:07:29
+SO-900037,MG-100087,2026-08-10 07:41:37,web,Stromzähler-Lesekopf,smart_home,2,78,sepa,delivered,,2026-08-10 07:58:37
+SO-900038,MG-100087,2024-03-31 09:37:26,app,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2024-03-31 09:56:26
+SO-900039,MG-100087,2026-03-18 05:41:51,web,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2026-03-18 06:05:51
+SO-900040,MG-100093,2025-09-06 09:43:50,app,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2025-09-06 10:12:50
+SO-900041,MG-100093,2024-05-11 03:40:32,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2024-05-11 04:05:32
+SO-900042,MG-100093,2025-07-31 23:08:27,web,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2025-07-31 23:31:27
+SO-900043,MG-100094,2025-02-23 07:39:15,web,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2025-02-23 07:53:15
+SO-900044,MG-100094,2024-06-21 18:52:19,web,Smart Plug 4er-Set,smart_home,2,98,credit_card,delivered,,2024-06-21 19:00:19
+SO-900045,MG-100094,2025-02-03 09:10:08,web,LED-Set 10 Stk,energy_saving,1,29,paypal,delivered,,2025-02-03 09:40:08
+SO-900046,MG-100102,2025-03-24 20:28:55,app,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2025-03-24 20:30:55
+SO-900047,MG-100105,2026-03-31 11:43:34,web,Stromzähler-Lesekopf,smart_home,1,39,invoice,delivered,,2026-03-31 11:47:34
+SO-900048,MG-100106,2026-08-12 06:42:43,web,Wallbox 11 kW,e_mobility,1,699,invoice,delivered,,2026-08-12 07:12:43
+SO-900049,MG-100106,2026-02-01 17:02:48,web,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2026-02-01 17:26:48
+SO-900050,MG-100106,2026-08-06 02:40:42,web,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2026-08-06 02:46:42
+SO-900051,MG-100108,2024-12-30 06:02:34,web,LED-Set 10 Stk,energy_saving,1,29,invoice,delivered,,2024-12-30 06:17:34
+SO-900052,MG-100109,2024-09-25 23:05:03,app,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-09-25 23:17:03
+SO-900053,MG-100109,2025-06-09 09:39:37,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2025-06-09 10:06:37
+SO-900054,MG-100111,2024-04-24 13:43:22,app,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2024-04-24 13:47:22
+SO-900055,MG-100112,2024-10-25 19:49:53,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-10-25 20:12:53
+SO-900056,MG-100124,2026-07-30 06:14:21,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2026-07-30 06:34:21
+SO-900057,MG-100124,2026-01-21 09:37:41,app,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2026-01-21 10:07:41
+SO-900058,MG-100124,2024-04-01 02:41:18,web,LED-Set 10 Stk,energy_saving,1,29,sepa,delivered,,2024-04-01 03:11:18
+SO-900059,MG-100125,2024-09-13 22:39:41,web,Balkonkraftwerk 800 W,solar,1,499,paypal,returned,,2024-09-13 22:57:41
+SO-900060,MG-100125,2026-08-20 00:39:39,web,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2026-08-20 00:56:39
+SO-900061,MG-100125,2025-02-24 02:08:46,web,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2025-02-24 02:25:46
+SO-900062,MG-100127,2026-07-06 22:23:25,app,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2026-07-06 22:32:25
+SO-900063,MG-100131,2025-01-13 22:09:09,app,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2025-01-13 22:26:09
+SO-900064,MG-100131,2026-01-17 03:54:56,app,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2026-01-17 04:18:56
+SO-900065,MG-100137,2024-04-07 14:30:36,web,LED-Set 10 Stk,energy_saving,2,58,paypal,delivered,,2024-04-07 14:41:36
+SO-900066,MG-100141,2024-07-31 15:25:14,app,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2024-07-31 15:27:14
+SO-900067,MG-100147,2026-04-22 23:13:51,web,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2026-04-22 23:16:51
+SO-900068,MG-100149,2025-05-21 02:59:17,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2025-05-21 03:26:17
+SO-900069,MG-100149,2026-04-18 22:07:18,web,LED-Set 10 Stk,energy_saving,1,29,sepa,delivered,,2026-04-18 22:23:18
+SO-900070,MG-100149,2026-01-05 06:24:53,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2026-01-05 06:25:53
+SO-900071,MG-100150,2025-08-13 11:38:17,app,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2025-08-13 11:55:17
+SO-900072,MG-100151,2025-03-02 07:19:38,app,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2025-03-02 07:30:38
+SO-900073,MG-100151,2024-05-16 02:46:28,web,Smarte Thermostate 3er,smart_home,1,129,sepa,delivered,,2024-05-16 03:10:28
+SO-900074,MG-100152,2024-05-22 09:21:08,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2024-05-22 09:41:08
+SO-900075,MG-100160,2024-05-12 23:47:14,web,Ladekabel Typ 2,e_mobility,1,149,invoice,returned,,2024-05-13 00:14:14
+SO-900076,MG-100161,2024-03-08 17:21:34,web,Stromzähler-Lesekopf,smart_home,2,78,credit_card,delivered,,2024-03-08 17:39:34
+SO-900077,MG-100161,2026-04-14 07:27:33,app,Powerbank Solar,accessories,1,59,credit_card,delivered,,2026-04-14 07:40:33
+SO-900078,MG-100161,2024-12-17 13:22:00,web,Smart Plug 4er-Set,smart_home,1,49,invoice,delivered,,2024-12-17 13:30:00
+SO-900079,MG-100163,2025-06-02 12:01:51,app,Smart Plug 4er-Set,smart_home,2,98,invoice,delivered,,2025-06-02 12:15:51
+SO-900080,MG-100163,2024-04-02 04:06:05,web,Ladekabel Typ 2,e_mobility,1,149,credit_card,delivered,,2024-04-02 04:18:05
+SO-900081,MG-100169,2025-10-28 03:07:02,web,Stromzähler-Lesekopf,smart_home,2,78,credit_card,delivered,,2025-10-28 03:19:02
+SO-900082,MG-100169,2025-10-02 11:14:21,web,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2025-10-02 11:40:21
+SO-900083,MG-100170,2024-12-16 10:11:57,app,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2024-12-16 10:33:57
+SO-900084,MG-100171,2025-05-09 15:14:21,app,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2025-05-09 15:39:21
+SO-900085,MG-100171,2024-08-17 06:30:59,app,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-08-17 06:57:59
+SO-900086,MG-100173,2024-06-04 14:00:27,web,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2024-06-04 14:10:27
+SO-900087,MG-100175,2025-01-30 18:02:23,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2025-01-30 18:29:23
+SO-900088,MG-100179,2024-08-06 17:23:05,app,LED-Set 10 Stk,energy_saving,2,58,sepa,delivered,,2024-08-06 17:40:05
+SO-900089,MG-100182,2025-01-03 13:02:55,app,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2025-01-03 13:18:55
+SO-900090,MG-100184,2024-04-30 21:53:50,app,Powerbank Solar,accessories,1,59,paypal,delivered,,2024-04-30 21:56:50
+SO-900091,MG-100187,2024-07-27 01:19:55,web,Powerbank Solar,accessories,2,118,paypal,delivered,,2024-07-27 01:20:55
+SO-900092,MG-100190,2025-08-02 18:21:45,app,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2025-08-02 18:48:45
+SO-900093,MG-100193,2026-04-12 14:36:49,web,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2026-04-12 15:00:49
+SO-900094,MG-100193,2024-03-05 18:36:39,web,Stromzähler-Lesekopf,smart_home,2,78,sepa,delivered,,2024-03-05 18:48:39
+SO-900095,MG-100195,2026-09-24 19:14:49,web,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2026-09-24 19:18:49
+SO-900096,MG-100197,2025-08-15 18:06:48,web,Smart Plug 4er-Set,smart_home,2,98,sepa,delivered,,2025-08-15 18:13:48
+SO-900097,MG-100197,2024-10-31 22:39:56,app,Wallbox 11 kW,e_mobility,1,699,credit_card,returned,,2024-10-31 22:42:56
+SO-900098,MG-100198,2025-12-10 18:11:52,web,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2025-12-10 18:34:52
+SO-900099,MG-100201,2024-05-06 13:41:30,app,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2024-05-06 14:06:30
+SO-900100,MG-100201,2025-03-05 04:11:02,web,LED-Set 10 Stk,energy_saving,1,29,sepa,delivered,,2025-03-05 04:37:02
+SO-900101,MG-100201,2026-05-16 18:22:14,app,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2026-05-16 18:36:14
+SO-900102,MG-100203,2024-05-26 00:59:38,web,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2024-05-26 01:12:38
+SO-900103,MG-100205,2026-02-06 19:04:16,app,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2026-02-06 19:08:16
+SO-900104,MG-100208,2025-12-28 15:51:39,web,Smarte Thermostate 3er,smart_home,1,129,sepa,delivered,,2025-12-28 16:10:39
+SO-900105,MG-100214,2025-04-14 18:32:42,web,Powerbank Solar,accessories,1,59,credit_card,delivered,,2025-04-14 18:42:42
+SO-900106,MG-100216,2024-12-27 11:25:25,web,Powerbank Solar,accessories,1,59,credit_card,delivered,,2024-12-27 11:39:25
+SO-900107,MG-100216,2025-02-27 02:44:12,app,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2025-02-27 02:46:12
+SO-900108,MG-100216,2025-09-27 15:35:00,app,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2025-09-27 15:55:00
+SO-900109,MG-100218,2024-06-09 17:24:27,app,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2024-06-09 17:54:27
+SO-900110,MG-100218,2026-02-02 21:05:17,app,Balkonkraftwerk 800 W,solar,1,499,credit_card,cancelled,,2026-02-02 21:18:17
+SO-900111,MG-100218,2026-08-07 19:03:40,web,LED-Set 10 Stk,energy_saving,2,58,sepa,delivered,,2026-08-07 19:31:40
+SO-900112,MG-100220,2026-09-19 13:12:16,app,Smart Plug 4er-Set,smart_home,2,98,sepa,delivered,,2026-09-19 13:15:16
+SO-900113,MG-100220,2025-06-03 02:48:36,app,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2025-06-03 03:09:36
+SO-900114,MG-100220,2025-03-21 13:35:49,web,Powerbank Solar,accessories,2,118,invoice,delivered,,2025-03-21 13:36:49
+SO-900115,MG-100228,2024-10-06 11:45:20,web,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2024-10-06 12:04:20
+SO-900116,MG-100229,2024-04-05 16:02:08,web,Ladekabel Typ 2,e_mobility,1,149,credit_card,cancelled,,2024-04-05 16:15:08
+SO-900117,MG-100235,2025-02-18 08:34:13,web,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2025-02-18 08:56:13
+SO-900118,MG-100243,2025-08-18 10:42:33,web,LED-Set 10 Stk,energy_saving,2,58,credit_card,returned,,2025-08-18 11:11:33
+SO-900119,MG-100246,2024-10-15 17:35:36,app,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2024-10-15 17:49:36
+SO-900120,MG-100246,2024-07-24 05:50:07,app,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2024-07-24 06:02:07
+SO-900121,MG-100246,2024-06-22 02:20:08,web,Ladekabel Typ 2,e_mobility,1,149,paypal,returned,,2024-06-22 02:38:08
+SO-900122,MG-100247,2024-10-13 08:44:39,app,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2024-10-13 09:03:39
+SO-900123,MG-100247,2024-09-03 16:51:23,web,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2024-09-03 17:04:23
+SO-900124,MG-100249,2025-04-27 09:13:15,web,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2025-04-27 09:29:15
+SO-900125,MG-100251,2025-10-28 21:20:39,web,Smarte Thermostate 3er,smart_home,1,129,paypal,returned,,2025-10-28 21:22:39
+SO-900126,MG-100251,2025-10-23 11:23:37,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2025-10-23 11:45:37
+SO-900127,MG-100251,2025-08-03 03:46:35,web,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2025-08-03 03:49:35
+SO-900128,MG-100252,2025-05-08 19:05:08,app,Smart Plug 4er-Set,smart_home,2,98,paypal,delivered,,2025-05-08 19:33:08
+SO-900129,MG-100254,2026-05-20 14:24:06,web,LED-Set 10 Stk,energy_saving,2,58,sepa,delivered,,2026-05-20 14:45:06
+SO-900130,MG-100254,2025-09-24 05:29:44,web,Wallbox 11 kW,e_mobility,1,699,invoice,delivered,,2025-09-24 05:30:44
+SO-900131,MG-100259,2025-11-17 09:06:08,app,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2025-11-17 09:26:08
+SO-900132,MG-100259,2024-03-31 05:36:50,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2024-03-31 06:00:50
+SO-900133,MG-100263,2026-09-21 20:39:46,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2026-09-21 21:09:46
+SO-900134,MG-100266,2026-02-04 01:22:02,web,Wallbox 11 kW,e_mobility,1,699,invoice,delivered,,2026-02-04 01:34:02
+SO-900135,MG-100268,2025-11-14 10:00:25,web,Stromzähler-Lesekopf,smart_home,2,78,sepa,delivered,,2025-11-14 10:01:25
+SO-900136,MG-100273,2024-08-22 22:46:44,web,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2024-08-22 23:13:44
+SO-900137,MG-100276,2025-08-18 21:14:08,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2025-08-18 21:17:08
+SO-900138,MG-100276,2026-06-25 22:06:41,app,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2026-06-25 22:30:41
+SO-900139,MG-100280,2024-05-06 19:12:10,web,Ladekabel Typ 2,e_mobility,1,149,sepa,cancelled,,2024-05-06 19:21:10
+SO-900140,MG-100280,2024-05-22 04:15:34,web,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2024-05-22 04:42:34
+SO-900141,MG-100282,2026-02-18 13:32:13,app,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2026-02-18 14:02:13
+SO-900142,MG-100284,2026-04-03 15:15:23,app,Smart Plug 4er-Set,smart_home,2,98,credit_card,delivered,,2026-04-03 15:19:23
+SO-900143,MG-100286,2026-06-27 09:01:06,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2026-06-27 09:09:06
+SO-900144,MG-100286,2025-02-23 19:44:50,web,LED-Set 10 Stk,energy_saving,2,58,paypal,delivered,,2025-02-23 20:12:50
+SO-900145,MG-100295,2025-12-26 22:41:30,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2025-12-26 23:04:30
+SO-900146,MG-100295,2026-04-11 05:32:04,web,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2026-04-11 06:00:04
+SO-900147,MG-100295,2025-09-19 03:24:14,app,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2025-09-19 03:27:14
+SO-900148,MG-100297,2025-07-23 08:38:51,web,Smart Plug 4er-Set,smart_home,1,49,invoice,delivered,,2025-07-23 08:39:51
+SO-900149,MG-100300,2025-11-20 01:03:33,web,Smart Plug 4er-Set,smart_home,2,98,credit_card,delivered,,2025-11-20 01:06:33
+SO-900150,MG-100302,2026-02-08 11:58:08,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2026-02-08 12:06:08
+SO-900151,MG-100302,2026-06-20 17:55:01,app,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2026-06-20 18:01:01
+SO-900152,MG-100302,2024-04-28 16:50:37,web,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2024-04-28 17:12:37
+SO-900153,MG-100307,2025-06-07 03:21:46,app,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2025-06-07 03:42:46
+SO-900154,MG-100308,2026-06-26 16:53:12,web,Smarte Thermostate 3er,smart_home,1,129,sepa,delivered,,2026-06-26 16:56:12
+SO-900155,MG-100310,2025-10-28 14:45:10,app,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2025-10-28 14:46:10
+SO-900156,MG-100310,2026-02-01 04:01:14,app,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2026-02-01 04:25:14
+SO-900157,MG-100310,2026-02-15 18:27:41,web,Smart Plug 4er-Set,smart_home,2,98,sepa,delivered,,2026-02-15 18:45:41
+SO-900158,MG-100311,2026-01-08 00:34:43,web,Smart Plug 4er-Set,smart_home,2,98,credit_card,delivered,,2026-01-08 00:45:43
+SO-900159,MG-100311,2024-12-30 17:08:08,app,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2024-12-30 17:34:08
+SO-900160,MG-100311,2025-07-08 09:21:49,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2025-07-08 09:43:49
+SO-900161,MG-100314,2025-09-11 19:05:33,web,Stromzähler-Lesekopf,smart_home,1,39,invoice,delivered,,2025-09-11 19:27:33
+SO-900162,MG-100315,2024-09-10 21:49:52,app,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2024-09-10 22:14:52
+SO-900163,MG-100323,2025-03-19 02:50:19,web,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2025-03-19 03:16:19
+SO-900164,MG-100323,2025-02-09 04:06:36,web,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2025-02-09 04:17:36
+SO-900165,MG-100323,2025-04-10 00:39:34,app,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2025-04-10 00:45:34
+SO-900166,MG-100325,2025-08-16 09:02:27,app,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2025-08-16 09:15:27
+SO-900167,MG-100325,2025-02-08 07:47:24,web,Powerbank Solar,accessories,1,59,invoice,delivered,,2025-02-08 07:51:24
+SO-900168,MG-100326,2025-10-29 17:42:47,web,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2025-10-29 17:59:47
+SO-900169,MG-100326,2025-10-22 01:31:41,app,Wallbox 11 kW,e_mobility,1,699,invoice,returned,,2025-10-22 01:32:41
+SO-900170,MG-100326,2026-03-28 17:19:23,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2026-03-28 17:20:23
+SO-900171,MG-100327,2026-05-05 20:18:30,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2026-05-05 20:48:30
+SO-900172,MG-100327,2026-03-23 06:06:52,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2026-03-23 06:25:52
+SO-900173,MG-100327,2024-04-28 13:12:19,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-04-28 13:25:19
+SO-900174,MG-100332,2024-11-25 12:54:32,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2024-11-25 13:10:32
+SO-900175,MG-100335,2025-07-06 22:33:21,app,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2025-07-06 23:01:21
+SO-900176,MG-100335,2024-08-17 11:43:04,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2024-08-17 12:08:04
+SO-900177,MG-100336,2026-06-01 02:27:27,web,Smarte Thermostate 3er,smart_home,1,129,sepa,returned,,2026-06-01 02:45:27
+SO-900178,MG-100336,2024-09-21 11:41:09,web,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2024-09-21 11:53:09
+SO-900179,MG-100337,2025-08-24 02:10:16,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2025-08-24 02:28:16
+SO-900180,MG-100337,2025-12-26 02:39:17,app,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2025-12-26 03:05:17
+SO-900181,MG-100337,2026-06-16 04:12:13,web,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2026-06-16 04:28:13
+SO-900182,MG-100346,2025-05-22 10:38:04,web,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2025-05-22 10:41:04
+SO-900183,MG-100348,2024-03-10 17:17:54,web,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2024-03-10 17:43:54
+SO-900184,MG-100349,2025-02-24 12:55:34,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2025-02-24 13:21:34
+SO-900185,MG-100350,2024-03-09 15:39:13,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2024-03-09 15:56:13
+SO-900186,MG-100351,2024-12-08 23:00:29,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2024-12-08 23:10:29
+SO-900187,MG-100351,2026-05-25 05:39:35,app,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2026-05-25 05:44:35
+SO-900188,MG-100352,2026-01-15 04:03:04,web,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2026-01-15 04:08:04
+SO-900189,MG-100354,2024-11-16 12:38:33,web,Powerbank Solar,accessories,1,59,paypal,returned,,2024-11-16 12:55:33
+SO-900190,MG-100354,2024-11-24 13:12:23,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-11-24 13:19:23
+SO-900191,MG-100354,2024-09-13 04:38:04,app,LED-Set 10 Stk,energy_saving,1,29,paypal,delivered,,2024-09-13 04:59:04
+SO-900192,MG-100356,2024-07-18 13:53:14,web,LED-Set 10 Stk,energy_saving,1,29,sepa,delivered,,2024-07-18 13:59:14
+SO-900193,MG-100356,2026-07-07 15:51:51,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2026-07-07 16:16:51
+SO-900194,MG-100359,2024-12-06 15:41:12,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2024-12-06 15:52:12
+SO-900195,MG-100359,2025-09-16 04:36:27,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2025-09-16 04:41:27
+SO-900196,MG-100360,2025-07-19 13:04:04,app,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2025-07-19 13:17:04
+SO-900197,MG-100360,2026-07-09 07:09:06,web,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2026-07-09 07:27:06
+SO-900198,MG-100360,2026-01-12 19:06:32,web,Stromzähler-Lesekopf,smart_home,2,78,credit_card,returned,,2026-01-12 19:09:32
+SO-900199,MG-100362,2025-02-01 12:24:35,app,Stromzähler-Lesekopf,smart_home,2,78,credit_card,returned,,2025-02-01 12:51:35
+SO-900200,MG-100362,2025-07-20 03:32:50,app,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2025-07-20 03:56:50
+SO-900201,MG-100363,2025-12-24 11:26:38,app,Powerbank Solar,accessories,2,118,paypal,delivered,,2025-12-24 11:47:38
+SO-900202,MG-100364,2025-03-03 07:40:15,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2025-03-03 08:03:15
+SO-900203,MG-100364,2026-08-15 06:40:51,web,Powerbank Solar,accessories,2,118,invoice,delivered,,2026-08-15 06:58:51
+SO-900204,MG-100364,2025-04-19 10:12:52,app,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2025-04-19 10:36:52
+SO-900205,MG-100368,2026-08-05 02:03:10,app,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2026-08-05 02:23:10
+SO-900206,MG-100375,2024-06-17 13:24:27,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-06-17 13:46:27
+SO-900207,MG-100375,2026-02-26 19:21:23,app,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2026-02-26 19:28:23
+SO-900208,MG-100375,2025-07-21 18:50:57,app,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2025-07-21 18:55:57
+SO-900209,MG-100376,2025-09-17 22:21:34,app,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2025-09-17 22:39:34
+SO-900210,MG-100377,2025-04-17 03:31:55,app,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2025-04-17 03:48:55
+SO-900211,MG-100380,2025-09-30 04:21:23,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2025-09-30 04:42:23
+SO-900212,MG-100387,2025-06-13 07:14:09,web,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2025-06-13 07:41:09
+SO-900213,MG-100392,2026-08-04 06:22:57,web,Powerbank Solar,accessories,1,59,credit_card,delivered,,2026-08-04 06:43:57
+SO-900214,MG-100397,2025-01-03 21:16:25,app,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2025-01-03 21:18:25
+SO-900215,MG-100399,2026-03-01 06:28:19,app,Smart Plug 4er-Set,smart_home,2,98,sepa,delivered,,2026-03-01 06:31:19
+SO-900216,MG-100400,2024-05-15 05:05:47,app,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-05-15 05:09:47
+SO-900217,MG-100405,2024-10-03 21:58:19,app,LED-Set 10 Stk,energy_saving,2,58,paypal,delivered,,2024-10-03 22:02:19
+SO-900218,MG-100405,2025-11-16 13:36:21,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2025-11-16 13:40:21
+SO-900219,MG-100407,2026-06-01 00:20:10,web,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2026-06-01 00:22:10
+SO-900220,MG-100408,2025-08-06 23:56:49,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2025-08-07 00:11:49
+SO-900221,MG-100411,2025-05-13 03:23:57,web,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2025-05-13 03:24:57
+SO-900222,MG-100411,2025-11-04 06:36:11,web,LED-Set 10 Stk,energy_saving,1,29,paypal,delivered,,2025-11-04 06:55:11
+SO-900223,MG-100411,2024-09-26 03:31:43,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2024-09-26 03:32:43
+SO-900224,MG-100415,2024-06-11 13:18:48,app,Smart Plug 4er-Set,smart_home,2,98,paypal,delivered,,2024-06-11 13:44:48
+SO-900225,MG-100419,2024-03-27 13:06:24,web,Smarte Thermostate 3er,smart_home,1,129,sepa,delivered,,2024-03-27 13:10:24
+SO-900226,MG-100419,2024-12-22 07:54:55,web,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2024-12-22 08:12:55
+SO-900227,MG-100419,2025-06-20 19:44:41,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2025-06-20 20:12:41
+SO-900228,MG-100420,2024-10-29 14:27:38,web,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2024-10-29 14:31:38
+SO-900229,MG-100425,2026-01-18 08:30:31,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2026-01-18 08:58:31
+SO-900230,MG-100425,2025-12-01 13:11:31,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2025-12-01 13:22:31
+SO-900231,MG-100425,2024-11-02 08:58:42,app,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2024-11-02 09:06:42
+SO-900232,MG-100428,2025-09-16 04:35:03,web,Balkonkraftwerk 800 W,solar,1,499,sepa,returned,,2025-09-16 04:54:03
+SO-900233,MG-100433,2026-09-03 17:22:34,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2026-09-03 17:32:34
+SO-900234,MG-100435,2024-08-13 07:48:45,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2024-08-13 08:02:45
+SO-900235,MG-100436,2024-09-01 02:21:27,web,Smart Plug 4er-Set,smart_home,2,98,paypal,delivered,,2024-09-01 02:28:27
+SO-900236,MG-100437,2024-08-03 22:19:58,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2024-08-03 22:25:58
+SO-900237,MG-100437,2024-05-06 05:07:01,app,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2024-05-06 05:33:01
+SO-900238,MG-100439,2024-04-17 08:27:11,web,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2024-04-17 08:50:11
+SO-900239,MG-100440,2024-05-05 22:40:26,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-05-05 22:42:26
+SO-900240,MG-100442,2025-05-21 23:10:36,web,Powerbank Solar,accessories,2,118,sepa,delivered,,2025-05-21 23:20:36
+SO-900241,MG-100443,2024-12-31 08:02:56,app,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2024-12-31 08:08:56
+SO-900242,MG-100443,2026-05-30 09:49:38,web,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2026-05-30 10:12:38
+SO-900243,MG-100444,2025-01-12 18:37:13,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2025-01-12 18:44:13
+SO-900244,MG-100449,2026-01-09 14:14:43,web,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2026-01-09 14:26:43
+SO-900245,MG-100449,2026-05-24 23:05:56,app,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2026-05-24 23:06:56
+SO-900246,MG-100450,2025-12-22 02:09:32,web,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2025-12-22 02:34:32
+SO-900247,MG-100451,2026-09-01 05:24:10,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2026-09-01 05:54:10
+SO-900248,MG-100453,2026-06-23 21:14:27,web,Smart Plug 4er-Set,smart_home,2,98,invoice,delivered,,2026-06-23 21:33:27
+SO-900249,MG-100454,2024-06-11 04:24:44,web,Smart Plug 4er-Set,smart_home,1,49,invoice,delivered,,2024-06-11 04:44:44
+SO-900250,MG-100456,2026-09-15 20:34:13,web,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2026-09-15 20:55:13
+SO-900251,MG-100456,2024-06-10 03:47:57,app,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2024-06-10 04:09:57
+SO-900252,MG-100456,2025-12-05 00:31:24,app,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2025-12-05 00:35:24
+SO-900253,MG-100459,2024-05-16 06:44:10,app,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2024-05-16 06:52:10
+SO-900254,MG-100460,2026-01-08 16:34:40,app,LED-Set 10 Stk,energy_saving,2,58,invoice,delivered,,2026-01-08 16:53:40
+SO-900255,MG-100461,2026-01-22 22:37:10,app,Powerbank Solar,accessories,1,59,invoice,delivered,,2026-01-22 22:43:10
+SO-900256,MG-100467,2026-06-18 17:10:37,web,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2026-06-18 17:12:37
+SO-900257,MG-100467,2024-04-12 14:38:32,app,Stromzähler-Lesekopf,smart_home,2,78,invoice,delivered,,2024-04-12 14:42:32
+SO-900258,MG-100472,2026-08-05 21:23:35,app,Smart Plug 4er-Set,smart_home,2,98,sepa,delivered,,2026-08-05 21:52:35
+SO-900259,MG-100473,2026-01-20 10:33:03,app,Balkonkraftwerk 800 W,solar,1,499,invoice,returned,,2026-01-20 11:03:03
+SO-900260,MG-100475,2025-11-10 19:51:35,app,Powerbank Solar,accessories,1,59,credit_card,delivered,,2025-11-10 19:57:35
+SO-900261,MG-100479,2025-02-26 04:00:28,app,LED-Set 10 Stk,energy_saving,1,29,invoice,delivered,,2025-02-26 04:15:28
+SO-900262,MG-100479,2026-06-16 11:05:44,web,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2026-06-16 11:19:44
+SO-900263,MG-100479,2026-03-06 04:58:49,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2026-03-06 05:11:49
+SO-900264,MG-100481,2024-07-09 12:57:33,app,Balkonkraftwerk 800 W,solar,1,499,sepa,returned,,2024-07-09 13:19:33
+SO-900265,MG-100481,2025-04-25 01:50:36,app,LED-Set 10 Stk,energy_saving,2,58,sepa,delivered,,2025-04-25 02:08:36
+SO-900266,MG-100483,2026-03-12 04:54:31,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2026-03-12 05:13:31
+SO-900267,MG-100483,2024-08-31 04:09:07,web,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2024-08-31 04:13:07
+SO-900268,MG-100485,2024-12-01 00:07:48,app,Smart Plug 4er-Set,smart_home,2,98,credit_card,delivered,,2024-12-01 00:18:48
+SO-900269,MG-100485,2025-09-01 23:39:51,app,LED-Set 10 Stk,energy_saving,1,29,sepa,delivered,,2025-09-01 23:45:51
+SO-900270,MG-100485,2024-05-10 03:58:09,web,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2024-05-10 04:25:09
+SO-900271,MG-100486,2025-04-16 09:37:44,web,Smarte Thermostate 3er,smart_home,1,129,paypal,returned,,2025-04-16 09:46:44
+SO-900272,MG-100486,2025-06-29 06:52:49,web,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2025-06-29 06:57:49
+SO-900273,MG-100489,2025-03-13 17:35:20,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2025-03-13 17:36:20
+SO-900274,MG-100490,2025-02-08 20:51:22,app,Powerbank Solar,accessories,1,59,credit_card,delivered,,2025-02-08 21:11:22
+SO-900275,MG-100490,2026-01-07 03:50:13,web,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2026-01-07 04:06:13
+SO-900276,MG-100490,2026-05-28 23:47:14,app,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2026-05-29 00:01:14
+SO-900277,MG-100491,2024-06-23 17:26:28,web,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2024-06-23 17:38:28
+SO-900278,MG-100497,2025-01-26 10:01:59,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2025-01-26 10:12:59
+SO-900279,MG-100497,2025-03-22 05:25:32,web,Wallbox 11 kW,e_mobility,1,699,invoice,delivered,,2025-03-22 05:43:32
+SO-900280,MG-100503,2026-04-09 21:00:27,app,LED-Set 10 Stk,energy_saving,1,29,paypal,delivered,,2026-04-09 21:14:27
+SO-900281,MG-100504,2025-05-24 04:22:27,web,Stromzähler-Lesekopf,smart_home,2,78,sepa,delivered,,2025-05-24 04:50:27
+SO-900282,MG-100505,2024-06-10 11:48:44,app,Stromzähler-Lesekopf,smart_home,1,39,invoice,delivered,,2024-06-10 12:08:44
+SO-900283,MG-100505,2026-06-28 03:30:50,app,Smart Plug 4er-Set,smart_home,2,98,paypal,delivered,,2026-06-28 03:58:50
+SO-900284,MG-100509,2026-05-13 02:05:52,web,Ladekabel Typ 2,e_mobility,1,149,credit_card,delivered,,2026-05-13 02:32:52
+SO-900285,MG-100509,2024-12-12 22:24:43,app,Ladekabel Typ 2,e_mobility,1,149,sepa,returned,,2024-12-12 22:33:43
+SO-900286,MG-100514,2026-07-02 16:47:16,app,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2026-07-02 17:06:16
+SO-900287,MG-100514,2024-07-19 06:28:26,app,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2024-07-19 06:39:26
+SO-900288,MG-100514,2024-05-16 14:03:25,web,Stromzähler-Lesekopf,smart_home,2,78,credit_card,delivered,,2024-05-16 14:05:25
+SO-900289,MG-100518,2024-05-09 02:38:56,web,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2024-05-09 02:52:56
+SO-900290,MG-100518,2024-06-05 02:34:24,app,Smart Plug 4er-Set,smart_home,2,98,sepa,delivered,,2024-06-05 02:41:24
+SO-900291,MG-100520,2026-08-17 20:42:29,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2026-08-17 20:55:29
+SO-900292,MG-100522,2026-08-07 04:36:47,web,Smart Plug 4er-Set,smart_home,1,49,invoice,delivered,,2026-08-07 04:42:47
+SO-900293,MG-100522,2025-10-06 14:48:17,app,Balkonkraftwerk 800 W,solar,1,499,invoice,cancelled,,2025-10-06 15:14:17
+SO-900294,MG-100522,2026-07-13 21:13:58,web,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2026-07-13 21:15:58
+SO-900295,MG-100524,2025-06-26 17:18:16,web,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2025-06-26 17:43:16
+SO-900296,MG-100525,2026-08-05 08:15:28,web,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2026-08-05 08:22:28
+SO-900297,MG-100525,2024-04-14 21:08:49,web,LED-Set 10 Stk,energy_saving,1,29,invoice,delivered,,2024-04-14 21:34:49
+SO-900298,MG-100525,2025-10-14 06:25:04,app,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2025-10-14 06:50:04
+SO-900299,MG-100526,2025-11-06 22:13:58,app,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2025-11-06 22:21:58
+SO-900300,MG-100528,2024-12-16 02:05:57,web,Wallbox 11 kW,e_mobility,1,699,invoice,delivered,,2024-12-16 02:11:57
+SO-900301,MG-100528,2026-02-01 01:02:07,app,Powerbank Solar,accessories,1,59,sepa,delivered,,2026-02-01 01:12:07
+SO-900302,MG-100533,2024-08-03 05:05:24,app,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2024-08-03 05:23:24
+SO-900303,MG-100537,2026-03-08 05:49:24,web,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2026-03-08 06:12:24
+SO-900304,MG-100537,2026-07-17 02:40:08,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2026-07-17 02:59:08
+SO-900305,MG-100537,2025-09-08 16:48:45,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2025-09-08 16:53:45
+SO-900306,MG-100540,2025-12-21 04:42:27,web,Smart Plug 4er-Set,smart_home,2,98,credit_card,delivered,,2025-12-21 04:44:27
+SO-900307,MG-100541,2026-03-14 16:02:33,web,Wallbox 11 kW,e_mobility,1,699,invoice,delivered,,2026-03-14 16:25:33
+SO-900308,MG-100545,2024-11-18 05:27:19,web,Ladekabel Typ 2,e_mobility,1,149,credit_card,delivered,,2024-11-18 05:37:19
+SO-900309,MG-100545,2026-07-15 00:48:40,web,Wallbox 11 kW,e_mobility,1,699,invoice,delivered,,2026-07-15 01:17:40
+SO-900310,MG-100545,2025-04-21 20:59:25,app,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2025-04-21 21:08:25
+SO-900311,MG-100546,2026-02-24 19:22:31,web,Ladekabel Typ 2,e_mobility,1,149,credit_card,delivered,,2026-02-24 19:50:31
+SO-900312,MG-100550,2026-06-13 14:45:43,app,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2026-06-13 15:07:43
+SO-900313,MG-100550,2024-07-10 20:03:47,web,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2024-07-10 20:25:47
+SO-900314,MG-100551,2024-04-17 16:46:08,app,Smarte Thermostate 3er,smart_home,1,129,sepa,delivered,,2024-04-17 17:08:08
+SO-900315,MG-100552,2025-09-01 08:17:20,app,Stromzähler-Lesekopf,smart_home,2,78,paypal,delivered,,2025-09-01 08:43:20
+SO-900316,MG-100555,2025-04-01 00:28:34,web,LED-Set 10 Stk,energy_saving,2,58,paypal,delivered,,2025-04-01 00:41:34
+SO-900317,MG-100558,2024-10-11 23:31:03,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2024-10-12 00:00:03
+SO-900318,MG-100558,2024-04-25 13:22:31,app,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2024-04-25 13:39:31
+SO-900319,MG-100558,2025-11-06 16:35:23,app,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2025-11-06 16:52:23
+SO-900320,MG-100561,2025-03-31 04:28:10,web,Ladekabel Typ 2,e_mobility,1,149,invoice,returned,,2025-03-31 04:37:10
+SO-900321,MG-100562,2026-06-10 05:14:10,app,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2026-06-10 05:30:10
+SO-900322,MG-100562,2025-02-01 18:51:04,web,Smart Plug 4er-Set,smart_home,2,98,paypal,delivered,,2025-02-01 19:12:04
+SO-900323,MG-100562,2025-07-11 21:03:10,web,Smart Plug 4er-Set,smart_home,2,98,credit_card,delivered,,2025-07-11 21:21:10
+SO-900324,MG-100564,2025-10-21 14:59:42,app,Stromzähler-Lesekopf,smart_home,2,78,sepa,delivered,,2025-10-21 15:18:42
+SO-900325,MG-100572,2024-08-10 13:47:19,app,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2024-08-10 13:56:19
+SO-900326,MG-100573,2026-09-16 07:09:35,app,LED-Set 10 Stk,energy_saving,1,29,invoice,delivered,,2026-09-16 07:15:35
+SO-900327,MG-100574,2025-02-15 16:12:47,app,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2025-02-15 16:20:47
+SO-900328,MG-100580,2024-10-31 01:43:20,web,Stromzähler-Lesekopf,smart_home,2,78,credit_card,returned,,2024-10-31 02:00:20
+SO-900329,MG-100580,2024-05-16 16:52:28,web,Stromzähler-Lesekopf,smart_home,2,78,credit_card,delivered,,2024-05-16 16:57:28
+SO-900330,MG-100581,2025-02-21 07:44:47,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2025-02-21 07:47:47
+SO-900331,MG-100582,2025-10-11 09:08:51,web,Smarte Thermostate 3er,smart_home,1,129,sepa,delivered,,2025-10-11 09:31:51
+SO-900332,MG-100582,2024-03-18 09:43:06,web,Ladekabel Typ 2,e_mobility,1,149,credit_card,delivered,,2024-03-18 09:55:06
+SO-900333,MG-100584,2025-03-01 10:04:37,web,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2025-03-01 10:25:37
+SO-900334,MG-100594,2026-09-01 12:23:10,web,Stromzähler-Lesekopf,smart_home,2,78,paypal,delivered,,2026-09-01 12:24:10
+SO-900335,MG-100594,2024-03-27 06:08:27,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-03-27 06:09:27
+SO-900336,MG-100600,2024-05-11 13:52:57,app,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2024-05-11 14:06:57
+SO-900337,MG-100601,2025-11-01 11:37:52,web,Balkonkraftwerk 800 W,solar,1,499,paypal,returned,,2025-11-01 12:00:52
+SO-900338,MG-100602,2024-03-03 11:07:01,web,Powerbank Solar,accessories,2,118,paypal,delivered,,2024-03-03 11:20:01
+SO-900339,MG-100609,2025-12-28 19:42:12,web,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2025-12-28 19:55:12
+SO-900340,MG-100609,2026-07-30 12:44:32,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2026-07-30 13:04:32
+SO-900341,MG-100609,2024-03-24 23:08:47,app,Smarte Thermostate 3er,smart_home,1,129,sepa,delivered,,2024-03-24 23:26:47
+SO-900342,MG-100616,2024-04-17 14:09:03,app,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2024-04-17 14:15:03
+SO-900343,MG-100616,2024-06-29 10:41:26,web,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2024-06-29 11:04:26
+SO-900344,MG-100616,2024-09-13 12:25:06,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2024-09-13 12:54:06
+SO-900345,MG-100619,2024-12-16 03:21:49,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2024-12-16 03:46:49
+SO-900346,MG-100619,2026-08-06 00:16:17,web,Stromzähler-Lesekopf,smart_home,1,39,sepa,delivered,,2026-08-06 00:28:17
+SO-900347,MG-100619,2025-07-02 07:59:17,web,Ladekabel Typ 2,e_mobility,1,149,sepa,cancelled,,2025-07-02 08:15:17
+SO-900348,MG-100624,2024-06-24 22:20:39,app,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-06-24 22:29:39
+SO-900349,MG-100624,2026-09-06 23:35:06,web,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2026-09-06 23:44:06
+SO-900350,MG-100624,2024-10-05 21:37:39,web,Wallbox 11 kW,e_mobility,1,699,invoice,delivered,,2024-10-05 21:54:39
+SO-900351,MG-100626,2025-09-21 05:55:25,web,LED-Set 10 Stk,energy_saving,1,29,invoice,delivered,,2025-09-21 06:17:25
+SO-900352,MG-100627,2024-05-10 11:34:10,web,LED-Set 10 Stk,energy_saving,2,58,paypal,delivered,,2024-05-10 12:02:10
+SO-900353,MG-100627,2024-09-13 05:52:08,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2024-09-13 06:15:08
+SO-900354,MG-100630,2025-08-14 13:03:52,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2025-08-14 13:09:52
+SO-900355,MG-100630,2024-09-28 06:54:39,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2024-09-28 07:11:39
+SO-900356,MG-100631,2025-05-09 23:06:10,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2025-05-09 23:12:10
+SO-900357,MG-100631,2026-02-02 03:02:40,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2026-02-02 03:15:40
+SO-900358,MG-100631,2026-06-21 08:21:22,web,Stromzähler-Lesekopf,smart_home,1,39,sepa,returned,,2026-06-21 08:24:22
+SO-900359,MG-100632,2024-05-31 15:44:55,web,Stromzähler-Lesekopf,smart_home,2,78,paypal,delivered,,2024-05-31 16:04:55
+SO-900360,MG-100634,2024-07-12 20:47:11,web,Powerbank Solar,accessories,1,59,paypal,delivered,,2024-07-12 21:11:11
+SO-900361,MG-100640,2024-06-19 02:36:15,app,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2024-06-19 02:58:15
+SO-900362,MG-100641,2024-07-13 13:33:56,app,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2024-07-13 13:51:56
+SO-900363,MG-100641,2025-05-30 05:09:28,web,LED-Set 10 Stk,energy_saving,2,58,sepa,delivered,,2025-05-30 05:23:28
+SO-900364,MG-100646,2026-03-04 13:32:25,web,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2026-03-04 13:52:25
+SO-900365,MG-100649,2025-06-26 21:30:01,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2025-06-26 21:59:01
+SO-900366,MG-100649,2024-06-18 20:45:12,web,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2024-06-18 20:57:12
+SO-900367,MG-100654,2025-09-11 03:38:58,app,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2025-09-11 03:49:58
+SO-900368,MG-100656,2025-04-29 02:29:39,web,Balkonkraftwerk 800 W,solar,1,499,paypal,cancelled,,2025-04-29 02:53:39
+SO-900369,MG-100656,2024-12-26 23:45:08,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2024-12-27 00:14:08
+SO-900370,MG-100656,2026-06-20 21:03:46,app,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2026-06-20 21:09:46
+SO-900371,MG-100657,2025-06-06 19:05:12,web,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2025-06-06 19:16:12
+SO-900372,MG-100659,2024-05-17 20:38:40,app,Stromzähler-Lesekopf,smart_home,1,39,invoice,delivered,,2024-05-17 20:50:40
+SO-900373,MG-100659,2025-11-07 19:41:22,app,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2025-11-07 20:05:22
+SO-900374,MG-100665,2025-06-24 18:00:03,app,Smart Plug 4er-Set,smart_home,2,98,paypal,delivered,,2025-06-24 18:29:03
+SO-900375,MG-100665,2024-07-08 10:56:28,web,Wallbox 11 kW,e_mobility,1,699,sepa,cancelled,,2024-07-08 11:00:28
+SO-900376,MG-100671,2024-12-01 04:32:28,web,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2024-12-01 04:55:28
+SO-900377,MG-100671,2025-02-27 04:59:17,app,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2025-02-27 05:21:17
+SO-900378,MG-100673,2024-12-09 02:25:57,app,Smart Plug 4er-Set,smart_home,1,49,invoice,delivered,,2024-12-09 02:53:57
+SO-900379,MG-100675,2024-05-18 20:59:18,web,LED-Set 10 Stk,energy_saving,1,29,credit_card,delivered,,2024-05-18 21:27:18
+SO-900380,MG-100675,2024-12-10 10:11:36,app,LED-Set 10 Stk,energy_saving,1,29,invoice,returned,,2024-12-10 10:26:36
+SO-900381,MG-100678,2026-04-04 18:44:51,web,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2026-04-04 19:12:51
+SO-900382,MG-100681,2026-09-03 08:35:18,web,LED-Set 10 Stk,energy_saving,2,58,credit_card,delivered,,2026-09-03 08:57:18
+SO-900383,MG-100683,2025-05-22 03:39:45,web,Powerbank Solar,accessories,2,118,invoice,returned,,2025-05-22 04:04:45
+SO-900384,MG-100687,2024-04-18 19:53:48,web,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2024-04-18 20:10:48
+SO-900385,MG-100690,2024-07-24 16:56:25,web,Smart Plug 4er-Set,smart_home,2,98,credit_card,returned,,2024-07-24 17:14:25
+SO-900386,MG-100693,2025-08-11 21:33:09,web,Smart Plug 4er-Set,smart_home,1,49,paypal,delivered,,2025-08-11 21:35:09
+SO-900387,MG-100694,2026-08-15 06:49:32,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2026-08-15 07:19:32
+SO-900388,MG-100694,2026-06-29 12:12:21,web,Stromzähler-Lesekopf,smart_home,2,78,sepa,delivered,,2026-06-29 12:28:21
+SO-900389,MG-100695,2026-04-18 04:54:46,web,Powerbank Solar,accessories,2,118,credit_card,delivered,,2026-04-18 05:16:46
+SO-900390,MG-100702,2025-10-07 14:43:09,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2025-10-07 14:54:09
+SO-900391,MG-100702,2024-11-05 14:35:19,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2024-11-05 14:51:19
+SO-900392,MG-100707,2025-03-31 18:33:27,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2025-03-31 18:55:27
+SO-900393,MG-100712,2024-04-19 15:07:07,app,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2024-04-19 15:34:07
+SO-900394,MG-100714,2026-06-19 10:27:31,app,Smart Plug 4er-Set,smart_home,1,49,invoice,delivered,,2026-06-19 10:35:31
+SO-900395,MG-100715,2025-10-31 20:31:14,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2025-10-31 20:41:14
+SO-900396,MG-100717,2026-07-22 22:14:04,app,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2026-07-22 22:25:04
+SO-900397,MG-100717,2024-12-15 01:07:10,app,Stromzähler-Lesekopf,smart_home,2,78,sepa,delivered,,2024-12-15 01:17:10
+SO-900398,MG-100719,2024-12-04 08:20:58,app,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2024-12-04 08:35:58
+SO-900399,MG-100720,2025-04-02 10:12:06,web,Wallbox 11 kW,e_mobility,1,699,paypal,delivered,,2025-04-02 10:35:06
+SO-900400,MG-100720,2024-03-02 16:54:46,web,Smart Plug 4er-Set,smart_home,1,49,invoice,returned,,2024-03-02 17:21:46
+SO-900401,MG-100720,2026-07-04 12:43:52,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2026-07-04 13:06:52
+SO-900402,MG-100722,2024-11-21 12:14:23,web,LED-Set 10 Stk,energy_saving,2,58,sepa,delivered,,2024-11-21 12:38:23
+SO-900403,MG-100722,2025-09-20 15:02:15,web,Balkonkraftwerk 800 W,solar,1,499,paypal,delivered,,2025-09-20 15:27:15
+SO-900404,MG-100722,2026-01-08 03:02:08,web,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2026-01-08 03:20:08
+SO-900405,MG-100726,2026-03-01 19:28:03,web,Smart Plug 4er-Set,smart_home,2,98,sepa,delivered,,2026-03-01 19:46:03
+SO-900406,MG-100726,2024-05-18 04:57:27,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2024-05-18 05:13:27
+SO-900407,MG-100730,2024-10-27 02:54:24,web,Powerbank Solar,accessories,2,118,credit_card,delivered,,2024-10-27 03:20:24
+SO-900408,MG-100730,2025-07-29 06:37:44,web,Smart Plug 4er-Set,smart_home,1,49,paypal,returned,,2025-07-29 06:54:44
+SO-900409,MG-100730,2026-03-11 15:21:03,web,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2026-03-11 15:39:03
+SO-900410,MG-100731,2025-02-19 04:15:35,web,Smart Plug 4er-Set,smart_home,1,49,invoice,delivered,,2025-02-19 04:18:35
+SO-900411,MG-100735,2026-05-25 09:42:49,web,Stromzähler-Lesekopf,smart_home,1,39,invoice,delivered,,2026-05-25 10:01:49
+SO-900412,MG-100737,2024-03-21 06:22:53,web,Smart Plug 4er-Set,smart_home,2,98,paypal,delivered,,2024-03-21 06:31:53
+SO-900413,MG-100741,2024-09-14 14:03:56,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2024-09-14 14:15:56
+SO-900414,MG-100741,2024-05-04 08:34:43,app,LED-Set 10 Stk,energy_saving,1,29,paypal,delivered,,2024-05-04 08:48:43
+SO-900415,MG-100743,2024-03-05 11:35:30,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2024-03-05 11:58:30
+SO-900416,MG-100745,2025-09-04 19:22:56,app,Smarte Thermostate 3er,smart_home,1,129,paypal,delivered,,2025-09-04 19:42:56
+SO-900417,MG-100745,2024-09-22 02:01:52,web,Smart Plug 4er-Set,smart_home,2,98,credit_card,delivered,,2024-09-22 02:21:52
+SO-900418,MG-100746,2025-10-09 09:20:21,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2025-10-09 09:39:21
+SO-900419,MG-100002,2025-06-12 20:11:00,web,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2025-06-12 20:38:00
+SO-900420,MG-100007,2026-08-20 19:02:00,app,Ladekabel Typ 2,e_mobility,1,149,invoice,delivered,,2026-08-20 19:05:00
+SO-900421,MG-100005,2026-02-03 12:40:00,app,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2026-02-03 12:53:00
+SO-900422,,2025-04-28 03:46:56,app,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2025-04-28 04:12:56
+SO-900423,,2025-04-03 01:17:16,web,Smarte Thermostate 3er,smart_home,1,129,sepa,delivered,,2025-04-03 01:18:16
+SO-900424,,2025-10-12 23:22:18,web,Balkonkraftwerk 800 W,solar,1,499,invoice,delivered,,2025-10-12 23:49:18
+SO-900425,,2025-11-02 10:49:38,web,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2025-11-02 11:02:38
+SO-900426,,2026-06-29 00:53:27,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2026-06-29 00:56:27
+SO-900427,,2025-10-09 05:06:57,web,Stromzähler-Lesekopf,smart_home,1,39,paypal,delivered,,2025-10-09 05:16:57
+SO-900428,,2026-08-28 21:56:19,web,Smart Plug 4er-Set,smart_home,1,49,invoice,delivered,,2026-08-28 22:17:19
+SO-900429,,2025-12-09 12:22:29,web,Balkonkraftwerk 800 W,solar,1,499,sepa,delivered,,2025-12-09 12:29:29
+SO-900430,,2026-04-15 15:39:49,web,Smart Plug 4er-Set,smart_home,1,49,credit_card,delivered,,2026-04-15 15:58:49
+SO-900431,,2025-09-25 00:42:30,web,Stromzähler-Lesekopf,smart_home,1,39,invoice,delivered,,2025-09-25 01:03:30
+SO-900432,,2025-05-10 22:13:43,web,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2025-05-10 22:18:43
+SO-900433,,2025-10-27 07:15:52,web,Ladekabel Typ 2,e_mobility,1,149,sepa,delivered,,2025-10-27 07:44:52
+SO-900434,,2025-03-10 17:00:26,web,Wallbox 11 kW,e_mobility,1,699,credit_card,delivered,,2025-03-10 17:09:26
+SO-900435,,2026-09-03 08:56:29,web,Smarte Thermostate 3er,smart_home,1,129,credit_card,delivered,,2026-09-03 09:26:29
+SO-900436,,2026-05-24 09:37:20,app,LED-Set 10 Stk,energy_saving,1,29,invoice,delivered,,2026-05-24 09:46:20
+SO-900437,,2025-03-20 18:27:14,app,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2025-03-20 18:45:14
+SO-900438,,2026-04-07 11:10:20,app,Powerbank Solar,accessories,1,59,paypal,delivered,,2026-04-07 11:34:20
+SO-900439,,2025-04-25 13:57:06,app,Stromzähler-Lesekopf,smart_home,1,39,credit_card,delivered,,2025-04-25 14:21:06
+SO-900440,,2026-07-07 10:01:23,web,Smart Plug 4er-Set,smart_home,1,49,sepa,delivered,,2026-07-07 10:10:23
+SO-900441,,2025-06-06 03:09:27,app,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2025-06-06 03:35:27
+SO-900442,,2025-04-15 01:31:44,app,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2025-04-15 01:46:44
+SO-900443,,2025-10-11 23:53:55,app,Ladekabel Typ 2,e_mobility,1,149,paypal,delivered,,2025-10-12 00:05:55
+SO-900444,,2025-06-24 16:40:45,web,Smarte Thermostate 3er,smart_home,1,129,invoice,delivered,,2025-06-24 16:47:45
+SO-900445,,2026-09-21 07:18:08,app,Balkonkraftwerk 800 W,solar,1,499,credit_card,delivered,,2026-09-21 07:21:08
+SO-900446,,2026-07-03 16:21:32,web,Wallbox 11 kW,e_mobility,1,699,sepa,delivered,,2026-07-03 16:34:32
