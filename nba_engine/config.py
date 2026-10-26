@@ -51,6 +51,24 @@ class EngineConfig:
     # Beta-Binomial pseudo-count per hierarchy level (global -> type -> offer -> channel -> tone).
     shrinkage_strength: float = 30.0
 
+    # --- personalisation (only with profiling_analytics consent, slide 12) ---
+    # A21: a trigger signal counts as evidence of intent, like a click. Strength 1.0 moves
+    # p_accept all the way to the learned "conversion after click" rate of the offer.
+    signal_strength: dict[str, float] = field(default_factory=lambda: {
+        "gas_meter_deregistered": 1.0,
+        "heat_pump_interest": 1.0,
+        "heat_pump_device": 0.5,
+        "wallbox_purchase": 1.0,
+    })
+    heat_pump_clicks_min: int = 3
+    signal_lookback_days: int = 365
+    # adjusted p_accept is capped; the history never shows more than ~31 % after a click
+    max_p_accept: float = 0.5
+    # channel affinity multiplies acceptance odds within these bounds
+    affinity_bounds: tuple[float, float] = (0.1, 3.0)
+    # A22: without profiling consent the engine addresses customers with "Sie"
+    tone_requires_profiling: bool = True
+
     # --- arbitration (slide 10: set offers, priorities and contact limits) ---
     disabled_offers: set[str] = field(default_factory=set)
     # ranking weight per offer; dCLV > 0 is still required, the weight only reorders

@@ -415,6 +415,9 @@ for customer in trigger_set:
 - **ANNAHME A18:** p_accept nutzt nur Populations- bzw. Segmentraten (offer × channel × tone) und ist damit auch ohne Profiling-Consent zulässig. Die Shrinkage-Stärke ist 30 Pseudo-Beobachtungen pro Ebene.
 - **ANNAHME A19:** Pro Lauf bekommt jeder Kunde höchstens eine Aktion. Die Outbound-Call-Kapazität liegt bei 25 pro Lauf (Call-Center-Limit, im Dashboard änderbar). Marketing-Prioritäten gewichten nur das Ranking, die Bedingung dCLV > 0 bleibt bestehen.
 - **ANNAHME A20:** 10 % der Sales-Entscheidungen gehen per stabilem Hash in die Kontrollgruppe (Status `held_out`, nicht versendet). Service-Aktionen werden nie zurückgehalten, denn ein Kunde mit Problem soll die Lösung nicht wegen eines Experiments verlieren.
+- **ANNAHME A21:** Ein Trigger-Signal zählt als Kaufabsicht wie ein Klick. p_accept wird mit Signalstärke s Richtung „Konversion nach Klick“ des Angebots verschoben: `p = p_base + s·(p_intent − p_base)`. p_intent ist ein zweites Beta-Binomial-Modell nur auf geklickten Aktionen (Historie: 31 % nach Klick gegenüber 3,4 % gesamt). Stärken: Gaszähler-Abmeldung, 3 Wärmepumpen-Klicks und Wallbox jeweils 1,0, Wärmepumpe im HEMS 0,5. Pro Angebot zählt nur das stärkste Signal. p ist auf 0,5 gedeckelt. Begründung: Die alten P-AS-01-Aktionen gingen ungezielt raus (0/179 Konversionen), deshalb taugt ihre Basisrate nicht als Maßstab für Kunden mit Signal.
+- **ANNAHME A22:** Signale, Kanalaffinität und die erkannte Du/Sie-Ansprache sind Personalisierung und greifen nur mit `profiling_analytics`. Ohne Consent gelten Populationsraten, die Ansprache ist „Sie“, und das Signal wird als „not used“ geloggt.
+- **ANNAHME A23:** Die Kanalaffinität vergleicht menschliche Öffnungen der letzten 6 Newsletter (ohne Apple MPP) bzw. Portal- und App-Besuche pro Woche (Jul–Sep) mit dem Bevölkerungsschnitt, geglättet mit 2 Pseudo-Beobachtungen und begrenzt auf ×0,1 bis ×3 der Odds.
 
 ---
 

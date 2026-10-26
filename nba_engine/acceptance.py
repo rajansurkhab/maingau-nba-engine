@@ -74,13 +74,17 @@ class AcceptanceModel:
         catalog: pd.DataFrame,
         strength: float = 30.0,
         type_priors: dict[str, float] | None = None,
+        clicked_only: bool = False,
     ) -> AcceptanceModel:
+        """`clicked_only=True` learns P(convert | intent shown), used for trigger signals."""
         model = cls(
             offer_types=dict(zip(catalog["product_id"], catalog["action_type"])),
             strength=strength,
             type_priors=dict(type_priors or {}),
         )
         rows = history[history["usable_for_learning"]]
+        if clicked_only:
+            rows = rows[rows["response"] == "clicked"]
         for r in rows.itertuples(index=False):
             model.update(r.offer_id, r.channel, r.tonality, bool(r.converted_within_14d))
         return model

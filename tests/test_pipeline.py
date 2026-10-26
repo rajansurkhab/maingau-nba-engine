@@ -108,6 +108,49 @@ def test_slide7_case_end_to_end(engine):
     assert "during open service case" in d.reason
 
 
+def by_customer(decisions):
+    return {d.customer_id: d for d in decisions}
+
+
+def test_slide9_formal_portal_customer(decisions):
+    """MG-100001 writes formally, opened 0/6 newsletters, visits the portal weekly."""
+    d = by_customer(decisions)["MG-100001"]
+    assert (d.channel, d.tone) == ("portal_popup", "sie")
+    assert "portal visits/week" in d.reason
+    assert d.inputs["channel_evidence"]["newsletter_email"] == "0/6 newsletters opened"
+
+
+@pytest.mark.parametrize(
+    "customer_id, offer_id, signal",
+    [
+        ("MG-100060", "P-EN-03", "gas_meter_deregistered"),  # gas meter -> heat-pump electricity
+        ("MG-100266", "P-AS-01", "wallbox_purchase"),  # wallbox bought in shop -> Autostrom
+        ("MG-100125", "P-EN-03", "heat_pump_interest"),  # 3 heat-pump clicks -> follow-up
+    ],
+)
+def test_slide6_signal_cases(decisions, customer_id, offer_id, signal):
+    d = by_customer(decisions)[customer_id]
+    assert d.offer_id == offer_id
+    assert d.inputs["signal_used"] == signal
+    assert d.p_accept > d.inputs["p_accept_base"]
+    assert "→" in d.reason
+
+
+def test_no_personalisation_without_profiling(decisions):
+    for d in decisions:
+        if d.has_action and not d.inputs["profiling_allowed"]:
+            assert d.inputs["signal_used"] is None
+            assert d.inputs["channel_factor"] == 1.0
+            assert d.p_accept == pytest.approx(d.inputs["p_accept_base"])
+            assert d.tone == "sie"
+
+
+def test_p_accept_cap(decisions, engine):
+    for d in decisions:
+        if d.has_action:
+            assert d.p_accept <= max(engine.cfg.max_p_accept, d.inputs["p_accept_base"]) + 1e-12
+
+
 def test_approval_is_append_only(ds, tmp_path):
     path = tmp_path / "decision_log.jsonl"
     eng = Engine(ds, log_path=path)

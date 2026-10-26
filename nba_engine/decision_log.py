@@ -16,6 +16,7 @@ from nba_engine.arbitration import Option
 from nba_engine.config import SALES_ACTION_TYPES
 from nba_engine.eligibility import EligibilityResult
 from nba_engine.scoring import CustomerValue, Score
+from nba_engine.signals import Signal
 from nba_engine.state import CustomerState
 
 # proposed -> approved / rejected by marketing; held_out = control group, never sent
@@ -162,8 +163,11 @@ def reason_for(
     cv: CustomerValue,
     scored: list[tuple[EligibilityResult, Score]],
     notes: list[str],
+    signal: Signal | None = None,
+    tone: str | None = None,
+    channel_evidence: str | None = None,
 ) -> str:
-    """One line a marketer can read (slide 8). Deterministic, built from drivers and scores."""
+    """One line a marketer can read (slide 8). Deterministic, built from drivers, signals and scores."""
     suffix = f" [{'; '.join(notes)}]" if notes else ""
     if chosen is None:
         eligible = [(r, s) for r, s in scored if r.eligible]
@@ -182,14 +186,19 @@ def reason_for(
 
     s, offer = chosen.score, chosen.offer
     channel = CHANNEL_LABELS[s.channel]
+    if tone:
+        channel += f" ({tone.capitalize()})"
+    if channel_evidence:
+        channel += f", {channel_evidence}"
     if offer.action_type == "service":
         drivers = [DRIVER_LABELS[d] for d in cv.drivers if d in SERVICE_DRIVER_KEYS] or ["open service case"]
-        text = (f"Service first: {', '.join(drivers)} raise churn; proactive fix via {channel} "
+        text = (f"Service first ({', '.join(drivers)}): proactive fix via {channel} "
                 f"{_eur(s.dclv)} expected CLV") + _sales_context(scored)
     elif offer.action_type == "retention":
         text = (f"Price guarantee ends <90d: renewal via {channel} avoids churn, "
                 f"{_eur(s.dclv)} expected CLV")
     else:
-        text = (f"{offer.name} via {channel}: {s.p_accept:.0%} acceptance × "
+        trigger = f"{signal.evidence} → " if signal else ""
+        text = (f"{offer.name} via {channel}: {trigger}{s.p_accept:.0%} acceptance × "
                 f"{_eur(s.gain_if_accept)} CLV → {_eur(s.dclv)} expected")
     return text + suffix
