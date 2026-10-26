@@ -1,7 +1,9 @@
 """Static settings and marketing-editable defaults."""
 from __future__ import annotations
 
-from dataclasses import dataclass
+import json
+from dataclasses import asdict, dataclass, field
+from hashlib import sha1
 from pathlib import Path
 
 import pandas as pd
@@ -48,3 +50,18 @@ class EngineConfig:
     service_p_accept_prior: float = 0.5
     # Beta-Binomial pseudo-count per hierarchy level (global -> type -> offer -> channel -> tone).
     shrinkage_strength: float = 30.0
+
+    # --- arbitration (slide 10: set offers, priorities and contact limits) ---
+    disabled_offers: set[str] = field(default_factory=set)
+    # ranking weight per offer; dCLV > 0 is still required, the weight only reorders
+    offer_priority: dict[str, float] = field(default_factory=dict)
+    # A19: max actions per channel and run (None = unlimited); call centre capacity
+    channel_capacity: dict[str, int] = field(default_factory=lambda: {"outbound_call": 25})
+    top_k: int = 3
+    # slide 9/12: hold out 10 % of sales decisions as control group; service is never held out
+    control_share: float = 0.10
+
+    def version(self) -> str:
+        """Short hash of all settings, stored with every decision."""
+        payload = json.dumps(asdict(self), sort_keys=True, default=sorted)
+        return sha1(payload.encode()).hexdigest()[:8]

@@ -413,6 +413,8 @@ for customer in trigger_set:
 - **ANNAHME A16:** Ein Service-Fix entfernt die Treiber offene Beschwerde, Tickets ≥ 2, niedriger CSAT und fehlgeschlagene Ladevorgänge, aber **nicht** den Mahnungs-Treiber. Sonst würden Zahlungsdaten Wert erzeugen (F12).
 - **ANNAHME A17:** Für P-SV-01 gibt es keine Historie. Prior p_accept = 0,5, im Dashboard änderbar. Einmalprodukte addieren ihre Marge einmal und undiskontiert. `app_push` kostet wie ein Portal-Pop-up (0 €).
 - **ANNAHME A18:** p_accept nutzt nur Populations- bzw. Segmentraten (offer × channel × tone) und ist damit auch ohne Profiling-Consent zulässig. Die Shrinkage-Stärke ist 30 Pseudo-Beobachtungen pro Ebene.
+- **ANNAHME A19:** Pro Lauf bekommt jeder Kunde höchstens eine Aktion. Die Outbound-Call-Kapazität liegt bei 25 pro Lauf (Call-Center-Limit, im Dashboard änderbar). Marketing-Prioritäten gewichten nur das Ranking, die Bedingung dCLV > 0 bleibt bestehen.
+- **ANNAHME A20:** 10 % der Sales-Entscheidungen gehen per stabilem Hash in die Kontrollgruppe (Status `held_out`, nicht versendet). Service-Aktionen werden nie zurückgehalten, denn ein Kunde mit Problem soll die Lösung nicht wegen eines Experiments verlieren.
 
 ---
 

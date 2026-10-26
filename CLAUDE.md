@@ -29,7 +29,10 @@ python -m venv .venv
 - `nba_engine/eligibility.py`: `RULES` is an ordered tuple of `Rule` predicates. `evaluate()` returns an `EligibilityResult` with a `trace` that stops at the first failing rule. Product prerequisites are in `PRODUCT_PREREQUISITES`.
 - `nba_engine/scoring.py`: `clv()` and `score()` implement `clv_method.txt` literally and return a `Score` with p, CLV_now/accept/reject, contact cost and dCLV. `customer_values()` parses `churn_drivers` text into additive driver keys (verified additive on the data). Score blocked candidates too, because their negative dCLV is the economic reason for the block.
 - `nba_engine/acceptance.py`: `AcceptanceModel.fit()` builds hierarchical Beta-Binomial shrinkage (global → action_type → offer → channel → tone). `update()` is the Bayesian learning step for deep dive A. `uplift_by_offer()` compares treatment and control.
-- `tests/`: `test_scoring.py::test_slide7_autostrom_case` pins the slide-7 demo case (MG-100009). The property tests in `test_eligibility.py` recompute consent and exclusions from the raw tables and assert zero violations. Keep them green.
+- `nba_engine/arbitration.py`: `arbitrate()` drops dCLV ≤ 0 and disabled offers, ranks by dCLV × `offer_priority`, and assigns at most one action per customer with a global greedy pass that respects `channel_capacity`.
+- `nba_engine/decision_log.py`: `Decision` and the append-only `DecisionLog` (optional JSONL file). Statuses are proposed / held_out / no_action, and marketing review appends approved / rejected. `reason_for()` builds the one-line reason.
+- `nba_engine/pipeline.py`: `Engine.recommend(customer_ids, as_of)` runs Eligibility → Scoring → Arbitration → Log. This is the API entry point. The module-level `recommend()` is a convenience wrapper. 10 % of sales decisions are held out by a stable hash, and service actions are never held out. Tone is still a stub (`tone_of` returns "sie").
+- `tests/`: `test_scoring.py::test_slide7_autostrom_case` and `test_pipeline.py::test_slide7_case_end_to_end` pins the slide-7 demo case (MG-100009). The property tests in `test_eligibility.py` recompute consent and exclusions from the raw tables and assert zero violations. Keep them green.
 
 Every outbound channel, including for service actions, needs its consent (see assumption A12 in the planning doc).
 
