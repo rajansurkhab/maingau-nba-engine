@@ -195,6 +195,41 @@ def review_template(key: str, body: TemplateReview, svc: EngineService = Depends
     return _guard(svc.review_template, key, body.status, body.actor)
 
 
+# --- ML upgrades, learn, impact, compliance -----------------------------------------------
+
+class ExplorationRequest(BaseModel):
+    concentration: float = Field(default=16.0, gt=0, le=1000)
+
+
+@app.get("/api/capacity")
+def capacity(svc: EngineService = Depends(get_service)):
+    """V3: greedy vs. LP and the shadow price (value of one more slot) per channel."""
+    return svc.capacity()
+
+
+@app.get("/api/learn")
+def learn(svc: EngineService = Depends(get_service)):
+    """Deep dive A: uplift vs. control group, A/B plan, learning curve, logged policy."""
+    return svc.learn()
+
+
+@app.post("/api/learn/exploration-cost")
+def exploration_cost(body: ExplorationRequest, svc: EngineService = Depends(get_service)):
+    return svc.exploration_cost(body.concentration)
+
+
+@app.get("/api/impact")
+def impact(svc: EngineService = Depends(get_service)):
+    """Legacy rule engine vs. this engine, valued with the same dCLV formula."""
+    return svc.impact()
+
+
+@app.get("/api/audit")
+def audit(svc: EngineService = Depends(get_service)):
+    """MCP tool `compliance_audit`: independent re-check of every decision."""
+    return svc.audit()
+
+
 # --- decision log -------------------------------------------------------------------------
 
 @app.get("/api/log/reviews")

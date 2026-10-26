@@ -3,13 +3,17 @@
 `Engine.recommend()` is the API entry point that later maps 1:1 to an MCP tool.
 Channel & Tone works inside scoring: tone is detected per customer, channel affinity and
 trigger signals adjust p_accept per candidate, and arbitration then picks the channel with
-the best dCLV. Content (German templates) is not built yet.
+the best dCLV. Content templates live in `content.py` and are attached by the API.
+
+Optional ML upgrades (config): `solver="lp"` (V3), `exploration="thompson"` (V1). Every
+decision logs its policy and propensity (V6-prep) for later off-policy evaluation.
 """
 from __future__ import annotations
 
+import random
 import uuid
 from collections import Counter
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from hashlib import sha256
 from pathlib import Path
 
@@ -80,17 +84,88 @@ class Engine:
     def p_accept(self, ctx: CustomerContext, offer_id: str, channel: str) -> float:
         """History rate; with profiling consent, a trigger signal moves it toward the
         after-click rate and channel affinity multiplies the odds. Capped at max_p_accept."""
-        tone = ctx.tone.tone
-        base = self.model.p(offer_id, channel, tone)
+        base = self.model.p(offer_id, channel, ctx.tone.tone)
         ctx.p_base[(offer_id, channel)] = base
+        return self._personalise(ctx, offer_id, channel, base)
+
+    def _personalise(self, ctx: CustomerContext, offer_id: str, channel: str, base: float) -> float:
         p = base
         signal = strongest_for(ctx.signals, offer_id)
         if signal:
-            p = apply_signal(p, self.intent_model.p(offer_id, channel, tone), signal.strength)
+            p = apply_signal(p, self.intent_model.p(offer_id, channel, ctx.tone.tone), signal.strength)
         factor = ctx.affinity.factor(channel)
         if factor != 1.0:
             p = apply_odds(p, factor)
         return min(p, max(self.cfg.max_p_accept, base))
+
+    # --- ML-Upgrade V1: Thompson sampling -------------------------------------------------
+
+    def _explorable(self, option: Option) -> bool:
+        """Positive sales options that arbitration may pick. Service is never sampled."""
+        return (option.offer.action_type != "service" and option.score.dclv > 0
+                and option.offer.offer_id not in self.cfg.disabled_offers
+                and option.channel not in self.cfg.disabled_channels)
+
+    def _sampler(self, ctx: CustomerContext, option: Option):
+        """Returns rng -> sampled dCLV. Everything except the Beta draw is precomputed.
+
+        dCLV is linear in p: dCLV = L − c + p·(G − L), so only p is drawn; the draw then
+        goes through the same personalisation (signal, affinity, cap) as the expected value.
+        """
+        s = option.score
+        alpha, beta = self.model.posterior(s.offer_id, s.channel, s.tone)
+        k = self.cfg.exploration_concentration
+        alpha, beta = alpha * k, beta * k
+        signal = strongest_for(ctx.signals, s.offer_id)
+        p_intent = self.intent_model.p(s.offer_id, s.channel, s.tone) if signal else None
+        factor = ctx.affinity.factor(s.channel)
+        base_value, slope = s.loss_if_reject - s.contact_cost, s.gain_if_accept - s.loss_if_reject
+        cap = self.cfg.max_p_accept
+
+        def draw(rng: random.Random) -> float:
+            base = rng.betavariate(alpha, beta)
+            p = apply_signal(base, p_intent, signal.strength) if signal else base
+            if factor != 1.0:
+                p = apply_odds(p, factor)
+            return base_value + min(p, max(cap, base)) * slope
+
+        return draw
+
+    def _options(self, ctx: CustomerContext) -> list[Option]:
+        options = [make_option(r.candidate.offer, s, self.cfg) for r, s in ctx.scored if r.eligible]
+        if self.cfg.exploration != "thompson":
+            return options
+        rng = random.Random(f"{self.cfg.exploration_seed}:{ctx.state.customer_id}")
+        return [replace(o, sample_dclv=self._sampler(ctx, o)(rng)) if self._explorable(o) else o for o in options]
+
+    def _propensity(self, ctx: CustomerContext, options: list[Option], chosen: Option) -> tuple[float, str]:
+        """ML-Upgrade V6-prep: probability that this policy picks `chosen` for the customer.
+
+        Deterministic policies log 1.0. Under exploration it is estimated by Monte Carlo over
+        fresh posterior draws (per-customer argmax, before channel capacity). The draw that
+        was actually used counts as one observation, so the estimate is never 0:
+        (hits + 1) / (draws + 1).
+        """
+        if self.cfg.exploration != "thompson":
+            return 1.0, "deterministic"
+        rng = random.Random(f"{self.cfg.exploration_seed}:{ctx.state.customer_id}:propensity")
+        candidates = []
+        for o in options:
+            if o.score.dclv > 0 and o.offer.offer_id not in self.cfg.disabled_offers \
+                    and o.channel not in self.cfg.disabled_channels:
+                fixed = None if self._explorable(o) else o.score.dclv * o.priority
+                candidates.append(((o.offer.offer_id, o.channel), o.priority, fixed,
+                                   self._sampler(ctx, o) if fixed is None else None))
+        key = (chosen.offer.offer_id, chosen.channel)
+        hits = 0
+        for _ in range(self.cfg.propensity_draws):
+            best, best_value = None, float("-inf")
+            for action, priority, fixed, draw in candidates:
+                value = fixed if fixed is not None else max(draw(rng), 1e-6) * priority
+                if value > best_value:
+                    best, best_value = action, value
+            hits += best == key
+        return (hits + 1) / (self.cfg.propensity_draws + 1), f"monte_carlo_{self.cfg.propensity_draws}"
 
     def evaluate_customer(self, state: CustomerState, as_of: pd.Timestamp = SNAPSHOT) -> CustomerContext:
         """All candidates with their rule trace and score. Blocked ones are scored too:
@@ -117,18 +192,39 @@ class Engine:
         states = self.states(as_of)
         ids = customer_ids if customer_ids is not None else list(states)
         contexts = {cid: self.evaluate_customer(states[cid], as_of) for cid in ids}
-        options = {
-            cid: [make_option(r.candidate.offer, s, self.cfg) for r, s in ctx.scored if r.eligible]
-            for cid, ctx in contexts.items()
-        }
+        options = {cid: self._options(ctx) for cid, ctx in contexts.items()}
         arb = arbitrate(options, self.cfg)
+        self.last_options, self.last_arbitration = options, arb
 
         decisions = []
         for cid in ids:
             d = self._decision(contexts[cid], arb.chosen[cid], arb.ranked[cid], arb.notes[cid], as_of)
+            self._log_policy(d, contexts[cid], options[cid], arb.chosen[cid], arb.shadow_prices)
             self.log.record(d)
             decisions.append(d)
         return decisions
+
+    def _log_policy(self, d: Decision, ctx: CustomerContext, options: list[Option], chosen: Option | None,
+                    shadow_prices: dict[str, float]) -> None:
+        """ML-Upgrade V6-prep: everything off-policy evaluation will need later."""
+        policy = {"solver": self.cfg.solver, "exploration": self.cfg.exploration,
+                  "seed": self.cfg.exploration_seed if self.cfg.exploration != "off" else None}
+        if chosen is not None:
+            propensity, method = self._propensity(ctx, options, chosen)
+            treat = 1 - self.cfg.control_share if chosen.offer.action_type in SALES_ACTION_TYPES else 1.0
+            policy.update({"propensity": propensity, "propensity_method": method, "p_treat": treat})
+            if chosen.sample_dclv is not None:
+                policy["sampled_dclv"] = chosen.sample_dclv
+                expected_best = max((o for o in options if o.score.dclv > 0 and o.offer.offer_id not in
+                                     self.cfg.disabled_offers and o.channel not in self.cfg.disabled_channels),
+                                    key=lambda o: o.score.dclv * o.priority)
+                if (expected_best.offer.offer_id, expected_best.channel) != (chosen.offer.offer_id, chosen.channel):
+                    note = f"exploration: expected best was {expected_best.offer.name} via {expected_best.channel}"
+                    d.notes.append(note)
+                    d.reason += f" [{note}]"
+            if chosen.channel in shadow_prices:
+                policy["channel_shadow_price"] = shadow_prices[chosen.channel]
+        d.inputs["policy"] = policy
 
     def _decision(
         self,

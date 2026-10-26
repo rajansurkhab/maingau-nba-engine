@@ -6,6 +6,7 @@ content template first (slide 10). Nothing is ever sent from here.
 """
 from __future__ import annotations
 
+import json
 import threading
 from collections import Counter
 from dataclasses import asdict, dataclass, field, replace
@@ -13,6 +14,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from nba_engine.arbitration import capacity_report
+from nba_engine.audit import audit_decisions, legacy_audit, legacy_comparison
 from nba_engine.config import CHANNELS, SNAPSHOT, EngineConfig
 from nba_engine.content import all_templates, lint, template_for
 from nba_engine.decision_log import CHANNEL_LABELS, DRIVER_LABELS, Decision
@@ -20,6 +23,7 @@ from nba_engine.loader import Dataset, default_dataset
 from nba_engine.pipeline import Engine
 from nba_engine.segments import SEGMENT_ORDER, customer_segments
 from nba_engine.signals import SIGNAL_LABELS
+from nba_engine.uplift import ab_plan, learning_curve, pooled_uplift, uplift_by_offer_ci
 
 DECISION_TIMES = {
     "snapshot": ("Snapshot 30 Sep, 23:59", SNAPSHOT),
@@ -43,7 +47,9 @@ EDITABLE_CONFIG = {
     "allow_du_tone": bool, "max_sales_contacts_30d": int, "control_share": float,
     "service_p_accept_prior": float, "allow_retention_on_cancellation": bool,
     "reject_penalty_on_any_open_ticket": bool, "signal_strength": dict,
+    "solver": str, "exploration": str, "exploration_concentration": float,
 }
+ALLOWED_VALUES = {"solver": {"greedy", "lp"}, "exploration": {"off", "thompson"}}
 
 
 class ReviewError(ValueError):
@@ -57,6 +63,7 @@ class Run:
     as_of: pd.Timestamp
     by_id: dict[str, Decision] = field(default_factory=dict)
     by_customer: dict[str, Decision] = field(default_factory=dict)
+    cache: dict = field(default_factory=dict)  # reports derived from this run (capacity, impact)
 
     def __post_init__(self):
         self.by_id = {d.decision_id: d for d in self.decisions}
@@ -68,9 +75,10 @@ def _now() -> str:
 
 
 class EngineService:
-    def __init__(self, ds: Dataset | None = None, log_path: Path | None = None):
+    def __init__(self, ds: Dataset | None = None, log_path: Path | None = None, state_path: Path | None = None):
         self.ds = ds or default_dataset()
         self.log_path = log_path
+        self.state_path = state_path
         self.lock = threading.RLock()
         self.cfg = EngineConfig()
         self.time_key = "snapshot"
@@ -85,6 +93,41 @@ class EngineService:
             t.key: {"status": "pending", "actor": None, "ts": None} for t in all_templates()
         }
         self.config_history: list[dict] = []
+        self._legacy: dict | None = None
+        self._load_state()
+
+    # --- persistence ----------------------------------------------------------------------
+    # Approvals, content status and settings survive a server restart, so a demo never
+    # starts from scratch. Decisions themselves are recomputed; reviews are re-applied
+    # through the same carry-over as after a config change.
+
+    def _save_state(self) -> None:
+        if self.state_path is None:
+            return
+        state = {
+            "time_key": self.time_key,
+            "config": {k: (sorted(v) if isinstance(v, set) else v)
+                       for k, v in asdict(self.cfg).items() if k in EDITABLE_CONFIG},
+            "templates": self.template_status,
+            "reviews": self._reviews,
+            "config_history": self.config_history,
+        }
+        self.state_path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = self.state_path.with_suffix(".tmp")
+        tmp.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+        tmp.replace(self.state_path)
+
+    def _load_state(self) -> None:
+        if self.state_path is None or not self.state_path.exists():
+            return
+        state = json.loads(self.state_path.read_text(encoding="utf-8"))
+        self.cfg = replace(EngineConfig(), **self._coerce(state.get("config", {})))
+        self.time_key = state.get("time_key") if state.get("time_key") in DECISION_TIMES else "snapshot"
+        for key, status in state.get("templates", {}).items():
+            if key in self.template_status:
+                self.template_status[key] = status
+        self._reviews = state.get("reviews", {})
+        self.config_history = state.get("config_history", [])
 
     # --- runs -----------------------------------------------------------------------------
 
@@ -125,6 +168,7 @@ class EngineService:
             raise ValueError(f"unknown decision time {time_key}")
         with self.lock:
             self.time_key = time_key
+            self._save_state()
 
     # --- config ---------------------------------------------------------------------------
 
@@ -134,7 +178,8 @@ class EngineService:
         out["version"] = self.cfg.version()
         return out
 
-    def update_config(self, patch: dict, actor: str) -> dict:
+    @staticmethod
+    def _coerce(patch: dict) -> dict:
         unknown = set(patch) - set(EDITABLE_CONFIG)
         if unknown:
             raise ValueError(f"not editable: {sorted(unknown)}")
@@ -142,14 +187,21 @@ class EngineService:
         for key, value in patch.items():
             kind = EDITABLE_CONFIG[key]
             changes[key] = set(value) if kind is set else dict(value) if kind is dict else kind(value)
+            if key in ALLOWED_VALUES and changes[key] not in ALLOWED_VALUES[key]:
+                raise ValueError(f"{key} must be one of {sorted(ALLOWED_VALUES[key])}")
         if "channel_capacity" in changes:
             changes["channel_capacity"] = {k: int(v) for k, v in changes["channel_capacity"].items()
                                            if v is not None and k in CHANNELS}
+        return changes
+
+    def update_config(self, patch: dict, actor: str) -> dict:
+        changes = self._coerce(patch)
         with self.lock:
             before = self.cfg.version()
             self.cfg = replace(self.cfg, **changes)
             self.config_history.append({"ts": _now(), "actor": actor, "from": before,
                                         "to": self.cfg.version(), "changed": sorted(changes)})
+            self._save_state()
         return self.config_dict()
 
     def reset_config(self, actor: str) -> dict:
@@ -158,6 +210,7 @@ class EngineService:
             self.cfg = EngineConfig()
             self.config_history.append({"ts": _now(), "actor": actor, "from": before,
                                         "to": self.cfg.version(), "changed": ["reset"]})
+            self._save_state()
         return self.config_dict()
 
     # --- content --------------------------------------------------------------------------
@@ -184,6 +237,7 @@ class EngineService:
             raise ReviewError("template has lint issues and cannot be approved")
         with self.lock:
             self.template_status[key] = {"status": status, "actor": actor, "ts": _now()}
+            self._save_state()
         return self.template_status[key]
 
     def content_approved(self, offer_id: str, tone: str) -> bool:
@@ -291,6 +345,7 @@ class EngineService:
             offer_id, channel = self._effective(run, d)
             self._reviews[d.customer_id] = {"status": status, "actor": actor, "decision_id": decision_id,
                                             "offer_id": offer_id, "channel": channel, "tone": d.tone}
+            self._save_state()
             return self.decision_row(run, d)
 
     def bulk_review(self, decision_ids: list[str], status: str, actor: str, note: str = "") -> dict:
@@ -424,6 +479,85 @@ class EngineService:
             "events": [{"occurred_at": str(r.occurred_at), "event_type": r.event_type} for r in events.itertuples()],
         }
 
+    # --- ML upgrades, impact, compliance ---------------------------------------------------
+
+    def capacity(self) -> dict:
+        """V3: greedy vs. LP on the current options, and the value of one more slot per channel."""
+        run = self.run()
+        if "capacity" not in run.cache:
+            report = capacity_report(run.engine.last_options, self.cfg)
+            for c in report["channels"]:
+                c["label"] = CHANNEL_LABELS.get(c["channel"], c["channel"])
+            report["solver"] = self.cfg.solver
+            run.cache["capacity"] = report
+        return run.cache["capacity"]
+
+    def learn(self) -> dict:
+        """Deep dive A: causal evidence from the control group, the A/B plan, and the loop."""
+        run = self.run()
+        history = self.ds.nba_action_history
+        policies = Counter(d.inputs.get("policy", {}).get("propensity_method", "none")
+                           for d in run.decisions if d.has_action)
+        props = [d.inputs["policy"]["propensity"] for d in run.decisions if d.has_action]
+        return {
+            "pooled": pooled_uplift(history).to_dict(),
+            "by_offer": [{**r, "offer_name": self._offer_names.get(r["offer_id"], r["offer_id"])}
+                         for r in uplift_by_offer_ci(history)],
+            "ab_plan": ab_plan(history),
+            "learning_curve": {
+                "offer_id": "P-EN-03", "offer_name": self._offer_names["P-EN-03"], "channel": "email",
+                "true_p": 0.25,
+                "points": learning_curve(run.engine.model, "P-EN-03", "email", "sie", true_p=0.25, steps=400, every=20),
+            },
+            "policy": {"solver": self.cfg.solver, "exploration": self.cfg.exploration,
+                       "concentration": self.cfg.exploration_concentration,
+                       "propensity_methods": dict(policies),
+                       "mean_propensity": sum(props) / len(props) if props else None},
+        }
+
+    def exploration_cost(self, concentration: float) -> dict:
+        """What would Thompson sampling at this concentration cost in expected CLV right now?"""
+        base = self.run()
+        cfg = replace(self.cfg, exploration="thompson", exploration_concentration=float(concentration))
+        explored = Engine(self.ds, cfg).recommend(as_of=self.as_of)
+        before = {d.customer_id: d for d in base.decisions}
+        changed = sum(1 for d in explored if d.has_action and (d.offer_id, d.channel)
+                      != (before[d.customer_id].offer_id, before[d.customer_id].channel))
+        gain_before = sum(d.dclv for d in base.decisions if d.has_action)
+        gain_after = sum(d.dclv for d in explored if d.has_action)
+        props = [d.inputs["policy"]["propensity"] for d in explored if d.has_action]
+        return {"concentration": concentration, "changed_decisions": changed,
+                "expected_gain_without": gain_before, "expected_gain_with": gain_after,
+                "cost_share": 1 - gain_after / gain_before if gain_before else 0.0,
+                "mean_propensity": sum(props) / len(props) if props else None}
+
+    def impact(self) -> dict:
+        run = self.run()
+        if self._legacy is None:
+            self._legacy = legacy_audit(self.ds)
+        if "comparison" not in run.cache:
+            run.cache["comparison"] = legacy_comparison(run.engine, run.decisions, run.as_of)
+        return {"legacy_audit": self._legacy, "comparison": run.cache["comparison"], "as_of": str(run.as_of)}
+
+    def audit(self) -> dict:
+        """Independent re-check of the current run, plus the content-approval rule."""
+        run = self.run()
+        log = run.engine.log
+        statuses = {d.decision_id: log.status(d.decision_id) for d in run.decisions}
+        reviewed = {e["decision_id"] for e in log.entries if e["kind"] == "status" and e.get("actor")}
+        report = audit_decisions(self.ds, run.decisions, run.as_of, statuses, reviewed)
+        unapproved_content = []
+        for d in run.decisions:
+            if statuses[d.decision_id] == "approved":
+                offer_id, _ = self._effective(run, d)
+                if not self.content_approved(offer_id, d.tone):
+                    unapproved_content.append(d.customer_id)
+        report["checks"].append({"id": "content", "label": "Every approved action uses approved content",
+                                 "violations": len(unapproved_content), "examples": unapproved_content[:5]})
+        report["violations"] += len(unapproved_content)
+        report["approved"] = sum(1 for s in statuses.values() if s == "approved")
+        return report
+
     # --- log ------------------------------------------------------------------------------
 
     def review_log(self) -> list[dict]:
@@ -452,5 +586,6 @@ def get_service() -> EngineService:
     global _service
     if _service is None:
         from nba_engine.config import REPO_ROOT
-        _service = EngineService(log_path=REPO_ROOT / "logs" / "decision_log.jsonl")
+        _service = EngineService(log_path=REPO_ROOT / "logs" / "decision_log.jsonl",
+                                 state_path=REPO_ROOT / "logs" / "cockpit_state.json")
     return _service

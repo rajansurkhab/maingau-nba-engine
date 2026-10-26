@@ -13,7 +13,7 @@ const TYPE_LABEL = { sales: "Sales", upsell: "Upsell", retention: "Retention", o
 const EDITABLE = [
   "disabled_offers", "offer_priority", "disabled_channels", "channel_capacity", "allow_du_tone",
   "max_sales_contacts_30d", "control_share", "service_p_accept_prior", "allow_retention_on_cancellation",
-  "reject_penalty_on_any_open_ticket", "signal_strength",
+  "reject_penalty_on_any_open_ticket", "signal_strength", "solver", "exploration", "exploration_concentration",
 ];
 const SIGNAL_LABEL = {
   gas_meter_deregistered: "Gas meter deregistered",
@@ -289,7 +289,9 @@ function closeDrawer() {
   $("#drawer-root").innerHTML = "";
 }
 
-function renderDrawer(c) {
+/* Customer view used by the marketing drawer and the service 360° page.
+ * mode "marketing" adds the review box; "service" shows talking points instead. */
+function customerParts(c, mode = "marketing") {
   const d = c.decision;
   const flags = [];
   if (c.flags.open_complaint) flags.push('<span class="chip bad">Open complaint · sales blocked</span>');
@@ -303,18 +305,14 @@ function renderDrawer(c) {
   const contentOk = d.content?.status === "approved";
   const alternatives = (d.alternatives || []).filter((a) => !(a.offer_id === d.offer_id && a.channel === d.channel));
 
-  $("#drawer-root").innerHTML = `
-    <div class="scrim" data-action="close"></div>
-    <aside class="drawer" role="dialog" aria-modal="true" aria-label="Customer ${esc(c.customer_id)}">
-      <div class="drawer-head">
+  const head = `
         <div class="grow">
           <h2 class="mono" style="font-size:18px">${esc(c.customer_id)}</h2>
           <div class="muted small">${esc(c.segment)} · ${esc(c.city)} · customer since ${esc(c.since)} · household of ${c.household_size} · address as <strong>${esc(tone(c.tone))}</strong> (${esc(c.tone_evidence)})</div>
           <div class="chips">${flags.join("")}</div>
-        </div>
-        <button class="btn ghost" data-action="close" aria-label="Close">✕</button>
-      </div>
-      <div class="drawer-body">
+        </div>`;
+  const policy = d.inputs?.policy;
+  const body = `
         <div class="grid grid-3">
           <div class="card kpi"><div class="label">CLV (10 years)</div><div class="value num">${eur(c.value.clv)}</div></div>
           <div class="card kpi"><div class="label">Churn risk / year</div><div class="value num">${pct(c.value.churn)}</div></div>
@@ -348,12 +346,18 @@ function renderDrawer(c) {
 
         ${d.content ? `
         <div class="message">
-          <div class="msg-head"><strong>Message preview</strong><span class="chips" style="margin:0">${d.content.status === "approved" ? '<span class="chip good">Content approved</span>' : `<span class="chip warn">Content ${esc(d.content.status)}</span>`}</span></div>
+          <div class="msg-head"><strong>${mode === "service" ? "Talking points for this conversation" : "Message preview"}</strong><span class="chips" style="margin:0">${d.content.status === "approved" ? '<span class="chip good">Content approved</span>' : `<span class="chip warn">Content ${esc(d.content.status)}</span>`}</span></div>
           <div class="msg-body"><div class="subj">${esc(d.content.subject_en)}</div><div>${esc(d.content.body_en)}</div><div class="muted small" style="margin-top:6px">English translation for review</div></div>
           <details><summary>Customer-facing text (German, required by slide 12)</summary><div class="de"><div class="subj">${esc(d.content.subject_de)}</div>${esc(d.content.body_de)}</div></details>
         </div>` : ""}
 
-        ${reviewable ? `
+        ${mode === "service" && d.offer_id ? `
+        <div class="banner info"><span class="grow">${d.control_group ? "Control group: do not offer this. It is held out to measure the effect of our actions."
+          : d.status === "approved" ? "Approved by marketing: you may offer this in the conversation."
+          : d.action_type === "service" ? "Service action: solve the issue first, no sales content."
+          : "Not approved by marketing yet: mention it only if the customer asks."}</span></div>` : ""}
+
+        ${reviewable && mode === "marketing" ? `
         <div class="card review-box">
           <div class="section-title"><h3>Your decision</h3><span class="muted small">reviewer: ${esc(reviewer())}</span></div>
           ${!contentOk ? `<div class="banner"><span class="grow">The message template is not approved yet, so this action cannot be approved.</span><button class="btn sm" data-action="approve-template" data-key="${esc(d.content.key)}">Approve this content</button></div>` : ""}
@@ -420,9 +424,19 @@ function renderDrawer(c) {
             <div class="k">Config version</div><div class="mono">${esc(d.config_version)}</div>
             <div class="k">Notes</div><div>${esc((d.notes || []).join("; ") || "—")}</div>
             <div class="k">Review history</div><div>${d.history.length ? d.history.map((h) => `${esc(h.ts)} · ${esc(h.actor)} · ${esc(h.status)}${h.note ? ` · “${esc(h.note)}”` : ""}`).join("<br>") : "not reviewed yet"}</div>
+            ${policy ? `<div class="k">Policy</div><div>solver ${esc(policy.solver)} · exploration ${esc(policy.exploration)}${policy.propensity != null ? ` · propensity ${Number(policy.propensity).toFixed(2)} (${esc(policy.propensity_method)})` : ""}${policy.channel_shadow_price != null ? ` · channel shadow price ${eur(policy.channel_shadow_price)}` : ""}</div>` : ""}
           </div>
-        </details>
-      </div>
+        </details>`;
+  return { head, body };
+}
+
+function renderDrawer(c) {
+  const { head, body } = customerParts(c, "marketing");
+  $("#drawer-root").innerHTML = `
+    <div class="scrim" data-action="close"></div>
+    <aside class="drawer" role="dialog" aria-modal="true" aria-label="Customer ${esc(c.customer_id)}">
+      <div class="drawer-head">${head}<button class="btn ghost" data-action="close" aria-label="Close">✕</button></div>
+      <div class="drawer-body">${body}</div>
     </aside>`;
 }
 
@@ -503,7 +517,9 @@ async function showSteering() {
     state.actionCounts.offer[d.offer_id] = (state.actionCounts.offer[d.offer_id] || 0) + 1;
     state.actionCounts.channel[d.channel] = (state.actionCounts.channel[d.channel] || 0) + 1;
   }
+  state.capacityHtml = null;
   renderSteering();
+  loadCapacityCard();  // LP comparison takes a few seconds on a fresh run; the page stays usable
 }
 
 function changedKeys() {
@@ -575,6 +591,20 @@ function renderSteering() {
       </div>
     </div>
 
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-head"><h2>Optimisation</h2><span class="muted small">how scarce channel capacity is allocated</span></div>
+        <div class="setting"><div><strong>Arbitration solver</strong><div class="help">Greedy gives a scarce slot to the highest value. The LP optimum gives it to the customer who loses most without it.</div></div>
+          <div class="segmented">${[["greedy", "Greedy"], ["lp", "LP optimum"]].map(([k, l]) => `<button class="${d.solver === k ? "on" : ""}" data-action="solver" data-solver="${k}">${l}</button>`).join("")}</div></div>
+        <div id="capacity-card" style="margin-top:10px">${state.capacityHtml ?? '<div class="muted small">Comparing greedy and LP on the current run…</div>'}</div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Learning</h2><a class="muted small" href="#/learn">deep dive A →</a></div>
+        <div class="setting"><div><strong>Exploration (Thompson sampling)</strong><div class="help">Tries uncertain offers to learn faster. Never touches hard rules or service actions, never proposes negative expected value.</div></div>${sw("explore", d.exploration === "thompson", "explore")}</div>
+        <div class="setting"><div><strong>Concentration</strong><div class="help">1 = pure Thompson sampling. Higher = less exploration, lower cost.</div></div><div class="range-row"><input type="range" min="1" max="64" step="1" value="${d.exploration_concentration}" data-action="concentration" aria-label="Exploration concentration"><span class="num">${Number(d.exploration_concentration).toFixed(0)}</span></div></div>
+      </div>
+    </div>
+
     <div class="card">
       <div class="card-head"><h2>Change history</h2><button class="btn sm" data-action="reset-config">Reset to defaults</button></div>
       ${state.configHistory.length ? `<div class="table-wrap"><table><thead><tr><th>Time</th><th>Reviewer</th><th>Changed</th><th>Version</th></tr></thead><tbody>
@@ -626,14 +656,20 @@ async function showLog() {
 
 /* --- routing and events ------------------------------------------------------------------ */
 async function route() {
-  state.route = (location.hash.replace("#/", "") || "overview").split("?")[0];
+  const [route, param] = (location.hash.replace("#/", "") || "overview").split("?")[0].split("/");
+  state.route = route;
   state.selected.clear();
+  closeDrawer();
   updateChrome();
   try {
-    if (state.route === "queue") await showQueue();
-    else if (state.route === "content") await showContent();
-    else if (state.route === "steering") await showSteering();
-    else if (state.route === "log") await showLog();
+    if (route === "queue") await showQueue();
+    else if (route === "content") await showContent();
+    else if (route === "steering") await showSteering();
+    else if (route === "log") await showLog();
+    else if (route === "service") await showService(param && decodeURIComponent(param));
+    else if (route === "learn") await showLearn();
+    else if (route === "impact") await showImpact();
+    else if (route === "architecture") showArchitecture();
     else { state.route = "overview"; renderOverview(); }
   } catch (err) {
     toast(err.message, "bad");
@@ -690,6 +726,7 @@ const handlers = {
     await showSteering();
   },
 };
+Object.assign(handlers, pageHandlers);
 
 const inputHandlers = {
   "offer-toggle": (el) => {
@@ -715,6 +752,8 @@ const inputHandlers = {
   number: (el) => { state.draft[el.dataset.key] = parseInt(el.value, 10) || 0; },
   range: (el) => { state.draft[el.dataset.key] = Number(el.value); },
   signal: (el) => { state.draft.signal_strength[el.dataset.signal] = Number(el.value); },
+  explore: (el) => { state.draft.exploration = el.checked ? "thompson" : "off"; },
+  concentration: (el) => { state.draft.exploration_concentration = Number(el.value); },
 };
 
 document.addEventListener("click", async (ev) => {
@@ -731,7 +770,9 @@ document.addEventListener("input", (ev) => {
   handler(el);
   if (el.type === "range") {
     const out = el.parentElement.querySelector(".num");
-    if (out) out.textContent = el.dataset.action === "priority" ? `×${Number(el.value).toFixed(1)}` : el.dataset.action === "signal" ? Number(el.value).toFixed(1) : pct(Number(el.value));
+    const a = el.dataset.action;
+    if (out) out.textContent = a === "priority" ? `×${Number(el.value).toFixed(1)}` : a === "signal" ? Number(el.value).toFixed(1)
+      : a === "concentration" ? Number(el.value).toFixed(0) : pct(Number(el.value));
   }
 });
 

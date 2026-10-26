@@ -79,6 +79,18 @@ class EngineConfig:
     # A19: max actions per channel and run (None = unlimited); call centre capacity
     channel_capacity: dict[str, int] = field(default_factory=lambda: {"outbound_call": 25})
     top_k: int = 3
+    # ML-Upgrade V3: "greedy" (default) or "lp" (exact optimum under channel capacities)
+    solver: str = "greedy"
+    # ML-Upgrade V1: "off" (default) or "thompson". Exploration only reorders actions with
+    # positive expected dCLV; service actions are never sampled.
+    exploration: str = "off"
+    exploration_seed: int = 7
+    # 1 = pure Thompson sampling; larger values narrow the posterior (less exploration).
+    # On the mock data pure TS changes 386 decisions and costs 18 % expected CLV;
+    # 16 changes 181 decisions for 3.6 % (assumption A30).
+    exploration_concentration: float = 16.0
+    # ML-Upgrade V6-prep: Monte Carlo draws to estimate the logged propensity under exploration
+    propensity_draws: int = 100
     # slide 9/12: hold out 10 % of sales decisions as control group; service is never held out
     control_share: float = 0.10
 

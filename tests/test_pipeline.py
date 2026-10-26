@@ -41,7 +41,7 @@ def test_every_decision_has_a_one_line_reason(decisions):
         assert len(d.reason) < 250
 
 
-def test_zero_consent_and_exclusion_violations(ds, decisions):
+def assert_no_violations(ds, decisions):
     """Independent recomputation from the raw tables (jury check, slide 11)."""
     cs = ds.consent_status
     granted = set(zip(cs.loc[cs["status"] == "granted", "customer_id"], cs.loc[cs["status"] == "granted", "consent_type"]))
@@ -63,6 +63,10 @@ def test_zero_consent_and_exclusion_violations(ds, decisions):
             assert d.customer_id not in unsubscribed
         if d.action_type in SALES_ACTION_TYPES:
             assert d.customer_id not in excluded, d.decision_id
+
+
+def test_zero_consent_and_exclusion_violations(ds, decisions):
+    assert_no_violations(ds, decisions)
 
 
 def test_chosen_action_is_eligible_when_reevaluated(engine, decisions):
@@ -177,3 +181,44 @@ def test_held_out_and_no_action_cannot_be_approved(engine, decisions):
     other = next(d for d in decisions if d.status in ("held_out", "no_action"))
     with pytest.raises(ValueError):
         engine.log.set_status(other.decision_id, "approved", actor="x", ts="2026-10-26")
+
+
+# --- ML upgrades V1, V3, V6-prep ----------------------------------------------------------------
+
+@pytest.fixture(scope="module")
+def explored(ds):
+    return Engine(ds, EngineConfig(exploration="thompson", solver="lp")).recommend()
+
+
+def test_ml_upgrades_keep_zero_violations(ds, explored):
+    assert_no_violations(ds, explored)
+
+
+def test_exploration_never_proposes_negative_expected_value(explored):
+    assert all(d.dclv > 0 for d in explored if d.has_action)
+
+
+def test_exploration_leaves_excluded_customers_on_service(states, decisions, explored):
+    base = {d.customer_id: d for d in decisions}
+    for d in explored:
+        s = states[d.customer_id]
+        if s.open_complaint or s.dunning_level >= 1 or s.cancellation_received:
+            assert d.action_type in (None, "service")
+            if base[d.customer_id].offer_id == "P-SV-01" and d.has_action:
+                assert d.offer_id == "P-SV-01"
+
+
+def test_exploration_is_deterministic(ds, explored):
+    again = Engine(ds, EngineConfig(exploration="thompson", solver="lp")).recommend()
+    assert [(d.offer_id, d.channel) for d in again] == [(d.offer_id, d.channel) for d in explored]
+
+
+def test_policy_and_propensity_logged(decisions, explored):
+    for d in decisions:
+        if d.has_action:
+            assert d.inputs["policy"]["propensity"] == 1.0
+            assert d.inputs["policy"]["solver"] == "greedy"
+    props = [d.inputs["policy"]["propensity"] for d in explored if d.has_action]
+    assert all(0 < p <= 1 for p in props) and min(props) < 1
+    sales = [d for d in explored if d.action_type in SALES_ACTION_TYPES]
+    assert all(d.inputs["policy"]["p_treat"] == pytest.approx(0.9) for d in sales)

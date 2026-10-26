@@ -3,7 +3,7 @@ name = "nba_engine"
 version = "0.1.0"
 description = "MAINGAU Next-Best-Action engine (Futury Build Days #3)"
 requires-python = ">=3.11"
-dependencies = ["pandas>=2.2", "openpyxl", "streamlit>=1.45", "fastapi>=0.115", "uvicorn>=0.30"]
+dependencies = ["pandas>=2.2", "openpyxl", "scipy>=1.11", "streamlit>=1.45", "fastapi>=0.115", "uvicorn>=0.30", "httpx", "mcp>=2"]
 
 [project.optional-dependencies]
 dev = ["pytest", "httpx"]

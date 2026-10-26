@@ -121,3 +121,31 @@ def test_log_download_is_jsonl(client):
     r = client.get("/api/log/download")
     assert r.status_code == 200
     assert len(r.text.strip().splitlines()) >= 750
+
+
+def test_state_survives_a_restart(ds, tmp_path):
+    """Approvals, content status and settings are persisted, so a demo never starts from zero."""
+    path = tmp_path / "state.json"
+    first = EngineService(ds, state_path=path)
+    d = next(r for r in first.decisions(status="proposed"))
+    first.review_template(f"{d['offer_id']}:{d['tone']}", "approved", "qa")
+    first.review(d["decision_id"], "approved", "qa")
+    first.update_config({"solver": "lp"}, "qa")
+
+    second = EngineService(ds, state_path=path)
+    assert second.cfg.solver == "lp"
+    assert second.content_approved(d["offer_id"], d["tone"])
+    after = next(r for r in second.decisions() if r["customer_id"] == d["customer_id"])
+    assert after["status"] == "approved"
+
+
+def test_new_endpoints(client):
+    cap = client.get("/api/capacity").json()
+    assert cap["lp_objective"] >= cap["greedy_objective"] - 1e-6
+    learn = client.get("/api/learn").json()
+    assert learn["pooled"]["control_n"] > 0 and learn["learning_curve"]["points"]
+    audit = client.get("/api/audit").json()
+    assert audit["violations"] == 0 and any(c["id"] == "content" for c in audit["checks"])
+    impact = client.get("/api/impact").json()
+    assert impact["comparison"]["engine_expected_gain"] > impact["comparison"]["legacy_expected_gain"]
+    assert client.put("/api/config", json={"actor": "qa", "changes": {"exploration": "maybe"}}).status_code == 400

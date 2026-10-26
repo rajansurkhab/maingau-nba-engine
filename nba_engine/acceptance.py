@@ -53,15 +53,33 @@ class AcceptanceModel:
         return s, n
 
     def p(self, offer_id: str, channel: str, tone: str) -> float:
+        alpha, beta = self.posterior(offer_id, channel, tone)
+        return alpha / (alpha + beta)
+
+    def posterior(self, offer_id: str, channel: str, tone: str) -> tuple[float, float]:
+        """Beta(alpha, beta) of the leaf cell: its counts on top of a prior centred on the parent.
+
+        Empirical Bayes: the parent estimate is treated as known, so the spread is a lower
+        bound of the true uncertainty.
+        """
         path = self._path(offer_id, channel, tone)
         s, n = self._cell(ROOT)
         p = (s + 1) / (n + 2)  # Laplace at the root
-        for key in path[1:]:
+        for key in path[1:-1]:
             if key[0] == "type" and key[1] in self.type_priors:
                 p = self.type_priors[key[1]]
             s, n = self._cell(key)
             p = (s + self.strength * p) / (n + self.strength)
-        return p
+        s, n = self._cell(path[-1])
+        return max(s + self.strength * p, 1e-9), max(n - s + self.strength * (1 - p), 1e-9)
+
+    def p_sample(self, offer_id: str, channel: str, tone: str, rng, concentration: float = 1.0) -> float:
+        """ML-Upgrade V1: one Thompson draw from the leaf posterior (rng = random.Random).
+
+        `concentration` > 1 narrows the posterior around the same mean (less exploration).
+        """
+        alpha, beta = self.posterior(offer_id, channel, tone)
+        return rng.betavariate(alpha * concentration, beta * concentration)
 
     def trials(self, offer_id: str, channel: str, tone: str) -> int:
         """Observations behind the leaf estimate (0 = pure prior), for the reason text."""

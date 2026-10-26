@@ -375,6 +375,39 @@ details.panel > .inner { padding: 0 14px 14px; }
 }
 .savebar .grow { flex: 1; }
 
+/* --- charts ----------------------------------------------------------------------------- */
+.nav-section { margin: 12px 10px 4px; font-size: 11px; font-weight: 650; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.chart { width: 100%; height: auto; display: block; }
+.chart .grid-line { stroke: var(--border); stroke-width: 1; }
+.chart .tick { fill: var(--muted); font-size: 11px; font-family: var(--font); }
+.chart .axis-label { fill: var(--muted); font-size: 11px; font-family: var(--font); }
+.chart .band { fill: var(--bar); opacity: .18; }
+.chart .series { fill: none; stroke: var(--bar); stroke-width: 2; stroke-linejoin: round; }
+.chart .truth { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 4 4; }
+.chart .hit { fill: transparent; cursor: default; }
+.chart .hit:hover { fill: var(--bar); opacity: .35; }
+.chart .zero { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; }
+.chart .ci { stroke: var(--muted); stroke-width: 2; stroke-linecap: round; }
+.chart .ci.strong { stroke: var(--bar); stroke-width: 3; }
+.chart .est { fill: var(--surface); stroke: var(--muted); stroke-width: 2; }
+.chart .est.strong { fill: var(--bar); stroke: var(--surface); }
+.chart .row-label { fill: var(--text-2); font-size: 12px; font-family: var(--font); }
+.chart .row-label.strong { fill: var(--text); font-weight: 650; }
+
+/* --- architecture ----------------------------------------------------------------------- */
+.arch .arch-zone { fill: var(--surface-2); stroke: var(--border); stroke-width: 1.5; }
+.arch .arch-zone.gov { fill: var(--accent-soft); stroke: transparent; }
+.arch .arch-zone-title { fill: var(--text); font: 650 14px var(--font); }
+.arch .arch-box rect { fill: var(--surface); stroke: var(--border); stroke-width: 1.5; }
+.arch .arch-box.core rect { stroke: var(--accent); stroke-width: 2; }
+.arch .arch-box.mcp rect { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; }
+.arch .arch-box.app rect { stroke: var(--good); }
+.arch .arch-title { fill: var(--text); font: 650 13px var(--font); }
+.arch .arch-line { fill: var(--text-2); font: 12px var(--font); }
+.arch .arch-label { fill: var(--muted); font: 11px var(--font); }
+.arch .arch-arrow { stroke: var(--muted); stroke-width: 1.5; }
+.arch .arch-head { fill: var(--muted); }
+
 /* --- toast & loading -------------------------------------------------------------------- */
 .toasts { position: fixed; top: 16px; right: 16px; z-index: 60; display: flex; flex-direction: column; gap: 8px; }
 .toast {

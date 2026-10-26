@@ -78,3 +78,33 @@ def test_uplift_table(ds):
     row = up.loc["P-EN-02"]
     assert row["control_n"] > 0
     assert row["uplift"] == pytest.approx(row["treated_rate"] - row["control_rate"])
+
+
+# --- ML-Upgrade V1: Thompson sampling ---------------------------------------------------------
+
+def test_posterior_mean_is_point_estimate(ds):
+    m = AcceptanceModel.fit(ds.nba_action_history, ds.product_catalog, type_priors={"service": 0.5})
+    alpha, beta = m.posterior("P-EN-02", "newsletter_email", "sie")
+    assert alpha / (alpha + beta) == pytest.approx(m.p("P-EN-02", "newsletter_email", "sie"))
+
+
+def test_p_sample_is_centred_and_concentration_narrows_it(ds):
+    import random
+    import statistics
+
+    m = AcceptanceModel.fit(ds.nba_action_history, ds.product_catalog)
+    p = m.p("P-MO-01", "portal_popup", "sie")
+    wide = [m.p_sample("P-MO-01", "portal_popup", "sie", random.Random(i)) for i in range(4000)]
+    narrow = [m.p_sample("P-MO-01", "portal_popup", "sie", random.Random(i), concentration=16) for i in range(4000)]
+    assert statistics.mean(wide) == pytest.approx(p, rel=0.1)
+    assert statistics.mean(narrow) == pytest.approx(p, rel=0.05)
+    assert statistics.stdev(narrow) < statistics.stdev(wide) / 3
+
+
+def test_p_sample_is_deterministic_per_seed(ds):
+    import random
+
+    m = AcceptanceModel.fit(ds.nba_action_history, ds.product_catalog)
+    draw = lambda seed: m.p_sample("P-IN-01", "email", "du", random.Random(seed))  # noqa: E731
+    assert draw(3) == draw(3)
+    assert draw(3) != draw(4)
