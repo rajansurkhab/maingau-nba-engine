@@ -38,12 +38,14 @@ class ToneResult:
     informal_hits: int
     texts: int
     used: bool  # False: profiling not allowed or no text, default "sie" applied
+    du_blocked: bool = False  # detected "du", but marketing has not approved Du content
 
     @property
     def evidence(self) -> str:
         if not self.used:
             return "default Sie"
-        return f"{self.texts} texts, {self.formal_hits} formal vs {self.informal_hits} informal markers"
+        text = f"{self.texts} texts, {self.formal_hits} formal vs {self.informal_hits} informal markers"
+        return text + ("; Du detected but not approved, using Sie" if self.du_blocked else "")
 
 
 def tone_markers(text: str) -> tuple[int, int]:
@@ -75,6 +77,8 @@ class ToneDetector:
         allowed = state.profiling_allowed or not self.cfg.tone_requires_profiling
         if not allowed or not texts:
             return ToneResult("sie", formal, informal, len(texts), used=False)
+        if votes > 0 and not self.cfg.allow_du_tone:
+            return ToneResult("sie", formal, informal, len(texts), used=True, du_blocked=True)
         return ToneResult("du" if votes > 0 else "sie", formal, informal, len(texts), used=True)
 
 

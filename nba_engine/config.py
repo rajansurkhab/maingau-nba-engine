@@ -71,6 +71,9 @@ class EngineConfig:
 
     # --- arbitration (slide 10: set offers, priorities and contact limits) ---
     disabled_offers: set[str] = field(default_factory=set)
+    # slide 10: marketing approves channels and tone
+    disabled_channels: set[str] = field(default_factory=set)
+    allow_du_tone: bool = True
     # ranking weight per offer; dCLV > 0 is still required, the weight only reorders
     offer_priority: dict[str, float] = field(default_factory=dict)
     # A19: max actions per channel and run (None = unlimited); call centre capacity

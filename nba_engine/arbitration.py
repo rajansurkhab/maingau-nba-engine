@@ -67,6 +67,9 @@ def arbitrate(options_by_customer: dict[str, list[Option]], cfg: EngineConfig) -
             if o.offer.offer_id in cfg.disabled_offers:
                 result.notes[cid].append(f"{o.offer.offer_id} disabled by marketing")
                 continue
+            if o.channel in cfg.disabled_channels:
+                result.notes[cid].append(f"{o.channel} not approved by marketing")
+                continue
             keep.append(o)
         positive[cid] = keep
         result.notes[cid] = sorted(set(result.notes[cid]))

@@ -95,6 +95,14 @@ def test_marketing_controls_change_the_outcome(ds):
     assert all(d.channel != "outbound_call" for d in out)
 
 
+def test_channel_and_tone_approval(ds):
+    cfg = EngineConfig(disabled_channels={"newsletter_email", "app_push"}, allow_du_tone=False)
+    out = Engine(ds, cfg).recommend()
+    assert all(d.channel not in cfg.disabled_channels for d in out)
+    assert all(d.tone in (None, "sie") for d in out)
+    assert any("Du detected but not approved" in d.inputs["tone_evidence"] for d in out)
+
+
 def test_config_version_logged(decisions, engine):
     assert all(d.config_version == engine.cfg.version() for d in decisions)
     assert EngineConfig(top_k=5).version() != EngineConfig().version()
