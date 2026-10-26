@@ -69,11 +69,13 @@
         </div>
         <label class="control">Decision time
           <select id="time-select" aria-label="Decision time"></select>
+          <span class="tip" tabindex="0" role="img" id="time-tip">?</span>
         </label>
-        <label class="control">Reviewer
+        <label class="control" id="reviewer-control">Reviewer
           <input type="text" id="reviewer" value="marketing" size="12" aria-label="Reviewer name">
         </label>
-        <span class="chip mono" id="config-chip" title="Config version: changes whenever steering settings change"></span>
+        <a class="chip" id="config-chip" href="#/steering"></a>
+        <div class="time-banner" id="time-banner" hidden></div>
       </header>
       <main class="page" id="page" tabindex="-1"></main>
     </div>
@@ -81,6 +83,7 @@
 
   <div id="drawer-root"></div>
   <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="tooltip" id="tip" role="tooltip" hidden></div>
   <div class="loading" id="loading" hidden>
     <div><div class="spinner" style="margin: 0 auto"></div><div class="msg" id="loading-msg">Loading…</div></div>
   </div>
