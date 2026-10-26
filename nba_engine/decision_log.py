@@ -82,6 +82,7 @@ class DecisionLog:
         self.entries: list[dict] = []
         self._decisions: dict[str, Decision] = {}
         self._status: dict[str, str] = {}
+        self._overrides: dict[str, dict] = {}
 
     def _append(self, entry: dict) -> None:
         self.entries.append(entry)
@@ -97,19 +98,42 @@ class DecisionLog:
         self._status[decision.decision_id] = decision.status
         self._append({"kind": "decision", **asdict(decision)})
 
-    def set_status(self, decision_id: str, status: str, actor: str, ts: str, note: str = "") -> None:
-        """Marketing approves or rejects a proposed decision."""
+    def set_status(
+        self,
+        decision_id: str,
+        status: str,
+        actor: str,
+        ts: str,
+        note: str = "",
+        override: dict | None = None,
+    ) -> None:
+        """Marketing approves or rejects a proposed decision.
+
+        `override` = {"offer_id", "channel"} approves one of the decision's ranked
+        alternatives instead of the engine's choice (slide 8: the marketer can change it).
+        Only alternatives are allowed: they already passed every hard rule and have dCLV > 0.
+        """
         if status not in REVIEW_STATUSES:
             raise ValueError(f"status must be one of {REVIEW_STATUSES}")
         current = self._status.get(decision_id)
         if current != "proposed":
             raise ValueError(f"decision {decision_id} is {current}, only proposed decisions can be reviewed")
+        if override is not None:
+            if status != "approved":
+                raise ValueError("an override can only be approved")
+            alternatives = {(a["offer_id"], a["channel"]) for a in self._decisions[decision_id].alternatives}
+            if (override.get("offer_id"), override.get("channel")) not in alternatives:
+                raise ValueError("override must be one of the decision's ranked alternatives")
+            self._overrides[decision_id] = {"offer_id": override["offer_id"], "channel": override["channel"]}
         self._status[decision_id] = status
         self._append({"kind": "status", "decision_id": decision_id, "status": status,
-                      "actor": actor, "ts": ts, "note": note})
+                      "actor": actor, "ts": ts, "note": note, "override": override})
 
     def status(self, decision_id: str) -> str:
         return self._status[decision_id]
+
+    def override(self, decision_id: str) -> dict | None:
+        return self._overrides.get(decision_id)
 
     def get(self, decision_id: str) -> Decision:
         return self._decisions[decision_id]

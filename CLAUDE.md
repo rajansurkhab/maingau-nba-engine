@@ -16,13 +16,14 @@ Python 3.12, venv in `.venv` (Windows paths shown; Git Bash works the same with 
 
 ```bash
 python -m venv .venv
-.venv/Scripts/python -m pip install pandas openpyxl pytest streamlit
-.venv/Scripts/python -m pytest -q                                  # all tests
+.venv/Scripts/python -m pip install pandas openpyxl pytest streamlit fastapi uvicorn httpx
+.venv/Scripts/python -m pytest -q                                  # all tests (~1 min)
 .venv/Scripts/python -m pytest tests/test_eligibility.py -k consent # single test
-.venv/Scripts/python -m streamlit run app/streamlit_app.py          # UI on http://localhost:8501
+.venv/Scripts/python -m uvicorn api.main:app --port 8000            # marketing cockpit + API on http://localhost:8000
+.venv/Scripts/python -m streamlit run app/streamlit_app.py          # older Streamlit UI on http://localhost:8501
 ```
 
-`.claude/launch.json` has the same app as `nba-app` for the browser preview.
+`.claude/launch.json` has both as `nba-web` and `nba-app` for the browser preview. The API server does not auto-reload; restart it after Python changes (state such as approvals is in memory and resets).
 
 **Language:** everything in the project (code, UI, docs, commits) is English. Customer-facing content (message templates) is German, as slide 12 requires.
 
@@ -39,6 +40,11 @@ python -m venv .venv
 - `nba_engine/pipeline.py`: `Engine.recommend(customer_ids, as_of)` runs Eligibility → Scoring → Arbitration → Log. This is the API entry point. The module-level `recommend()` is a convenience wrapper. 10 % of sales decisions are held out by a stable hash, and service actions are never held out. `Engine.p_accept()` combines the history rate, the trigger signal and the channel affinity.
 - `nba_engine/signals.py`: `SignalDetector` finds gas meter deregistration, ≥3 heat-pump clicks, a heat pump device and a wallbox purchase (shop, HEMS or event). A signal moves p toward the offer's after-click rate from `Engine.intent_model` (`AcceptanceModel.fit(clicked_only=True)`).
 - `nba_engine/channel_tone.py`: `ToneDetector` gives Du/Sie from customer texts (agent turns ignored, default "sie"). `AffinityModel` gives per-channel odds factors from human newsletter opens and portal/app visits.
+- `nba_engine/content.py`: message templates per offer × tone. The sendable text is German (slide 12), and each offer has an English translation in `TRANSLATIONS_EN` for reviewers. `lint()` blocks prices, discounts, urgency and tone mismatches.
+- `nba_engine/segments.py`: `customer_segments()` (CLV terciles plus "New customer"), shared by both UIs.
+- `api/service.py`: `EngineService` holds config, decision time, one cached run per (config version, time), template approvals and the latest review per customer. Human-in-the-loop rules: an action can only be approved when its template is approved; an override must be one of the decision's ranked alternatives; reviews carry over to a new run when the action is still allowed (an approved action that became an alternative is carried over as an override).
+- `api/main.py`: FastAPI app. `/api/recommend`, `/api/customers/{id}`, `/api/config`, `/api/decisions/{id}/review` are the MCP tools of the architecture slide. It also serves `web/`.
+- `web/`: marketing cockpit (plain HTML/CSS/JS, no build step). Hash routes: overview, queue (approval queue with bulk review and customer drawer), content (template approval), steering, log. Light and dark mode via `prefers-color-scheme`.
 - `app/`: Streamlit UI. `common.py` caches one engine run per (config version, decision time) with `st.cache_resource` and makes the repo root importable. `customer_360.py` is the service view (status, CLV, NBA with reason, every candidate with its block reason, decision log entry). `marketing.py` has the tabs Top NBAs, Segments, Steering (offers/priorities, channel approval and capacity, Du approval, contact limit, model assumptions, signal strengths), Approval and Decision log. Approvals live in the cached run's `DecisionLog`, so a config change starts a new run with fresh proposals.
 - Personalisation (signals, affinity, detected tone) applies **only** with `profiling_analytics` consent. Without it, signals are logged as "not used".
 - `tests/`: the demo cases are pinned in `test_pipeline.py`: slide 7 (MG-100009), slide 9 (MG-100001) and slide 6 (MG-100060 gas, MG-100266 wallbox, MG-100125 heat-pump clicks). Also `test_scoring.py::test_slide7_autostrom_case`. pins the slide-7 demo case (MG-100009). The property tests in `test_eligibility.py` recompute consent and exclusions from the raw tables and assert zero violations. Keep them green.

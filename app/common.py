@@ -16,6 +16,7 @@ from nba_engine.config import SNAPSHOT, EngineConfig  # noqa: E402
 from nba_engine.decision_log import CHANNEL_LABELS, Decision  # noqa: E402
 from nba_engine.loader import Dataset, default_dataset  # noqa: E402
 from nba_engine.pipeline import Engine  # noqa: E402
+from nba_engine.segments import customer_segments  # noqa: E402
 
 DECISION_TIMES = {
     "Snapshot 30 Sep, 23:59": SNAPSHOT,
@@ -81,14 +82,11 @@ def current_run() -> Run:
 
 @st.cache_data(show_spinner=False)
 def segments() -> pd.DataFrame:
-    """Value tier from CLV terciles; customers younger than one year are 'New customer'."""
     ds = dataset()
-    cv = ds.customer_value.set_index("customer_id")["clv_eur"]
-    tiers = pd.qcut(cv.rank(method="first"), 3, labels=["Low value", "Mid value", "High value"]).astype(str)
-    since = ds.customer_master.set_index("customer_id")["customer_since"]
-    new = since > SNAPSHOT - pd.Timedelta(days=365)
-    seg = tiers.where(~new.reindex(tiers.index, fill_value=False), "New customer")
-    return pd.DataFrame({"segment": seg, "clv_eur": cv})
+    return pd.DataFrame({
+        "segment": customer_segments(ds),
+        "clv_eur": ds.customer_value.set_index("customer_id")["clv_eur"],
+    })
 
 
 def decisions_frame(run: Run) -> pd.DataFrame:

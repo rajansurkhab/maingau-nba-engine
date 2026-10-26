@@ -420,6 +420,9 @@ for customer in trigger_set:
 - **ASSUMPTION A23:** Channel affinity compares human opens of the last 6 newsletters (excluding Apple MPP) and portal and app visits per week (Jul–Sep) with the population average, smoothed with 2 pseudo-observations and bounded to ×0.1 to ×3 of the odds.
 - **ASSUMPTION A24:** Marketing approval of channels and tone (S10) is a config switch. A channel that is not approved is skipped in arbitration (logged as a note). If "Du" is not approved, every customer gets "Sie" and the tone evidence records the override. Approval of individual actions happens in the decision log (proposed → approved/rejected).
 - **ASSUMPTION A25:** Segments in the dashboard are CLV terciles (low/mid/high value). Customers younger than 365 days form their own segment "New customer". This makes the "high-value vs. new customer" comparison from S6 visible.
+- **ASSUMPTION A26:** Content is one template per offer × tone. The text sent to customers is German (S12). Every template carries an English translation, because the project, UI and pitch are English. Templates start as "pending"; an action can only be approved once its template is approved (S10: approve content). A lint check blocks prices, discounts, urgency and Du/Sie mismatches (S12: no personalised prices, no fake urgency).
+- **ASSUMPTION A27:** Marketing can change an action (S8) only to one of the decision's ranked alternatives. These have already passed every hard rule and have dCLV > 0, so an override can never create a consent or exclusion violation.
+- **ASSUMPTION A28:** When steering changes re-run the engine, each customer's latest review is carried over if the reviewed action is still allowed (same action, or now an alternative). Otherwise the customer returns to the approval queue. Reviews of all runs stay in the log.
 
 ---
 

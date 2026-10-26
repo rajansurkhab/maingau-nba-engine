@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NBA Marketing Cockpit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">NBA</div>
+        <div>
+          <div class="brand-title">Marketing Cockpit</div>
+          <div class="brand-sub">MAINGAU Next Best Action</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#/overview" data-route="overview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Overview
+        </a>
+        <a href="#/queue" data-route="queue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          Approval queue <span class="count" id="nav-queue-count" hidden></span>
+        </a>
+        <a href="#/content" data-route="content">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+          Content approval <span class="count" id="nav-content-count" hidden></span>
+        </a>
+        <a href="#/steering" data-route="steering">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+          Steering
+        </a>
+        <a href="#/log" data-route="log">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>
+          Decision log
+        </a>
+      </nav>
+      <div class="hitl-card">
+        <strong>Human in the loop</strong>
+        The engine proposes, marketing approves. Nothing is sent automatically. Every decision and review is logged.
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="title">
+          <h1 id="page-title">Overview</h1>
+          <div class="subtitle" id="page-subtitle"></div>
+        </div>
+        <label class="control">Decision time
+          <select id="time-select" aria-label="Decision time"></select>
+        </label>
+        <label class="control">Reviewer
+          <input type="text" id="reviewer" value="marketing" size="12" aria-label="Reviewer name">
+        </label>
+        <span class="chip mono" id="config-chip" title="Config version: changes whenever steering settings change"></span>
+      </header>
+      <main class="page" id="page" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div id="drawer-root"></div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="loading" id="loading" hidden>
+    <div><div class="spinner" style="margin: 0 auto"></div><div class="msg" id="loading-msg">Loading…</div></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
